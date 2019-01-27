@@ -55,9 +55,9 @@ final class Core extends CoreCommon {
 	
 	public function getHomePage() {
 		UserRequest::startBenchmark('dashboard');
-		$oUpdateMgr = new UpdateMgr();
-		$oUpdateMgr->sendState();
-		unset($oUpdateMgr);
+		//$oUpdateMgr = new UpdateMgr();
+		//$oUpdateMgr->sendState();
+		//unset($oUpdateMgr);
 		$oModuleMgr = new ModulesMgr();
 		$sDashboard = '';
 		foreach($oModuleMgr->getModulesAvailable() as $sModuleName) {
