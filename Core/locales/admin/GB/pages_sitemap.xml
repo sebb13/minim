@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<translations>
+	<SITEMAP_PAGE_TITLE><![CDATA[Sitemap]]></SITEMAP_PAGE_TITLE>
+	<SITEMAP_TITLE><![CDATA[Sitemap]]></SITEMAP_TITLE>
+	<SITEMAP_XML_TITLE><![CDATA[Current sitemap]]></SITEMAP_XML_TITLE>
+	<LAST_MOD_LABEL><![CDATA[Last modify]]></LAST_MOD_LABEL>
+	<REGENERATE_SITEMAP><![CDATA[Regenerate sitemap]]></REGENERATE_SITEMAP>
+	<REGENERATE_SITEMAP_CONFIRM><![CDATA[Are you sure you want to regenerate the sitemap?]]></REGENERATE_SITEMAP_CONFIRM>
+	<SUCCESS_REGENERATE_SITEMAP><![CDATA[Successfully regenerated Sitemap]]></SUCCESS_REGENERATE_SITEMAP>
+	<ERROR_REGENERATE_SITEMAP><![CDATA[Impossible to regenerate the sitemap]]></ERROR_REGENERATE_SITEMAP>
+</translations>

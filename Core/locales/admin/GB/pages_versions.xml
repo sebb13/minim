@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<translations>
+	<PAGE_TITLE><![CDATA[Versions]]></PAGE_TITLE>
+	<APPLY_VERSION><![CDATA[Apply this version]]></APPLY_VERSION>
+	<VERSION_PREVIEW_BUTTON><![CDATA[Preview this version]]></VERSION_PREVIEW_BUTTON>
+	<APPLY_VERSION_CONFIRM><![CDATA[Are you sure you want to apply this release?]]></APPLY_VERSION_CONFIRM>
+	<SUCCESS_APPLY_VERSION_MSG><![CDATA[Version successfully restored]]></SUCCESS_APPLY_VERSION_MSG>
+	<ERROR_APPLY_VERSION_MSG><![CDATA[Unable to restore this version]]></ERROR_APPLY_VERSION_MSG>
+	<PURGE_VERSIONS><![CDATA[Purge these versions]]></PURGE_VERSIONS>
+	<PURGE_VERSIONS_CONFIRM><![CDATA[Are you sure you want to purge these versions?]]></PURGE_VERSIONS_CONFIRM>
+	<SUCCESS_PURGE_VERSIONS_MSG><![CDATA[Successfully purged versions]]></SUCCESS_PURGE_VERSIONS_MSG>
+	<ERROR_PURGE_VERSIONS_MSG><![CDATA[Could not flush versions]]></ERROR_PURGE_VERSIONS_MSG>
+	<DELETE_VERSION_CONFIRM><![CDATA[Are you sure you want to delete this version?]]></DELETE_VERSION_CONFIRM>
+	<SUCCESS_DELETE_VERSION_MSG><![CDATA[Version deleted successfully]]></SUCCESS_DELETE_VERSION_MSG>
+	<ERROR_DELETE_VERSION_MSG><![CDATA[Unable to remove this version]]></ERROR_DELETE_VERSION_MSG>
+</translations>

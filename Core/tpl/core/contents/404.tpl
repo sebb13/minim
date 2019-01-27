@@ -1,0 +1,1 @@
+<div id="page404" class="pageNotFound">{__TEXT__}</div>

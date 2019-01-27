@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<translations>
+	<NB_ERRORS_WORDING><![CDATA[ Fehler(s) heute]]></NB_ERRORS_WORDING>
+	<TODAYS_LOGS><![CDATA[Erhalten heute Logs]]></TODAYS_LOGS>
+	<ERROR_LOGS><![CDATA[Fehlerprotokolle]]></ERROR_LOGS>
+	<RESET_CACHE><![CDATA[Reset cache]]></RESET_CACHE>
+	<CLEAN_OLD_SESSIONS><![CDATA[Saubere alte Sitzungen]]></CLEAN_OLD_SESSIONS>
+	<ROUTING_TITLE><![CDATA[Routing]]></ROUTING_TITLE>
+	<SYS_UPDATES><![CDATA[Systemaktualisierungen]]></SYS_UPDATES>
+	<MANAGE_ROUTES><![CDATA[Verwalten Routen]]></MANAGE_ROUTES>
+	<GLOBAL_CONF><![CDATA[Globale konfiguration]]></GLOBAL_CONF>
+	<MANAGE_USERS><![CDATA[Benutzer verwalten]]></MANAGE_USERS>
+</translations> 

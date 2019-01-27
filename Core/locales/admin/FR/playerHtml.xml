@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<translations>
+	<PLAY_PREVIOUS><![CDATA[Jouer le titre précédent]]></PLAY_PREVIOUS>
+	<PREVIOUS><![CDATA[Précédent]]></PREVIOUS>
+	<START_READING><![CDATA[Démarrer la lecture]]></START_READING>
+	<PLAY><![CDATA[Jouer]]></PLAY>
+	<SET_PAUSED><![CDATA[Mettre en pause]]></SET_PAUSED>
+	<PAUSE><![CDATA[Pause]]></PAUSE>
+	<PLAY_NEXT><![CDATA[Jouer le titre suivant]]></PLAY_NEXT>
+	<NEXT><![CDATA[Suivant]]></NEXT>
+	<STOP_READING><![CDATA[Stopper la lecture]]></STOP_READING>
+	<STOP><![CDATA[Stop]]></STOP>
+	<MUTE><![CDATA[Muet]]></MUTE>
+	<SOUND><![CDATA[Sonore]]></SOUND>
+	<MAX_VOLUME><![CDATA[Volume maximum !]]></MAX_VOLUME>
+	<MIX><![CDATA[Mélanger]]></MIX>
+	<STOP_MIX><![CDATA[Arrêter de mélanger]]></STOP_MIX>
+	<REPEAT><![CDATA[Répéter]]></REPEAT>
+	<STOP_REPEAT><![CDATA[Arrêter de répéter]]></STOP_REPEAT>
+	<PLAYER_DOES_NOT_WORK><![CDATA[Oops! Le lecteur ne fonctionne pas !]]></PLAYER_DOES_NOT_WORK>
+	<SHOW_PLAYLIST><![CDATA[Afficher la playlist]]></SHOW_PLAYLIST>
+	<HIDE_PLAYLIST><![CDATA[Masquer la playlist]]></HIDE_PLAYLIST>
+</translations>

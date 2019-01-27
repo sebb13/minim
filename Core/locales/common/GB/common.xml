@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<translations>
+	<PARTNERS><![CDATA[Partners]]></PARTNERS>
+	<YES><![CDATA[yes]]></YES>
+	<NO><![CDATA[no]]></NO>
+	<HEIGHT><![CDATA[height]]></HEIGHT>
+	<WIDTH><![CDATA[width]]></WIDTH>
+	<COMMON><![CDATA[Gemeinsam]]></COMMON>
+	<FRONT><![CDATA[Front]]></FRONT>
+	<BACK><![CDATA[Back]]></BACK>
+	<SAVE><![CDATA[Save]]></SAVE>
+	<CREATE><![CDATA[Create]]></CREATE>
+	<EDIT><![CDATA[Edit]]></EDIT>
+	<SEARCH><![CDATA[Search]]></SEARCH>
+	<SEARCH_NO_RESULTS><![CDATA[Sorry, your search did not return any result]]></SEARCH_NO_RESULTS>
+	<MANAGE><![CDATA[Manage]]></MANAGE>
+	<LOGIN_PROMPT><![CDATA[Please log in]]></LOGIN_PROMPT>
+	<AUTH_FAIL><![CDATA[Authentication Failure]]></AUTH_FAIL>
+	<LOGIN><![CDATA[Login]]></LOGIN>
+	<LOGOUT><![CDATA[Logout]]></LOGOUT>
+	<PWD><![CDATA[Password]]></PWD>
+	<VALIDATE><![CDATA[Validate]]></VALIDATE>
+	<ACTIONS><![CDATA[Actions]]></ACTIONS>
+	<CONFIGURATION><![CDATA[Configuration]]></CONFIGURATION>
+	<MOVE_TO_PROD><![CDATA[Move to production]]></MOVE_TO_PROD>
+	<PUBLISH><![CDATA[Publish]]></PUBLISH>
+	<CONFIRM_TITLE><![CDATA[Confirmation]]></CONFIRM_TITLE>
+	<REMOVE><![CDATA[Remove]]></REMOVE>
+	<ARCHIVE><![CDATA[Archive]]></ARCHIVE>
+	<RESTORE><![CDATA[Restore]]></RESTORE>
+	<DESCRIPTION><![CDATA[Beschreibung]]></DESCRIPTION>
+	<CONTROLS><![CDATA[Controls]]></CONTROLS>
+	<RESET><![CDATA[Reset]]></RESET>
+	<CANCEL><![CDATA[Cancel]]></CANCEL>
+	<DRAFT><![CDATA[Draft copy]]></DRAFT>
+	<PAGE_PREVIEW><![CDATA[Page preview]]></PAGE_PREVIEW>
+	<PROD_DATA><![CDATA[Production data]]></PROD_DATA>
+	<MANAGING_DRAFTS><![CDATA[Managing drafts]]></MANAGING_DRAFTS>
+	<DRAFT_NOT_FOUND><![CDATA[No draft found for this page]]></DRAFT_NOT_FOUND>
+	<BENCHMARK_LABEL><![CDATA[Execution time : ]]></BENCHMARK_LABEL>
+	<TRANSLATE><![CDATA[Translate]]></TRANSLATE>
+	<LEGAL_NOTICES><![CDATA[legal notices]]></LEGAL_NOTICES>
+	<ERROR_INVALID_EMAIL><![CDATA[Invalid email.]]></ERROR_INVALID_EMAIL>
+	<NEXT><![CDATA[Next]]></NEXT>
+	<PREVIOUS><![CDATA[Previous]]></PREVIOUS>
+	<COMMENTS><![CDATA[Comments]]></COMMENTS>
+	<CONTACT><![CDATA[Contact]]></CONTACT>
+	<LEGAL_NOTICES><![CDATA[Legal notices]]></LEGAL_NOTICES>
+	<COOKIES_CONSENT><![CDATA[As a visitor, you agree to the use of cookies to enhance the user experience.]]></COOKIES_CONSENT>
+	<LEARN_MORE><![CDATA[Learn more]]></LEARN_MORE>
+	<ERROR_PAGE_NAME_EMPTY><![CDATA[Page Name must be fill]]></ERROR_PAGE_NAME_EMPTY>
+	<COPY_TO_CLIPBOARD><![CDATA[Copy to clipboard]]></COPY_TO_CLIPBOARD>
+	<JS_REQUIRED><![CDATA[You must activate javascript on your browser to take full advantage of the features of this site.]]></JS_REQUIRED>
+	<SYS_MOD_NAME_TOOLTIP><![CDATA[]]></SYS_MOD_NAME_TOOLTIP>
+	<SYS_MOD_VERSION_TOOLTIP><![CDATA[]]></SYS_MOD_VERSION_TOOLTIP>
+	<SYS_NEED_DB_TOOLTIP><![CDATA[]]></SYS_NEED_DB_TOOLTIP>
+	<SYS_LAST_CACHE_TOOLTIP><![CDATA[]]></SYS_LAST_CACHE_TOOLTIP>
+	<LETS_TALK_ABOUT_IT><![CDATA[Let's talk about it !]]></LETS_TALK_ABOUT_IT>
+	<CONTACT_ME><![CDATA[Contact me !]]></CONTACT_ME>
+	<CONTACT_US><![CDATA[Contact us!]]></CONTACT_US>
+    <HOME><![CDATA[Home]]></HOME>
+	<ABOUT><![CDATA[About]]></ABOUT>
+	<EXAMPLES><![CDATA[Exemples]]></EXAMPLES>
+	<BLOG><![CDATA[Blog]]></BLOG>
+    <FOLLOW><![CDATA[Follw the project !]]></FOLLOW>
+    <RAPID_ACCESS><![CDATA[Rapid access]]></RAPID_ACCESS>
+    <QUOTES><![CDATA[Quotes]]></QUOTES>
+	<QUOTE_1><![CDATA["Regarde ton chien dans les yeux et tu ne pourras pas affirmer qu'il n'a pas d'âme."<br />
+	Victor Hugo (poète français, 1802-1885)]]></QUOTE_1>
+	<QUOTE_2><![CDATA["Tout le monde pense qu'ils ont le meilleur chien et il ont tous raison."<br />
+	W.R. Purche]]></QUOTE_2>
+</translations>

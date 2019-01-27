@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<translations>
+    <FOLLOW_US><![CDATA[Suivez nous]]></FOLLOW_US>
+	<CONTACT_FRONT_TITLE><![CDATA[Pour nous contacter,<br /> veuillez remplir le formulaire ci-dessous:]]></CONTACT_FRONT_TITLE>
+	<MANDATORY_FIELD><![CDATA[* Champs obligatoires]]></MANDATORY_FIELD>
+	<CONTACT_NAME_LABEL><![CDATA[Nom]]></CONTACT_NAME_LABEL>
+	<CONTACT_EMAIL_LABEL><![CDATA[Email]]></CONTACT_EMAIL_LABEL>
+	<CONTACT_SUBJECT_LABEL><![CDATA[Sujet]]></CONTACT_SUBJECT_LABEL>
+	<CONTACT_MSG_LABEL><![CDATA[Message]]></CONTACT_MSG_LABEL>
+	<CONTACT_FILE_LABEL><![CDATA[Joindre un fichier]]></CONTACT_FILE_LABEL>
+	<CONTACT_SEND_LABEL><![CDATA[Envoyer]]></CONTACT_SEND_LABEL>
+	<ERROR_MISSING_NAME><![CDATA[Vous devez renseigner votre nom]]></ERROR_MISSING_NAME>
+	<ERROR_MISSING_EMAIL><![CDATA[Vous devez renseigner votre email]]></ERROR_MISSING_EMAIL>
+	<ERROR_MISSING_MSG><![CDATA[Vous n'avez pas saisi de message]]></ERROR_MISSING_MSG>
+	<ERROR_SEND_MSG><![CDATA[Une erreur est survenue]]></ERROR_SEND_MSG>
+	<SUCCESS_SEND_MSG><![CDATA[Votre message a bien été envoyé, nous vous en remercions.]]></SUCCESS_SEND_MSG>
+</translations>

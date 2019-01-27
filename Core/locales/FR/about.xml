@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<translations>
+	<ABOUT_TITLE_1><![CDATA[Qui suis-je ?]]></ABOUT_TITLE_1>
+	<ABOUT_1><![CDATA[
+<p>Passionné depuis plus de 15 ans, je suis aujourd'hui freelance dans le développement web et à l'origine de minim.</p>
+<p>Ancien développeur au service qualité d'une célèbre marque d'intermédiation, j'attache beaucoup d'importance à la qualité globale de mon code source.</p>
+<p>M'occupant de plusieurs sites web, l'utilisation d'un framework me permet de monter des sites simples rapidement, mais aussi d'ajouter des fonctionnalités plus poussées à la demande.</p>
+<p>Aidé par plusieurs autres développeurs qui m'ont rejoint au fil de ce projet, je tiens ici à les remercier.</p>
+<p>Bonne visite !</p>
+]]></ABOUT_1>
+	<ABOUT_TITLE_2><![CDATA[À propos de cette documentation et du code proposé]]></ABOUT_TITLE_2>
+	<ABOUT_2><![CDATA[
+<p>Cette documentation n'est pas exhaustive, nous allons tâcher de la compléter au mieux à mesure des évolutions et des correctifs de bug.</p>
+<p>Nous avons apporté le plus grand soin au développement des différentes parties, certaines restes perfectibles.</p>
+<p>Nous utiliserons les réseaux sociaux en parallèle de ce site pour vous tenir informé des dernières nouveautés.</p>
+<p>Vous pouvez nous contacter pour toute question via la page <a class="ajaxLink" href="/{##LANG##}/contact.html" id="___contact">contact</a> de ce site, nous tâcherons de vous répondre dans les meilleurs délais.</p>
+]]></ABOUT_2>
+	<ABOUT_TITLE_3><![CDATA[Open source (GPL v3)]]></ABOUT_TITLE_3>
+	<ABOUT_3><![CDATA[
+<p>Ce projet vous est proposé en open source.</p>
+<p>La licence utilisée est la GNU GPL v3 (<a href="{##FRONT_URL##}download.php?file_id=copying">télécharger</a>) qui vous donne :</p>
+<ul class="cog-tools">
+	<li>La liberté d'exécuter ce logiciel, pour n'importe quel usage.</li>
+	<li>La liberté d'étudier son fonctionnement et de l'adapter à vos besoins.</li>
+	<li>La liberté d'en redistribuer des copies.</li>
+	<li>L'obligation de faire bénéficier la communauté des versions modifiées.</li>
+</ul>
+]]></ABOUT_3>
+</translations>

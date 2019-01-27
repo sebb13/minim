@@ -1,0 +1,5 @@
+	.lang-button img{margin-top:-28px;margin-left:-7px!important;border:0;}
+	.lang-button{float:left;width:31px;height:20px;text-align:left;}
+	.lang-button.on {display:table-cell;background:url("https://static.artearthquake.com/img/tab-on.gif") no-repeat 0 0;}
+	.lang-button.off {background:url("https://static.artearthquake.com/img/tab-off.gif") no-repeat 0 0;cursor:pointer;}
+	#langSwitcher {float:left;margin:14px 5px 10px 0;}

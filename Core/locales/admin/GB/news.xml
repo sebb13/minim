@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<translations>
+	<NEWS_HOME_TITLE><![CDATA[News Manager]]></NEWS_HOME_TITLE>
+	<NEWS_FEED><![CDATA[News feed]]></NEWS_FEED>
+	<ADD_NEWS_THREAD><![CDATA[Add news thread]]></ADD_NEWS_THREAD>
+	<ADD_THREAD><![CDATA[Add thread]]></ADD_THREAD>
+	<NEW_THREAD_NAME><![CDATA[New thread's name]]></NEW_THREAD_NAME>
+	<SUCCESS_ADD_THREAD><![CDATA[Successfully added thread]]></SUCCESS_ADD_THREAD>
+	<ERROR_ADD_THREAD><![CDATA[Unable to add thread]]></ERROR_ADD_THREAD>
+	<ERROR_THREAD_ALREADY_EXISTS><![CDATA[This thread already exists]]></ERROR_THREAD_ALREADY_EXISTS>
+	<DELETE_THREAD><![CDATA[Remove this thread]]></DELETE_THREAD>
+	<CONFIRM_DELETE_THREAD><![CDATA[Are you sure you want to delete this thread?]]></CONFIRM_DELETE_THREAD>
+	<SUCCESS_DELETE_THREAD><![CDATA[Wire deleted successfully]]></SUCCESS_DELETE_THREAD>
+	<ERROR_DELETE_THREAD><![CDATA[Unable to remove thread]]></ERROR_DELETE_THREAD>
+	<CREATE_NEWS><![CDATA[Create a news]]></CREATE_NEWS>
+	<SEARCH_NEWS><![CDATA[Search news]]></SEARCH_NEWS>
+	<DATE_LABEL><![CDATA[Date]]></DATE_LABEL>
+	<TIME_LABEL><![CDATA[Hour]]></TIME_LABEL>
+	<MAIN_TEXT_LABEL><![CDATA[Main text]]></MAIN_TEXT_LABEL>
+	<HASHTAGS_LABEL><![CDATA[Hashtags]]></HASHTAGS_LABEL>
+	<IMG_URL_THUMB_LABEL><![CDATA[Image preview URL]]></IMG_URL_THUMB_LABEL>
+	<IMG_URL_LABEL><![CDATA[Image URL]]></IMG_URL_LABEL>
+	<IMG_LINK_LABEL><![CDATA[Image link]]></IMG_LINK_LABEL>
+	<IMG_TITLE_LABEL><![CDATA[Image title]]></IMG_TITLE_LABEL>
+	<MEDIA_LABEL><![CDATA[Media]]></MEDIA_LABEL>
+	<SUCCESS_ADD_NEWS><![CDATA[News added successfully]]></SUCCESS_ADD_NEWS>
+	<ERROR_ADD_NEWS><![CDATA[Unable to add news]]></ERROR_ADD_NEWS>
+	<SUCCESS_PUBLISH_NEWS><![CDATA[News published successfully]]></SUCCESS_PUBLISH_NEWS>
+	<ERROR_PUBLISH_NEWS><![CDATA[Unable to publish the news]]></ERROR_PUBLISH_NEWS>
+	<SUCCESS_REMOVE_NEWS><![CDATA[News offline successfully]]></SUCCESS_REMOVE_NEWS>
+	<ERROR_REMOVE_NEWS><![CDATA[Unable to put the news offline]]></ERROR_REMOVE_NEWS>
+	<SUCCESS_UPDATE_NEWS><![CDATA[News saved successfully]]></SUCCESS_UPDATE_NEWS>
+	<ERROR_UPDATE_NEWS><![CDATA[Unable to save the news]]></ERROR_UPDATE_NEWS>
+	<SUCCESS_TRANSLATE_NEWS><![CDATA[News translated successfully]]></SUCCESS_TRANSLATE_NEWS>
+	<ERROR_TRANSLATE_NEWS><![CDATA[Unable to translate the news]]></ERROR_TRANSLATE_NEWS>
+</translations>

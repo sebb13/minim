@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<translations>
+	<img_label><![CDATA[picture]]></img_label>
+	<audio_label><![CDATA[audio]]></audio_label>
+	<video_label><![CDATA[video]]></video_label>
+	<flux_label><![CDATA[flux]]></flux_label>
+	<embed_label><![CDATA[embedded]]></embed_label>
+	<pdf_label><![CDATA[pdf]]></pdf_label>
+	<zip_label><![CDATA[Compressed file]]></zip_label>
+	<MEDIA_MANAGER><![CDATA[Media Manager]]></MEDIA_MANAGER>
+	<MEDIA_TRANSLATIONS><![CDATA[Translations]]></MEDIA_TRANSLATIONS>
+	<MANAGE_MEDIAS><![CDATA[Manage the media]]></MANAGE_MEDIAS>
+	<MEDIA_TYPE><![CDATA[Type of media]]></MEDIA_TYPE>
+	<UPLOAD_MEDIA><![CDATA[Upload Media]]></UPLOAD_MEDIA>
+	<ADD_MEDIA><![CDATA[Add Media]]></ADD_MEDIA>
+	<UPDATE_MEDIA><![CDATA[Edit media]]></UPDATE_MEDIA>
+	<CURRENT_VALUE><![CDATA[current value]]></CURRENT_VALUE>
+	<CONFIRM_DELETE_MEDIA><![CDATA[Are you sure you want to delete this media?]]></CONFIRM_DELETE_MEDIA>
+	<SEARCH_MEDIA><![CDATA[Search a media]]></SEARCH_MEDIA>
+	<NO_MEDIA><![CDATA[No media.]]></NO_MEDIA>
+	<SUCCESS_ADD_MEDIA><![CDATA[Media successfully added]]></SUCCESS_ADD_MEDIA>
+	<ERROR_CAN_NOT_ADD_MEDIA><![CDATA[Unable to add media]]></ERROR_CAN_NOT_ADD_MEDIA>
+	<SUCCESS_UPDATE_MEDIA><![CDATA[Media successfully updated]]></SUCCESS_UPDATE_MEDIA>
+	<ERROR_CAN_NOT_UPDATE_MEDIA><![CDATA[Unable to update media]]></ERROR_CAN_NOT_UPDATE_MEDIA>
+	<SUCCESS_DELETE_MEDIA><![CDATA[Media successfully deleted]]></SUCCESS_DELETE_MEDIA>
+	<ERROR_CAN_NOT_DELETE_MEDIA><![CDATA[Unable to delete media]]></ERROR_CAN_NOT_DELETE_MEDIA>
+	<INVALID_FILE><![CDATA[Invalid file type]]></INVALID_FILE>
+	<INVALID_URL><![CDATA[Invalid URL]]></INVALID_URL>
+	<MEDIA_OPS_MENU><![CDATA[Media Operations]]></MEDIA_OPS_MENU>
+	<THUMBNAIL_SECTION><![CDATA[Thumbnail section]]></THUMBNAIL_SECTION>
+	<GENERATE_THUMBNAIL><![CDATA[Generate thumbnails]]></GENERATE_THUMBNAIL>
+	<GENERATE_MISSING_OGG_FILES><![CDATA[Generate missing ogg files]]></GENERATE_MISSING_OGG_FILES>
+	<NO_OPERATION_FOR_MEDIA><![CDATA[No operation possible for this type of media]]></NO_OPERATION_FOR_MEDIA>
+	<DOWNLOAD_ALLOWED><![CDATA[Downloadable media from the website]]></DOWNLOAD_ALLOWED>
+	<MEDIA_TRANSLATIONS_TOOLTIP><![CDATA[]]></MEDIA_TRANSLATIONS_TOOLTIP>
+	<TITLE_TOOLTIP><![CDATA[This field is used to enter the title of the media.
+	This will be visible when the mouse is over the media.]]></TITLE_TOOLTIP>
+	<ALT_TOOLTIP><![CDATA[]]></ALT_TOOLTIP>
+	<MP3_TOOLTIP><![CDATA[]]></MP3_TOOLTIP>
+	<OGG_TOOLTIP><![CDATA[]]></OGG_TOOLTIP>
+	<IFRAME_TOOLTIP><![CDATA[]]></IFRAME_TOOLTIP>
+	<SRC_TOOLTIP><![CDATA[]]></SRC_TOOLTIP>
+	<MP4_TOOLTIP><![CDATA[]]></MP4_TOOLTIP>
+	<POSTER_TOOLTIP><![CDATA[]]></POSTER_TOOLTIP>
+	<URL_TOOLTIP><![CDATA[]]></URL_TOOLTIP>
+	<MEDIA_DESCRIPTION_TOOLTIP><![CDATA[]]></MEDIA_DESCRIPTION_TOOLTIP>
+</translations>

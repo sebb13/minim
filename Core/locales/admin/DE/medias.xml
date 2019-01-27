@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<translations>
+	<img_label><![CDATA[Bild]]></img_label>
+	<audio_label><![CDATA[Audio]]></audio_label>
+	<video_label><![CDATA[Video]]></video_label>
+	<flux_label><![CDATA[fließen]]></flux_label>
+	<embed_label><![CDATA[eingebettet]]></embed_label>
+	<pdf_label><![CDATA[pdf]]></pdf_label>
+	<zip_label><![CDATA[komprimierte Datei]]></zip_label>
+	<MEDIA_MANAGER><![CDATA[Media Manager]]></MEDIA_MANAGER>
+	<MEDIA_TRANSLATIONS><![CDATA[Übersetzungen]]></MEDIA_TRANSLATIONS>
+	<MANAGE_MEDIAS><![CDATA[Verwalten medien]]></MANAGE_MEDIAS>
+	<MEDIA_TYPE><![CDATA[Medientyp]]></MEDIA_TYPE>
+	<UPLOAD_MEDIA><![CDATA[Hochladen von Medien]]></UPLOAD_MEDIA>
+	<ADD_MEDIA><![CDATA[Artikel hinzufügen]]></ADD_MEDIA>
+	<UPDATE_MEDIA><![CDATA[Bearbeiten von Medien]]></UPDATE_MEDIA>
+	<CURRENT_VALUE><![CDATA[Stromwert]]></CURRENT_VALUE>
+	<CONFIRM_DELETE_MEDIA><![CDATA[Sind Sie sicher, dass Sie dieses Medium zu löschen?]]></CONFIRM_DELETE_MEDIA>
+	<SEARCH_MEDIA><![CDATA[Suche Medien]]></SEARCH_MEDIA>
+	<NO_MEDIA><![CDATA[Keine Medien.]]></NO_MEDIA>
+	<SUCCESS_ADD_MEDIA><![CDATA[Medien erfolgreich hinzugefügt]]></SUCCESS_ADD_MEDIA>
+	<ERROR_CAN_NOT_ADD_MEDIA><![CDATA[Kann nicht Medien hinzufügen]]></ERROR_CAN_NOT_ADD_MEDIA>
+	<SUCCESS_UPDATE_MEDIA><![CDATA[Medien erfolgreich aktualisiert]]></SUCCESS_UPDATE_MEDIA>
+	<ERROR_CAN_NOT_UPDATE_MEDIA><![CDATA[Konnte nicht die Medien aktualisieren]]></ERROR_CAN_NOT_UPDATE_MEDIA>
+	<SUCCESS_DELETE_MEDIA><![CDATA[Medien erfolgreich gelöscht]]></SUCCESS_DELETE_MEDIA>
+	<ERROR_CAN_NOT_DELETE_MEDIA><![CDATA[Unfähig, die Medien zu entfernen]]></ERROR_CAN_NOT_DELETE_MEDIA>
+	<INVALID_FILE><![CDATA[Ungültige Dateityp]]></INVALID_FILE>
+	<INVALID_URL><![CDATA[Ungültige URL]]></INVALID_URL>
+	<MEDIA_OPS_MENU><![CDATA[Medienoperationen]]></MEDIA_OPS_MENU>
+	<THUMBNAIL_SECTION><![CDATA[Thumbnail-Bereich]]></THUMBNAIL_SECTION>
+	<GENERATE_THUMBNAIL><![CDATA[Thumbnails]]></GENERATE_THUMBNAIL>
+	<GENERATE_MISSING_OGG_FILES><![CDATA[Generieren ogg-Dateien fehlen]]></GENERATE_MISSING_OGG_FILES>
+	<NO_OPERATION_FOR_MEDIA><![CDATA[Kein Betrieb möglich für diese Art von Medien]]></NO_OPERATION_FOR_MEDIA>
+	<DOWNLOAD_ALLOWED><![CDATA[Medien können von der Website heruntergeladen werde]]></DOWNLOAD_ALLOWED>
+	<MEDIA_TRANSLATIONS_TOOLTIP><![CDATA[]]></MEDIA_TRANSLATIONS_TOOLTIP>
+	<TITLE_TOOLTIP><![CDATA[Dieses Feld wird in den Medientitel verwendet.
+	Dies wird auf die Übersicht über die Medien von der Maus sichtbar sein.]]></TITLE_TOOLTIP>
+	<ALT_TOOLTIP><![CDATA[]]></ALT_TOOLTIP>
+	<MP3_TOOLTIP><![CDATA[]]></MP3_TOOLTIP>
+	<OGG_TOOLTIP><![CDATA[]]></OGG_TOOLTIP>
+	<IFRAME_TOOLTIP><![CDATA[]]></IFRAME_TOOLTIP>
+	<SRC_TOOLTIP><![CDATA[]]></SRC_TOOLTIP>
+	<MP4_TOOLTIP><![CDATA[]]></MP4_TOOLTIP>
+	<POSTER_TOOLTIP><![CDATA[]]></POSTER_TOOLTIP>
+	<URL_TOOLTIP><![CDATA[]]></URL_TOOLTIP>
+	<MEDIA_DESCRIPTION_TOOLTIP><![CDATA[]]></MEDIA_DESCRIPTION_TOOLTIP>
+</translations>

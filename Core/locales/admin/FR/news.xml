@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<translations>
+	<NEWS_HOME_TITLE><![CDATA[Gestionnaire de news]]></NEWS_HOME_TITLE>
+	<NEWS_FEED><![CDATA[Fil de news]]></NEWS_FEED>
+	<ADD_NEWS_THREAD><![CDATA[Ajouter un fil de news]]></ADD_NEWS_THREAD>
+	<ADD_THREAD><![CDATA[Ajouter un fil de news]]></ADD_THREAD>
+	<NEW_THREAD_NAME><![CDATA[Nom du nouveau fil]]></NEW_THREAD_NAME>
+	<SUCCESS_ADD_THREAD><![CDATA[Fil ajouté avec succès]]></SUCCESS_ADD_THREAD>
+	<ERROR_ADD_THREAD><![CDATA[Impossible d'ajouter le fil]]></ERROR_ADD_THREAD>
+	<ERROR_THREAD_ALREADY_EXISTS><![CDATA[Ce fil existe déjà]]></ERROR_THREAD_ALREADY_EXISTS>
+	<DELETE_THREAD><![CDATA[Supprimer ce fil]]></DELETE_THREAD>
+	<CONFIRM_DELETE_THREAD><![CDATA[Êtes vous sûr de vouloir supprimer ce fil ?]]></CONFIRM_DELETE_THREAD>
+	<SUCCESS_DELETE_THREAD><![CDATA[Fil supprimé avec succès]]></SUCCESS_DELETE_THREAD>
+	<ERROR_DELETE_THREAD><![CDATA[Impossible de supprimer le fil]]></ERROR_DELETE_THREAD>
+	<CREATE_NEWS><![CDATA[Créer une news]]></CREATE_NEWS>
+	<SEARCH_NEWS><![CDATA[Rechercher une news]]></SEARCH_NEWS>
+	<DATE_LABEL><![CDATA[Date]]></DATE_LABEL>
+	<TIME_LABEL><![CDATA[Heure]]></TIME_LABEL>
+	<MAIN_TEXT_LABEL><![CDATA[Texte principal]]></MAIN_TEXT_LABEL>
+	<HASHTAGS_LABEL><![CDATA[Hashtags]]></HASHTAGS_LABEL>
+	<IMG_URL_THUMB_LABEL><![CDATA[URL de l'aperçu de l'image]]></IMG_URL_THUMB_LABEL>
+	<IMG_URL_LABEL><![CDATA[URL de l'image]]></IMG_URL_LABEL>
+	<IMG_LINK_LABEL><![CDATA[Lien où renvoie l'image]]></IMG_LINK_LABEL>
+	<IMG_TITLE_LABEL><![CDATA[Titre de l'image]]></IMG_TITLE_LABEL>
+	<MEDIA_LABEL><![CDATA[Média]]></MEDIA_LABEL>
+	<SUCCESS_ADD_NEWS><![CDATA[News ajoutée avec succès]]></SUCCESS_ADD_NEWS>
+	<ERROR_ADD_NEWS><![CDATA[Impossible d'ajouter la news]]></ERROR_ADD_NEWS>
+	<SUCCESS_PUBLISH_NEWS><![CDATA[News publiée avec succès]]></SUCCESS_PUBLISH_NEWS>
+	<ERROR_PUBLISH_NEWS><![CDATA[Impossible de publier la news]]></ERROR_PUBLISH_NEWS>
+	<SUCCESS_REMOVE_NEWS><![CDATA[News mise hors ligne avec succès]]></SUCCESS_REMOVE_NEWS>
+	<ERROR_REMOVE_NEWS><![CDATA[Impossible de mettre la news hors ligne]]></ERROR_REMOVE_NEWS>
+	<SUCCESS_UPDATE_NEWS><![CDATA[News sauvegardée avec succès]]></SUCCESS_UPDATE_NEWS>
+	<ERROR_UPDATE_NEWS><![CDATA[Impossible de sauvegarder la news]]></ERROR_UPDATE_NEWS>
+	<SUCCESS_TRANSLATE_NEWS><![CDATA[News traduite avec succès]]></SUCCESS_TRANSLATE_NEWS>
+	<ERROR_TRANSLATE_NEWS><![CDATA[Impossible de traduire la news]]></ERROR_TRANSLATE_NEWS>
+</translations>

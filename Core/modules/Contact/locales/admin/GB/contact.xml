@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<translations>
+	<CONTACT_MGR_HOME_TITLE><![CDATA[Contact Management]]></CONTACT_MGR_HOME_TITLE>
+	<MESSAGES_RECEIVED><![CDATA[Messages Received]]></MESSAGES_RECEIVED>
+	<ARCHIVED_MESSAGES><![CDATA[Archived Posts]]></ARCHIVED_MESSAGES>
+	<SEARCH_IN_MESSAGES><![CDATA[Search in Posts]]></SEARCH_IN_MESSAGES>
+	<MESSAGES_FOUND><![CDATA[Messages found: ]]></MESSAGES_FOUND>
+	<CONFIRM_ARCHIVE_MSG><![CDATA[Are you sure you want to archive this message?]]></CONFIRM_ARCHIVE_MSG>
+	<CONFIRM_DELETE_MSG><![CDATA[Are you sure you want to delete this message?]]></CONFIRM_DELETE_MSG>
+	<SUCCESS_ARCHIVE_MSG><![CDATA[Message archived successfully]]></SUCCESS_ARCHIVE_MSG>
+	<ERROR_ARCHIVE_MSG><![CDATA[Unable to archive this message]]></ERROR_ARCHIVE_MSG>
+	<SUCCESS_RESTORE_MSG><![CDATA[Message restored successfully]]></SUCCESS_RESTORE_MSG>
+	<ERROR_RESTORE_MSG><![CDATA[Unable to restore this message]]></ERROR_RESTORE_MSG>
+	<SUCCESS_DELETE_MSG><![CDATA[Message deleted successfully]]></SUCCESS_DELETE_MSG>
+	<ERROR_DELETE_MSG><![CDATA[Unable to delete this message]]></ERROR_DELETE_MSG>
+	<SUCCESS_SAVE_COMMENT><![CDATA[Comment successfully saved]]></SUCCESS_SAVE_COMMENT>
+	<ERROR_SAVE_COMMENT><![CDATA[Unable to save your comment]]></ERROR_SAVE_COMMENT>
+	<NB_MSG_LABEL><![CDATA[Messages received]]></NB_MSG_LABEL>
+	<NB_ARCHIVE_LABEL><![CDATA[Archived messages]]></NB_ARCHIVE_LABEL>
+	<LAST_MSG_DATE_LABEL><![CDATA[Last message received]]></LAST_MSG_DATE_LABEL>
+	<DATA_FORMAT_TOOLTIP><![CDATA[]]></DATA_FORMAT_TOOLTIP>
+	<EMAIL_ALERT_TOOLTIP><![CDATA[]]></EMAIL_ALERT_TOOLTIP>
+</translations>

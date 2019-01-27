@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<translations>
+	<SYSTEM_UPDATES_TITLE><![CDATA[Mises à jour du système]]></SYSTEM_UPDATES_TITLE>
+	<NO_UPDATE_TO_INSTALL><![CDATA[Pas de mise à jour à installer]]></NO_UPDATE_TO_INSTALL>
+	<CHECK_DEPOSIT><![CDATA[Vérifier sur le dépôt]]></CHECK_DEPOSIT>
+	<VERSION><![CDATA[Version]]></VERSION>
+	<NB_FILES><![CDATA[Nombre de fichiers]]></NB_FILES>
+	<CRITICALITY_LEVEL><![CDATA[Niveau de criticité]]></CRITICALITY_LEVEL>
+	<CHANGELOG><![CDATA[Changelog]]></CHANGELOG>
+	<INSTALL_UPDATE><![CDATA[Installer la mise à jour]]></INSTALL_UPDATE>
+	<DOWNLOADED_UPDATES><![CDATA[Mise(s) à jour téléchargée(s)]]></DOWNLOADED_UPDATES>
+	<NO_UPDATE_AVAILABLE><![CDATA[Pas de mise à jour disponible]]></NO_UPDATE_AVAILABLE>
+	<UNABLE_TO_EXTRACT_UPDATE><![CDATA[Impossible d'extraire les mises à jour]]></UNABLE_TO_EXTRACT_UPDATE>
+	<CONFIRM_GENERATE_UPDATES><![CDATA[Êtes vous sûr de vouloir générer cette mise à jour ?]]></CONFIRM_GENERATE_UPDATES>
+	<GENERATE_UPDATES><![CDATA[Générer les mises à jour]]></GENERATE_UPDATES>
+	<GENERATE><![CDATA[Générer]]></GENERATE>
+	<SUCCESS_GENERATE_UPDATES><![CDATA[Ensemble des mises à jour généré avec succès]]></SUCCESS_GENERATE_UPDATES>
+	<ERROR_GENERATE_UPDATES><![CDATA[Impossible de générer les mises à jour]]></ERROR_GENERATE_UPDATES>
+	<WEBSITES_STATE><![CDATA[État des sites clients]]></WEBSITES_STATE>
+	<REPOSITORY_STATE><![CDATA[État du dépôt]]></REPOSITORY_STATE>
+	<CONFIRM_INSTALL_UPDATES><![CDATA[Êtes vous sûr de vouloir installer cette mise à jour ?]]></CONFIRM_INSTALL_UPDATES>
+	<SUCCESS_INSTALL_UPDATES><![CDATA[Mise à jour installée avec succès]]></SUCCESS_INSTALL_UPDATES>
+	<ERROR_INSTALL_UPDATES><![CDATA[Impossible d'installer cette mise à jour]]></ERROR_INSTALL_UPDATES>
+	<SUCCESS_BACKUP><![CDATA[Backup effectué avec succès]]></SUCCESS_BACKUP>
+	<ERROR_BACKUP><![CDATA[Impossible d'effectuer le backup]]></ERROR_BACKUP>
+	<ROLLBACK><![CDATA[Annuler la mise à jour]]></ROLLBACK>
+	<CONFIRM_ROLLBACK><![CDATA[Êtes vous sûr de vouloir annuler cette mise à jour ?]]></CONFIRM_ROLLBACK>
+	<SUCCESS_ROLLBACK><![CDATA[Rollback effectué avec succès]]></SUCCESS_ROLLBACK>
+	<ERROR_ROLLBACK><![CDATA[Impossible d'effectuer le rollback]]></ERROR_ROLLBACK>
+	<PURGE_BACKUP_UPDATE><![CDATA[Supprimer le backup]]></PURGE_BACKUP_UPDATE>
+	<CONFIRM_PURGE_BACKUP_UPDATE><![CDATA[Êtes vous sûr de vouloir supprimer  les backup de la mise à jour ?]]></CONFIRM_PURGE_BACKUP_UPDATE>
+	<SUCCESS_PURGE_BACKUP_UPDATE><![CDATA[Backup de la mise à jour supprimé avec succès]]></SUCCESS_PURGE_BACKUP_UPDATE>
+	<ERROR_PURGE_BACKUP_UPDATE><![CDATA[Impossible de supprimer le backup de la mise à jour]]></ERROR_PURGE_BACKUP_UPDATE>
+	<SUCCESS_UPDATE_CONF><![CDATA[Configuration mise à jour avec succès]]></SUCCESS_UPDATE_CONF>
+	<ERROR_UPDATE_CONF><![CDATA[Impossible de mettre à jour la configuration]]></ERROR_UPDATE_CONF>
+	<NO_ROLLBACK_POSSIBLE><![CDATA[Aucun rollback possible]]></NO_ROLLBACK_POSSIBLE>
+</translations>

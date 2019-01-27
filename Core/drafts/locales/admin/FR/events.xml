@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<translations>
+	<EVENTS_MGR_HOME_TITLE><![CDATA[Gestionnaire d'événements]]></EVENTS_MGR_HOME_TITLE>
+	<EVENTS_MGR_TITLE><![CDATA[Gérer les événements]]></EVENTS_MGR_TITLE>
+	<ARCHIVES_MGR_TITLE><![CDATA[Gérer les archives]]></ARCHIVES_MGR_TITLE>
+	<ALL_EVENTS_MGR_TITLE><![CDATA[Gérer tous les événements]]></ALL_EVENTS_MGR_TITLE>
+	<FORCING_ARCHIVING><![CDATA[Lancer l'archivage]]></FORCING_ARCHIVING>
+	<EVENT_PLACE><![CDATA[Lieu]]></EVENT_PLACE>
+	<EVENT_TITLE><![CDATA[Titre]]></EVENT_TITLE>
+	<EVENT_DATE><![CDATA[Date]]></EVENT_DATE>
+	<EVENT_TIME><![CDATA[Heure]]></EVENT_TIME>
+	<CONFIRM_TEXT><![CDATA[Êtes-vous sûr de vouloir supprimer cette date ?]]></CONFIRM_TEXT>
+	<ADD_EVENT><![CDATA[Ajouter]]></ADD_EVENT>
+	<EVENTS_PREVIEW><![CDATA[Aperçu des événements]]></EVENTS_PREVIEW>
+	<ARCHIVES_PREVIEW><![CDATA[Aperçu des archives]]></ARCHIVES_PREVIEW>
+	<REMOVE_EVENT_SUCCESS><![CDATA[Événement supprimé avec succès]]></REMOVE_EVENT_SUCCESS>
+	<SAVE_EVENT_SUCCESS><![CDATA[Événements sauvegardés avec succès]]></SAVE_EVENT_SUCCESS>
+	<ERROR_CAN_NOT_SAVE><![CDATA[Impossible de sauvegarder]]></ERROR_CAN_NOT_SAVE>
+	<REMOVE_EVENT_FAILED><![CDATA[L'événement à supprimer n'existe pas]]></REMOVE_EVENT_FAILED>
+</translations>

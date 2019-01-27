@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<translations>
+	<img_label><![CDATA[immagine]]></img_label>
+	<audio_label><![CDATA[audio]]></audio_label>
+	<video_label><![CDATA[video]]></video_label>
+	<flux_label><![CDATA[flusso]]></flux_label>
+	<embed_label><![CDATA[incorporato]]></embed_label>
+	<pdf_label><![CDATA[pdf]]></pdf_label>
+	<zip_label><![CDATA[file compresso]]></zip_label>
+	<MEDIA_MANAGER><![CDATA[Media manager]]></MEDIA_MANAGER>
+	<MEDIA_TRANSLATIONS><![CDATA[Traduzioni]]></MEDIA_TRANSLATIONS>
+	<MANAGE_MEDIAS><![CDATA[Gestire i supporti]]></MANAGE_MEDIAS>
+	<MEDIA_TYPE><![CDATA[Tipo di supporto]]></MEDIA_TYPE>
+	<UPLOAD_MEDIA><![CDATA[Carica i media]]></UPLOAD_MEDIA>
+	<ADD_MEDIA><![CDATA[Aggiungere i media]]></ADD_MEDIA>
+	<UPDATE_MEDIA><![CDATA[Modifica supporto]]></UPDATE_MEDIA>
+	<CURRENT_VALUE><![CDATA[valore corrente]]></CURRENT_VALUE>
+	<CONFIRM_DELETE_MEDIA><![CDATA[Sei sicuro di voler eliminare questo media?]]></CONFIRM_DELETE_MEDIA>
+	<SEARCH_MEDIA><![CDATA[Cerca media]]></SEARCH_MEDIA>
+	<NO_MEDIA><![CDATA[Nessun media.]]></NO_MEDIA>
+	<SUCCESS_ADD_MEDIA><![CDATA[Media, ha aggiunto con successo]]></SUCCESS_ADD_MEDIA>
+	<ERROR_CAN_NOT_ADD_MEDIA><![CDATA[Impossibile aggiungere supporti]]></ERROR_CAN_NOT_ADD_MEDIA>
+	<SUCCESS_UPDATE_MEDIA><![CDATA[Media aggiornato con successo]]></SUCCESS_UPDATE_MEDIA>
+	<ERROR_CAN_NOT_UPDATE_MEDIA><![CDATA[Impossibile aggiornare i media]]></ERROR_CAN_NOT_UPDATE_MEDIA>
+	<SUCCESS_DELETE_MEDIA><![CDATA[Media cancellato con successo]]></SUCCESS_DELETE_MEDIA>
+	<ERROR_CAN_NOT_DELETE_MEDIA><![CDATA[Impossibile rimuovere il supporto]]></ERROR_CAN_NOT_DELETE_MEDIA>
+	<INVALID_FILE><![CDATA[Tipo di file non valido]]></INVALID_FILE>
+	<INVALID_URL><![CDATA[URL non valido]]></INVALID_URL>
+	<MEDIA_OPS_MENU><![CDATA[Operazioni media]]></MEDIA_OPS_MENU>
+	<THUMBNAIL_SECTION><![CDATA[Sezione miniatura]]></THUMBNAIL_SECTION>
+	<GENERATE_THUMBNAIL><![CDATA[Genera miniature]]></GENERATE_THUMBNAIL>
+	<GENERATE_MISSING_OGG_FILES><![CDATA[Generare file ogg mancanti]]></GENERATE_MISSING_OGG_FILES>
+	<NO_OPERATION_FOR_MEDIA><![CDATA[Nessuna operazione possibile per questo tipo di supporto]]></NO_OPERATION_FOR_MEDIA>
+	<DOWNLOAD_ALLOWED><![CDATA[I supporti possono essere scaricati dal sito web]]></DOWNLOAD_ALLOWED>
+	<MEDIA_TRANSLATIONS_TOOLTIP><![CDATA[]]></MEDIA_TRANSLATIONS_TOOLTIP>
+	<TITLE_TOOLTIP><![CDATA[Questo campo è utilizzato per il titolo multimediale.
+	Questo sarà visibile alla panoramica dei mezzi di comunicazione da parte del mouse.]]></TITLE_TOOLTIP>
+	<ALT_TOOLTIP><![CDATA[]]></ALT_TOOLTIP>
+	<MP3_TOOLTIP><![CDATA[]]></MP3_TOOLTIP>
+	<OGG_TOOLTIP><![CDATA[]]></OGG_TOOLTIP>
+	<IFRAME_TOOLTIP><![CDATA[]]></IFRAME_TOOLTIP>
+	<SRC_TOOLTIP><![CDATA[]]></SRC_TOOLTIP>
+	<MP4_TOOLTIP><![CDATA[]]></MP4_TOOLTIP>
+	<POSTER_TOOLTIP><![CDATA[]]></POSTER_TOOLTIP>
+	<URL_TOOLTIP><![CDATA[]]></URL_TOOLTIP>
+	<MEDIA_DESCRIPTION_TOOLTIP><![CDATA[]]></MEDIA_DESCRIPTION_TOOLTIP>
+</translations>

@@ -1,0 +1,50 @@
+<div class="row">
+	<article class="col-sm-12 maincontent">
+		<h2>Le routage dans minim <i class="fa fa-road"></i></h2>
+		<p>Le concept de routage est important à comprendre pour profiter au mieux de la souplesse de minim.</p>
+	</article>
+	<!-- /Article -->
+</div>
+<hr />
+<div class="row">
+	<article class="col-sm-8 maincontent">
+		<h3>Le routage statique</h3>
+		<p>Le routage statique intervient si aucune route n'a été définie pour la page appelée.</p>
+		<p>Le routeur va donc aller chercher dans le cache la page demandée, dans la langue en cours sur le site ou l'application.</p>
+		<p>Si la version demandée n'est pas trouvée en cache, une exception est levée et nous redirige vers la page 404 avec les headers correspondants.</p>
+		<p>L'ensemble du cache (pages et système) peut être (ré)généré depuis le backoffice avec les droits sysAdmin : Système > Régénérer le cache.</p>
+	</article>
+	<!-- /Article -->
+	<!-- Sidebar créer un widget -->
+	<aside class="col-sm-4 sidebar sidebar-right">
+		<div class="widget">
+			<p class="text-center">
+				<img src="/img/contents/doc/staticRouting.png" alt="fichiers de cache" class="img-rounded" />
+			</p>
+		</div>
+	</aside>
+	<!-- /Sidebar -->
+</div>
+<hr />
+<div class="row">
+	<article class="col-sm-8 maincontent">
+		<h3>Le routage dynamique</h3>
+		<p>Si pour une page donnée une route a été indiquée, alors minim ne cherchera pas dans le cache la page demandée mais exécutera le service::méthode demandé et renverra le résultat.<br />
+			Le backoffice offre une interface simple permettant de renseigner ces routes par modules, minim compris (minim est considéré comme un module), et par face (back, front).<br />
+			Cette interface vérifie l'existence de la méthode appelée avant d'enregistrer la route demandée afin de protéger le front de toute "fatal error".<br />
+			C'est grâce à ce système de routage donc que n'importe quelle page peut devenir dynamique.</p>
+		<p>Ces routes sont inscrites dans une classe PHP (pour des questions de performance) chargée dans inc.coreAutoConfig.php, donc tout en haut de la pile d'appel.</p>
+	</article>
+	<!-- /Article -->
+	<!-- Sidebar créer un widget -->
+	<aside class="col-sm-4 sidebar sidebar-right">
+		<div class="widget">
+			<p class="text-center">
+				<a href="/img/contents/doc/routingEx.png" rel="cbox" title="exemple de configuration de routage" class="cbox">
+                    <img src="/img/contents/doc/routingEx.png" alt="exemple de configuration de routage" class="img-rounded" />
+                </a>
+			</p>
+		</div>
+	</aside>
+	<!-- /Sidebar -->
+</div>

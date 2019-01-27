@@ -1,0 +1,37 @@
+<div class="row">
+	<article class="col-sm-12 maincontent">
+		<h2>Modules <i class="fa fa-puzzle-piece"></i></h2>
+		<p>Vous aurez besoin d'au moins un module, celui pour vos css et js spécifiques.</p>
+	</article>
+	<!-- /Article -->
+</div>
+<hr />
+<div class="row">
+	<article class="col-sm-8 maincontent">
+		<h3>Structure</h3>
+		<p>La strucure d'un module est la même que minim, minim étant considéré comme un module à part entière.</p>
+		<p>Cependant, pour des raisons de performances, l'installation d'un module ne se résume pas à le placer dans le répertoire qui va bien.</p>
+		<p>Pour que votre module soit bien pris en compte vous devrez :</p>
+		<ul class="cog-tools">
+			<li>Respecter l'arborescence en illustration.</li>
+			<li>Fournir un /data/votreModule.conf même vide.</li>
+			<li>Fournir un /data/votreModule.version avec une valeur de type 0.0.1.</li>
+			<li>Déposer votre module dans le répertoire "Modules" de minim.</li>
+			<li>Copier toutes les classes PHP dans /lib/modules de minim (/Core).</li>
+			<li>Copier toutes les traductions appelées directement dans le Locales de minim, langue par langue.</li>
+			<li>Régénérer le cache.</li>
+			<li>Votre module est pris en compte.</li>
+		</ul>
+		<p>Les copies des classes et des traduction sont un peu pénible, mais évite à l'autoloader par exemple de parcourir tous les modules installés pour trouver la classe à instancier, ou la traduction à appliquer.</p>
+	</article>
+	<!-- /Article -->
+	<!-- Sidebar créer un widget -->
+	<aside class="col-sm-4 sidebar sidebar-right">
+		<div class="widget">
+			<p class="text-center">
+				<img src="/img/contents/doc/moduleRoot.png" alt="arborescence d'un module" class="img-rounded" />
+			</p>
+		</div>
+	</aside>
+	<!-- /Sidebar -->
+</div>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<translations>
+	<img_label><![CDATA[imagen]]></img_label>
+	<audio_label><![CDATA[audio]]></audio_label>
+	<video_label><![CDATA[vídeo]]></video_label>
+	<flux_label><![CDATA[flujo]]></flux_label>
+	<embed_label><![CDATA[incrustado]]></embed_label>
+	<pdf_label><![CDATA[pdf]]></pdf_label>
+	<zip_label><![CDATA[archivo comprimido]]></zip_label>
+	<MEDIA_MANAGER><![CDATA[Media Manager]]></MEDIA_MANAGER>
+	<MEDIA_TRANSLATIONS><![CDATA[Traducciones]]></MEDIA_TRANSLATIONS>
+	<MANAGE_MEDIAS><![CDATA[Gestionar medios]]></MANAGE_MEDIAS>
+	<MEDIA_TYPE><![CDATA[Tipo de soporte]]></MEDIA_TYPE>
+	<UPLOAD_MEDIA><![CDATA[Subir medios]]></UPLOAD_MEDIA>
+	<ADD_MEDIA><![CDATA[Añadir medios]]></ADD_MEDIA>
+	<UPDATE_MEDIA><![CDATA[Editar medios]]></UPDATE_MEDIA>
+	<CURRENT_VALUE><![CDATA[valor actual]]></CURRENT_VALUE>
+	<CONFIRM_DELETE_MEDIA><![CDATA[¿Está seguro de que quiere eliminar este medio?]]></CONFIRM_DELETE_MEDIA>
+	<SEARCH_MEDIA><![CDATA[Buscar medios]]></SEARCH_MEDIA>
+	<NO_MEDIA><![CDATA[Ningún medio de comunicación.]]></NO_MEDIA>
+	<SUCCESS_ADD_MEDIA><![CDATA[Medios añadido correctamente]]></SUCCESS_ADD_MEDIA>
+	<ERROR_CAN_NOT_ADD_MEDIA><![CDATA[No se puede agregar medios]]></ERROR_CAN_NOT_ADD_MEDIA>
+	<SUCCESS_UPDATE_MEDIA><![CDATA[Medios actualizado correctamente]]></SUCCESS_UPDATE_MEDIA>
+	<ERROR_CAN_NOT_UPDATE_MEDIA><![CDATA[No se pudo actualizar los medios]]></ERROR_CAN_NOT_UPDATE_MEDIA>
+	<SUCCESS_DELETE_MEDIA><![CDATA[Medios eliminado correctamente]]></SUCCESS_DELETE_MEDIA>
+	<ERROR_CAN_NOT_DELETE_MEDIA><![CDATA[No es posible eliminar los medios]]></ERROR_CAN_NOT_DELETE_MEDIA>
+	<INVALID_FILE><![CDATA[Tipo de archivo no válido]]></INVALID_FILE>
+	<INVALID_URL><![CDATA[URL no válida]]></INVALID_URL>
+	<MEDIA_OPS_MENU><![CDATA[Operaciones de medios]]></MEDIA_OPS_MENU>
+	<THUMBNAIL_SECTION><![CDATA[Sección de miniaturas]]></THUMBNAIL_SECTION>
+	<GENERATE_THUMBNAIL><![CDATA[Generar miniaturas]]></GENERATE_THUMBNAIL>
+	<GENERATE_MISSING_OGG_FILES><![CDATA[Generar archivos ogg desaparecidos]]></GENERATE_MISSING_OGG_FILES>
+	<NO_OPERATION_FOR_MEDIA><![CDATA[Ninguna operación posible para este tipo de medios]]></NO_OPERATION_FOR_MEDIA>
+	<DOWNLOAD_ALLOWED><![CDATA[Los medios pueden ser descargados desde el sitio web]]></DOWNLOAD_ALLOWED>
+	<MEDIA_TRANSLATIONS_TOOLTIP><![CDATA[]]></MEDIA_TRANSLATIONS_TOOLTIP>
+	<TITLE_TOOLTIP><![CDATA[Este campo se utiliza para el título de los medios de comunicación.
+	Este será visible a la visión general de los medios de comunicación por el ratón.]]></TITLE_TOOLTIP>
+	<ALT_TOOLTIP><![CDATA[]]></ALT_TOOLTIP>
+	<MP3_TOOLTIP><![CDATA[]]></MP3_TOOLTIP>
+	<OGG_TOOLTIP><![CDATA[]]></OGG_TOOLTIP>
+	<IFRAME_TOOLTIP><![CDATA[]]></IFRAME_TOOLTIP>
+	<SRC_TOOLTIP><![CDATA[]]></SRC_TOOLTIP>
+	<MP4_TOOLTIP><![CDATA[]]></MP4_TOOLTIP>
+	<POSTER_TOOLTIP><![CDATA[]]></POSTER_TOOLTIP>
+	<URL_TOOLTIP><![CDATA[]]></URL_TOOLTIP>
+	<MEDIA_DESCRIPTION_TOOLTIP><![CDATA[]]></MEDIA_DESCRIPTION_TOOLTIP>
+</translations>

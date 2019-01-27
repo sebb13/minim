@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<translations>
+	<MODULE_TO_CONFIGURE><![CDATA[Module to set]]></MODULE_TO_CONFIGURE>
+	<SIDE_TO_CONFIGURE><![CDATA[Interface to set]]></SIDE_TO_CONFIGURE>
+	<ADD_ROUTES><![CDATA[Add Routes]]></ADD_ROUTES>
+	<PAGE_LEGEND><![CDATA[Page]]></PAGE_LEGEND>
+	<ROUTE_LEGEND><![CDATA[Route]]></ROUTE_LEGEND>
+	<SUCCESS_REMOVE_ROUTE><![CDATA[Route deleted successfully]]></SUCCESS_REMOVE_ROUTE>
+	<ERROR_CAN_NOT_REMOVE_ROUTE><![CDATA[Unable to remove the route]]></ERROR_CAN_NOT_REMOVE_ROUTE>
+	<SUCCESS_ROUTING_SAVE><![CDATA[Routes saved successfully]]></SUCCESS_ROUTING_SAVE>
+	<ERROR_CAN_NOT_SAVE><![CDATA[Unable to save routes]]></ERROR_CAN_NOT_SAVE>
+	<INVALID_ROUTE><![CDATA[Invalid route]]></INVALID_ROUTE>
+	<CONFIRM_DELETE_ROUTE><![CDATA[Are you sure you want to delete this route?]]></CONFIRM_DELETE_ROUTE>
+</translations>

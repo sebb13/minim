@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<translations>
+	<FRONT><![CDATA[Régénération du cache du front]]></FRONT>
+	<SITE_MAP><![CDATA[Régénération du site map]]></SITE_MAP>
+	<ADMIN><![CDATA[Régénération du cache de l'admin]]></ADMIN>
+	<MODULES><![CDATA[Régénération du cache des modules...]]></MODULES>
+	<DRAFTS><![CDATA[Régénération du cache des brouillons]]></DRAFTS>
+	<DONE><![CDATA[DONE]]></DONE>
+	<ERROR><![CDATA[ERROR BUILD CACHE]]></ERROR>
+	<SUCCESS_UPDATE_CACHE><![CDATA[Cache aggiornata con successo]]></SUCCESS_UPDATE_CACHE>
+	<ERROR_UPDATE_CACHE><![CDATA[Impossibile aggiornare la cache]]></ERROR_UPDATE_CACHE>
+</translations>

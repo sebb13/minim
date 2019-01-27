@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<translations>
+	<PLAYER_DOES_NOT_APPEAR><![CDATA[Si le player ne s'affiche pas, vous pouvez nous écouter ici !]]></PLAYER_DOES_NOT_APPEAR>
+	<ADS_WORDING><![CDATA[La publicité permet de payer les artistes, on revient d'ici 2 minutes.]]></ADS_WORDING>
+	<PROGRAMMING_GRID><![CDATA[Grille de programmation]]></PROGRAMMING_GRID>
+	<PROGRAMMING_GRID_TITLE><![CDATA[Retrouvez notre sélection 24h/24, 7j/7 !]]></PROGRAMMING_GRID_TITLE>
+	<LAST_TRACKS_TEMPORARY_UNAVAILABLE><![CDATA[Liste des derniers titres diffusés temporairement indisponible]]></LAST_TRACKS_TEMPORARY_UNAVAILABLE>
+	<TITLE_LIST_LINK><![CDATA[La liste complète des titres diffusés est disponible ici !]]></TITLE_LIST_LINK>
+</translations>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<translations>
+	<COMMON><![CDATA[Commun]]></COMMON>
+	<FRONT><![CDATA[Front]]></FRONT>
+	<BACK><![CDATA[Admin]]></BACK>
+	<SAVE><![CDATA[Enregistrer]]></SAVE>
+	<LOGIN_PROMPT><![CDATA[Veuillez vous identifier]]></LOGIN_PROMPT>
+	<AUTH_FAIL><![CDATA[Échec d'authentification]]></AUTH_FAIL>
+	<LOGIN><![CDATA[Identifiant]]></LOGIN>
+	<PWD><![CDATA[Mot de passe]]></PWD>
+	<VALIDATE><![CDATA[Valider]]></VALIDATE>
+	<ACTIONS><![CDATA[Actions]]></ACTIONS>
+	<CONFIGURATION><![CDATA[Configuration]]></CONFIGURATION>
+	<MOVE_TO_PROD><![CDATA[Mettre en production]]></MOVE_TO_PROD>
+	<PUBLISH><![CDATA[Publier]]></PUBLISH>
+	<CONFIRM_TITLE><![CDATA[Confirmation]]></CONFIRM_TITLE>
+	<REMOVE><![CDATA[Supprimer]]></REMOVE>
+	<DESCRIPTION><![CDATA[Description]]></DESCRIPTION>
+	<CONTROLS><![CDATA[Contrôles]]></CONTROLS>
+	<RESET><![CDATA[Réinitialiser]]></RESET>
+	<DRAFT><![CDATA[Brouillon]]></DRAFT>
+	<PAGE_PREVIEW><![CDATA[Aperçu de la page]]></PAGE_PREVIEW>
+	<PROD_DATA><![CDATA[Données en production]]></PROD_DATA>
+	<DRAFT_SUCCESSFULLY_RESET><![CDATA[Brouillon réinitialisé avec succès]]></DRAFT_SUCCESSFULLY_RESET>
+	<MANAGING_DRAFTS><![CDATA[Gestion des brouillons]]></MANAGING_DRAFTS>
+	<DRAFT_NOT_FOUND><![CDATA[Aucun brouillon trouvé pour cette page]]></DRAFT_NOT_FOUND>
+</translations>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<translations>
+	<DRAFT_SUCCESSFULLY_RESET><![CDATA[Brouillon réinitialisé avec succès]]></DRAFT_SUCCESSFULLY_RESET>
+	<CAN_NOT_RESET_DRAFT><![CDATA[Impossible de réinitialiser le brouillon]]></CAN_NOT_RESET_DRAFT>
+	<DRAFTS_SUCCESSFULLY_RESET><![CDATA[Brouillons réinitialisés avec succès]]></DRAFTS_SUCCESSFULLY_RESET>
+	<SUCCESS_PUBLISH_DRAFT><![CDATA[Brouillon publié avec succès]]></SUCCESS_PUBLISH_DRAFT>
+	<ERROR_PUBLISH_DRAFT><![CDATA[Impossible de publier le brouillon]]></ERROR_PUBLISH_DRAFT>
+	<SUCCESS_PUBLISH_DRAFTS><![CDATA[Brouillons publiés avec succès]]></SUCCESS_PUBLISH_DRAFTS>
+	<ERROR_PUBLISH_DRAFTS><![CDATA[Impossible de publier les brouillons]]></ERROR_PUBLISH_DRAFTS>
+</translations>

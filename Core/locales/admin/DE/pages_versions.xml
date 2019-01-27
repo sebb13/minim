@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<translations>
+	<PAGE_TITLE><![CDATA[Versionen]]></PAGE_TITLE>
+	<APPLY_VERSION><![CDATA[Wenden Sie diese Version]]></APPLY_VERSION>
+	<VERSION_PREVIEW_BUTTON><![CDATA[Vorschau auf diese Version]]></VERSION_PREVIEW_BUTTON>
+	<APPLY_VERSION_CONFIRM><![CDATA[Sind Sie sicher, dass Sie diese Version zu beantragen?]]></APPLY_VERSION_CONFIRM>
+	<SUCCESS_APPLY_VERSION_MSG><![CDATA[Version erfolgreich wiederhergestellt]]></SUCCESS_APPLY_VERSION_MSG>
+	<ERROR_APPLY_VERSION_MSG><![CDATA[Können Sie diese Version wiederherstellen]]></ERROR_APPLY_VERSION_MSG>
+	<PURGE_VERSIONS><![CDATA[Spülen Sie diese Versionen]]></PURGE_VERSIONS>
+	<PURGE_VERSIONS_CONFIRM><![CDATA[Sind Sie sicher, dass Sie diese Versionen zu bereinigen?]]></PURGE_VERSIONS_CONFIRM>
+	<SUCCESS_PURGE_VERSIONS_MSG><![CDATA[Erfolgreich gespült Versionen]]></SUCCESS_PURGE_VERSIONS_MSG>
+	<ERROR_PURGE_VERSIONS_MSG><![CDATA[Konnte nicht bündig Versionen]]></ERROR_PURGE_VERSIONS_MSG>
+	<DELETE_VERSION_CONFIRM><![CDATA[Sind Sie sicher, dass Sie diese Version löschen möchten?]]></DELETE_VERSION_CONFIRM>
+	<SUCCESS_DELETE_VERSION_MSG><![CDATA[Version erfolgreich gelöscht]]></SUCCESS_DELETE_VERSION_MSG>
+	<ERROR_DELETE_VERSION_MSG><![CDATA[Diese Version kann nicht entfernt werden]]></ERROR_DELETE_VERSION_MSG>
+</translations>

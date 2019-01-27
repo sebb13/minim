@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<translations>
+	<COMMON><![CDATA[Gemeinsam]]></COMMON>
+	<FRONT><![CDATA[Front]]></FRONT>
+	<BACK><![CDATA[Admin]]></BACK>
+	<SAVE><![CDATA[Save]]></SAVE>
+	<LOGIN_PROMPT><![CDATA[Please log in]]></LOGIN_PROMPT>
+	<AUTH_FAIL><![CDATA[Authentication Failure]]></AUTH_FAIL>
+	<LOGIN><![CDATA[Login]]></LOGIN>
+	<PWD><![CDATA[Password]]></PWD>
+	<VALIDATE><![CDATA[Validate]]></VALIDATE>
+	<ACTIONS><![CDATA[Actions]]></ACTIONS>
+	<CONFIGURATION><![CDATA[Configuration]]></CONFIGURATION>
+	<MOVE_TO_PROD><![CDATA[Move to production]]></MOVE_TO_PROD>
+	<PUBLISH><![CDATA[Publish]]></PUBLISH>
+	<CONFIRM_TITLE><![CDATA[Confirmation]]></CONFIRM_TITLE>
+	<REMOVE><![CDATA[Remove]]></REMOVE>
+	<DESCRIPTION><![CDATA[Beschreibung]]></DESCRIPTION>
+	<CONTROLS><![CDATA[Controls]]></CONTROLS>
+	<RESET><![CDATA[Reset]]></RESET>
+	<DRAFT><![CDATA[Draft copy]]></DRAFT>
+	<PAGE_PREVIEW><![CDATA[Page preview]]></PAGE_PREVIEW>
+	<PROD_DATA><![CDATA[Production data]]></PROD_DATA>
+	<DRAFT_SUCCESSFULLY_RESET><![CDATA[Draft successfully reset]]></DRAFT_SUCCESSFULLY_RESET>
+	<MANAGING_DRAFTS><![CDATA[Managing drafts]]></MANAGING_DRAFTS>
+	<DRAFT_NOT_FOUND><![CDATA[No draft found for this page]]></DRAFT_NOT_FOUND>
+</translations>

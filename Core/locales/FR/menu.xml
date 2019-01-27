@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<translations>
+	<HOME><![CDATA[Accueil]]></HOME>
+	<FRAMEWORK><![CDATA[Framework]]></FRAMEWORK>
+	<PLUGINS><![CDATA[Modules]]></PLUGINS>
+	<DOCUMENTATION><![CDATA[Documentation]]></DOCUMENTATION>
+	<EXAMPLES><![CDATA[Exemples]]></EXAMPLES>
+	<ABOUT><![CDATA[A propos]]></ABOUT>
+	<CONTACT><![CDATA[Contact]]></CONTACT>
+	<LEGAL_NOTICES><![CDATA[Mentions légales]]></LEGAL_NOTICES>
+</translations>

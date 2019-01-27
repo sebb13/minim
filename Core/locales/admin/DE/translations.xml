@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<translations>
+	<FILE_TO_TRANSLATE><![CDATA[Datei zu übersetzen]]></FILE_TO_TRANSLATE>
+	<TRANSLATIONS><![CDATA[Übersetzungen]]></TRANSLATIONS>
+	<REF_LANG><![CDATA[Referenzsprache]]></REF_LANG>
+	<LANG_TO_TRANSLATE><![CDATA[Datei zu übersetzen]]></LANG_TO_TRANSLATE>
+	<FILE><![CDATA[Datei]]></FILE>
+	<SUCCESS_SAVE_TRANS><![CDATA[Übersetzungen erfolgreich gespeichert]]></SUCCESS_SAVE_TRANS>
+</translations>

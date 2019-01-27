@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<translations>
+	<USER_MANAGER><![CDATA[Gestione degli account utente]]></USER_MANAGER>
+	<MANAGE_USER_ACCOUNTS><![CDATA[Gestione degli account utente]]></MANAGE_USER_ACCOUNTS>
+	<ADD_USER><![CDATA[Aggiungi utente]]></ADD_USER>
+	<USER_ACCOUNT_TYPE><![CDATA[Tipo di account utente]]></USER_ACCOUNT_TYPE>
+	<DELETE_USER_ACCOUNT><![CDATA[Suppprimer un account utente]]></DELETE_USER_ACCOUNT>
+	<UPDATE_USER_ACCOUNT><![CDATA[Modifica account utente]]></UPDATE_USER_ACCOUNT>
+	<CONFIRM_DELETE_USER_ACCOUNT><![CDATA[Sei sicuro di voler rimuovere questo utente?]]></CONFIRM_DELETE_USER_ACCOUNT>
+	<CONFIRM_UPDATE_USER_ACCOUNT><![CDATA[Sei sicuro che si desidera modificare il tuo account?]]></CONFIRM_UPDATE_USER_ACCOUNT>
+	<CONFIRM_UPDATE_USER_ACCOUNTS><![CDATA[Sei sicuro che si desidera modificare tutti gli account utente?]]></CONFIRM_UPDATE_USER_ACCOUNTS>
+	<EDIT_MY_INFORMATION><![CDATA[Modificare le mie informazioni]]></EDIT_MY_INFORMATION>
+	<NEW_PWD><![CDATA[Nuova password]]></NEW_PWD>
+	<ENTER_CURRENT_PWD><![CDATA[Password corrente]]></ENTER_CURRENT_PWD>
+	<ERROR_LOGIN_ALREADY_USED><![CDATA[Questo login è già utilizzato]]></ERROR_LOGIN_ALREADY_USED>
+	<ERROR_LOGIN_ONLY_ALPHANUMERIC_CHAR><![CDATA[L'ID deve contenere solo caratteri alfanumerici]]></ERROR_LOGIN_ONLY_ALPHANUMERIC_CHAR>
+	<ERROR_WRONG_PWD><![CDATA[Password errata]]></ERROR_WRONG_PWD>
+	<SUCCESS_GENERATED_HTPASSWD><![CDATA[il file .htpasswd generato correttamente]]></SUCCESS_GENERATED_HTPASSWD>
+	<ERROR_GENERATED_HTPASSWD><![CDATA[Impossibile generare il file .htpasswd]]></ERROR_GENERATED_HTPASSWD>
+	<SUCCESS_CREATED_USER_ACCOUNT><![CDATA[Account utente creato con successo]]></SUCCESS_CREATED_USER_ACCOUNT>
+	<ERROR_UNABLE_TO_CREATE_USER_ACCOUNT><![CDATA[Impossibile creare questo account utente]]></ERROR_UNABLE_TO_CREATE_USER_ACCOUNT>
+	<SUCCESS_USER_ACCOUNT_EDIT_SUCCESSFULLY><![CDATA[Profilo utente cambiare con successo]]></SUCCESS_USER_ACCOUNT_EDIT_SUCCESSFULLY>
+	<ERROR_UNABLE_TO_MODIFY_USER_ACCOUNT><![CDATA[Non è possibile modificare l'account utente]]></ERROR_UNABLE_TO_MODIFY_USER_ACCOUNT>
+	<SUCCESS_DELETED_USER_ACCOUNT><![CDATA[account utente eliminato con successo]]></SUCCESS_DELETED_USER_ACCOUNT>
+	<ERROR_UNABLE_TO_DELETE_USER_ACCOUNT><![CDATA[Impossibile eliminare questo account utente]]></ERROR_UNABLE_TO_DELETE_USER_ACCOUNT>
+	<ERROR_TRY_DELETE_LAST_USER_ACCOUNT><![CDATA[È necessario mantenere almeno un account utente]]></ERROR_TRY_DELETE_LAST_USER_ACCOUNT>
+</translations>

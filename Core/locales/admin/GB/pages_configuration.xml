@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<translations>
+	<PAGE_TO_CONFIGURE><![CDATA[Page to configure]]></PAGE_TO_CONFIGURE>
+	<NEW_PAGE><![CDATA[Add page to configure]]></NEW_PAGE>
+	<NEW_PAGE_NAME><![CDATA[New page name]]></NEW_PAGE_NAME>
+	<VIEW><![CDATA[View]]></VIEW>
+	<VIEW_NAME_LABEL><![CDATA[View name]]></VIEW_NAME_LABEL>
+	<DELETE_CONF><![CDATA[Delete this configuration]]></DELETE_CONF>
+	<ROBOTS><![CDATA[Robots]]></ROBOTS>
+	<META_TAGS><![CDATA[Meta tags]]></META_TAGS>
+	<GOOGLE_TAGS><![CDATA[Google+]]></GOOGLE_TAGS>
+	<TWITTER_TAGS><![CDATA[Twitter]]></TWITTER_TAGS>
+	<SUCCESS_ADD_PAGE><![CDATA[Page successfully added]]></SUCCESS_ADD_PAGE>
+	<CONFIRM_DELETE_PAGE><![CDATA[Are you sure you want to delete the configuration from this page?]]></CONFIRM_DELETE_PAGE>
+	<SUCCESS_DELETE_PAGE><![CDATA[Successfully deleted Page]]></SUCCESS_DELETE_PAGE>
+	<SUCCESS_CONFIGURATION_SAVE><![CDATA[Successfully saved configuration]]></SUCCESS_CONFIGURATION_SAVE>
+	<ERROR_DELETE_STATIC><![CDATA[You can not delete a static page]]></ERROR_DELETE_STATIC>
+	<ERROR_DELETE_DEFAULT><![CDATA[You can not delete the default configuration]]></ERROR_DELETE_DEFAULT>
+	<SUCCESS_RENAME_PAGE><![CDATA[Successfully renamed page]]></SUCCESS_RENAME_PAGE>
+	<ERROR_RENAME_STATIC><![CDATA[You can not rename a static page]]></ERROR_RENAME_STATIC>
+	<ERROR_RENAME_DEFAULT><![CDATA[You can not rename the default configuration]]></ERROR_RENAME_DEFAULT>
+	<ERROR_INVALID_VIEW><![CDATA[The view does not exist]]></ERROR_INVALID_VIEW>
+	<ERROR_CAN_NOT_SAVE><![CDATA[Can not save]]></ERROR_CAN_NOT_SAVE>
+	<PAGE_ALREADY_EXISTS><![CDATA[This page already exists]]></PAGE_ALREADY_EXISTS>
+	<SUCCESS_CREATE_PAGE><![CDATA[Successfully created page]]></SUCCESS_CREATE_PAGE>
+	<ERROR_CAN_NOT_CREATE_PAGE><![CDATA[Unable to create page]]></ERROR_CAN_NOT_CREATE_PAGE>
+	<ERROR_PAGE_NAME_EMPTY><![CDATA[]]></ERROR_PAGE_NAME_EMPTY>
+	<ROBOTS_TOOLTIP><![CDATA[Configuring Search Engine Robots:
+Index: index the page ; 
+Noindex: does not index page ; 
+Follow: follow links ; 
+Nofollow: do not follow the links ; 
+Archive: Archive page ; 
+Noarchive: does not archive the page]]></ROBOTS_TOOLTIP>
+	<DESCRIPTION_TOOLTIP><![CDATA[Description of website]]></DESCRIPTION_TOOLTIP>
+	<MSVALIDATE_01_TOOLTIP><![CDATA[Validation Code for Bing Tracking Tools]]></MSVALIDATE_01_TOOLTIP>
+	<KEYWORDS_TOOLTIP><![CDATA[Website keywords]]></KEYWORDS_TOOLTIP>
+	<AUTHOR_TOOLTIP><![CDATA[Website author]]></AUTHOR_TOOLTIP>
+	<OG_TYPE_TOOLTIP><![CDATA[The type of content to display when sharing the page on social networks.]]></OG_TYPE_TOOLTIP>
+	<OG_TITLE_TOOLTIP><![CDATA[Title that were displayed when sharing the page on social networks.]]></OG_TITLE_TOOLTIP>
+	<OG_URL_TOOLTIP><![CDATA[The URL of the page to be displayed when sharing the page on social networks.]]></OG_URL_TOOLTIP>
+	<OG_IMAGE_TOOLTIP><![CDATA[URL of the image to display when sharing the page on social networks.]]></OG_IMAGE_TOOLTIP>
+	<OG_AUDIO_TOOLTIP><![CDATA[URL of the sound file to play when sharing the page on social networks.]]></OG_AUDIO_TOOLTIP>
+	<OG_DESCRIPTION_TOOLTIP><![CDATA[Short description to display when sharing the page on social networks.]]></OG_DESCRIPTION_TOOLTIP>
+	<OG_DETERMINER_TOOLTIP><![CDATA[The word that appears before the share title in a sentence. Leave blank for now.]]></OG_DETERMINER_TOOLTIP>
+	<OG_LOCALE_TOOLTIP><![CDATA[The language in which the previous information was written.]]></OG_LOCALE_TOOLTIP>
+	<OG_SITE_NAME_TOOLTIP><![CDATA[Name of website.]]></OG_SITE_NAME_TOOLTIP>
+	<OG_VIDEO_TOOLTIP><![CDATA[URL of the video to display when sharing the page on social networks.]]></OG_VIDEO_TOOLTIP>
+	<VIEW_TOOLTIP><![CDATA[Name of the view to use to display this page]]></VIEW_TOOLTIP>
+	<TWITTER_CARD_TOOLTIP><![CDATA[Twitter map type (summary or summary_large_image)]]></TWITTER_CARD_TOOLTIP>
+	<TWITTER_SITE_TOOLTIP><![CDATA[The Twitter @username the card should be attributed to.]]></TWITTER_SITE_TOOLTIP>
+	<TWITTER_TITLE_TOOLTIP><![CDATA[Title to display]]></TWITTER_TITLE_TOOLTIP>
+	<TWITTER_DESCRIPTION_TOOLTIP><![CDATA[Description]]></TWITTER_DESCRIPTION_TOOLTIP>
+	<TWITTER_CREATOR_TOOLTIP><![CDATA[Name of creator]]></TWITTER_CREATOR_TOOLTIP>
+	<TWITTER_IMAGE_SRC_TOOLTIP><![CDATA[URL of image to display]]></TWITTER_IMAGE_SRC_TOOLTIP>
+	<NAME_TOOLTIP><![CDATA[Name of website]]></NAME_TOOLTIP>
+	<IMAGE_TOOLTIP><![CDATA[URL of image to display]]></IMAGE_TOOLTIP>
+</translations>

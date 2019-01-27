@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<translations>
+	<DRAFT_SUCCESSFULLY_RESET><![CDATA[Entwurf erfolgreich zurückgesetzt]]></DRAFT_SUCCESSFULLY_RESET>
+	<CAN_NOT_RESET_DRAFT><![CDATA[Kann nicht den Entwurf zurückgesetzt]]></CAN_NOT_RESET_DRAFT>
+	<DRAFTS_SUCCESSFULLY_RESET><![CDATA[Entwürfe erfolgreich zurückgesetzt]]></DRAFTS_SUCCESSFULLY_RESET>
+	<SUCCESS_PUBLISH_DRAFT><![CDATA[Entwurf erfolgreich veröffentlicht]]></SUCCESS_PUBLISH_DRAFT>
+	<ERROR_PUBLISH_DRAFT><![CDATA[Nicht imstande, den Entwurf zu veröffentlichen]]></ERROR_PUBLISH_DRAFT>
+	<SUCCESS_PUBLISH_DRAFTS><![CDATA[Entwürfe veröffentlicht erfolgreich]]></SUCCESS_PUBLISH_DRAFTS>
+	<ERROR_PUBLISH_DRAFTS><![CDATA[Kann nicht Entwürfe veröffentliche]]></ERROR_PUBLISH_DRAFTS>
+</translations>

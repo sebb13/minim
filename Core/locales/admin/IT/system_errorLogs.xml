@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<translations>
+	<PAGE_TITLE><![CDATA[Log degli errori]]></PAGE_TITLE>
+	<PURGE_OLD_LOGS><![CDATA[Registri di errore vecchi spurgo]]></PURGE_OLD_LOGS>
+	<PURGE_OLD_LOGS_CONFIRM><![CDATA[Sei sicuro di voler eliminare i vecchi registri di errore?]]></PURGE_OLD_LOGS_CONFIRM>
+	<PURGE_OLD_LOGS_SUCCESS><![CDATA[Log degli errori eliminati con successo]]></PURGE_OLD_LOGS_SUCCESS>
+	<PURGE_OLD_LOGS_ERROR><![CDATA[Impossibile svuotare i vecchi registri di errore]]></PURGE_OLD_LOGS_ERROR>
+	<ERROR_LOGS_TITLE><![CDATA[log di errore (sito web e back office)]]></ERROR_LOGS_TITLE>
+</translations>

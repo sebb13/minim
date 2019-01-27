@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<translations>
+	<NEWS_HOME_TITLE><![CDATA[Nachrichtenmanager]]></NEWS_HOME_TITLE>
+	<NEWS_FEED><![CDATA[News wire]]></NEWS_FEED>
+	<ADD_NEWS_THREAD><![CDATA[News-Thread hinzufügen]]></ADD_NEWS_THREAD>
+	<ADD_THREAD><![CDATA[Fügen Sie Thread hinzu]]></ADD_THREAD>
+	<NEW_THREAD_NAME><![CDATA[Name des neuen Threads]]></NEW_THREAD_NAME>
+	<SUCCESS_ADD_THREAD><![CDATA[Over erfolgreich hinzugefügt]]></SUCCESS_ADD_THREAD>
+	<ERROR_ADD_THREAD><![CDATA[Kann nicht den Draht hinzufügen]]></ERROR_ADD_THREAD>
+	<ERROR_THREAD_ALREADY_EXISTS><![CDATA[Dieser Thread ist bereits]]></ERROR_THREAD_ALREADY_EXISTS>
+	<DELETE_THREAD><![CDATA[Löschen dieses Themas]]></DELETE_THREAD>
+	<CONFIRM_DELETE_THREAD><![CDATA[Sind Sie sicher, dass Sie diesen Thread zu löschen?]]></CONFIRM_DELETE_THREAD>
+	<SUCCESS_DELETE_THREAD><![CDATA[Draht entfernt erfolgreich]]></SUCCESS_DELETE_THREAD>
+	<ERROR_DELETE_THREAD><![CDATA[Nicht imstande, den Draht zu entfernen]]></ERROR_DELETE_THREAD>
+	<CREATE_NEWS><![CDATA[Erstellen Sie Nachrichten]]></CREATE_NEWS>
+	<SEARCH_NEWS><![CDATA[Suchen Sie eine Nachricht]]></SEARCH_NEWS>
+	<DATE_LABEL><![CDATA[Datum]]></DATE_LABEL>
+	<TIME_LABEL><![CDATA[Zeit]]></TIME_LABEL>
+	<MAIN_TEXT_LABEL><![CDATA[Haupttext]]></MAIN_TEXT_LABEL>
+	<HASHTAGS_LABEL><![CDATA[Hashtags]]></HASHTAGS_LABEL>
+	<IMG_URL_THUMB_LABEL><![CDATA[URL des Bildes Vorschau]]></IMG_URL_THUMB_LABEL>
+	<IMG_URL_LABEL><![CDATA[Bild-URL]]></IMG_URL_LABEL>
+	<IMG_LINK_LABEL><![CDATA[Link, der das Bild reflektiert]]></IMG_LINK_LABEL>
+	<IMG_TITLE_LABEL><![CDATA[Bild Titel]]></IMG_TITLE_LABEL>
+	<MEDIA_LABEL><![CDATA[Medien]]></MEDIA_LABEL>
+	<SUCCESS_ADD_NEWS><![CDATA[Nachrichten erfolgreich hinzugefügt]]></SUCCESS_ADD_NEWS>
+	<ERROR_ADD_NEWS><![CDATA[Kann nicht die Nachrichten hinzufügen]]></ERROR_ADD_NEWS>
+	<SUCCESS_PUBLISH_NEWS><![CDATA[News veröffentlicht erfolgreich]]></SUCCESS_PUBLISH_NEWS>
+	<ERROR_PUBLISH_NEWS><![CDATA[Kann nicht die Nachricht veröffentlichen]]></ERROR_PUBLISH_NEWS>
+	<SUCCESS_REMOVE_NEWS><![CDATA[Nachrichten Failover erfolgreich]]></SUCCESS_REMOVE_NEWS>
+	<ERROR_REMOVE_NEWS><![CDATA[Kann die Nachricht nicht offline schalten]]></ERROR_REMOVE_NEWS>
+	<SUCCESS_UPDATE_NEWS><![CDATA[Nachrichten erfolgreich gespeichert]]></SUCCESS_UPDATE_NEWS>
+	<ERROR_UPDATE_NEWS><![CDATA[Unfähig, die Nachricht zu speichern]]></ERROR_UPDATE_NEWS>
+	<SUCCESS_TRANSLATE_NEWS><![CDATA[Erfolgreich übersetzt Nachrichten]]></SUCCESS_TRANSLATE_NEWS>
+	<ERROR_TRANSLATE_NEWS><![CDATA[Unfähig, die Nachricht zu übersetzen]]></ERROR_TRANSLATE_NEWS>
+</translations>

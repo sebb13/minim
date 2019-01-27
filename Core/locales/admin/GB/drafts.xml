@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<translations>
+	<DRAFT_SUCCESSFULLY_RESET><![CDATA[Draft successfully reset]]></DRAFT_SUCCESSFULLY_RESET>
+	<CAN_NOT_RESET_DRAFT><![CDATA[Can not reset the draft]]></CAN_NOT_RESET_DRAFT>
+	<DRAFTS_SUCCESSFULLY_RESET><![CDATA[Drafts successfully reset]]></DRAFTS_SUCCESSFULLY_RESET>
+	<SUCCESS_PUBLISH_DRAFT><![CDATA[Draft successfully published]]></SUCCESS_PUBLISH_DRAFT>
+	<ERROR_PUBLISH_DRAFT><![CDATA[Unable to publish the draft]]></ERROR_PUBLISH_DRAFT>
+	<SUCCESS_PUBLISH_DRAFTS><![CDATA[Drafts published successfully]]></SUCCESS_PUBLISH_DRAFTS>
+	<ERROR_PUBLISH_DRAFTS><![CDATA[Can not publish drafts]]></ERROR_PUBLISH_DRAFTS>
+</translations>

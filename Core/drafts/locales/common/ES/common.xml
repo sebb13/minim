@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<translations>
+	<COMMON><![CDATA[]]></COMMON>
+	<FRONT><![CDATA[]]></FRONT>
+	<BACK><![CDATA[]]></BACK>
+	<SAVE><![CDATA[]]></SAVE>
+	<LOGIN_PROMPT><![CDATA[]]></LOGIN_PROMPT>
+	<AUTH_FAIL><![CDATA[]]></AUTH_FAIL>
+	<LOGIN><![CDATA[]]></LOGIN>
+	<PWD><![CDATA[]]></PWD>
+	<VALIDATE><![CDATA[]]></VALIDATE>
+	<ACTIONS><![CDATA[]]></ACTIONS>
+	<CONFIGURATION><![CDATA[Configuración]]></CONFIGURATION>
+	<MOVE_TO_PROD><![CDATA[Poner en producción]]></MOVE_TO_PROD>
+	<PUBLISH><![CDATA[Publicar]]></PUBLISH>
+	<CONFIRM_TITLE><![CDATA[confirmación]]></CONFIRM_TITLE>
+	<REMOVE><![CDATA[Eliminar]]></REMOVE>
+	<DESCRIPTION><![CDATA[descripción]]></DESCRIPTION>
+	<CONTROLS><![CDATA[Controles]]></CONTROLS>
+	<RESET><![CDATA[Reajustar]]></RESET>
+	<DRAFT><![CDATA[Borrador]]></DRAFT>
+	<PAGE_PREVIEW><![CDATA[Vista previa de páginas]]></PAGE_PREVIEW>
+	<PROD_DATA><![CDATA[Datos de producción]]></PROD_DATA>
+	<DRAFT_SUCCESSFULLY_RESET><![CDATA[Proyecto de restablecer con éxito]]></DRAFT_SUCCESSFULLY_RESET>
+	<MANAGING_DRAFTS><![CDATA[La gestión de proyectos]]></MANAGING_DRAFTS>
+	<DRAFT_NOT_FOUND><![CDATA[No hay resultados para esta página proyecto]]></DRAFT_NOT_FOUND>
+</translations>

@@ -1,0 +1,477 @@
+<div class="row">
+	<article class="col-sm-12 maincontent">
+		<h3>Comment ça marche <i class="fa fa-cogs"></i></h3>
+		<p>De l'installation au point d'entrée et comment créer une page en plusieurs langues, nous vous expliquons tout ici.</p>
+	</article>
+</div>
+<hr />
+<div class="row">
+	<article class="col-sm-12 maincontent">
+		<h3>Installation</h3>
+		<p>L'installation se fait très simplement :</p>
+		<ul class="cog-tools">
+			<li>Créez autant de répertoires sur votre serveur que d'environnement désirés (si vous souhaitez avoir une version de développement, une version de test, une version de production...).</li>
+			<li>Vos noms de répertoires doivent être de la forme 
+				<ul class="cog-2">
+					<li><strong>/dev.website.ext</strong> pour la version de développement.</li>
+					<li><strong>/test.website.ext</strong> pour la version de test.</li>
+					<li><strong>/website.ext</strong> pour la version de production.</li>
+				</ul>
+				Cette norme de nommage permet au fichier <strong>inc.autoconfig.php</strong> de déterminer le type d'environnement dans lequel il se trouve et d'adapter en fonction le niveau d'erreur ainsi que certains comportements.
+			</li>
+			<li>Vous pouvez compléter ce fichier si vous souhaitez la prise en charge d'un environnement de recette (par exemple) en plus des trois environnements cités plus haut.</li>
+			<li>Nous vous recommandons de faire pointer les <strong>DNS</strong> de la manière suivante
+				<ul class="cog-2">
+					<li><strong>dev.myWebsite.ext</strong> vers votre répertoire de développement.</li>
+					<li><strong>dev-admin.myWebsite.ext</strong> vers votre répertoire de développement.</li>
+					<li><strong>test.myWebsite.ext</strong> vers votre répertoire de test.</li>
+					<li><strong>test-admin.myWebsite.ext</strong> vers votre répertoire de test.</li>
+					<li><strong>myWebsite.ext</strong> vers votre répertoire de production.</li>
+					<li><strong>admin.myWebsite.ext</strong> vers votre répertoire de production.</li>
+				</ul>
+				Ceci-dit, vous pouvez nommer vos sous domaines comme vous le souhaitez sauf pour le backoffice dont le sous domaine le plus bas doit comporter la chaîne "admin", indifféremment de l'environnement (comme dans les exemples ci dessus).
+			</li>
+			<li>Préparez un minimum la configuration (fichier <strong>/Core/data/minim.conf.xml</strong>) en renseignant les nœuds :
+				<ul class="cog-2 language-php">
+					<li><code>DOMAIN_NAME</code> : le nom de domaine.</li>
+					<li><code>SITE_URL_PROD</code> : l'URL du front en PROD.</li>
+					<li><code>SITE_URL_DEV</code> : l'URL du front en DEV.</li>
+					<li><code>ADMIN_URL_PROD</code> : l'URL du backoffice en PROD.</li>
+					<li><code>ADMIN_URL_DEV</code> : l'URL du backoffice en DEV.</li>
+					<li><code>ERROR_MAIL</code> : l'adresse email pour les erreurs.</li>
+				</ul>
+			</li>
+			<li>Depuis le backoffice, lancez une régénération du cache (avec les css qui ne fonctionnent pas, oui) et tout devrait commencer à fonctionner.</li>
+			<li>Alimentez ces deux répertoire ensuite avec vos dernières évolutions.</li>
+	</ul>
+	</article>
+	<!-- /Article -->
+</div>
+<hr />
+<div class="row">
+	<article class="col-sm-8 maincontent">
+		<h3>L'arborescence</h3>
+		<p>Comme vous pouvez le constater dans l'arborescence en illustration, il n'y a qu'un index.php à la racine du site, il s'agit bien du point d'entrée.</p>
+		<p>L'index, comme vous allez le découvrir plus tard, va amorcer minim et lui transmettre toutes les informations nécessaires pour enfin renvoyer ce qu'on lui demande.</p>
+		<p>Pour se faire, il convient de paramétrer le serveur hôte de manière à ce que toutes les requêtes, ou presque, soient redirigées vers cet index.</p>
+		<p>Un exemple vous est donné plus bas pour les serveurs Apache.</p>
+	</article>
+	<!-- /Article -->
+	<!-- Sidebar créer un widget -->
+	<aside class="col-sm-4 sidebar sidebar-right">
+		<div class="widget">
+			<p class="text-center">
+				<img src="/img/contents/doc/rootDir.png" alt="Racine du système de fichier" class="img-rounded" />
+			</p>
+		</div>
+	</aside>
+	<!-- /Sidebar -->
+</div>
+<hr />
+<div class="row">
+	<article class="col-sm-8 maincontent">
+		<h3>L'arborescence II (le retour)</h3>
+		<p>Comprendre toute l'arborescence est important pour expliquer la suite.</p>
+		<p>Nous parlons ici de l'arborescence du "noyau".</p>
+		<p>Détails</p>
+		<ul class="cog-tools">
+			<li><strong>_backups :</strong> stock les versions des pages mises à jour via le backoffice.</li>
+			<li><strong>_sessions :</strong> stock les fichiers de session.</li>
+			<li><strong>_updates :</strong> stock les mises à jour de l'application (pas encore au point).</li>
+			<li><strong>cache :</strong> stock les fichiers de cache.</li>
+			<li><strong>data :</strong> stock les données comme les fichiers de configuration mais pas que.</li>
+			<li><strong>drafts :</strong> stock les brouillons des pages modifiées.</li>
+			<li><strong>inc :</strong> stock les fichiers à inclure (y'en a que 2 mais ils sont super importants).</li>
+			<li><strong>lib :</strong> stock toutes les classes et les interfaces PHP (de manière plutôt bien rangé).</li>
+			<li><strong>locales :</strong> stock tous les fichiers de traduction (un répertoire par langue, sans racisme et sans haine).</li>
+			<li><strong>logs :</strong> stock les fichiers de log PHP (bein y'a des bugs, donc voila).</li>
+			<li><strong>modules :</strong> stock les modules installés (et les bugs qui vont avec).</li>
+			<li><strong>tpl :</strong> stock les templates (hors module, sauf pour les templates des pages statiques.).</li>
+		</ul>
+	</article>
+	<!-- /Article -->
+	<!-- Sidebar créer un widget -->
+	<aside class="col-sm-4 sidebar sidebar-right">
+		<div class="widget">
+			<p class="text-center">
+				<img src="/img/contents/doc/CoreDir.png" alt="inc.coreAutoConfig.php extrait" class="img-rounded" />
+			</p>
+		</div>
+	</aside>
+	<!-- /Sidebar -->
+</div>
+<hr />
+<div class="row">
+	<article class="col-sm-8 maincontent">
+		<h3>Rediriger les requêtes HTTP(S) vers l'index</h3>
+		<p>Cette étape est indispensable au fonctionnement de minim, ici un exemple pour le serveur <strong>Apache</strong>.</p>
+		<p>Dans cet exemple, le HTTPS est forcé, ce que nous vous recommandons afin que votre site/application ne réponde pas sur le HTTP et le HTTPS, ce qui provoquerai du <strong>duplicate content</strong> pénalisant votre référencement.</p>
+		<p>Pensez à exclure de la redirection les fichiers d'image, de son, les polices...</p>
+		<p>Pensez à exclure également de la redirection le fichier <strong>download.php</strong> si vous souhaitez permettre à votre site/application de fournir des fichiers au téléchargement.</p>
+	</article>
+	<!-- /Article -->
+	<!-- Sidebar créer un widget -->
+	<aside class="col-sm-4 sidebar sidebar-right">
+		<div class="widget">
+			<p>
+				<a href="/img/contents/doc/htaccess.png" rel="cbox" title=".htaccess (apache)" class="cbox">
+                    <img src="/img/contents/doc/htaccess.png" alt=".htaccess (apache)" class="img-rounded" />
+                </a>
+			</p>
+			<p>
+				Extrait du fichier de configuration <strong>.htaccess</strong> pour le serveur <strong>Apache</strong>.
+			</p>
+		</div>
+	</aside>
+	<!-- /Sidebar -->
+</div>
+<hr />
+<div class="row">
+	<article class="col-sm-8 maincontent">
+		<h3>index.php, l'amorce</h3>
+		<p>Peu de lignes pour un site qui peut comporter une quantité infinie de page !</p>
+		<p>Un premier fichier est inclus, l'autoconfig ; et on en parle juste après.</p>
+		<p>Ensuite vient le routeur qui va lancer la machine puis un pile de récupération d'exceptions histoire d'alimenter les logs et surtout d’être informé.</p>
+		<p>Il y a 2 niveaux d'attrapage des exceptions, le premier gère lui-même les envois de mails en cas d'erreur et en tenant compte de l'environnement.</p>
+		<p>Il suffit de suivre le signal maintenant !</p>
+	</article>
+	<!-- /Article -->
+	<!-- Sidebar créer un widget -->
+	<aside class="col-sm-4 sidebar sidebar-right">
+		<div class="widget">
+			<p class="txt-center">
+				<a href="/img/contents/doc/index.png" rel="cbox" title="index.php" class="cbox">
+                    <img src="/img/contents/doc/index.png" alt="index.php" class="img-rounded" />
+                </a>
+			</p>
+		</div>
+	</aside>
+	<!-- /Sidebar -->
+</div>
+<hr />
+<div class="row">
+	<article class="col-sm-8 maincontent">
+		<h3>Configuration automatique</h3>
+		<h4>Définir le contexte</h4>
+		<p>Tout ne se fait pas tout seul évidemment, mais certaines choses si, et l'idée est de ne pas s'en priver.</p>
+		<p>Définir dynamiquement les différents chemins vers les différents répertoires de l'application par exemple, le chargement des classes, le comportement à adopter en fonction du contexte (back, front, développement, production...)...</p>
+		<p>Voilà le rôle du fichier <strong>inc.coreAutoConfig.php</strong>.</p>
+		<p>Mais pas que !</p>
+		<ul class="cog-tools">
+			<li>Il met à plat quelques normes (timezone, encodage).</li>
+			<li>Charge les classes essentielles.</li>
+			<li>Inclue l'autoloader.</li>
+			<li>Défini le gestionnaire d'erreurs.</li>
+			<li>Charge le premier niveau d'outils.</li>
+			<li>Charge la configuration globale et initialise les constantes nécessaires.</li>
+			<li>Réalise la connexion avec la base de données (si besoin).</li>
+			<li>Soigne les attaques XSS.</li>
+			<li>Défini la langue par défaut.</li>
+			<li>Défini la page par défaut.</li>
+		</ul>
+		<p>Enfin, il initialise le "starter" de minim que nous allons voir juste après.</p>
+		<p>Nous vous invitons à lire ce code directement pour bien comprendre l'importance de ce fichier et ce qu'il apporte.</p>
+	</article>
+	<!-- /Article -->
+	<!-- Sidebar créer un widget -->
+	<aside class="col-sm-4 sidebar sidebar-right">
+		<div class="widget">
+			<p class="txt-center">
+				<a href="/img/contents/doc/autoConfig.png" rel="cbox" title="inc.coreAutoConfig.php extrait" class="cbox">
+                    <img src="/img/contents/doc/autoConfig.png" alt="inc.coreAutoConfig.php extrait" class="img-rounded" />
+                </a>
+			</p>
+		</div>
+	</aside>
+	<!-- /Sidebar -->
+	<article class="col-sm-8 maincontent">
+		<h4>Les classes essentielles à charger</h4>
+		<p>Le système a besoin de certaines classes pour fonctionner.</p>
+		<p>Dans l'ordre :</p>
+		<ul class="cog-tools">
+			<li><strong>inc.coreFunctions.php.</strong></li>
+			<li><strong>class.GenericException.php.</strong></li>
+			<li><strong>package.exceptions.errors.php.</strong></li>
+			<li><strong>package.Session.php.</strong></li>
+			<li><strong>class.RoutesConf.php.</strong></li>
+			<li><strong>class.PagesConf.php.</strong></li>
+			<li><strong>class.UserRequest.php.</strong></li>
+			<li><strong>class.SimpleXmlMgr.php.</strong></li>
+			<li><strong>class.Config.php.</strong></li>
+		</ul>
+		<p>Vous n'avez rien à faire si vous n'avez pas fait n'importe quoi dans ce fichier et que vous avez bien gardé tout ce qu'il faut dans le répertoire "Core".</p>
+	</article>
+	<!-- /Article -->
+	<!-- Sidebar créer un widget -->
+	<aside class="col-sm-4 sidebar sidebar-right">
+		<div class="widget">
+			<p class="txt-center">
+				<a href="/img/contents/doc/requirePHP.png" rel="cbox" title="inc.coreAutoConfig.php extrait" class="cbox">
+                    <img src="/img/contents/doc/requirePHP.png" alt="inc.coreAutoConfig.php extrait" class="img-rounded" />
+                </a>
+			</p>
+		</div>
+	</aside>
+	<!-- /Sidebar -->
+	<article class="col-sm-8 maincontent language-php">
+		<h4>Et la base de données ?</h4>
+		<p>Pour le fonctionnement de minim, aucune base de données n'est requise. Cependant, vous pouvez très bien en avoir besoin d'une pour le développement d'un module.</p>
+		<p>Pas de panique, c'est prévu.</p>
+		<p>Il vous suffit de renseigner dans le fichier de configuration <strong>minim.conf</strong> les nœuds suivants :</p>
+		<ul class="cog-tools">
+			<li><strong>SYS_DB_NEED :</strong> 3 valeurs sont possible ici, à savoir :
+				<ul class="cog-2">
+					<li><strong>YES :</strong> la connexion à la base de données se fera pour le front et le back.</li>
+					<li><strong>BACK :</strong> la connexion à la base de données se fera uniquement pour le front.</li>
+					<li><strong>FRONT :</strong> la connexion à la base de données se fera uniquement pour le back.</li>
+				</ul>
+			</li>
+			<li><strong>SYS_DB_DEV_DATABASE :</strong> nom de la base de données de développement.</li>
+			<li><strong>SYS_DB_PROD_DATABASE :</strong> nom de la base de données de production.</li>
+			<li><strong>SYS_DB_HOST :</strong> URL du serveur de votre base de données.</li>
+			<li><strong>SYS_DB_USER :</strong> utilisateur de la base de données.</li>
+			<li><strong>SYS_DB_PWD :</strong> mot de passe de l'utilisateur de la base de données.</li>
+		</ul>
+		<p>Il vous suffit ensuite de récupérer votre objet <strong>PDO</strong> quand vous en avez besoin avec un simple</p>
+		<code>$oPdo = SPDO::getInstance();</code>
+	</article>
+	<!-- /Article -->
+	<!-- Sidebar créer un widget -->
+	<aside class="col-sm-4 sidebar sidebar-right">
+		<div class="widget">
+			<p class="txt-center">
+				<a href="/img/contents/doc/dataBaseInit.png" rel="cbox" title="connexion à la base de données" class="cbox">
+                    <img src="/img/contents/doc/dataBaseInit.png" alt="connexion à la base de données" class="img-rounded" />
+                </a>
+			</p>
+			<p class="txt-center">
+				<a href="/img/contents/doc/SPDO.png" rel="cbox" title="classe SPDO.php" class="cbox">
+                    <img src="/img/contents/doc/SPDO.png" alt="classe SPDO.php" class="img-rounded" />
+                </a>
+			</p>
+		</div>
+	</aside>
+	<!-- /Sidebar -->
+</div>
+<hr />
+<div class="row">
+	<article class="col-sm-8 maincontent">
+		<h3>Le starter</h3>
+		<code class="language-php">Starter::start($_SERVER, $_GET, $_POST, $_FILES, $_COOKIE);</code>
+		<p>Ici s'initialise la classe UserRequest, permettant de retrouver à tout moment dans le code la page demandée, la langue en cours, les arguments fournis dans l'URL, etc.</p>
+		<p>Détails</p>
+		<ul class="cog-tools">
+			<li>C'est ici que le mode "maintenance" sera activé si défini en configuration.</li>
+			<li>C'est ici que le mode "prévisualisation" des brouillons va s'activer si c'est ce que l'on demande.</li>
+			<li>Initialisation de la classe UserRequest</li>
+			<li>Initialisation de la session</li>
+			<li>Initialisation de la classe de gestion des langues</li>
+		</ul>
+		<p>C'est à la fois le démarreur du système et le barrage filtrant.</p>
+	</article>
+	<!-- /Article -->
+	<!-- Sidebar créer un widget -->
+	<aside class="col-sm-4 sidebar sidebar-right">
+		<div class="widget">
+			<p>
+				<a href="/img/contents/doc/starter.png" rel="cbox" title="class.Starter.php extrait" class="cbox">
+                    <img src="/img/contents/doc/starter.png" alt="class.Starter.php extrait" class="img-rounded" />
+                </a>
+			</p>
+			<p>
+				Ici, les trois méthodes de la classe <strong>class.Starter.php</strong>.
+			</p>
+		</div>
+	</aside>
+	<!-- /Sidebar -->
+</div>
+<hr />
+<div class="row">
+	<article class="col-sm-8 maincontent">
+		<h3>Le routeur</h3>
+		<code class="language-php">$oRouter->checkRequest();</code>
+		<p>Tout est prêt, on envoie la sauce.</p>
+		<p>Détails</p>
+		<ul class="cog-tools">
+			<li>C'est ici que l'application basculera en front ou backoffice.</li>
+			<li>Si c'est le backoffice, redirection automatique vers la page d'identification.</li>
+			<li>C'est ici que va être vérifié et lancé si besoin la route correspondante à la page demandée.</li>
+			<li>Tout est fait dans cette classe pour donner la réponse la mieux adaptée.</li>
+		</ul>
+		<p>Cette classe est le rond-point incontournable du système.</p>
+		<p>Vous trouverez plus d'informations sur le routage dans la section portant le même nom de cette documentation.</p>
+		<p>Le mieux pour tout bien comprendre reste de mettre le nez dans le code et de suivre les différents déroulements possibles, cette partie n'étant pas spécialement vouée à évoluer, sauf pour des améliorations, de sécurité notamment.</p>
+	</article>
+	<!-- /Article -->
+	<!-- Sidebar créer un widget -->
+	<aside class="col-sm-4 sidebar sidebar-right">
+		<div class="widget">
+			<p class="txt-center">
+				<a href="/img/contents/doc/router.png" rel="cbox" title="class.Router.php extrait" class="cbox">
+                    <img src="/img/contents/doc/router.png" alt="class.Router.php extrait" class="img-rounded" />
+                </a>
+			</p>
+		</div>
+	</aside>
+	<!-- /Sidebar -->
+</div>
+<hr />
+<div class="row">
+	<article class="col-sm-8 maincontent language-php">
+		<h3>La vue et les pages.</h3>
+		<p>La gestion des vues se fait dans la classe <strong>class.view.php</strong>.</p>
+		<p>C'est ici que l'on va stocker dans un SplObjectStorage les méthodes des classes de placeholders sur lesquels nous reviendront dans la section suivante.</p>
+		<p>Comme vous pouvez le voir dans l'extrait en complément, les partie dynamiques de la vue  sont représentés par des placeholders du type <code>{__METATAGS__}</code>, comme pour les traductions dans les templates, ou <code>{##SITE_URL##}</code> pour le remplacement de certaines valeurs par le moteur de template.</p>
+		<p>Chaque placeholder correspond à une méthode qui sera appelée à la volée pour mettre en place le bon contenu (méthode <code>buildView($sViewPath)</code>).</p>
+		<p>Le contenu de la page viendra se placer en lieu et place du tag <code>{__CONTENT__}</code> de la vue.</p>
+	</article>
+	<!-- /Article -->
+	<!-- Sidebar créer un widget -->
+	<aside class="col-sm-4 sidebar sidebar-right">
+		<div class="widget">
+			<p class="txt-center">
+				<a href="/img/contents/doc/default_view.png" rel="cbox" title="default_view.tpl extrait" class="cbox">
+                    <img src="/img/contents/doc/default_view.png" alt="default_view.tpl extrait" class="img-rounded" />
+                </a>
+			</p>
+		</div>
+	</aside>
+	<!-- /Sidebar -->
+</div>
+<hr />
+<div class="row">
+	<article class="col-sm-8 maincontent language-php">
+		<h3>Les placeholders</h3>
+		<p>La classe <strong>class.Placeholders.php</strong> embarque toutes les méthodes de base pour construire la vue.</p>
+		<ul class="cog-tools">
+			<li><code>getLang()</code> : Renvoie la langue en cours.</li>
+			<li><code>getMetaTags()</code> : Renvoie les métadonnées de la page demandée.</li>
+			<li><code>getCss()</code> : Renvoie les appels css.</li>
+			<li><code>getDev_Banner()</code> : Place une bannière en haut de la page pour indiquer que l'on est en version de développement (si c'est le cas bien sûr).</li>
+			<li><code>getLogin_Value()</code> : Renvoie le login.</li>
+			<li><code>getFlags()</code> : Place les drapeaux permettant de changer de langue.</li>
+			<li><code>getMenu()</code> : Place le menu.</li>
+			<li><code>getContent()</code> : Renvoie le contenu de la page désirée.</li>
+			<li><code>getSocial_networks()</code> : Renvoie les boutons des réseaux sociaux.</li>
+			<li><code>getJs()</code> : Renvoie les appels js.</li>
+			<li><code>getCookies_Consent()</code> : Place le message pour les cookies.</li>
+			<li><code>getMinim_Version()</code> : Renvoie la version courante de minim.</li>
+		</ul>
+		<p>Vous pouvez rajouter vos propres méthodes dans des classes du type <strong>class.myModulePlaceholders.php</strong>.</p>
+	</article>
+	<!-- /Article -->
+	<!-- Sidebar créer un widget -->
+	<aside class="col-sm-4 sidebar sidebar-right">
+		<div class="widget">
+			<p>
+				<a href="/img/contents/doc/view.png" rel="cbox" title="class.View.php extrait" class="cbox">
+                    <img src="/img/contents/doc/view.png" alt="class.View.php extrait" class="img-rounded" />
+                </a>
+			</p>
+			<p class="language-php">
+				La méthode <code>InitPlaceholdersStorage()</code> regroupe toutes les classes de type <strong>class.*Placeholders.php</strong> puis en extrait les méthodes dans une collection de type <strong>SplObjectStorage</strong>.
+			</p>
+		</div>
+	</aside>
+	<!-- /Sidebar -->
+</div>
+<hr />
+<div class="row">
+	<article class="col-sm-8 maincontent language-php">
+		<h3>Le moteur de template</h3>
+		<p>La classe <strong>class.TplMgr.php</strong> embarque les méthodes de base pour gérer les templates et les traductions (en équipe avec la classe <strong>class.Lang.php</strong>).</p>
+		<p>Elle permet en plus de gérer la mise en place des traductions d'assurer le remplacement de certaines valeurs, autant dans la vue que dans la page demandée.</p>
+		<ul class="cog-tools">
+			<li><code>{##WEB_PATH##}</code> : L'URL du projet avec un "/" à la fin.</li>
+			<li><code>{##SITE_URL##}</code> : L'URL du projet sans "/" à la fin.</li>
+			<li><code>{##FRONT_URL##}</code> : L'URL du front du projet (tient compte de l'environnement, développement ou production).</li>
+			<li><code>{##STATIC_SERVER_URL##}</code> : L'URL du serveur statique du projet (tient compte de l'environnement, développement ou production).</li>
+			<li><code>{##EMAIL_CONTACT##}</code> : L'email à utiliser pour les notifications d'erreur.</li>
+			<li><code>{##LANG##}</code> : La langue en cours.</li>
+			<li><code>{##PAGE##}</code> : La page en cours.</li>
+			<li><code>{##APP_TOKEN##}</code> : Le token de l'application.</li>
+			<li><code>{##DOMAIN_NAME##}</code> : Le nom de domaine.</li>
+			<li><code>{##YEAR##}</code> : L'année en cours.</li>
+		</ul>
+		<p>La plupart de ces informations sont récupérées directement dans la configuration.</p>
+	</article>
+	<!-- /Article -->
+	<!-- Sidebar créer un widget -->
+	<aside class="col-sm-4 sidebar sidebar-right">
+		<div class="widget">
+			<p>
+				<a href="/img/contents/doc/TplMgr.png" rel="cbox" title="class.TplMgr.php extrait" class="cbox">
+                    <img src="/img/contents/doc/TplMgr.png" alt="class.TplMgr.php extrait" class="img-rounded" />
+                </a>
+			</p>
+			<p class="language-php">
+				Comme vous pouvez le voir dans cet extrait, c'est également ici que sont injectées les traductions communes.
+			</p>
+		</div>
+	</aside>
+	<!-- /Sidebar -->
+</div>
+<hr />
+<div class="row">
+	<article class="col-sm-8 maincontent language-php">
+		<h3>Organisation des templates</h3>
+		<p>Les templates sont regroupés par type et par "face", soit back ou front.</p>
+		<p>Suivant le type de template, il portera le nom de la page qu'il représente ou de la partie de la fonction à laquelle il sert.</p>
+		<ul class="cog-tools">
+			<li><strong>admin</strong> : tout ce qui va concerner le backoffice
+				<ul class="cog-2">
+					<li><strong>content</strong> : les pages en elles-même.</li>
+					<li><strong>parts</strong> : les templates propres à des parties de contenu.</li>
+					<li><strong>view</strong> : les vues utilisables.</li>
+				</ul>
+			</li>
+			<li><strong>contents</strong> : les pages en elles-même.</li>
+			<li><strong>core</strong> : les templates propres au cœur du système.</li>
+			<li><strong>inc</strong> : les templates des inclusions (le template des métadonnes par exemple).</li>
+			<li><strong>parts</strong> : les templates propres à des parties de contenu.</li>
+			<li><strong>socialNetwork</strong> : les templates propres aux réseaux sociaux.</li>
+			<li><strong>view</strong> : les vues utilisables</li>
+		</ul>
+	</article>
+	<!-- /Article -->
+	<!-- Sidebar créer un widget -->
+	<aside class="col-sm-4 sidebar sidebar-right">
+		<div class="widget">
+			<p class="text-center">
+				<img src="/img/contents/doc/templates.png" alt="arborescence des templates" class="img-rounded" />
+			</p>
+		</div>
+	</aside>
+	<!-- /Sidebar -->
+</div>
+<hr />
+<div class="row">
+	<article class="col-sm-8 maincontent language-php">
+		<h3>Métdonnées du framework</h3>
+		<p>minim génère quelques métadonnées pour son fonctionnement et sa sécurité.</p>
+		<ul class="cog-tools">
+			<li>app_token</li>
+			<li>app_current_page</li>
+			<li>app_lang</li>
+			<li>app_lang_available</li>
+		</ul>
+	</article>
+	<!-- /Article -->
+	<!-- Sidebar créer un widget -->
+	<aside class="col-sm-4 sidebar sidebar-right">
+		<div class="widget">
+			<p class="text-center">
+				<a href="/img/contents/doc/common_meta.png" rel="cbox" title="métadonnées communes" class="cbox">
+                    <img src="/img/contents/doc/common_meta.png" alt="métadonnées communes" class="img-rounded" />
+                </a>
+			</p>
+			<p>
+				Les métadonnées présentées ici servent aux scripts javascript.
+			</p>
+			<p>
+				Elles sont générées dynamiquement par la vue.
+			</p>
+		</div>
+	</aside>
+	<!-- /Sidebar -->
+</div>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<translations>
+	<CONTACT_MGR_HOME_TITLE><![CDATA[Gestion des contacts]]></CONTACT_MGR_HOME_TITLE>
+	<MESSAGES_RECEIVED><![CDATA[Messages reçus]]></MESSAGES_RECEIVED>
+	<ARCHIVED_MESSAGES><![CDATA[Messages archivés]]></ARCHIVED_MESSAGES>
+	<SEARCH_IN_MESSAGES><![CDATA[Rechercher dans les messages]]></SEARCH_IN_MESSAGES>
+	<MESSAGES_FOUND><![CDATA[Messages trouvés : ]]></MESSAGES_FOUND>
+	<CONFIRM_ARCHIVE_MSG><![CDATA[Êtes vous sûr de vouloir archiver ce message?]]></CONFIRM_ARCHIVE_MSG>
+	<CONFIRM_DELETE_MSG><![CDATA[Êtes vous sûr de vouloir supprimer ce message?]]></CONFIRM_DELETE_MSG>
+	<SUCCESS_ARCHIVE_MSG><![CDATA[Message archivé avec succès]]></SUCCESS_ARCHIVE_MSG>
+	<ERROR_ARCHIVE_MSG><![CDATA[Impossible d'archiver ce message]]></ERROR_ARCHIVE_MSG>
+	<SUCCESS_RESTORE_MSG><![CDATA[Message restauré avec succès]]></SUCCESS_RESTORE_MSG>
+	<ERROR_RESTORE_MSG><![CDATA[Impossible de restaurer ce message]]></ERROR_RESTORE_MSG>
+	<SUCCESS_DELETE_MSG><![CDATA[Message supprimé avec succès]]></SUCCESS_DELETE_MSG>
+	<ERROR_DELETE_MSG><![CDATA[Impossible de supprimer ce message]]></ERROR_DELETE_MSG>
+	<SUCCESS_SAVE_COMMENT><![CDATA[Commentaire enregistré avec succès]]></SUCCESS_SAVE_COMMENT>
+	<ERROR_SAVE_COMMENT><![CDATA[Impossible d'enregistrer votre commentaire]]></ERROR_SAVE_COMMENT>
+	<NB_MSG_LABEL><![CDATA[Messages reçus]]></NB_MSG_LABEL>
+	<NB_ARCHIVE_LABEL><![CDATA[Messages archivés]]></NB_ARCHIVE_LABEL>
+	<LAST_MSG_DATE_LABEL><![CDATA[Dernier message reçu]]></LAST_MSG_DATE_LABEL>
+	<DATA_FORMAT_TOOLTIP><![CDATA[Type de stockage des données (SQL ou XML)]]></DATA_FORMAT_TOOLTIP>
+	<EMAIL_ALERT_TOOLTIP><![CDATA[Adresse email à laquelle seront envoyés les notifications de nouveaux messages]]></EMAIL_ALERT_TOOLTIP>
+</translations>

@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<conf>
+	<DOMAIN_NAME>minim.webearthquake.com</DOMAIN_NAME>
+	<EMAIL_CONTACT></EMAIL_CONTACT>
+	<SITE_URL_PROD>https://minim.webearthquake.com/</SITE_URL_PROD>
+	<SITE_URL_DEV>https://dev.minim.webearthquake.com/</SITE_URL_DEV>
+	<ADMIN_URL_PROD>https://admin.minim.webearthquake.com/</ADMIN_URL_PROD>
+	<ADMIN_URL_DEV>https://dev-admin.minim.webearthquake.com/</ADMIN_URL_DEV>
+	<STATIC_SERVER_URL></STATIC_SERVER_URL>
+	<STATIC_DEV_SERVER_URL></STATIC_DEV_SERVER_URL>
+	<ERROR_MAIL></ERROR_MAIL>
+	<DEFAULT_LANG>FR</DEFAULT_LANG>
+	<LOGS_TTL options="-1 month|-2 month|-3 month|-4 month|-5 month|-6 month">-1 month</LOGS_TTL>
+	<MAINTENANCE>NO</MAINTENANCE>
+	<SYS_MOD_NAME>minim</SYS_MOD_NAME>
+	<SYS_MOD_VERSION>0.9.8</SYS_MOD_VERSION>
+	<SYS_UNIQ_ID>5c42f9fde1660</SYS_UNIQ_ID>
+	<SYS_UPDATES_URL>https://update.minim.webearthquake.com</SYS_UPDATES_URL>
+	<SYS_DEV_UPDATES_URL>https://dev.update.minim.webearthquake.com</SYS_DEV_UPDATES_URL>
+	<SYS_UPDATES_SVC>Updates::checkRepository</SYS_UPDATES_SVC>
+	<SYS_GET_RELEASE_SVC>Updates::getRelease</SYS_GET_RELEASE_SVC>
+	<SYS_SEND_STATE_SVC>Updates::sendSiteState</SYS_SEND_STATE_SVC>
+	<SYS_DB_NEED options="YES|NO|BACK|FRONT">NO</SYS_DB_NEED>
+	<SYS_DB_HOST/>
+	<SYS_DB_TYPE>mysql</SYS_DB_TYPE>
+	<SYS_DB_USER/>
+	<SYS_DB_PWD/>
+	<SYS_DB_PROD_DATABASE/>
+	<SYS_DB_DEV_DATABASE/>
+	<SYS_LAST_CACHE>20190119 - 11:20:45</SYS_LAST_CACHE>
+	<SYS_LANG_FRONT>FR,GB</SYS_LANG_FRONT>
+	<SYS_LANG_BACK>DE,ES,FR,GB,IT</SYS_LANG_BACK>
+</conf>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<translations>
+	<PAGE_TITLE><![CDATA[Fehlerprotokolle]]></PAGE_TITLE>
+	<PURGE_OLD_LOGS><![CDATA[Entfernen Sie alte Fehlerprotokolle]]></PURGE_OLD_LOGS>
+	<PURGE_OLD_LOGS_CONFIRM><![CDATA[Sind Sie sicher, dass Sie alte Fehlerprotokolle zu reinigen?]]></PURGE_OLD_LOGS_CONFIRM>
+	<PURGE_OLD_LOGS_SUCCESS><![CDATA[Fehlerprotokolle erfolgreich gespült]]></PURGE_OLD_LOGS_SUCCESS>
+	<PURGE_OLD_LOGS_ERROR><![CDATA[Konnte nicht alte Fehler-Logs spülen]]></PURGE_OLD_LOGS_ERROR>
+	<ERROR_LOGS_TITLE><![CDATA[Logs von Erreurs (site web + Back-Office)]]></ERROR_LOGS_TITLE>
+</translations>

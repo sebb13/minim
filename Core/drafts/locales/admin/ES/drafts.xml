@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<translations>
+	<DRAFT_SUCCESSFULLY_RESET><![CDATA[Proyecto de restablecer con éxito]]></DRAFT_SUCCESSFULLY_RESET>
+	<DRAFTS_SUCCESSFULLY_RESET><![CDATA[Borradores restablece satisfactoriamente]]></DRAFTS_SUCCESSFULLY_RESET>
+	<SUCCESS_PUBLISH_DRAFT><![CDATA[Proyecto publicado correctamente]]></SUCCESS_PUBLISH_DRAFT>
+	<ERROR_PUBLISH_DRAFT><![CDATA[No se puede publicar el proyecto]]></ERROR_PUBLISH_DRAFT>
+	<SUCCESS_PUBLISH_DRAFTS><![CDATA[Borrador publicado con éxito]]></SUCCESS_PUBLISH_DRAFTS>
+	<ERROR_PUBLISH_DRAFTS><![CDATA[No se puede publicar borradores]]></ERROR_PUBLISH_DRAFTS>
+</translations>

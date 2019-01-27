@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<translations>
+	<YES><![CDATA[sí]]></YES>
+	<NO><![CDATA[no]]></NO>
+	<HEIGHT><![CDATA[altura]]></HEIGHT>
+	<WIDTH><![CDATA[ancho]]></WIDTH>
+	<COMMON><![CDATA[Común]]></COMMON>
+	<FRONT><![CDATA[Frente]]></FRONT>
+	<BACK><![CDATA[Administración]]></BACK>
+	<SAVE><![CDATA[Registro]]></SAVE>
+	<CREATE><![CDATA[Crear]]></CREATE>
+	<EDIT><![CDATA[Editar]]></EDIT>
+	<SEARCH><![CDATA[Búsqueda]]></SEARCH>
+	<SEARCH_NO_RESULTS><![CDATA[Lo sentimos, su búsqueda no produjo resultados]]></SEARCH_NO_RESULTS>
+	<MANAGE><![CDATA[Gestionar]]></MANAGE>
+	<LOGIN_PROMPT><![CDATA[Por favor conectarse]]></LOGIN_PROMPT>
+	<AUTH_FAIL><![CDATA[Fallo de autenticación]]></AUTH_FAIL>
+	<LOGIN><![CDATA[Login]]></LOGIN>
+	<LOGOUT><![CDATA[Cerrar sesión]]></LOGOUT>
+	<PWD><![CDATA[Contraseña]]></PWD>
+	<VALIDATE><![CDATA[Validar]]></VALIDATE>
+	<ACTIONS><![CDATA[Valores]]></ACTIONS>
+	<CONFIGURATION><![CDATA[Configuración]]></CONFIGURATION>
+	<MOVE_TO_PROD><![CDATA[Poner en producción]]></MOVE_TO_PROD>
+	<PUBLISH><![CDATA[Publicar]]></PUBLISH>
+	<CONFIRM_TITLE><![CDATA[confirmación]]></CONFIRM_TITLE>
+	<REMOVE><![CDATA[Eliminar]]></REMOVE>
+	<ARCHIVE><![CDATA[Archivo]]></ARCHIVE>
+	<RESTORE><![CDATA[Restaurar]]></RESTORE>
+	<DESCRIPTION><![CDATA[descripción]]></DESCRIPTION>
+	<CONTROLS><![CDATA[Controles]]></CONTROLS>
+	<RESET><![CDATA[Reajustar]]></RESET>
+	<CANCEL><![CDATA[Cancelar]]></CANCEL>
+	<DRAFT><![CDATA[Borrador]]></DRAFT>
+	<PAGE_PREVIEW><![CDATA[Vista previa de páginas]]></PAGE_PREVIEW>
+	<PROD_DATA><![CDATA[Datos de producción]]></PROD_DATA>
+	<MANAGING_DRAFTS><![CDATA[La gestión de proyectos]]></MANAGING_DRAFTS>
+	<DRAFT_NOT_FOUND><![CDATA[No hay resultados para esta página proyecto]]></DRAFT_NOT_FOUND>
+	<BENCHMARK_LABEL><![CDATA[Tiempo de ejecucion : ]]></BENCHMARK_LABEL>
+	<TRANSLATE><![CDATA[Traducir]]></TRANSLATE>
+	<ERROR_INVALID_EMAIL><![CDATA[Email no es válida]]></ERROR_INVALID_EMAIL>
+	<NEXT><![CDATA[Próximo]]></NEXT>
+	<PREVIOUS><![CDATA[Anterior]]></PREVIOUS>
+	<COMMENTS><![CDATA[Comentarios]]></COMMENTS>
+	<CONTACT><![CDATA[Contacto]]></CONTACT>
+	<LEGAL_NOTICES><![CDATA[Avisos legales]]></LEGAL_NOTICES>
+	<COOKIES_CONSENT><![CDATA[Como visitante, usted acepta el uso de cookies para mejorar la experiencia del usuario.]]></COOKIES_CONSENT>
+	<LEARN_MORE><![CDATA[Saber más]]></LEARN_MORE>
+	<ERROR_PAGE_NAME_EMPTY><![CDATA[El nombre de la página debe llenarse]]></ERROR_PAGE_NAME_EMPTY>
+	<COPY_TO_CLIPBOARD><![CDATA[Copiar al portapapeles]]></COPY_TO_CLIPBOARD>
+	<JS_REQUIRED><![CDATA[Necesita habilitar Javascript en su navegador para poder disfrutar completamente de las características de este sitio web.]]></JS_REQUIRED>
+	<SYS_MOD_NAME_TOOLTIP><![CDATA[]]></SYS_MOD_NAME_TOOLTIP>
+	<SYS_MOD_VERSION_TOOLTIP><![CDATA[]]></SYS_MOD_VERSION_TOOLTIP>
+	<SYS_NEED_DB_TOOLTIP><![CDATA[]]></SYS_NEED_DB_TOOLTIP>
+	<SYS_LAST_CACHE_TOOLTIP><![CDATA[]]></SYS_LAST_CACHE_TOOLTIP>
+</translations>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<translations>
+    <HANGS_TITLE><![CDATA[<strong>minim</strong> est un framework <strong>PHP léger</strong>, évolutif et <strong>open source</strong>]]></HANGS_TITLE>
+    <HANGS><![CDATA[
+		Dans le cadre de développements de sites internet ou d'applications, certains composants et outils sont souvent nécessaires de manière récurrente, comme un système d'internationalisation, de gestion de cache, etc.<br />
+		Forts d'une dizaine d'années d'expérience, nous avons regroupé ces différents composants autour d'un système de routage. 
+		Une structure de fichiers a également été pensée et mise en place pour favoriser l'aspect modulaire du projet et simplifier sa compréhension.<br />
+		En production sur plusieurs sites dont celui-ci, nous avons décidé de créer une documentation et de l'ouvrir à l'open source.
+	]]></HANGS>
+	<HANGS_OUTRO><![CDATA[minim est né.]]></HANGS_OUTRO>
+    <FRAMEWORK><![CDATA[Framework]]></FRAMEWORK>
+    <FRAMEWORK_HANGS><![CDATA[
+	<li>MVC</li>
+	<li>Gestion native de l'internationalisation</li>
+	<li>Gestionnaire de cache natif</li>
+	<li>Backoffice (en 5 langues)</li>
+	<li>Multi-plateforme (développement, test, production)</li>
+	<li>Full AJAX par défaut</li>
+	<li><a href="/FR/framework.html" id="___framework" class="ajaxLink">En savoir plus</a></li>
+]]></FRAMEWORK_HANGS>
+    <PLUGINS><![CDATA[Modules]]></PLUGINS>
+    <PLUGINS_HANGS><![CDATA[
+	<li>Chaque projet a des spécificités qu'il convient de placer dans un module.</li>
+	<li>Vous pouvez intégrer autant de module que vous le souhaitez.</li>
+	<li>La création d'un nouveau module est aussi aisée que son intégration.</li>
+	<li><a href="/FR/plugins.html" id="___plugins" class="ajaxLink">En savoir plus</a></li>
+]]></PLUGINS_HANGS>
+    <BACKEND><![CDATA[Back-office]]></BACKEND>
+	<BACKEND_HANGS_INTRO><![CDATA[Minim offre un backoffice qui s'active en fonction de l'URL appelée.<br />
+Il propose entre autre :]]></BACKEND_HANGS_INTRO>
+    <BACKEND_HANGS><![CDATA[
+		<li>Tableau de bord.</li>
+		<li>Gestion du cache</li>
+		<li>Configuration des pages.</li>
+		<li>Traductions des contenus.</li>
+		<li>Gestion système (si l'utilisateur a les droits).</li>
+		<li>Gestionnaires des modules installés.</li>
+		<li>Gestion des utilisateurs.</li>
+		<li><a href="{##FRONT_URL##}{##LANG##}/documentation/backend.html" id="documentation_backend" class="ajaxLink">En savoir plus</a></li>
+		</ul>
+	</li>
+]]></BACKEND_HANGS>
+    <TOOLS><![CDATA[Outils]]></TOOLS>
+    <TOOLS_HANGS><![CDATA[
+	<li>Vérifications de données.</li>
+	<li>Formatage de données.</li>
+	<li>Redimensionnement d'images.</li>
+	<li>Génération de html, formulaires...</li>
+	<li>Gestion de XML.</li>
+	<li>Gestion de fichiers.</li>
+	<li>Outils de contexte.</li>
+	<li><a href="{##FRONT_URL##}{##LANG##}/documentation/tools.html" id="documentation_tools" class="ajaxLink">En savoir plus</a></li>
+]]></TOOLS_HANGS>
+    <FAQ><![CDATA[On nous demande souvent]]></FAQ>
+	<FAQ_TITLE_1><![CDATA[Pourquoi un énième framework ?]]></FAQ_TITLE_1>
+	<FAQ_1><![CDATA[
+		<p>Au cours de différents développements, nous avons été amené à concevoir des solutions permettant de satisfaire les exigences de qualité de nos clients.</p>
+		<p>Au fil des développements et des échanges avec les clients et usagers, ces solutions se sont regroupées, jusqu'à former un framework.</p>
+		<p>Des contraintes ont été transformées en atouts, le besoin de construire une internationalisation fiable a débouché sur un système de cache, avec backOffice, une gestion des métadonnées des pages et un sitemap dynamique, entre autre.</p>
+		<p>Vous l'avez compris, ce framework, bien que nouveau, bénéficie déjà, de nombreuses années de test et d'exploitation.</p>
+		<p>Rien n'a été épargné pour que ce framework soit toujours le plus léger possible. <strong>Le tout, sans aucune base de données.</strong>
+]]></FAQ_1>
+	<FAQ_TITLE_2><![CDATA[Et pour les assets ?]]></FAQ_TITLE_2>
+	<FAQ_2><![CDATA[
+En plus de ses propres sources (css et javascript), Minim embarque jQuery et Bootstrap.</p>
+<p>Pour surcharger cette pile, il suffit d'ajouter vos fichiers dans la configuration et de régénérer le cache, ils seront automatiquement pris en compte.</p>
+<p>Si vous avez besoin d'installer un module dédié pour un projet, le gestionnaire de configuration vous aidera dans cette tâche.</p>
+		<p><a href="/FR/documentation/operation.html" id="documentation_operation" class="ajaxLink">Consultez la documentation</a>
+]]></FAQ_2>
+	<FAQ_TITLE_3><![CDATA[Comment crée-t-on des pages ?]]></FAQ_TITLE_3>
+	<FAQ_3><![CDATA[
+Tous simplement dans son éditeur favori ! (Netbeans, Bracket, Textwrangler, etc)</p>
+<p>On part d'un template en HTML, on ajoute un fichier XML pour les traduction, si besoin est, et c'est tout !</p>
+<p>Le CSS et les Javascript s'ajoutent dans les modules dédiés aux projets. </p>
+<p>La couche javascript installée au cœur du projet permet de développer rapidement des appels en AJAX, ou d'installer tous les widgets indispensables.</p>
+<p>S'il vous en faut plus, sachez que tous les modules sont sur-chargeable, extensible, modifiable à volonté !</p>
+<p>Vous pouvez également en créer autant que vous le voulez !</p>
+]]></FAQ_3>
+	<FAQ_TITLE_4><![CDATA[Ce n'est donc pas un CMS ?]]></FAQ_TITLE_4>
+	<FAQ_4><![CDATA[Déçu ?</p>
+<p>Minim est conçu pour offrir une structure de départ aux développeurs.</p>
+<p>C'est à la fois un canevas et une boite à outils que vous pourrez plier à vos besoins. </p>
+<p>Même s'il n'intègre pas de base de données, il est très rapide d'en ajouter une à votre convenance.</p>
+<p>Un gestionnaire de contenu peut être très facilement intégré au backoffice et permettre la création de nouvelles page, par exemple.
+]]></FAQ_4>
+</translations>

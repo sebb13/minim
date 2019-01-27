@@ -1,0 +1,112 @@
+.contact-row {
+	text-align:left;
+	margin-top:20px;
+}
+.div-contact-form {
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-o-border-radius: 5px;
+	
+}
+.contact-row textarea {
+	height:200px;
+}
+.contact-row input[type="text"], .contact-row input[type="file"], .contact-row textarea {
+	width:100%;
+	color:#777;
+}
+textarea,
+input[type="text"],
+input[type="file"] {
+    border:1px solid #999999 !important;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-o-border-radius: 5px;
+}
+textarea:focus,
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="datetime"]:focus,
+input[type="datetime-local"]:focus,
+input[type="date"]:focus,
+input[type="month"]:focus,
+input[type="time"]:focus,
+input[type="week"]:focus,
+input[type="number"]:focus,
+input[type="email"]:focus,
+input[type="url"]:focus,
+input[type="search"]:focus,
+input[type="tel"]:focus,
+input[type="file"]:focus,
+select:focus,
+.uneditable-input:focus {   
+  border-color: #3a6da7 !important;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px #3a6da7 !important;
+  outline: 0 none !important;
+}
+label {
+	font-size:18px;
+	color: #471b00;
+	width:100%;
+	font-weight:normal;
+}
+.tilala-fields {
+	display: none;
+}
+.mandatory-fields {
+	margin: 0;
+	color: #000;
+	font-weight:bold;
+}
+.contact-hr {
+    width:100% !important;
+}
+.progress {
+	margin:5px 0 0 0;
+	height:11px;
+	background-color: transparent !important;
+	padding:0;
+}
+#progressbar {
+	height:11px;
+	font-size:9px;
+	color:#000;
+	padding:0;
+	margin:0;
+}
+.tel-mail-container {
+	margin: 20px 0;
+}
+.ctc-tv {
+	height:32px;
+}
+.tel-mail-container img {
+	height:24px;
+    margin-top:-8px;
+}
+.contact-container {
+	margin: 40px 0 37px 0;
+	height:100%;
+	padding:15px;
+	font-size: 16px;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-o-border-radius: 5px;
+    background-color:transparent;
+}
+.panel-default, .panel-body {
+    background-color:transparent;
+}
+.alert-success li {
+    color: green;
+}
+.alert-danger li {
+    color: red;
+}
+
+.fa-twitter, .fa-google-plus, .fa-facebook {
+	font-size:30px;
+}

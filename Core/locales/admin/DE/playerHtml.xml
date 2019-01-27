@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<translations>
+	<PLAY_PREVIOUS><![CDATA[Vorigen Titel abspielen]]></PLAY_PREVIOUS>
+	<PREVIOUS><![CDATA[Zurück]]></PREVIOUS>
+	<START_READING><![CDATA[Wiedergabe starten]]></START_READING>
+	<PLAY><![CDATA[Wiedergabe]]></PLAY>
+	<SET_PAUSED><![CDATA[Auf Pause stellen]]></SET_PAUSED>
+	<PAUSE><![CDATA[Pause]]></PAUSE>
+	<PLAY_NEXT><![CDATA[Nächsten Titel abspielen]]></PLAY_NEXT>
+	<NEXT><![CDATA[Weiter]]></NEXT>
+	<STOP_READING><![CDATA[Wiedergabe stoppen]]></STOP_READING>
+	<STOP><![CDATA[Stop]]></STOP>
+	<MUTE><![CDATA[Leise]]></MUTE>
+	<SOUND><![CDATA[Laut]]></SOUND>
+	<MAX_VOLUME><![CDATA[Maximale Lautstärke]]></MAX_VOLUME>
+	<MIX><![CDATA[Mischen]]></MIX>
+	<STOP_MIX><![CDATA[Mischen beenden]]></STOP_MIX>
+	<REPEAT><![CDATA[Wiederholen]]></REPEAT>
+	<STOP_REPEAT><![CDATA[Wiederholen beenden]]></STOP_REPEAT>
+	<PLAYER_DOES_NOT_WORK><![CDATA[Hoppla! Der Player funktioniert nicht!]]></PLAYER_DOES_NOT_WORK>
+	<SHOW_PLAYLIST><![CDATA[Playlist anzeigen]]></SHOW_PLAYLIST>
+	<HIDE_PLAYLIST><![CDATA[Playlist ausblenden]]></HIDE_PLAYLIST>
+</translations>

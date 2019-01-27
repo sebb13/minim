@@ -1,0 +1,2 @@
+<?xml version="1.0"?>
+<routes><contact_home><![CDATA[Contact::getHomePage]]></contact_home><contact_messagesReceived><![CDATA[Contact::getMsgsPage]]></contact_messagesReceived><contact_archivedMessages><![CDATA[Contact::getArchivesPage]]></contact_archivedMessages></routes>

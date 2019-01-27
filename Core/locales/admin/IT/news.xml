@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<translations>
+	<NEWS_HOME_TITLE><![CDATA[Notizie Responsabile]]></NEWS_HOME_TITLE>
+	<NEWS_FEED><![CDATA[Filo notizie]]></NEWS_FEED>
+	<MANAGE_NEWS><![CDATA[Notizie Responsabile]]></MANAGE_NEWS>
+	<ADD_NEWS_THREAD><![CDATA[Aggiungere notizie filo]]></ADD_NEWS_THREAD>
+	<ADD_THREAD><![CDATA[Aggiungere filo]]></ADD_THREAD>
+	<NEW_THREAD_NAME><![CDATA[Nuovo nome del thread]]></NEW_THREAD_NAME>
+	<SUCCESS_ADD_THREAD><![CDATA[Nel corso successo aggiunto]]></SUCCESS_ADD_THREAD>
+	<ERROR_ADD_THREAD><![CDATA[Impossibile aggiungere il filo]]></ERROR_ADD_THREAD>
+	<ERROR_THREAD_ALREADY_EXISTS><![CDATA[Questo thread è già]]></ERROR_THREAD_ALREADY_EXISTS>
+	<DELETE_THREAD><![CDATA[Elimina questa discussione]]></DELETE_THREAD>
+	<CONFIRM_DELETE_THREAD><![CDATA[Sei sicuro di voler cancellare questa discussione ?]]></CONFIRM_DELETE_THREAD>
+	<SUCCESS_DELETE_THREAD><![CDATA[Filo rimosso con successo]]></SUCCESS_DELETE_THREAD>
+	<ERROR_DELETE_THREAD><![CDATA[Impossibile rimuovere il filo]]></ERROR_DELETE_THREAD>
+	<CREATE_NEWS><![CDATA[Crea notizie]]></CREATE_NEWS>
+	<SEARCH_NEWS><![CDATA[Cerca una notizia]]></SEARCH_NEWS>
+	<DATE_LABEL><![CDATA[Data]]></DATE_LABEL>
+	<TIME_LABEL><![CDATA[Tempo]]></TIME_LABEL>
+	<MAIN_TEXT_LABEL><![CDATA[Testo principale]]></MAIN_TEXT_LABEL>
+	<HASHTAGS_LABEL><![CDATA[Hashtags]]></HASHTAGS_LABEL>
+	<IMG_URL_THUMB_LABEL><![CDATA[URL dell'immagine di anteprima]]></IMG_URL_THUMB_LABEL>
+	<IMG_URL_LABEL><![CDATA[URL immagine]]></IMG_URL_LABEL>
+	<IMG_LINK_LABEL><![CDATA[Collegamento che riflette l'immagine]]></IMG_LINK_LABEL>
+	<IMG_TITLE_LABEL><![CDATA[Immagine Titolo]]></IMG_TITLE_LABEL>
+	<MEDIA_LABEL><![CDATA[Media]]></MEDIA_LABEL>
+	<SUCCESS_ADD_NEWS><![CDATA[Notizie aggiunto correttamente]]></SUCCESS_ADD_NEWS>
+	<ERROR_ADD_NEWS><![CDATA[Impossibile aggiungere la notizia]]></ERROR_ADD_NEWS>
+	<SUCCESS_PUBLISH_NEWS><![CDATA[Notizie pubblicato con successo]]></SUCCESS_PUBLISH_NEWS>
+	<ERROR_PUBLISH_NEWS><![CDATA[Non è possibile pubblicare la notizia]]></ERROR_PUBLISH_NEWS>
+	<SUCCESS_REMOVE_NEWS><![CDATA[Notizie di failover con successo]]></SUCCESS_REMOVE_NEWS>
+	<ERROR_REMOVE_NEWS><![CDATA[Non è possibile ruotare la linea notizie]]></ERROR_REMOVE_NEWS>
+	<SUCCESS_UPDATE_NEWS><![CDATA[Notizie salvata]]></SUCCESS_UPDATE_NEWS>
+	<ERROR_UPDATE_NEWS><![CDATA[Impossibile salvare la notizia]]></ERROR_UPDATE_NEWS>
+	<SUCCESS_TRANSLATE_NEWS><![CDATA[Tradotto con successo notizie]]></SUCCESS_TRANSLATE_NEWS>
+	<ERROR_TRANSLATE_NEWS><![CDATA[Incapace di tradurre la notizia]]></ERROR_TRANSLATE_NEWS>
+</translations>

@@ -1,0 +1,3 @@
+						<input type="hidden" name="{__VERSION__}_{__PAGE_NAME__}VersionNumber" id="{__VERSION__}_{__PAGE_NAME__}VersionNumber" value="{__VERSION__}" />
+						<input type="hidden" name="{__VERSION__}_{__PAGE_NAME__}VersionPageName" id="{__VERSION__}_{__PAGE_NAME__}VersionPageName" value="{__PAGE_NAME__}" />
+						<input type="button" class="btn btn-success applyVersionButton" id="{__VERSION__}_{__PAGE_NAME__}ApplyButton" value="{__APPLY_VERSION__}" />

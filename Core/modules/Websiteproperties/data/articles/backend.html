@@ -1,0 +1,273 @@
+<div class="row">
+	<article class="col-sm-12 maincontent">
+		<h2>Backoffice <i class="fa fa-home"></i></h2>
+		<p>Utilisant le même fonctionnement que le front, le backoffice permet de configurer minim ainsi que les modules installés.</p>
+		<p>Il permet également bon nombre d'autres choses comme vous allez le découvrir.</p>
+		<p>Responsive design, il s'appuie sur bootstrap 3 pour la mise en page.</p>
+	</article>
+	<!-- /Article -->
+</div>
+<hr />
+<div class="row">
+	<article class="col-sm-8 maincontent">
+		<h3>Il n'y a pas de dossier "admin" ?</h3>
+		<p>Non, le backoffice fonctionne comme le front. Il utilise les mêmes chemins sauf pour les templates et les fichiers de traductions.</p>
+		<p>Chaque classe fourni les éléments nécessaires à leur gestion.</p>
+		<p>Pour faire simple :</p>
+		<ul class="cog-tools">
+			<li><strong>https://dev-admin.myWebsite.com</strong> permet d'accéder au backoffice en version de développement.</li>
+			<li><strong>https://dev.myWebsite.com</strong> permet d'accéder à l'application en version de développement.</li>
+			<li><strong>https://admin.myWebsite.com</strong> permet d'accéder au backoffice en version de production.</li>
+			<li><strong>https://myWebsite.com</strong> permet d'accéder à l'application en version de production.</li>
+		</ul>
+		<p>Cette manière de faire permet la gestion de brouillons par exemple et donne toute sa dimension à la notion de framework.</p>
+	</article>
+	<!-- /Article -->
+	<!-- Sidebar créer un widget -->
+	<aside class="col-sm-4 sidebar sidebar-right">
+		<div class="widget">
+			<p class="txt-center">
+				<a href="/img/contents/doc/dashbord.png" rel="cbox" title="Exemple d'accueil du backoffice" class="cbox">
+                    <img src="/img/contents/doc/dashbord.png" alt="Exemple d'accueil du backoffice" class="img-rounded" />
+                </a>
+			</p>
+		</div>
+	</aside>
+	<!-- /Sidebar -->
+</div>
+<hr />
+<div class="row">
+	<article class="col-sm-8 maincontent">
+		<h3>Authentification</h3>
+		<p>Dans la classe <strong>class.AdminAuthMgr.php</strong>, il est indispensable de mettre en place la politique de sécurité de l'application ; la résolution des mots de passe.</p>
+		<p>Un système a été mis en place pour vous offirir une solution qui fonctionne en l'état, le champs est libre, vous pouvez faire comme bon vous semble.</p>
+		<p><strong>Attention :</strong> N'oubliez pas qu'en l'état, tout le monde connait votre politique de mot de passe.</p>
+		<p>Un système de double authentification par email est prêt à être intégré, à vous de le mettre en place selon vos exigences de sécurité.</p>
+	</article>
+	<!-- /Article -->
+	<!-- Sidebar créer un widget -->
+	<aside class="col-sm-4 sidebar sidebar-right">
+		<div class="widget">
+			<p class="txt-center">
+				<a href="/img/contents/doc/authFunctions.png" rel="cbox" title="fonctions d'authentification à coder" class="cbox">
+                    <img src="/img/contents/doc/authFunctions.png" alt="fonctions d'authentification à coder" class="img-rounded" />
+                </a>
+			</p>
+		</div>
+	</aside>
+	<!-- /Sidebar -->
+</div>
+<div class="row">
+	<article class="col-sm-8 maincontent ">
+		<h3>Initialisation du compte sysAdmin</h3>
+		<p>Afin de pouvoir vous connecter au backoffice, vous allez devoir paramétrer le fichier <strong>Core/data/rights.xml</strong>.</p>
+		<p>En effet, ce dernier renseigne l'identifiant, le mot de passe ainsi que le rôle de chaque utilisateur.</p>
+		<p>L'encryptage du mot de passe est assuré par la méthode <code class="language-php">Toolz_Crypt::getSha1ForHtpasswd($sPwd)</code> (sans le salt si vous en ajoutez un).</p>
+	</article>
+	<!-- /Article -->
+	<!-- Sidebar créer un widget -->
+	<aside class="col-sm-4 sidebar sidebar-right">
+		<div class="widget">
+			<p class="txt-center">
+				<a href="/img/contents/doc/rights.png" rel="cbox" title="fichier des authentifications" class="cbox">
+                    <img src="/img/contents/doc/rights.png" alt="fichier des authentifications" class="img-rounded" />
+                </a>
+			</p>
+		</div>
+	</aside>
+	<!-- /Sidebar -->
+</div>
+<hr />
+<div class="row">
+	<article class="col-sm-8 maincontent">
+		<h3>Gestion des utilisateurs</h3>
+		<p>Le backoffice embarque un système de gestion des utilisateurs avec deux niveaux de droits : "user" et "sysAdmin".</p>
+		<p>Les droits du niveau "user" permettent d'accéder :</p>
+		<ul class="cog-tools">
+			<li>Au tableau de bord.</li>
+			<li>Aux modules installés.</li>
+			<li>A la gestion des pages.</li>
+			<li>A la gestion des traductions.</li>
+			<li>A son compte utilisateur pour changer de mot de passe.</li>
+		</ul>
+		<p>Les droits du niveau "sysAdmin" permettent d'accéder :</p>
+		<ul class="cog-tools">
+			<li>Aux mêmes droits que le niveau "user".</li>
+			<li>Aux configurations.</li> 
+			<li>Aux routes.</li>
+			<li>Aux logs d'erreur.</li>
+			<li>A la gestion du cache.</li>
+			<li>A la purge forcée des sessions expirées.</li>
+		</ul>
+		<p>Un utilisateur avec les droits "sysAdmin" peut obtenir un lien donnant l'accès "sysAdmin" valable une heure à un utilisateur de type "user".</p>
+		<p>Lors de la sauvegarde d'un ajout ou d'une modification, pour la version de développement, le fichier <strong>.htpasswd</strong> est également régénéré (pour Apache uniquement).</p>
+	</article>
+	<!-- /Article -->
+	<!-- Sidebar créer un widget -->
+	<aside class="col-sm-4 sidebar sidebar-right">
+		<div class="widget">
+			<p class="txt-center">
+				<a href="/img/contents/doc/userMgr.png" rel="cbox" title="interface de gestion des utilisateurs" class="cbox">
+                    <img src="/img/contents/doc/userMgr.png" alt="interface de gestion des utilisateurs" class="img-rounded" />
+                </a>
+			</p>
+			<p class="txt-center">
+				<a href="/img/contents/doc/sysAdminLink.png" rel="cbox" title="lien d'accès à la partie système" class="cbox">
+                    <img src="/img/contents/doc/sysAdminLink.png" alt="lien d'accès à la partie système" class="img-rounded" />
+                </a>
+			</p>
+		</div>
+	</aside>
+	<!-- /Sidebar -->
+</div>
+<hr />
+<div class="row">
+	<article class="col-sm-8 maincontent">
+		<h3>Logs d'erreurs</h3>
+		<p>Le backoffice propose un système de consultation des erreurs.</p>
+		<p>Il permet :</p>
+		<ul class="cog-tools">
+			<li>D'accéder au fichiers de logs.</li>
+			<li>De voir sur un graphique le nombre d'erreur par jour.</li>
+			<li>De purger les anciens fichiers de logs.</li>
+			<li>La durée de conservation des fichiers de logs et paramétrable dans la configuration globale de minim.</li>
+		</ul>
+	</article>
+	<!-- /Article -->
+	<!-- Sidebar créer un widget -->
+	<aside class="col-sm-4 sidebar sidebar-right">
+		<div class="widget">
+			<p class="txt-center">
+				<a href="/img/contents/doc/errorLogs.png" rel="cbox" title="interface de gestion des logs" class="cbox">
+                    <img src="/img/contents/doc/errorLogs.png" alt="interface de gestion des logs" class="img-rounded" />
+                </a>
+			</p>
+		</div>
+	</aside>
+	<!-- /Sidebar -->
+</div>
+<hr />
+<div class="row">
+	<article class="col-sm-8 maincontent">
+		<h3>Les traductions</h3>
+		<p>Le backoffice propose une interface de gestion des traductions.</p>
+		<p>Elle permet de traduite les différentes pages côté back ou côté front.</p>
+		<p>Vous pouvez choisir </p>
+		<ul class="cog-tools">
+			<li>la page à traduire</li>
+			<li>la langue de référence</li>
+			<li>la langue à traduire</li>
+		</ul>
+		<p>Un petit outil a été ajouté dans la zone de saisie pour vous permettre d'ajouter des liens, de mettre en gras, etc.</p>
+		<p>Une fois votre contenu traduit, vous devez le sauvegarder. Cette sauvegarde ne modifiera pas le front immédiatement, mais créera ou mettra à jour un brouillon.</p>
+	</article>
+	<!-- /Article -->
+	<!-- Sidebar créer un widget -->
+	<aside class="col-sm-4 sidebar sidebar-right">
+		<div class="widget">
+			<p>
+				<a href="/img/contents/doc/translate.png" rel="cbox" title="interface de gestion des traductions" class="cbox">
+                    <img src="/img/contents/doc/translate.png" alt="interface de gestion des traductions" class="img-rounded" />
+                </a>
+			</p>
+			<p>
+				Le titre nous indique ici que nous travaillons déjà sur un brouillon.
+			</p>
+			<p>
+				<a href="/img/contents/doc/summernote.png" rel="cbox" title="summernote" class="cbox">
+                    <img src="/img/contents/doc/summernote.png" alt="summernote" class="img-rounded" />
+                </a>
+			</p>
+		</div>
+	</aside>
+	<!-- /Sidebar -->
+</div>
+<hr />
+<div class="row">
+	<article class="col-sm-8 maincontent">
+		<h3>Les brouillons / versions</h3>
+		<p>Minim embarque un système de gestion des brouillons.</p>
+		<p>En effet, lorsque vous enregistrez une traduction, un brouillon est généré.</p>
+		<p>À tout moment, vous pouvez réinitialiser ce brouillons avec les données en production.</p>
+		<p>Si vous décidez de le publier, alors, une sauvegarde de la version en cours sera générée puis votre version passera en production.</p>
+		<p>Ces versions sont stockées par défaut, vous pouvez appliquer la version de votre choix en cas de problème, vous pouvez également prévisualiser ou supprimer des versions dont vous n'avez plus besoin.</p>
+		<p>Vous pouvez également utiliser ce système à d'autres fins, comme modifier certain textes pour des périodes données ; il vous suffit d'appliquer la version désirée au moment désiré.</p>
+	</article>
+	<!-- /Article -->
+	<!-- Sidebar créer un widget -->
+	<aside class="col-sm-4 sidebar sidebar-right">
+		<div class="widget">
+			<p class="txt-center">
+				<a href="/img/contents/doc/versions.png" rel="cbox" title="interface de gestion des versions" class="cbox">
+                    <img src="/img/contents/doc/versions.png" alt="interface de gestion des versions" class="img-rounded" />
+                </a>
+			</p>
+		</div>
+	</aside>
+	<!-- /Sidebar -->
+</div>
+<hr />
+<div class="row">
+	<article class="col-sm-8 maincontent">
+		<h3>Le sitemap</h3>
+		<p>Le sitemap est généré automatiquement si vous le souhaitez.</p>
+		<p>Il tient compte des pages statiques mais aussi des pages dynamiques (accessibles via des routes).</p>
+		<p>Cette interface vous permet à tout moment de consulter l'état actuel et de régénérer le sitemap de votre site/application si besoin.</p>
+		<p>La section <strong>robots.txt</strong> n'est là qu'à titre informatif, ce fichier est à renseigner par vos soins.</p>
+	</article>
+	<!-- /Article -->
+	<!-- Sidebar créer un widget -->
+	<aside class="col-sm-4 sidebar sidebar-right">
+		<div class="widget">
+			<p class="txt-center">
+				<a href="/img/contents/doc/sitemap.png" rel="cbox" title="interface de gestion du sitemap" class="cbox">
+                    <img src="/img/contents/doc/sitemap.png" alt="interface de gestion du sitemap" class="img-rounded" />
+                </a>
+			</p>
+		</div>
+	</aside>
+	<!-- /Sidebar -->
+</div>
+<hr />
+<div class="row">
+	<article class="col-sm-8 maincontent">
+		<h3>Accueil système</h3>
+		<p>Cette section n'est disponible qu'aux utilisateurs de type <strong>sysAdmin</strong>.</p>
+		<p>Elle permet d'accéder à toutes les fonctionnalités sensibles de minim (gestion des utilisateurs, des configurations...).</p>
+		<p>Le backoffice n'offre pas les mêmes fonctionnalités en fonction du niveau de droit.</p>
+		<p>Sur cette interface, vous pouvez voir l'ensemble des routes mises en place, avoir accès aux différents outils système, etc.</p>
+	</article>
+	<!-- /Article -->
+	<!-- Sidebar créer un widget -->
+	<aside class="col-sm-4 sidebar sidebar-right">
+		<div class="widget">
+			<p class="txt-center">
+				<a href="/img/contents/doc/systemHome.png" rel="cbox" title="interface de gestion du système" class="cbox">
+                    <img src="/img/contents/doc/systemHome.png" alt="interface de gestion du système" class="img-rounded" />
+                </a>
+			</p>
+		</div>
+	</aside>
+	<!-- /Sidebar -->
+</div>
+<hr />
+<div class="row">
+	<article class="col-sm-8 maincontent">
+		<h3>?</h3>
+		<p>Cette page regroupe les différentes fonctionnalités de minim.</p>
+		<p>Vous y trouverez également le numéro de version.</p>
+		<p>Enfin, un titre du groupe Broadcast qui a influencé le choix du nom de ce petit framework.</p>
+	</article>
+	<!-- /Article -->
+	<!-- Sidebar créer un widget -->
+	<aside class="col-sm-4 sidebar sidebar-right">
+		<div class="widget">
+			<p class="txt-center">
+				<a href="/img/contents/doc/minimPage.png" rel="cbox" title="page à propos" class="cbox">
+                    <img src="/img/contents/doc/minimPage.png" alt="page à propos" class="img-rounded" />
+                </a>
+			</p>
+		</div>
+	</aside>
+	<!-- /Sidebar -->
+</div>

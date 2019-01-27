@@ -1,0 +1,1 @@
+<iframe src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fminim.webearthquake.com&amp;width=20&amp;layout=button_count&amp;action=like&amp;show_faces=true&amp;share=true&amp;height=21" scrolling="no" frameborder="0" style="border:none; overflow:hidden; height:20px; width:100%;" allowTransparency="true"></iframe>

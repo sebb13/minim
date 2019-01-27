@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<translations>
+	<PLAY_PREVIOUS><![CDATA[Play previous]]></PLAY_PREVIOUS>
+	<PREVIOUS><![CDATA[Previous]]></PREVIOUS>
+	<START_READING><![CDATA[Start reading]]></START_READING>
+	<PLAY><![CDATA[Play]]></PLAY>
+	<SET_PAUSED><![CDATA[Set paused]]></SET_PAUSED>
+	<PAUSE><![CDATA[Pause]]></PAUSE>
+	<PLAY_NEXT><![CDATA[Play next]]></PLAY_NEXT>
+	<NEXT><![CDATA[Next]]></NEXT>
+	<STOP_READING><![CDATA[Stop reading]]></STOP_READING>
+	<STOP><![CDATA[Stop]]></STOP>
+	<MUTE><![CDATA[Mute]]></MUTE>
+	<SOUND><![CDATA[Sound]]></SOUND>
+	<MAX_VOLUME><![CDATA[Max volume !]]></MAX_VOLUME>
+	<MIX><![CDATA[Mix]]></MIX>
+	<STOP_MIX><![CDATA[Stop mix]]></STOP_MIX>
+	<REPEAT><![CDATA[Repeat]]></REPEAT>
+	<STOP_REPEAT><![CDATA[Stop repeat]]></STOP_REPEAT>
+	<PLAYER_DOES_NOT_WORK><![CDATA[Oops! The player does not work !]]></PLAYER_DOES_NOT_WORK>
+	<SHOW_PLAYLIST><![CDATA[Show playlist]]></SHOW_PLAYLIST>
+	<HIDE_PLAYLIST><![CDATA[Hide playlist]]></HIDE_PLAYLIST>
+</translations>

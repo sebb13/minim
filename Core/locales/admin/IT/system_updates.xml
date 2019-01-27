@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<translations>
+	<SYSTEM_UPDATES_TITLE><![CDATA[Aggiornamenti del sistema]]></SYSTEM_UPDATES_TITLE>
+	<NO_UPDATE_TO_INSTALL><![CDATA[Nessun aggiornamento richiesto]]></NO_UPDATE_TO_INSTALL>
+	<CHECK_DEPOSIT><![CDATA[Controlla il deposito]]></CHECK_DEPOSIT>
+	<VERSION><![CDATA[Versione]]></VERSION>
+	<NB_FILES><![CDATA[Numero di file]]></NB_FILES>
+	<CRITICALITY_LEVEL><![CDATA[Livello di criticità]]></CRITICALITY_LEVEL>
+	<CHANGELOG><![CDATA[Changelog]]></CHANGELOG>
+	<INSTALL_UPDATE><![CDATA[Installare l'aggiornamento]]></INSTALL_UPDATE>
+	<DOWNLOADED_UPDATES><![CDATA[Aggiornamenti caricati]]></DOWNLOADED_UPDATES>
+	<NO_UPDATE_AVAILABLE><![CDATA[Nessun aggiornamento disponibile]]></NO_UPDATE_AVAILABLE>
+	<UNABLE_TO_EXTRACT_UPDATE><![CDATA[Impossibile recuperare gli aggiornamenti]]></UNABLE_TO_EXTRACT_UPDATE>
+	<CONFIRM_GENERATE_UPDATES><![CDATA[Sei sicuro di voler generare questo aggiornamento?]]></CONFIRM_GENERATE_UPDATES>
+	<GENERATE_UPDATES><![CDATA[Genera aggiornamenti]]></GENERATE_UPDATES>
+	<GENERATE><![CDATA[Generare]]></GENERATE>
+	<SUCCESS_GENERATE_UPDATES><![CDATA[Tutti gli aggiornamenti generati con successo]]></SUCCESS_GENERATE_UPDATES>
+	<ERROR_GENERATE_UPDATES><![CDATA[Impossibile generare aggiornamenti]]></ERROR_GENERATE_UPDATES>
+	<WEBSITES_STATE><![CDATA[Stato dei siti web]]></WEBSITES_STATE>
+	<REPOSITORY_STATE><![CDATA[Stato repository]]></REPOSITORY_STATE>
+	<CONFIRM_INSTALL_UPDATES><![CDATA[Sei sicuro di voler installare questo aggiornamento?]]></CONFIRM_INSTALL_UPDATES>
+	<SUCCESS_INSTALL_UPDATES><![CDATA[Aggiornamento installato correttamente]]></SUCCESS_INSTALL_UPDATES>
+	<ERROR_INSTALL_UPDATES><![CDATA[Impossibile installare questo aggiornamento]]></ERROR_INSTALL_UPDATES>
+	<SUCCESS_BACKUP><![CDATA[Il backup è stato eseguito correttamente]]></SUCCESS_BACKUP>
+	<ERROR_BACKUP><![CDATA[Impossibile eseguire il backup]]></ERROR_BACKUP>
+	<ROLLBACK><![CDATA[Annulla l'aggiornamento]]></ROLLBACK>
+	<CONFIRM_ROLLBACK><![CDATA[Sei sicuro di voler annullare questo aggiornamento?]]></CONFIRM_ROLLBACK>
+	<SUCCESS_ROLLBACK><![CDATA[Il rollback è stato completato correttamente]]></SUCCESS_ROLLBACK>
+	<ERROR_ROLLBACK><![CDATA[Impossibile ripristinare]]></ERROR_ROLLBACK>
+	<PURGE_BACKUP_UPDATE><![CDATA[Eliminare il backup]]></PURGE_BACKUP_UPDATE>
+	<CONFIRM_PURGE_BACKUP_UPDATE><![CDATA[Sei sicuro di voler rimuovere il backup dall'aggiornamento?]]></CONFIRM_PURGE_BACKUP_UPDATE>
+	<SUCCESS_PURGE_BACKUP_UPDATE><![CDATA[Backup dell'aggiornamento eliminato correttamente]]></SUCCESS_PURGE_BACKUP_UPDATE>
+	<ERROR_PURGE_BACKUP_UPDATE><![CDATA[Impossibile rimuovere il backup dall'aggiornamento]]></ERROR_PURGE_BACKUP_UPDATE>
+	<SUCCESS_UPDATE_CONF><![CDATA[Configurazione aggiornata correttamente]]></SUCCESS_UPDATE_CONF>
+	<ERROR_UPDATE_CONF><![CDATA[Impossibile aggiornare la configurazione]]></ERROR_UPDATE_CONF>
+	<NO_ROLLBACK_POSSIBLE><![CDATA[Nessun rollback possibile]]></NO_ROLLBACK_POSSIBLE>
+</translations>

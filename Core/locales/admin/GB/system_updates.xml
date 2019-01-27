@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<translations>
+	<SYSTEM_UPDATES_TITLE><![CDATA[System Updates]]></SYSTEM_UPDATES_TITLE>
+	<NO_UPDATE_TO_INSTALL><![CDATA[No update to install]]></NO_UPDATE_TO_INSTALL>
+	<CHECK_DEPOSIT><![CDATA[Check deposit]]></CHECK_DEPOSIT>
+	<VERSION><![CDATA[Version]]></VERSION>
+	<NB_FILES><![CDATA[Number of files]]></NB_FILES>
+	<CRITICALITY_LEVEL><![CDATA[Criticality level]]></CRITICALITY_LEVEL>
+	<CHANGELOG><![CDATA[Changelog]]></CHANGELOG>
+	<INSTALL_UPDATE><![CDATA[Install update]]></INSTALL_UPDATE>
+	<DOWNLOADED_UPDATES><![CDATA[Downloaded update]]></DOWNLOADED_UPDATES>
+	<NO_UPDATE_AVAILABLE><![CDATA[No update available]]></NO_UPDATE_AVAILABLE>
+	<UNABLE_TO_EXTRACT_UPDATE><![CDATA[Unable to extract update]]></UNABLE_TO_EXTRACT_UPDATE>
+	<CONFIRM_GENERATE_UPDATES><![CDATA[Are you sure you want to generate this update?]]></CONFIRM_GENERATE_UPDATES>
+	<GENERATE_UPDATES><![CDATA[Generate updates]]></GENERATE_UPDATES>
+	<GENERATE><![CDATA[Generate]]></GENERATE>
+	<SUCCESS_GENERATE_UPDATES><![CDATA[All successfully generated updates]]></SUCCESS_GENERATE_UPDATES>
+	<ERROR_GENERATE_UPDATES><![CDATA[Unable to generate updates]]></ERROR_GENERATE_UPDATES>
+	<WEBSITES_STATE><![CDATA[Websites state]]></WEBSITES_STATE>
+	<REPOSITORY_STATE><![CDATA[Repository state]]></REPOSITORY_STATE>
+	<CONFIRM_INSTALL_UPDATES><![CDATA[Are you sure you want to install this update?]]></CONFIRM_INSTALL_UPDATES>
+	<SUCCESS_INSTALL_UPDATES><![CDATA[Update successfully installed]]></SUCCESS_INSTALL_UPDATES>
+	<ERROR_INSTALL_UPDATES><![CDATA[Unable to install this update]]></ERROR_INSTALL_UPDATES>
+	<SUCCESS_BACKUP><![CDATA[Backup done successfully]]></SUCCESS_BACKUP>
+	<ERROR_BACKUP><![CDATA[Unable to perform backup]]></ERROR_BACKUP>
+	<ROLLBACK><![CDATA[Cancel the update]]></ROLLBACK>
+	<CONFIRM_ROLLBACK><![CDATA[Are you sure you want to cancel this update?]]></CONFIRM_ROLLBACK>
+	<SUCCESS_ROLLBACK><![CDATA[Rollback successfully completed]]></SUCCESS_ROLLBACK>
+	<ERROR_ROLLBACK><![CDATA[Unable to rollback]]></ERROR_ROLLBACK>
+	<PURGE_BACKUP_UPDATE><![CDATA[Delete the backup]]></PURGE_BACKUP_UPDATE>
+	<CONFIRM_PURGE_BACKUP_UPDATE><![CDATA[Are you sure you want to remove the backup from the update?]]></CONFIRM_PURGE_BACKUP_UPDATE>
+	<SUCCESS_PURGE_BACKUP_UPDATE><![CDATA[Backup of the deleted update successfully]]></SUCCESS_PURGE_BACKUP_UPDATE>
+	<ERROR_PURGE_BACKUP_UPDATE><![CDATA[Unable to remove backup from update]]></ERROR_PURGE_BACKUP_UPDATE>
+	<SUCCESS_UPDATE_CONF><![CDATA[Configuration successfully updated]]></SUCCESS_UPDATE_CONF>
+	<ERROR_UPDATE_CONF><![CDATA[Unable to update configuration]]></ERROR_UPDATE_CONF>
+	<NO_ROLLBACK_POSSIBLE><![CDATA[No rollback possible]]></NO_ROLLBACK_POSSIBLE>
+</translations>

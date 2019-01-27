@@ -1,0 +1,1 @@
+<li><a href="/{##LANG##}/translations/back.html" class="ajaxLink sub_menu" id="translations_back">{__BACK__}</a></li>

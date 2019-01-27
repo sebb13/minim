@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<translations>
+	<PAGE_TITLE><![CDATA[Los registros de errores]]></PAGE_TITLE>
+	<PURGE_OLD_LOGS><![CDATA[Viejos registros de errores de purga]]></PURGE_OLD_LOGS>
+	<PURGE_OLD_LOGS_CONFIRM><![CDATA[¿Está seguro de que desea purgar los registros de errores viejos?]]></PURGE_OLD_LOGS_CONFIRM>
+	<PURGE_OLD_LOGS_SUCCESS><![CDATA[registros de errores purgados con éxito]]></PURGE_OLD_LOGS_SUCCESS>
+	<PURGE_OLD_LOGS_ERROR><![CDATA[No se pudo eliminar registros de errores viejos]]></PURGE_OLD_LOGS_ERROR>
+	<ERROR_LOGS_TITLE><![CDATA[Registros de Erreurs (ET sitio web de back office)]]></ERROR_LOGS_TITLE>
+</translations>

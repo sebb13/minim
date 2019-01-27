@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<translations>
+	<EVENTS_MGR_HOME_TITLE><![CDATA[Event Manager]]></EVENTS_MGR_HOME_TITLE>
+	<EVENTS_MGR_TITLE><![CDATA[Manage Events]]></EVENTS_MGR_TITLE>
+	<ARCHIVES_MGR_TITLE><![CDATA[Manage archives]]></ARCHIVES_MGR_TITLE>
+	<ALL_EVENTS_MGR_TITLE><![CDATA[Manage all events]]></ALL_EVENTS_MGR_TITLE>
+	<FORCING_ARCHIVING><![CDATA[Start archiving]]></FORCING_ARCHIVING>
+	<EVENT_PLACE><![CDATA[Place]]></EVENT_PLACE>
+	<EVENT_TITLE><![CDATA[Title]]></EVENT_TITLE>
+	<EVENT_DATE><![CDATA[Date]]></EVENT_DATE>
+	<EVENT_TIME><![CDATA[Time]]></EVENT_TIME>
+	<CONFIRM_TEXT><![CDATA[Are you sure you want to delete this event?]]></CONFIRM_TEXT>
+	<ADD_EVENT><![CDATA[Add]]></ADD_EVENT>
+	<EVENTS_PREVIEW><![CDATA[Preview events]]></EVENTS_PREVIEW>
+	<ARCHIVES_PREVIEW><![CDATA[Preview archives]]></ARCHIVES_PREVIEW>
+	<REMOVE_EVENT_SUCCESS><![CDATA[Event successfully deleted]]></REMOVE_EVENT_SUCCESS>
+	<SAVE_EVENT_SUCCESS><![CDATA[Event successfully saved]]></SAVE_EVENT_SUCCESS>
+	<ERROR_CAN_NOT_SAVE><![CDATA[Can not save]]></ERROR_CAN_NOT_SAVE>
+	<REMOVE_EVENT_FAILED><![CDATA[Event to delete does not exist]]></REMOVE_EVENT_FAILED>
+</translations>

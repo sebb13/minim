@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<translations>
+	<USER_MANAGER><![CDATA[Gestión de cuentas de usuario]]></USER_MANAGER>
+	<MANAGE_USER_ACCOUNTS><![CDATA[Administración de cuentas de usuario]]></MANAGE_USER_ACCOUNTS>
+	<ADD_USER><![CDATA[Agregar usuario]]></ADD_USER>
+	<USER_ACCOUNT_TYPE><![CDATA[Tipo de cuenta de usuario]]></USER_ACCOUNT_TYPE>
+	<DELETE_USER_ACCOUNT><![CDATA[Suppprimer una cuenta de usuario]]></DELETE_USER_ACCOUNT>
+	<UPDATE_USER_ACCOUNT><![CDATA[Editar cuenta de usuario]]></UPDATE_USER_ACCOUNT>
+	<CONFIRM_DELETE_USER_ACCOUNT><![CDATA[¿Está seguro de que desea eliminar este usuario?]]></CONFIRM_DELETE_USER_ACCOUNT>
+	<CONFIRM_UPDATE_USER_ACCOUNT><![CDATA[¿Está seguro de que quiere cambiar su cuenta de usuario?]]></CONFIRM_UPDATE_USER_ACCOUNT>
+	<CONFIRM_UPDATE_USER_ACCOUNTS><![CDATA[¿Está seguro de que desea editar todas las cuentas de usuario?]]></CONFIRM_UPDATE_USER_ACCOUNTS>
+	<EDIT_MY_INFORMATION><![CDATA[Cambiar la información de mi]]></EDIT_MY_INFORMATION>
+	<NEW_PWD><![CDATA[Nueva contraseña]]></NEW_PWD>
+	<ENTER_CURRENT_PWD><![CDATA[Contraseña actual]]></ENTER_CURRENT_PWD>
+	<ERROR_LOGIN_ALREADY_USED><![CDATA[Este inicio de sesión ya se utiliza]]></ERROR_LOGIN_ALREADY_USED>
+	<ERROR_LOGIN_ONLY_ALPHANUMERIC_CHAR><![CDATA[La identificación debe contener sólo caracteres alfanuméricos]]></ERROR_LOGIN_ONLY_ALPHANUMERIC_CHAR>
+	<ERROR_WRONG_PWD><![CDATA[Contraseña incorrecta]]></ERROR_WRONG_PWD>
+	<SUCCESS_GENERATED_HTPASSWD><![CDATA[.htpasswd generó correctamente]]></SUCCESS_GENERATED_HTPASSWD>
+	<ERROR_GENERATED_HTPASSWD><![CDATA[No se puede generar el archivo .htpasswd]]></ERROR_GENERATED_HTPASSWD>
+	<SUCCESS_CREATED_USER_ACCOUNT><![CDATA[Cuenta de usuario se ha creado correctamente]]></SUCCESS_CREATED_USER_ACCOUNT>
+	<ERROR_UNABLE_TO_CREATE_USER_ACCOUNT><![CDATA[No se pudo crear esta cuenta de usuario]]></ERROR_UNABLE_TO_CREATE_USER_ACCOUNT>
+	<SUCCESS_USER_ACCOUNT_EDIT_SUCCESSFULLY><![CDATA[Cuenta de usuario cambiar con éxito]]></SUCCESS_USER_ACCOUNT_EDIT_SUCCESSFULLY>
+	<ERROR_UNABLE_TO_MODIFY_USER_ACCOUNT><![CDATA[No se puede cambiar la cuenta de usuario]]></ERROR_UNABLE_TO_MODIFY_USER_ACCOUNT>
+	<SUCCESS_DELETED_USER_ACCOUNT><![CDATA[Cuenta de usuario eliminada con éxito]]></SUCCESS_DELETED_USER_ACCOUNT>
+	<ERROR_UNABLE_TO_DELETE_USER_ACCOUNT><![CDATA[No se puede eliminar esta cuenta de usuario]]></ERROR_UNABLE_TO_DELETE_USER_ACCOUNT>
+	<ERROR_TRY_DELETE_LAST_USER_ACCOUNT><![CDATA[Debe mantener al menos una cuenta de usuario]]></ERROR_TRY_DELETE_LAST_USER_ACCOUNT>
+</translations>

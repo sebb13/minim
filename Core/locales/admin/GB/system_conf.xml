@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<translations>
+	<SUCCESS_CONFIGURATION_SAVE><![CDATA[Successfully saved configuration]]></SUCCESS_CONFIGURATION_SAVE>
+	<ERROR_CAN_NOT_SAVE><![CDATA[Can not save]]></ERROR_CAN_NOT_SAVE>
+	<NO_CONFIGURATION><![CDATA[No configuration for this module]]></NO_CONFIGURATION>
+</translations>

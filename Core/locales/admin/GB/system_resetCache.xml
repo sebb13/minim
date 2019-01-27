@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<translations>
+	<FRONT><![CDATA[Reset site cache]]></FRONT>
+	<SITE_MAP><![CDATA[Reset site map]]></SITE_MAP>
+	<ADMIN><![CDATA[Reset admin cache]]></ADMIN>
+	<MODULES><![CDATA[Reset modules cache]]></MODULES>
+	<DRAFTS><![CDATA[Reset drafts cache]]></DRAFTS>
+	<DONE><![CDATA[DONE]]></DONE>
+	<ERROR><![CDATA[ERROR BUILD CACHE]]></ERROR>
+	<SUCCESS_UPDATE_CACHE><![CDATA[Cache updated successfully]]></SUCCESS_UPDATE_CACHE>
+	<ERROR_UPDATE_CACHE><![CDATA[Unable to update the Cache]]></ERROR_UPDATE_CACHE>
+</translations>

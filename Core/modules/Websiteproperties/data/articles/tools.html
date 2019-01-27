@@ -1,0 +1,279 @@
+<div class="row">
+	<article class="col-sm-12 maincontent">
+		<h2>Outils <i class="fa fa-wrench"></i></h2>
+		<p>L'un des intérêts d'utiliser un framework, c'est qu'il regroupe une panoplie d'outils pour nous simplifier la vie.<br />
+		Minim n'est pas en reste, voici une liste assez complète de ce que vous avez à votre disposition et comment tous cela s'utilise.</p>
+		<p>
+			4 types d'outils sont disponibles :
+		</p>
+		<ul class="cog-tools">
+			<li>Les fonctions dans le fichier inclus "inc.coreFunctions.php".</li>
+			<li>Les outils dans les classes "toolz".</li>
+			<li>Les outils internes de minim.</li>
+			<li>Les constantes de chemin, d'état et de configuration.</li>
+		</ul>
+	</article>
+	<!-- /Article -->
+</div>
+<hr />
+<div class="row">
+	<article class="col-sm-12 maincontent">
+		<h3>/Core/inc/inc.coreFunctions.php</h3>
+	</article>
+	<article class="col-sm-6 maincontent">
+		<ul class="cog-tools language-php">
+			<li><code>array_key_exists_assign_default( $mSearch,$aArray,$mDefault)</code>
+				<ul class="cog-2">
+					<li>Vérifie si une clé de tableau existe.</li>
+					<li>Si elle existe, elle est renvoyée.</li>
+					<li>Si elle n'existe pas, la valeur par défaut donnée en argument est renvoyée.</li>
+				</ul>
+			</li>
+			<li><code>define_exists_assign_default( $mSearch,$mDefault)</code>
+				<ul class="cog-2">
+					<li>Vérifie si une constante existe.</li>
+					<li>Si elle existe, sa valeur est renvoyée.</li>
+					<li>Si elle n'existe pas, la valeur par défaut donnée en argument est renvoyée.</li>
+				</ul>
+			</li>
+		</ul>
+	</article>
+	<article class="col-sm-6 maincontent">
+		<ul class="cog-tools language-php">
+			<li><code>akead($mSearch,$aArray,$mDefault)</code>
+				<ul class="cog-2">
+					<li>alias de array_key_exists_assign_default().</li>
+				</ul>
+			</li>
+			<li><code>dexad($mSearch,$mDefault)</code>
+				<ul class="cog-2">
+					<li>alias de define_exists_assign_default().</li>
+				</ul>
+			</li>
+			<li><code>debug($mDebug)</code>
+				<ul class="cog-2">
+					<li>Renvoie un var_dump de la valeur entre deux balises "pre".</li>
+				</ul>
+			</li>
+		</ul>
+	</article>
+</div>
+<hr />
+<div class="row">
+	<article class="col-sm-12 maincontent">
+		<h3>/Core/lib/Toolz</h3>
+		<p>Ici la liste des outils par catégorie.</p>
+		<p>Toutes les méthode ne sont pas listées, nous vous invitons à aller voir directement dans les fichiers les différentes méthodes disponibles.</p>
+		<p>Enfin, les noms des méthodes nous paraissent assez parlant pour ne pas vous détailler chaque méthode.</p>
+	</article>
+	<article class="col-sm-6 maincontent">
+		<ul class="cog-tools language-php">
+			<li>Checker
+				<ul class="cog-2">
+					<li><code>checkParams(array $aParams)</code></li>
+					<li><code>isValidMethod($sClassMethod)</code></li>
+					<li><code>checkRegExp($sStr, $sRegExp)</code></li>
+					<li><code>checkMinLength($mString, $iMinLength)</code></li>
+					<li><code>checkMaxLength($mString, $iMaxLength)</code></li>
+					<li><code>checkStrictLength($mString, $iStrictLength)</code></li>
+					<li>...</li>
+				</ul>
+			</li>
+			<li>FileSystem
+				<ul class="cog-2">
+					<li><code>getRecursivePathList($sDirPath)</code></li>
+					<li><code>getPathList($sDirPath)</code></li>
+					<li><code>purgeDir($sDirPath)</code></li>
+					<li><code>clearDir($sDir, $bDelete=false)</code></li>
+				</ul>
+			</li>
+			<li>Main
+				<ul class="cog-2">
+					<li><code>checkVersion() (si on est en dév, en test, en prod...)</code></li>
+					<li><code>getDevBanner()</code></li>
+					<li><code>getDraftBanner()</code></li>
+				</ul>
+			</li>
+			<li>Mailer
+				<ul class="cog-2">
+					<li><code>send($aOptions)</code></li>
+				</ul>
+			</li>
+			<li>Tpl
+				<ul class="cog-2">
+					<li><code>getClass($sClassName='')</code></li>
+					<li><code>getId($sId='')</code></li>
+					<li><code>getUl($sContent='', $sClass='', $sId='')</code></li>
+					<li><code>getLi($sContent='', $sClass='', $sId='')</code></li>
+					<li><code>getDiv($sContent='', $sClass='', $sId='')</code></li>
+					<li><code>getSpan($sContent='', $sClass='', $sId='')</code></li>
+					<li><code>getHx($sLevel, $sContent='', $sClass='', $sId='')</code></li>
+					<li><code>getP($sContent='', $sClass='', $sId='')</code></li>
+					<li><code>getA($sUrl, $sContent, $sClass='', $sId='', $bTargetBlank=false)</code></li>
+					<li><code>getToolTip($sContents)</code></li>
+					<li><code>getToolTipTag($sTagName)</code></li>
+					<li><code>getPaging($iNbPages, $iActivePage, $sQueryString, $bArrow=true)</code></li>
+				</ul>
+			</li>
+		</ul>
+	</article>
+	<article class="col-sm-6 maincontent">
+		<ul class="cog-tools language-php">
+			<li>Format
+				<ul class="cog-2">
+					<li><code>XssKiller(&$aValue)</code></li>
+					<li><code>formatFromSerializeArray( array $aForm)</code></li>
+					<li><code>formatFromJQuerySerialize( $sForm)</code></li>
+					<li><code>formatTanslateNodeName( $sNodeName)</code></li>
+					<li><code>sanitizeStr($mString, $aOptions = array ('addslashes', 'htmlentities'))</code></li>
+					<li><code>sanitizeInt($mString, $aOptions = array ('onlyInt'))</code></li>
+					<li><code>removeAccent($sStr)</code></li>
+					<li>...</li>
+				</ul>
+			</li>
+			<li>Crypt
+				<ul class="cog-2">
+					<li><code>getSha1ForHtpasswd($sPwd)</code></li>
+				</ul>
+			</li>
+			<li>Form
+				<ul class="cog-2">
+					<li><code>hasBeenChecked($sChoice, $sValue, array $aData)</code></li>
+					<li><code>hasBeenSelected($sChoice, $sValue, array $aData)</code></li>
+					<li><code>optionsYear($sName='', $iYear=1900, $aData='', $sChoice='')</code></li>
+					<li><code>getSelect($sName, $sId='', $sClass='')</code></li>
+					<li><code>optionsList($sChoice='', array $aData=array())</code></li>
+					<li><code>label($sDisplay, $sForID, $sClass='text-left')</code></li>
+					<li><code>input($sType, $sName, $sId, $sValue=null, $sClass='', $bReadonly=false, $sPlaceholder='')</code></li>
+					<li><code>file($sName, $sId, $sClass='')</code></li>
+					<li><code>checkbox($sName, $sId, $sValue = null, $sChoice='', array $aData=array(), $sClass='')</code></li>
+					<li><code>textarea($sName, $sId, $sValue = null, $sClass='', $sRows='', $sCols='')</code></li>
+					<li><code>genInputsHidden($sName, $sValue, $sId)</code></li>
+				</ul>
+			</li>
+			<li>Img
+				<ul class="cog-2">
+					<li><code>resize($sImgSrcPath, $iMaxSize, $sOrient='', $sImgDstPath='', $iQuality=100)</code></li>
+					<li><code>getSize($sImgSrcPath='')</code></li>
+				</ul>
+			</li>
+			<li>WebSvc
+				<ul class="cog-2">
+					<li><code>curlMinim($sUrl, $aPost, $sAuth)</code></li>
+				</ul>
+			</li>
+		</ul>
+	</article>
+</div>
+<hr />
+<div class="row">
+	<article class="col-sm-12 maincontent">
+		<h3>minim</h3>
+		<p>Minim offre des outils propres à son fonctionnement. Petite liste des outils les plus importants par classe PHP.</p>
+	</article>
+	<article class="col-sm-6 maincontent">
+		<ul class="cog-tools language-php">
+			<li>AlertBoxMgr
+				<ul class="cog-2">
+					<li><code>__set($sType, $sMsg)</code> : permet de remonter un message de succès, d'erreur ou d'information sur le front.</li>
+				</ul>
+			</li>
+			<li>Lang
+				<ul class="cog-2">
+					<li><code>getMsg($sCat, $sKey)</code> : permet de récupérer une traduction dans la langue en cours.</li>
+				</ul>
+			</li>
+			<li>ModulesMgr
+				<ul class="cog-2">
+					<li><code>getFilePath($sModuleName, $sType, $sLang='')</code> : permet de récupérer facilement le chemin d'un fichier dans un module donné.</li>
+				</ul>
+			</li>
+			<li>UserRequest
+				<ul class="cog-2">
+					<li><code>getRequest($sKey='')</code></li>
+					<li><code>getFiles($sKey='')</code></li>
+					<li><code>getLang()</code></li>
+					<li><code>getPage()</code></li>
+					<li><code>setRequest($aNewRequest)</code></li>
+					<li><code>getParams($sKey='')</code></li>
+					<li><code>setParams($sKey, $mValue)</code></li>
+					<li><code>setAllParams(array $aParams)</code></li>
+					<li><code>getCookie($sKey)</code></li>
+					<li><code>setCookie($sKey, $sValue, $sTTL)</code></li>
+					<li><code>getUrl($sPage='', $sLang='')</code></li>
+					<li><code>startBenchmark($sIndex='')</code></li>
+					<li><code>stopBenchmark($sIndex='', $bInTpl=false)</code></li>
+					<li><code>getBenchmark($sIndex='', $bInTpl=false)</code></li>
+				</ul>
+			</li>
+		</ul>
+	</article>
+	<article class="col-sm-6 maincontent">
+		<ul class="cog-tools language-php">
+			<li>Config (à initialiser avec le nom du module dont on veut gérer la configuration, minim par défaut)
+				<ul class="cog-2">
+					<li><code>getGlobalConf($sKey='')</code> : renvoie la clé de configuration ou toute la configuration si aucun argument.</li>
+					<li><code>setGlobalConf($sKey, $sValue)</code> : enregistre une clé dans la configuration.</li>
+				</ul>
+			</li>
+			<li>SPDO (s'initialise au démarrage avec les identifiants en configuration)
+				<ul class="cog-2">
+					<li><code>SPDO::getInstance()</code> : permet de récupérer un objet PDO (singleton).</li>
+				</ul>
+			</li>
+			<li>TplMgr
+				<ul class="cog-2">
+					<li><code>buildSimpleFileTpl($sTplPath, $sXmlPath)</code> : rempli un template avec les traductions correspondantes.</li>
+					<li><code>addCommonElements($sCache)</code> : méthode privée appelée à la génération de templates pour ajouter des valeurs comme l'URL du site par exemple.</li>
+				</ul>
+			</li>
+			<li>Session*
+				<br />dans package.Session.php, plusieurs classes permettent de gérer les sessions par type de donnée à stocker. Elles ont ces fonctions communes :
+				<ul class="cog-2">
+					<li><code>set($sKey, $mValue='')</code></li>
+					<li><code>get($sKey)</code></li>
+					<li><code>setSubSession($sSubKey, $sKey, $mValue)</code></li>
+					<li><code>getSubSession($sSubKey, $sKey)</code></li>
+					<li><code>destroy()</code></li>
+					<li><code>keyExists($sKey)</code></li>
+					<li><code>destroySubSessionKey($sSubKey, $sKey)</code></li>
+				</ul>
+			</li>
+		</ul>
+	</article>
+</div>
+<hr />
+<div class="row">
+	<article class="col-sm-12 maincontent">
+		<h3>Les constantes</h3>
+		<p>Minim offre toute une liste de constantes prédéfinies.</p>
+		<p>Elles ne sont pas toutes présentées ici, mais sont toutes déclarées dans le fichier <strong>inc.coreAutoConfig.php</strong>, n'hésitez pas à le consulter pour avoir la liste exhaustive.</p>
+		<p>Nous pouvons distinguer deux types de constantes :</p>
+	</article>
+	<article class="col-sm-6 maincontent">
+		<h4>Les constantes de chemin et d'état</h4>
+		<ul class="cog-tools language-php">
+			<li><code>ADMIN</code><br />Si l'on est en mode admin (backoffice).</li>
+			<li><code>WEB_PATH</code><br />L'URL de la racine du projet.</li>
+			<li><code>ROOT_PATH</code><br />Le chemin absolu sur le serveur de la racine du projet.</li>
+			<li><code>CORE_PATH</code><br />Le chemin absolu sur le serveur du cœur (répertoire Core) du projet.</li>
+			<li><code>IMG_URL</code><br />L'URL du répertoire des images.</li>
+			<li><code>CSS_URL</code><br />L'URL du répertoire des fichiers CSS.</li>
+			<li><code>JS_URL</code><br />L'URL du répertoire des fichiers Javascript.</li>
+			<li>...</li>
+		</ul>
+	</article>
+	<article class="col-sm-6 maincontent">
+		<h4>Les constantes de configuration</h4>
+		<ul class="cog-tools language-php">
+			<li><code>DOMAIN_NAME</code><br />Le nom de domaine du projet.</li>
+			<li><code>EMAIL_CONTACT</code><br />L'email du contact principal du projet.</li>
+			<li><code>SITE_URL_PROD</code><br />L'URL de production du projet.</li>
+			<li><code>SITE_URL_DEV</code><br />L'URL de développement du projet.</li>
+			<li><code>ADMIN_URL_PROD</code><br />L'URL de production du backoffice du projet.</li>
+			<li><code>ADMIN_URL_DEV</code><br />L'URL de développement du backoffice du projet.</li>
+			<li><code>DEFAULT_LANG</code><br />La langue par défaut du projet.</li>
+			<li>...</li>
+		</ul>
+	</article>
+</div>

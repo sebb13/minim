@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<translations>
+	<DATE_TIME_1>
+		<![CDATA[04.03.2015]]>
+	</DATE_TIME_1>
+	<DATE_PLACE_1>
+		<![CDATA[Avignon (84)]]>
+	</DATE_PLACE_1>
+	<DATE_TITLE_1>
+		<![CDATA[BIOTOP au Delirium]]>
+	</DATE_TITLE_1>
+	
+	<DATE_TIME_2>
+		<![CDATA[05.03.2015]]>
+	</DATE_TIME_2>
+	<DATE_PLACE_2>
+		<![CDATA[Nîmes (30)]]>
+	</DATE_PLACE_2>
+	<DATE_TITLE_2>
+		<![CDATA[L´instant T]]>
+	</DATE_TITLE_2>
+	
+	<DATE_TIME_3>
+		<![CDATA[06.03.2015]]>
+	</DATE_TIME_3>
+	<DATE_PLACE_3>
+		<![CDATA[Sommières (30)]]>
+	</DATE_PLACE_3>
+	<DATE_TITLE_3>
+		<![CDATA[Le bec à vin]]>
+	</DATE_TITLE_3>
+	
+	<DATE_TIME_4>
+		<![CDATA[21.03.2015]]>
+	</DATE_TIME_4>
+	<DATE_PLACE_4>
+		<![CDATA[Saint-Jean-de-Maruéjols (30)]]>
+	</DATE_PLACE_4>
+	<DATE_TITLE_4>
+		<![CDATA[La grange]]>
+	</DATE_TITLE_4>
+	
+	<DATE_TIME_5>
+		<![CDATA[17.04.2015]]>
+	</DATE_TIME_5>
+	<DATE_PLACE_5>
+		<![CDATA[Marseille (13)]]>
+	</DATE_PLACE_5>
+	<DATE_TITLE_5>
+		<![CDATA[Le théâtre de tatie]]>
+	</DATE_TITLE_5>
+	
+	<DATE_TIME_6>
+		<![CDATA[18.04.2015]]>
+	</DATE_TIME_6>
+	<DATE_PLACE_6>
+		<![CDATA[Marseille (13)]]>
+	</DATE_PLACE_6>
+	<DATE_TITLE_6>
+		<![CDATA[Le théâtre de tatie]]>
+	</DATE_TITLE_6>
+</translations>

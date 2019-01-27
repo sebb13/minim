@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<concat_css>
+	<minim>
+		<file>
+			<url><![CDATA[lang.css]]></url>
+			<level><![CDATA[0]]></level>
+			<role><![CDATA[front]]></role>
+		</file>
+		<file>
+			<url><![CDATA[minim.front.css]]></url>
+			<level><![CDATA[1]]></level>
+			<role><![CDATA[front]]></role>
+		</file>
+		<file>
+			<url><![CDATA[lang.admin.css]]></url>
+			<level><![CDATA[0]]></level>
+			<role><![CDATA[back]]></role>
+		</file>
+		<file>
+			<url><![CDATA[minim.back.css]]></url>
+			<level><![CDATA[1]]></level>
+			<role><![CDATA[back]]></role>
+		</file>
+	</minim>
+	<Contact>
+		<file>
+			<url><![CDATA[contact.front.css]]></url>
+			<level><![CDATA[0]]></level>
+			<role><![CDATA[front]]></role>
+		</file>
+		<file>
+			<url><![CDATA[contact.back.css]]></url>
+			<level><![CDATA[0]]></level>
+			<role><![CDATA[back]]></role>
+		</file>
+	</Contact>
+	<Websiteproperties>
+		<file>
+			<url><![CDATA[websiteproperties.front.css]]></url>
+			<level><![CDATA[0]]></level>
+			<role><![CDATA[front]]></role>
+		</file>
+	</Websiteproperties>
+</concat_css>

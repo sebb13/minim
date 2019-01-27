@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<translations>
+    <TEL><![CDATA[Phone]]></TEL>
+    <FOLLOW_ME><![CDATA[Follow me]]></FOLLOW_ME>
+	<CONTACT_FRONT_TITLE><![CDATA[To contact me,<br /> please fill out the form below:]]></CONTACT_FRONT_TITLE>
+	<MANDATORY_FIELD><![CDATA[* Required fields]]></MANDATORY_FIELD>
+	<CONTACT_NAME_LABEL><![CDATA[Name]]></CONTACT_NAME_LABEL>
+	<CONTACT_EMAIL_LABEL><![CDATA[Email]]></CONTACT_EMAIL_LABEL>
+	<CONTACT_SUBJECT_LABEL><![CDATA[Subject]]></CONTACT_SUBJECT_LABEL>
+	<CONTACT_MSG_LABEL><![CDATA[Message]]></CONTACT_MSG_LABEL>
+	<CONTACT_FILE_LABEL><![CDATA[Add file]]></CONTACT_FILE_LABEL>
+	<CONTACT_SEND_LABEL><![CDATA[Send]]></CONTACT_SEND_LABEL>
+	<ERROR_MISSING_NAME><![CDATA[You must fill in your name]]></ERROR_MISSING_NAME>
+	<ERROR_MISSING_EMAIL><![CDATA[You must fill in your email]]></ERROR_MISSING_EMAIL>
+	<ERROR_MISSING_MSG><![CDATA[You did not enter a message]]></ERROR_MISSING_MSG>
+	<ERROR_SEND_MSG><![CDATA[An error has occurred]]></ERROR_SEND_MSG>
+	<SUCCESS_SEND_MSG><![CDATA[Your message has been sent, thank you !]]></SUCCESS_SEND_MSG>
+</translations>

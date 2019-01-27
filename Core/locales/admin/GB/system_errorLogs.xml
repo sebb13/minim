@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<translations>
+	<PAGE_TITLE><![CDATA[Error logs]]></PAGE_TITLE>
+	<PURGE_OLD_LOGS><![CDATA[Purge old error logs]]></PURGE_OLD_LOGS>
+	<PURGE_OLD_LOGS_CONFIRM><![CDATA[Are you sure you want to purge old error logs?]]></PURGE_OLD_LOGS_CONFIRM>
+	<PURGE_OLD_LOGS_SUCCESS><![CDATA[Error logs purged successfully]]></PURGE_OLD_LOGS_SUCCESS>
+	<PURGE_OLD_LOGS_ERROR><![CDATA[Could not flush old error logs]]></PURGE_OLD_LOGS_ERROR>
+	<ERROR_LOGS_TITLE><![CDATA[Error logs (website and back office]]></ERROR_LOGS_TITLE>
+</translations>

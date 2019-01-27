@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<translations>
+	<HOME><![CDATA[Home]]></HOME>
+	<MODULES><![CDATA[Modules]]></MODULES>
+	<CONTACT><![CDATA[Contact]]></CONTACT>
+	<MEDIAS><![CDATA[Medias]]></MEDIAS>
+	<NEWS><![CDATA[News]]></NEWS>
+	<EVENTS><![CDATA[Dates]]></EVENTS>
+	<PLAYER><![CDATA[Player]]></PLAYER>
+	<LINKS><![CDATA[Links]]></LINKS>
+	<PAGES><![CDATA[Pages]]></PAGES>
+	<PAGES_CONFIGURATION><![CDATA[Configuration]]></PAGES_CONFIGURATION>
+	<PAGES_VERSIONS><![CDATA[Versions]]></PAGES_VERSIONS>
+	<TRANSLATIONS><![CDATA[Translations]]></TRANSLATIONS>
+	<SYSTEM><![CDATA[System]]></SYSTEM>
+	<ABSTRACT><![CDATA[Abstract]]></ABSTRACT>
+	<GLOBAL_CONF><![CDATA[Global configuration]]></GLOBAL_CONF>
+	<RESTE_CACHE><![CDATA[Reset cache]]></RESTE_CACHE>
+	<LOGS><![CDATA[Get today's logs]]></LOGS>
+	<ERROR_LOGS><![CDATA[Get error logs]]></ERROR_LOGS>
+	<SYS_UPDATES><![CDATA[System Updates]]></SYS_UPDATES>
+	<SESSION_GC><![CDATA[Clean old sessions]]></SESSION_GC>
+	<MANAGE_ROUTES><![CDATA[Manage routes]]></MANAGE_ROUTES>
+	<MANAGE_USERS><![CDATA[Manage users]]></MANAGE_USERS>
+</translations>

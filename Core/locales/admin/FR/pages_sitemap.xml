@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<translations>
+	<SITEMAP_PAGE_TITLE><![CDATA[Plan du site]]></SITEMAP_PAGE_TITLE>
+	<SITEMAP_TITLE><![CDATA[Plan du site]]></SITEMAP_TITLE>
+	<SITEMAP_XML_TITLE><![CDATA[Plan du site actuel]]></SITEMAP_XML_TITLE>
+	<LAST_MOD_LABEL><![CDATA[Dernière modification]]></LAST_MOD_LABEL>
+	<REGENERATE_SITEMAP><![CDATA[Régénérer le plan du site]]></REGENERATE_SITEMAP>
+	<REGENERATE_SITEMAP_CONFIRM><![CDATA[Êtes vous sûr de vouloir régénérer le sitemap ?]]></REGENERATE_SITEMAP_CONFIRM>
+	<SUCCESS_REGENERATE_SITEMAP><![CDATA[Sitemap régénéré avec succès]]></SUCCESS_REGENERATE_SITEMAP>
+	<ERROR_REGENERATE_SITEMAP><![CDATA[Imopssible de régénérer le sitemap]]></ERROR_REGENERATE_SITEMAP>
+</translations>

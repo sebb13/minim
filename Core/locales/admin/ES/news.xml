@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<translations>
+	<NEWS_HOME_TITLE><![CDATA[Gerente de Noticias]]></NEWS_HOME_TITLE>
+	<NEWS_FEED><![CDATA[Cable de noticias]]></NEWS_FEED>
+	<ADD_NEWS_THREAD><![CDATA[Añadir hilo de noticias]]></ADD_NEWS_THREAD>
+	<ADD_THREAD><![CDATA[Añadir subproceso]]></ADD_THREAD>
+	<NEW_THREAD_NAME><![CDATA[Nombre del nuevo hilo]]></NEW_THREAD_NAME>
+	<SUCCESS_ADD_THREAD><![CDATA[Con el añadido con éxito]]></SUCCESS_ADD_THREAD>
+	<ERROR_ADD_THREAD><![CDATA[No se puede agregar el alambre]]></ERROR_ADD_THREAD>
+	<ERROR_THREAD_ALREADY_EXISTS><![CDATA[Este hilo ya es]]></ERROR_THREAD_ALREADY_EXISTS>
+	<DELETE_THREAD><![CDATA[Eliminar este hilo]]></DELETE_THREAD>
+	<CONFIRM_DELETE_THREAD><![CDATA[¿Está seguro de que quiere eliminar este hilo?]]></CONFIRM_DELETE_THREAD>
+	<SUCCESS_DELETE_THREAD><![CDATA[Alambre eliminado correctamente]]></SUCCESS_DELETE_THREAD>
+	<ERROR_DELETE_THREAD><![CDATA[No se puede quitar el alambre]]></ERROR_DELETE_THREAD>
+	<CREATE_NEWS><![CDATA[Crear noticias]]></CREATE_NEWS>
+	<SEARCH_NEWS><![CDATA[Buscar una noticia]]></SEARCH_NEWS>
+	<DATE_LABEL><![CDATA[Fecha]]></DATE_LABEL>
+	<TIME_LABEL><![CDATA[Tiempo]]></TIME_LABEL>
+	<MAIN_TEXT_LABEL><![CDATA[Texto principal]]></MAIN_TEXT_LABEL>
+	<HASHTAGS_LABEL><![CDATA[Hashtags]]></HASHTAGS_LABEL>
+	<IMG_URL_THUMB_LABEL><![CDATA[URL de la imagen de previsualización]]></IMG_URL_THUMB_LABEL>
+	<IMG_URL_LABEL><![CDATA[URL de la imagen]]></IMG_URL_LABEL>
+	<IMG_LINK_LABEL><![CDATA[Enlace que refleja la imagen]]></IMG_LINK_LABEL>
+	<IMG_TITLE_LABEL><![CDATA[Título de imagen]]></IMG_TITLE_LABEL>
+	<MEDIA_LABEL><![CDATA[Medios]]></MEDIA_LABEL>
+	<SUCCESS_ADD_NEWS><![CDATA[Noticias agregó correctamente]]></SUCCESS_ADD_NEWS>
+	<ERROR_ADD_NEWS><![CDATA[No se puede agregar las noticias]]></ERROR_ADD_NEWS>
+	<SUCCESS_PUBLISH_NEWS><![CDATA[News publicó con éxito]]></SUCCESS_PUBLISH_NEWS>
+	<ERROR_PUBLISH_NEWS><![CDATA[No se puede publicar la noticia]]></ERROR_PUBLISH_NEWS>
+	<SUCCESS_REMOVE_NEWS><![CDATA[Noticias de conmutación por error con éxito]]></SUCCESS_REMOVE_NEWS>
+	<ERROR_REMOVE_NEWS><![CDATA[No se puede dar vuelta las noticias en línea]]></ERROR_REMOVE_NEWS>
+	<SUCCESS_UPDATE_NEWS><![CDATA[Noticias guardado correctamente]]></SUCCESS_UPDATE_NEWS>
+	<ERROR_UPDATE_NEWS><![CDATA[No se puede guardar la noticia]]></ERROR_UPDATE_NEWS>
+	<SUCCESS_TRANSLATE_NEWS><![CDATA[Traducido con éxito de noticias]]></SUCCESS_TRANSLATE_NEWS>
+	<ERROR_TRANSLATE_NEWS><![CDATA[No se ha podido traducir la noticia]]></ERROR_TRANSLATE_NEWS>
+</translations>

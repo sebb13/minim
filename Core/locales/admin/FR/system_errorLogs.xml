@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<translations>
+	<PAGE_TITLE><![CDATA[Journaux d'erreur]]></PAGE_TITLE>
+	<PURGE_OLD_LOGS><![CDATA[Purger les anciens journaux d'erreur]]></PURGE_OLD_LOGS>
+	<PURGE_OLD_LOGS_CONFIRM><![CDATA[Êtes-vous sûr de vouloir purger les anciens journaux d'erreur ?]]></PURGE_OLD_LOGS_CONFIRM>
+	<PURGE_OLD_LOGS_SUCCESS><![CDATA[Journaux d'erreur purgés avec succès]]></PURGE_OLD_LOGS_SUCCESS>
+	<PURGE_OLD_LOGS_ERROR><![CDATA[Impossible de purger les anciens journaux d'erreur]]></PURGE_OLD_LOGS_ERROR>
+	<ERROR_LOGS_TITLE><![CDATA[Logs d'erreurs (site web et back office)]]></ERROR_LOGS_TITLE>
+</translations>

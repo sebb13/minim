@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<translations>
+	<EVENTS_MGR_HOME_TITLE><![CDATA[Event manager]]></EVENTS_MGR_HOME_TITLE>
+	<EVENTS_MGR_TITLE><![CDATA[Gestire gli eventi]]></EVENTS_MGR_TITLE>
+	<ARCHIVES_MGR_TITLE><![CDATA[Gestire gli archivi]]></ARCHIVES_MGR_TITLE>
+	<ALL_EVENTS_MGR_TITLE><![CDATA[Gestire tutti gli eventi]]></ALL_EVENTS_MGR_TITLE>
+	<FORCING_ARCHIVING><![CDATA[Inizia l'archiviazione]]></FORCING_ARCHIVING>
+	<EVENT_PLACE><![CDATA[Posto]]></EVENT_PLACE>
+	<EVENT_TITLE><![CDATA[Titolo]]></EVENT_TITLE>
+	<EVENT_DATE><![CDATA[Data]]></EVENT_DATE>
+	<EVENT_TIME><![CDATA[Tempo]]></EVENT_TIME>
+	<CONFIRM_TEXT><![CDATA[Sei sicuro di voler cancellare questo evento?]]></CONFIRM_TEXT>
+	<ADD_EVENT><![CDATA[Aggiungere]]></ADD_EVENT>
+	<EVENTS_PREVIEW><![CDATA[Eventi anteprima]]></EVENTS_PREVIEW>
+	<ARCHIVES_PREVIEW><![CDATA[Archivi anteprima]]></ARCHIVES_PREVIEW>
+	<REMOVE_EVENT_SUCCESS><![CDATA[Evento cancellato con successo]]></REMOVE_EVENT_SUCCESS>
+	<SAVE_EVENT_SUCCESS><![CDATA[Evento salvato con successo]]></SAVE_EVENT_SUCCESS>
+	<REMOVE_EVENT_FAILED><![CDATA[Evento da cancellare non esiste]]></REMOVE_EVENT_FAILED>
+</translations>

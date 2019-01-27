@@ -1,0 +1,1 @@
+<script src="{__URL__}" {__MISC__}></script>

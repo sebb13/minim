@@ -1,0 +1,120 @@
+<div class="row">
+	<article class="col-sm-12 maincontent">
+		<h2>Configurations <i class="fa fa-cog"></i></h2>
+		<p>Un certain nombre de choses sont à paramétrer pour que tout se passe bien, surtout au niveau du cache.</p>
+	</article>
+	<!-- /Article -->
+</div>
+<hr />
+<div class="row">
+	<article class="col-sm-8 maincontent">
+		<h3>minim</h3>
+		<p>Sur cette interface, vous pouvez configurer les données principales de votre application.</p>
+		<p>Les valeurs renseignées ici sont utilisées à bon nombre d'endroits dans le code, il convient donc d'être minutieux avec ces données.</p>
+		<p>Les bulles d'aide de cette interface ne sont pas encore toutes disponibles.</p>
+		<p>Vous pouvez configurer :</p>
+		<ul class="cog-tools">
+			<li><strong>DOMAIN_NAME :</strong> Le nom de domaine.</li>
+			<li><strong>EMAIL_CONTACT :</strong> L'email du contact principal.</li>
+			<li><strong>SITE_URL_PROD :</strong> L'URL de production de l'application.</li>
+			<li><strong>SITE_URL_DEV :</strong> L'URL de développement de l'application.</li>
+			<li><strong>ADMIN_URL_PROD :</strong> L'URL de production du backoffice l'application.</li>
+			<li><strong>ADMIN_URL_DEV :</strong> L'URL de développement du backoffice l'application.</li>
+			<li><strong>STATIC_SERVER_URL :</strong> L'URL de production du serveur statique de l'application.</li>
+			<li><strong>STATIC_DEV_SERVER_URL :</strong> L'URL de développement du serveur statique de l'application.</li>
+			<li><strong>ERROR_MAIL :</strong> L'email du contact concerné par les erreurs de l'application.</li>
+			<li><strong>DEFAULT_LANG :</strong> La langue par défaut de l'application.</li>
+			<li><strong>LOGS_TTL :</strong> La durée de vie des logs d'erreurs.</li>
+			<li><strong>MAINTENANCE :</strong> Si l'application est en maintenance ou non.</li>
+			<li><strong>SYS_DB_NEED :</strong> Si l'application nécessite une base de données.</li>
+			<li><strong>SYS_DB_HOST :</strong> Adresse de la basse de données.</li>
+			<li><strong>SYS_DB_TYPE :</strong> Type de base de données (mySQL, postgreSQL, msSQL...).</li>
+			<li><strong>SYS_DB_USER :</strong> Utilisateur.</li>
+			<li><strong>SYS_DB_PWD :</strong> Mot de passe.</li>
+			<li><strong>SYS_DB_PROD_DATABASE :</strong> Nom de la base de données de production.</li>
+			<li><strong>SYS_DB_DEV_DATABASE :</strong> Nom de la base de données de développement.</li>
+		</ul>
+	</article>
+	<!-- /Article -->
+	<!-- Sidebar créer un widget -->
+	<aside class="col-sm-4 sidebar sidebar-right">
+		<div class="widget">
+			<p class="txt-center">
+				<a href="/img/contents/doc/minimConf.png" rel="cbox" title="interface de configuration de minim" class="cbox">
+                    <img src="/img/contents/doc/minimConf.png" alt="interface de configuration de minim" class="img-rounded" />
+                </a>
+			</p>
+		</div>
+	</aside>
+	<!-- /Sidebar -->
+</div>
+<hr />
+<div class="row">
+	<article class="col-sm-8 maincontent">
+		<h3>Les pages</h3>
+		<p>Sur cette interface, vous pouvez configurer les métadonnées de vos pages.</p>
+		<p>Les pages sont listées automatiquement si elles sont en cache.</p>
+		<p>Pour les pages dynamiques, vous pouvez ajouter une configuration spécifique, sinon, ce sera la configuration par défaut qui sera appliquée.</p>
+		<p>Les bulles d'aide de cette interface ne sont pas encore toutes disponibles.</p>
+		<p>Vous pouvez configurer :</p>
+		<ul class="cog-tools">
+			<li>Les robots (index, noindex, etc).</li>
+			<li>Les métadonnées classiques.</li>
+			<li>Les données opengraph pour facebook.</li>
+			<li>Les données opengraph pour twitter (pas encore fonctionnel).</li>
+			<li>Les données opengraph pour google+.</li>
+			<li>La vue à utiliser.</li>
+		</ul>
+		<p>Cette interface et très facile à surcharger afin d'y ajouter les métadonnées dont vous avez besoin.</p>
+		<p>A noter : cette configuration est ensuite intégrée dans la classe <strong>class.PagesConf.php</strong> pour des raisons de performance.</p>
+	</article>
+	<!-- /Article -->
+	<!-- Sidebar créer un widget -->
+	<aside class="col-sm-4 sidebar sidebar-right">
+		<div class="widget">
+			<p class="txt-center">
+				<a href="/img/contents/doc/pageConf.png" rel="cbox" title="interface de configuration des pages" class="cbox">
+                    <img src="/img/contents/doc/pageConf.png" alt="interface de configuration des pages" class="img-rounded" />
+                </a>
+			</p>
+		</div>
+	</aside>
+	<!-- /Sidebar -->
+</div>
+<hr />
+<div class="row">
+	<article class="col-sm-8 maincontent">
+		<h3>Prise en compte des fichiers css et javascript</h3>
+		<p>Cette gestion se passe essentiellement dans la classe <strong>class.AssetsLinker.php</strong>.</p>
+		<h4>Les fichiers concat_css.xml et concat_js.xml</h4>
+		<p>Dans ces fichiers vous pouvez inclure tous les fichiers css et js de minim ainsi que de ses modules. 
+		Les inclusions sont regroupées par module et par utilité, à savoir front ou back, pour ne pas charger les css et js du back sur le front par exemple (fichier d'exemple en illustration).</p>
+		<p>Tous ces fichiers seront alors concaténés puis minifiés pour ne faire qu'un seul fichier par type : </p>
+		<ul class="cog-tools">
+			<li><strong>main.back.functions.js</strong></li>
+			<li><strong>main.back.launchers.js</strong></li>
+			<li><strong>main.front.functions.js</strong></li>
+			<li><strong>main.front.launchers.js</strong></li>
+			<li><strong>main.front.css</strong></li>
+			<li><strong>main.back.css</strong></li>
+		</ul>
+		<p>Une différence notable entre les fichiers js et css, c'est qu'il y a un niveau supplémentaire pour les fichiers javascript.</p>
+		<p>Il convient de séparer les fonctions des observateurs et autres lanceurs, les fonctions devant être chargées en premier.</p>
+		<p>Pour ce faire, un nœud dans le XML des fichiers javascript permet de préciser "functions" ou "launchers".</p>
+		<h4>Les fichiers css.xml et js.xml</h4>
+		<p>Ici, ce sont les bibliothèques et les fichiers finaux (les fichiers définis dans concat_css.xml et concat_js.xml donc) qui sont traités et inclus.</p>
+		<p>Dans les sources fournies, celles de ce site en l'occurrence, inspirez vous de la configuration et des fichiers existant pour vous faire la main puis allez voir directement dans le code comment ça se passe pour compléter, améliorer, surcharger... à votre guise !</p>
+	</article>
+	<!-- /Article -->
+	<!-- Sidebar créer un widget -->
+	<aside class="col-sm-4 sidebar sidebar-right">
+		<div class="widget">
+			<p class="text-center">
+				<a href="/img/contents/doc/concat_js.png" rel="cbox" title="concat_js.xml extrait" class="cbox">
+                    <img src="/img/contents/doc/concat_js.png" alt="concat_js.xml extrait" class="img-rounded" />
+                </a>
+			</p>
+		</div>
+	</aside>
+	<!-- /Sidebar -->
+</div>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<translations>
+	<SYS_MOD_NAME_TOOLTIP><![CDATA[Nom du module]]></SYS_MOD_NAME_TOOLTIP>
+	<SYS_MOD_VERSION_TOOLTIP><![CDATA[Version du module]]></SYS_MOD_VERSION_TOOLTIP>
+	<SYS_NEED_DB_TOOLTIP><![CDATA[Indique si le module requiert une base de données]]></SYS_NEED_DB_TOOLTIP>
+	<SYS_LAST_CACHE_TOOLTIP><![CDATA[Date de dernière mise à jour du cache de ce module]]></SYS_LAST_CACHE_TOOLTIP>
+</translations>

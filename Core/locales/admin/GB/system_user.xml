@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<translations>
+	<USER_MANAGER><![CDATA[Managing user accounts]]></USER_MANAGER>
+	<MANAGE_USER_ACCOUNTS><![CDATA[Manage user accounts]]></MANAGE_USER_ACCOUNTS>
+	<ADD_USER><![CDATA[Add user]]></ADD_USER>
+	<USER_ACCOUNT_TYPE><![CDATA[User account type]]></USER_ACCOUNT_TYPE>
+	<DELETE_USER_ACCOUNT><![CDATA[Delete a user account]]></DELETE_USER_ACCOUNT>
+	<UPDATE_USER_ACCOUNT><![CDATA[Modify a user account]]></UPDATE_USER_ACCOUNT>
+	<CONFIRM_DELETE_USER_ACCOUNT><![CDATA[Are you sure you want to delete this user account?]]></CONFIRM_DELETE_USER_ACCOUNT>
+	<CONFIRM_UPDATE_USER_ACCOUNT><![CDATA[Are you sure you want to change your user account?]]></CONFIRM_UPDATE_USER_ACCOUNT>
+	<CONFIRM_UPDATE_USER_ACCOUNTS><![CDATA[Are you sure you want to change all user accounts?]]></CONFIRM_UPDATE_USER_ACCOUNTS>
+	<EDIT_MY_INFORMATION><![CDATA[Edit my information]]></EDIT_MY_INFORMATION>
+	<NEW_PWD><![CDATA[New password]]></NEW_PWD>
+	<ENTER_CURRENT_PWD><![CDATA[Current password]]></ENTER_CURRENT_PWD>
+	<ERROR_LOGIN_ALREADY_USED><![CDATA[This login is already used]]></ERROR_LOGIN_ALREADY_USED>
+	<ERROR_LOGIN_ONLY_ALPHANUMERIC_CHAR><![CDATA[The identifier must contain only alphanumeric characters]]></ERROR_LOGIN_ONLY_ALPHANUMERIC_CHAR>
+	<ERROR_WRONG_PWD><![CDATA[Wrong password]]></ERROR_WRONG_PWD>
+	<SUCCESS_GENERATED_HTPASSWD><![CDATA[Successfully generated .htpasswd file]]></SUCCESS_GENERATED_HTPASSWD>
+	<ERROR_GENERATED_HTPASSWD><![CDATA[Unable to generate the .htpasswd file]]></ERROR_GENERATED_HTPASSWD>
+	<SUCCESS_CREATED_USER_ACCOUNT><![CDATA[Successfully created user account]]></SUCCESS_CREATED_USER_ACCOUNT>
+	<ERROR_UNABLE_TO_CREATE_USER_ACCOUNT><![CDATA[Unable to create this user account]]></ERROR_UNABLE_TO_CREATE_USER_ACCOUNT>
+	<SUCCESS_USER_ACCOUNT_EDIT_SUCCESSFULLY><![CDATA[User account edit successfully]]></SUCCESS_USER_ACCOUNT_EDIT_SUCCESSFULLY>
+	<ERROR_UNABLE_TO_MODIFY_USER_ACCOUNT><![CDATA[Unable to modify this user account]]></ERROR_UNABLE_TO_MODIFY_USER_ACCOUNT>
+	<SUCCESS_DELETED_USER_ACCOUNT><![CDATA[Successfully deleted user account]]></SUCCESS_DELETED_USER_ACCOUNT>
+	<ERROR_UNABLE_TO_DELETE_USER_ACCOUNT><![CDATA[Unable to delete this user account]]></ERROR_UNABLE_TO_DELETE_USER_ACCOUNT>
+	<ERROR_TRY_DELETE_LAST_USER_ACCOUNT><![CDATA[You must keep at least one user account]]></ERROR_TRY_DELETE_LAST_USER_ACCOUNT>
+</translations>

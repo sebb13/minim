@@ -1,0 +1,13 @@
+	.lang-button img{margin-top:-7px;margin-left:8px;border:0;}
+	.lang-button{float:left;width:30px;height:20px;text-align:left;}
+	.lang-button.on {display:table-cell;background:url("https://static.artearthquake.com/img/tab-on.gif") no-repeat 0 0;}
+	.lang-button.off {background:url("https://static.artearthquake.com/img/tab-off.gif") no-repeat 0 0;cursor:pointer;}
+	#langSwitcher {float:right;margin:20px 0 0 25px;}
+@media screen and (max-width: 767px) {
+	#langSwitcher {
+		margin:-1px 0 auto 10px ;
+	}
+    .lang-button img{
+        margin-top:-1px;
+    }            
+}

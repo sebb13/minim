@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<translations>
+	<img_label><![CDATA[image]]></img_label>
+	<audio_label><![CDATA[audio]]></audio_label>
+	<video_label><![CDATA[video]]></video_label>
+	<flux_label><![CDATA[flux]]></flux_label>
+	<embed_label><![CDATA[embarqué]]></embed_label>
+	<pdf_label><![CDATA[pdf]]></pdf_label>
+	<zip_label><![CDATA[fichier compressé]]></zip_label>
+	<MEDIA_MANAGER><![CDATA[Gestionnaire de médias]]></MEDIA_MANAGER>
+	<MEDIA_TRANSLATIONS><![CDATA[Traductions]]></MEDIA_TRANSLATIONS>
+	<MEDIA_TYPE><![CDATA[Type de média]]></MEDIA_TYPE>
+	<MANAGE_MEDIAS><![CDATA[Gérer les médias]]></MANAGE_MEDIAS>
+	<UPLOAD_MEDIA><![CDATA[Uploader le média]]></UPLOAD_MEDIA>
+	<ADD_MEDIA><![CDATA[Ajouter un média]]></ADD_MEDIA>
+	<UPDATE_MEDIA><![CDATA[Modifier un média]]></UPDATE_MEDIA>
+	<CURRENT_VALUE><![CDATA[valeur actuelle]]></CURRENT_VALUE>
+	<CONFIRM_DELETE_MEDIA><![CDATA[Êtes vous sûr de vouloir supprimer ce média ?]]></CONFIRM_DELETE_MEDIA>
+	<SEARCH_MEDIA><![CDATA[Rechercher un média]]></SEARCH_MEDIA>
+	<NO_MEDIA><![CDATA[Pas de média.]]></NO_MEDIA>
+	<SUCCESS_ADD_MEDIA><![CDATA[Média ajouté avec succès]]></SUCCESS_ADD_MEDIA>
+	<ERROR_CAN_NOT_ADD_MEDIA><![CDATA[Impossible d'ajouter le média]]></ERROR_CAN_NOT_ADD_MEDIA>
+	<SUCCESS_UPDATE_MEDIA><![CDATA[Média mis à jour avec succès]]></SUCCESS_UPDATE_MEDIA>
+	<ERROR_CAN_NOT_UPDATE_MEDIA><![CDATA[Impossible de mettre à jour le média]]></ERROR_CAN_NOT_UPDATE_MEDIA>
+	<SUCCESS_DELETE_MEDIA><![CDATA[Média supprimé avec succès]]></SUCCESS_DELETE_MEDIA>
+	<ERROR_CAN_NOT_DELETE_MEDIA><![CDATA[Impossible de supprimer le média]]></ERROR_CAN_NOT_DELETE_MEDIA>
+	<INVALID_FILE><![CDATA[Type de fichier invalide]]></INVALID_FILE>
+	<INVALID_URL><![CDATA[URL invalide]]></INVALID_URL>
+	<MEDIA_OPS_MENU><![CDATA[Opérations sur les médias]]></MEDIA_OPS_MENU>
+	<THUMBNAIL_SECTION><![CDATA[Section des miniatures]]></THUMBNAIL_SECTION>
+	<GENERATE_THUMBNAIL><![CDATA[Générer les mignatures]]></GENERATE_THUMBNAIL>
+	<GENERATE_MISSING_OGG_FILES><![CDATA[Générer les fichiers ogg manquants]]></GENERATE_MISSING_OGG_FILES>
+	<NO_OPERATION_FOR_MEDIA><![CDATA[Pas d'opération possible pour ce type de média]]></NO_OPERATION_FOR_MEDIA>
+	<DOWNLOAD_ALLOWED><![CDATA[Média téléchargeable depuis le site internet]]></DOWNLOAD_ALLOWED>
+	<MAX_SIZE><![CDATA[]]></MAX_SIZE>
+	<IMG_THUMBNAILS_QUALITY_TOOLTIP><![CDATA[Qualité des vignettes]]></IMG_THUMBNAILS_QUALITY_TOOLTIP>
+	<MEDIA_TRANSLATIONS_TOOLTIP><![CDATA[]]></MEDIA_TRANSLATIONS_TOOLTIP>
+	<TITLE_TOOLTIP><![CDATA[Ce champs permet de renseigner le titre du média.
+	Ce dernier sera visible au survol du média par la souris.]]></TITLE_TOOLTIP>
+	<ALT_TOOLTIP><![CDATA[Le texte alternatif a plusieurs rôles :
+	Il est annoncé par les logiciels de revue d'écran, à la place de l'image, rendant le contenu ou la fonction de l'image accessibles aux utilisateurs ayant des troubles visuels ou cognitifs.
+	Il est affiché par les agents utilisateurs (navigateurs) ne supportant pas les images ou lorsque l'image n'est pas disponible.
+	Il ajoute aux images un contenu sémantique et une description qui peuvent être lus par les moteurs de recherche ou utilisés pour déterminer le contenu de l'image à partir de son contexte.]]></ALT_TOOLTIP>
+	<MP3_TOOLTIP><![CDATA[Vous pouvez ajouter ici votre son au format mp3]]></MP3_TOOLTIP>
+	<OGG_TOOLTIP><![CDATA[Vous pouvez ajouter ici votre son au format ogg. Le format ogg est très important, en effet, certains navigateurs ne supportent pas le format mp3 comme firefox par exemple.]]></OGG_TOOLTIP>
+	<IFRAME_TOOLTIP><![CDATA[Saisissez ici le code de l'iframe que vous souhaitez enregistrer]]></IFRAME_TOOLTIP>
+	<SRC_TOOLTIP><![CDATA[Choisissez ici le fichier de votre média. Veillez à bien nommer votre fichier de manière à ce qu'il soit mieux référencé et plus accessible !]]></SRC_TOOLTIP>
+	<MP4_TOOLTIP><![CDATA[Choisissez ici le fichier mp4 de votre vidéo]]></MP4_TOOLTIP>
+	<POSTER_TOOLTIP><![CDATA[]]></POSTER_TOOLTIP>
+	<URL_TOOLTIP><![CDATA[Saisissez ici l'URL de votre média (si vous renseignez également un fichier, c'est ce fichier qui sera utilisé).]]></URL_TOOLTIP>
+	<MEDIA_DESCRIPTION_TOOLTIP><![CDATA[Saisissez ici la description de votre média]]></MEDIA_DESCRIPTION_TOOLTIP>
+	<IMG_MAX_HEIGHT_TOOLTIP><![CDATA[Hauteur maximale de vos images]]></IMG_MAX_HEIGHT_TOOLTIP>
+	<IMG_MAX_WIDTH_TOOLTIP><![CDATA[Largeur maximale de vos images]]></IMG_MAX_WIDTH_TOOLTIP>
+	<IMG_THUMB_QUALITY_TOOLTIP><![CDATA[Qalité des vignettes (en pourcentage)]]></IMG_THUMB_QUALITY_TOOLTIP>
+</translations>

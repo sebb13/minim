@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<translations>
+	<PAGE_TO_CONFIGURE><![CDATA[Página creada]]></PAGE_TO_CONFIGURE>
+	<NEW_PAGE><![CDATA[Añadir página a configurar]]></NEW_PAGE>
+	<NEW_PAGE_NAME><![CDATA[Nombre de la nueva página]]></NEW_PAGE_NAME>
+	<VIEW><![CDATA[Ver]]></VIEW>
+	<VIEW_NAME_LABEL><![CDATA[Nombre de la vista]]></VIEW_NAME_LABEL>
+	<DELETE_CONF><![CDATA[Eliminar esta configuración]]></DELETE_CONF>
+	<ROBOTS><![CDATA[Robots]]></ROBOTS>
+	<META_TAGS><![CDATA[Etiquetas meta]]></META_TAGS>
+	<GOOGLE_TAGS><![CDATA[Google+]]></GOOGLE_TAGS>
+	<TWITTER_TAGS><![CDATA[Twitter]]></TWITTER_TAGS>
+	<SUCCESS_ADD_PAGE><![CDATA[Página añadida]]></SUCCESS_ADD_PAGE>
+	<CONFIRM_DELETE_PAGE><![CDATA[¿Está seguro de que desea borrar la configuración de esta página?]]></CONFIRM_DELETE_PAGE>
+	<SUCCESS_DELETE_PAGE><![CDATA[Eliminado correctamente página]]></SUCCESS_DELETE_PAGE>
+	<SUCCESS_CONFIGURATION_SAVE><![CDATA[Guardado correctamente la configuración]]></SUCCESS_CONFIGURATION_SAVE>
+	<ERROR_DELETE_STATIC><![CDATA[No se puede eliminar una página estática]]></ERROR_DELETE_STATIC>
+	<ERROR_DELETE_DEFAULT><![CDATA[No se puede eliminar la configuración por defecto]]></ERROR_DELETE_DEFAULT>
+	<SUCCESS_RENAME_PAGE><![CDATA[Página cambiado correctamente]]></SUCCESS_RENAME_PAGE>
+	<ERROR_RENAME_STATIC><![CDATA[No se puede cambiar el nombre de una página estática]]></ERROR_RENAME_STATIC>
+	<ERROR_RENAME_DEFAULT><![CDATA[No se puede cambiar el nombre de la configuración por defecto]]></ERROR_RENAME_DEFAULT>
+	<ERROR_INVALID_VIEW><![CDATA[La vista no existe]]></ERROR_INVALID_VIEW>
+	<ERROR_CAN_NOT_SAVE><![CDATA[No se puede guardar]]></ERROR_CAN_NOT_SAVE>
+	<PAGE_ALREADY_EXISTS><![CDATA[Esta página ya existe]]></PAGE_ALREADY_EXISTS>
+	<SUCCESS_CREATE_PAGE><![CDATA[Página creada con éxito]]></SUCCESS_CREATE_PAGE>
+	<ERROR_CAN_NOT_CREATE_PAGE><![CDATA[No se puede crear la página]]></ERROR_CAN_NOT_CREATE_PAGE>
+	<ERROR_PAGE_NAME_EMPTY><![CDATA[El nombre de la página debe llenarse]]></ERROR_PAGE_NAME_EMPTY>
+	<ROBOTS_TOOLTIP><![CDATA[Configuración de los rastreadores de motores de búsqueda:
+Índice: Índice Página ; 
+Noindex: no indice la página ; 
+Seguir: seguir los enlaces ; 
+Nofollow: no seguir enlaces ; 
+Archivo: página de archivo ; 
+Noarchive: hacer página no Archivo]]></ROBOTS_TOOLTIP>
+	<DESCRIPTION_TOOLTIP><![CDATA[Descripción del sitio]]></DESCRIPTION_TOOLTIP>
+	<MSVALIDATE_01_TOOLTIP><![CDATA[Código de validación de las herramientas de supervisión de Bing]]></MSVALIDATE_01_TOOLTIP>
+	<KEYWORDS_TOOLTIP><![CDATA[Palabras clave relacionadas con el sitio web]]></KEYWORDS_TOOLTIP>
+	<AUTHOR_TOOLTIP><![CDATA[Web del autor]]></AUTHOR_TOOLTIP>
+	<OG_TYPE_TOOLTIP><![CDATA[El tipo de contenido que se mostrará al compartir la página en redes sociales.]]></OG_TYPE_TOOLTIP>
+	<OG_TITLE_TOOLTIP><![CDATA[Título que se mostraron al compartir la página en redes sociales.]]></OG_TITLE_TOOLTIP>
+	<OG_URL_TOOLTIP><![CDATA[La URL de la página que se mostrará al compartir la página en redes sociales.]]></OG_URL_TOOLTIP>
+	<OG_IMAGE_TOOLTIP><![CDATA[URL de la imagen que se mostrará al compartir la página en las redes sociales.]]></OG_IMAGE_TOOLTIP>
+	<OG_AUDIO_TOOLTIP><![CDATA[URL del archivo de sonido que se reproducirá al compartir la página en redes sociales.]]></OG_AUDIO_TOOLTIP>
+	<OG_DESCRIPTION_TOOLTIP><![CDATA[Breve descripción para mostrar cuando se comparte la página en las redes sociales.]]></OG_DESCRIPTION_TOOLTIP>
+	<OG_DETERMINER_TOOLTIP><![CDATA[La palabra que aparece antes del título compartido en una oración. Deje en blanco por ahora.]]></OG_DETERMINER_TOOLTIP>
+	<OG_LOCALE_TOOLTIP><![CDATA[El idioma en el que se escribió la información anterior.]]></OG_LOCALE_TOOLTIP>
+	<OG_SITE_NAME_TOOLTIP><![CDATA[Nombre del sitio web.]]></OG_SITE_NAME_TOOLTIP>
+	<OG_VIDEO_TOOLTIP><![CDATA[La URL del video que se mostrará al compartir la página en redes sociales.]]></OG_VIDEO_TOOLTIP>
+	<VIEW_TOOLTIP><![CDATA[Nombre de la vista a utilizar para mostrar esta página]]></VIEW_TOOLTIP>
+	<TWITTER_CARD_TOOLTIP><![CDATA[Tipo de mapa de Twitter (resumen o resumen_large_imagen)]]></TWITTER_CARD_TOOLTIP>
+	<TWITTER_SITE_TOOLTIP><![CDATA[El @username de Twitter la tarjeta debe ser atribuida a.]]></TWITTER_SITE_TOOLTIP>
+	<TWITTER_TITLE_TOOLTIP><![CDATA[Título a mostrar]]></TWITTER_TITLE_TOOLTIP>
+	<TWITTER_DESCRIPTION_TOOLTIP><![CDATA[descripción]]></TWITTER_DESCRIPTION_TOOLTIP>
+	<TWITTER_CREATOR_TOOLTIP><![CDATA[Nombre del creador]]></TWITTER_CREATOR_TOOLTIP>
+	<TWITTER_IMAGE_SRC_TOOLTIP><![CDATA[URL de la imagen a mostrar]]></TWITTER_IMAGE_SRC_TOOLTIP>
+	<NAME_TOOLTIP><![CDATA[Nombre del sitio web]]></NAME_TOOLTIP>
+	<IMAGE_TOOLTIP><![CDATA[URL de la imagen a mostrar]]></IMAGE_TOOLTIP>
+</translations>

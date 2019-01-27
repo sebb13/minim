@@ -1,0 +1,1 @@
+<div class="page-404"><h1 class="text-center">Maintenance</h1><p id="page404" class="text-center">Ce site est actuellement en maintenance, repassez très vite !</p></div>

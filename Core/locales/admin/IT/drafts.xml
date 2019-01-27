@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<translations>
+	<DRAFT_SUCCESSFULLY_RESET><![CDATA[Progetto azzerato con successo]]></DRAFT_SUCCESSFULLY_RESET>
+	<CAN_NOT_RESET_DRAFT><![CDATA[Non è possibile ripristinare il progetto]]></CAN_NOT_RESET_DRAFT>
+	<DRAFTS_SUCCESSFULLY_RESET><![CDATA[Bozze ripristinate con successo]]></DRAFTS_SUCCESSFULLY_RESET>
+	<SUCCESS_PUBLISH_DRAFT><![CDATA[Progetto pubblicato con successo]]></SUCCESS_PUBLISH_DRAFT>
+	<ERROR_PUBLISH_DRAFT><![CDATA[Impossibile pubblicare il progetto]]></ERROR_PUBLISH_DRAFT>
+	<SUCCESS_PUBLISH_DRAFTS><![CDATA[Bozze pubblicato con successo]]></SUCCESS_PUBLISH_DRAFTS>
+	<ERROR_PUBLISH_DRAFTS><![CDATA[Non è possibile pubblicare le bozze]]></ERROR_PUBLISH_DRAFTS>
+</translations>
+
+
+
+
+
+

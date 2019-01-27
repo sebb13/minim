@@ -1,0 +1,1 @@
+<link rel="stylesheet" type="text/css" media="screen" href="{__URL__}" {__MISC__} />

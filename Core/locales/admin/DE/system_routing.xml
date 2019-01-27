@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<translations>
+	<MODULE_TO_CONFIGURE><![CDATA[Module gesetzt werden]]></MODULE_TO_CONFIGURE>
+	<SIDE_TO_CONFIGURE><![CDATA[Schnittstelle zu konfigurieren]]></SIDE_TO_CONFIGURE>
+	<ADD_ROUTES><![CDATA[In Roads]]></ADD_ROUTES>
+	<PAGE_LEGEND><![CDATA[Seite]]></PAGE_LEGEND>
+	<ROUTE_LEGEND><![CDATA[Straße]]></ROUTE_LEGEND>
+	<SUCCESS_REMOVE_ROUTE><![CDATA[Route erfolgreich gelöscht]]></SUCCESS_REMOVE_ROUTE>
+	<ERROR_CAN_NOT_REMOVE_ROUTE><![CDATA[Kann nicht die Straße zu entfernen]]></ERROR_CAN_NOT_REMOVE_ROUTE>
+	<SUCCESS_ROUTING_SAVE><![CDATA[Routen erfolgreich gespeichert]]></SUCCESS_ROUTING_SAVE>
+	<ERROR_CAN_NOT_SAVE><![CDATA[Unfähig Routen zu speichern]]></ERROR_CAN_NOT_SAVE>
+	<INVALID_ROUTE><![CDATA[Ungültige Route]]></INVALID_ROUTE>
+	<CONFIRM_DELETE_ROUTE><![CDATA[Sind Sie sicher, dass Sie diese Route löschen?]]></CONFIRM_DELETE_ROUTE>
+</translations>
