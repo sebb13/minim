@@ -282,7 +282,7 @@
 			<h4>Téléchargement de fichiers</h4>
 			<p>Minim propose un système simple pour offrir des fichiers au téléchargement.</p>
 			<p>Le fichier download.php situé à la racine a été conçu pour cela.</p>
-			<p>Il gère actuellement les .txt, .pdf, .jpg, .png, .zip et les .tar.gz</p>
+			<p>Il gère actuellement les extentions .txt, .pdf, .jpg, .png, .zip et .tar.gz</p>
 			<p>Libre à vous d'en rajouter !</p>
 			<h4>Pour offrir des fichiers au téléchargement il vous suffit de :</h4>
 			<ul class="cog-tools">
