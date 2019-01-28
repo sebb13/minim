@@ -28,8 +28,7 @@ final class MetasTags {
 											'msvalidate_01'=>'msvalidate.01',
 											'keywords'=>'keywords',
 											'author'=>'author',
-											'current-period'=>'current-period',
-											'current-thread-id'=>'current-thread-id'
+											'google-site-verification'=>'google-site-verification'
 										);
 	public static $aOgList = array(
 				'type',
