@@ -13,11 +13,11 @@ if(getCurrentPage().indexOf("documentation") === 0) {
 			article_id: article_id
 		});
 	promise.success(function(data) {
-		updateArticle(article_id);
 		$('#article-contents').html(data);
 		$('.btn-primary').removeClass('btn-active');
 		$('#'+article_id).addClass('btn-active');
 		$('#'+article_id+'_bottom').addClass('btn-active');
+		updateArticle(article_id);
 	});
 }
 $('meta[name=app_current_page]').change(function(){
@@ -33,13 +33,12 @@ $('meta[name=app_current_page]').change(function(){
 			article_id: article_id
 		});
 		promise.success(function(data) {
-			updateArticle(article_id);
 			$('#article-contents').html(data);
 			$('.btn-primary').removeClass('btn-active');
 			$('#'+article_id).addClass('btn-active');
 			$('#'+article_id+'_bottom').addClass('btn-active');
 			jQuery('html, body').animate({scrollTop: 0}, 300);
-			$(".cbox").colorbox({rel:'cbox'});
+			updateArticle(article_id);
 		});
 	}
 	Prism.highlightAll();
@@ -59,7 +58,6 @@ $('div#ajaxFrame').on('click', '.article', function(e){
 		article_id: article_id
 	});
 	promise.success(function(data) {
-		updateArticle(article_id);
 		$('.btn-primary').removeClass('btn-active');
 		$('#article-contents').html(data);
 		$('body').css({'cursor':'default'});
@@ -68,5 +66,6 @@ $('div#ajaxFrame').on('click', '.article', function(e){
 		jQuery('html, body').animate({scrollTop: 0}, 300);
 		$('#'+article_id).find("div").attr("class", tabClass);
 		$('#'+article_id+'_bottom').find("div").attr("class", tabClass);
+		updateArticle(article_id);
 	});
 });
