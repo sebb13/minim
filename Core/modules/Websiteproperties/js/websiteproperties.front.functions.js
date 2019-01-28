@@ -11,12 +11,12 @@ function updateArticle(article_id) {
 		history.pushState(null, 'documentation/'+article_id, '/'+getLang()+'/'+'documentation/'+article_id+'.html');
 	}
 	$(".cbox").colorbox({rel:'cbox'});
-	Prism.highlightAll();
 	if(typeof gtag !== 'undefined') {
 		gtag('config', 'UA-132033845-1', {
 			page_title : article_id,
 			page_path: '/'+getLang()+'/documentation/'+article_id
-		 });
-	 }
-	 updateMenu("documentation");
+		});
+	}
+	updateMenu("documentation");
+	Prism.highlightAll();
 }
