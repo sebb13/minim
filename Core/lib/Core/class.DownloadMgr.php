@@ -34,11 +34,17 @@ final class DownloadMgr {
 			$aCounterFilesTmp = json_decode(
 									file_get_contents(DATA_PATH.'download.json')
 			);
-			foreach($aCounterFilesTmp as $sId=>$sCount) {
-				if($sId === $sFileId) {
-					$aCounterFiles[$sId] = (int)$sCount+1;
+			foreach($aFiles as $sId=>$sPath) {
+				if(!isset($aCounterFilesTmp->$sId)) {
+					$aCounterFiles[$sId] = '1';
 				} else {
-					$aCounterFiles[$sId] = $sCount;
+					foreach($aCounterFilesTmp as $sId=>$sCount) {
+						if($sId === $sFileId) {
+							$aCounterFiles[$sId] = (int)$sCount+1;
+						} else {
+							$aCounterFiles[$sId] = $sCount;
+						}
+					}
 				}
 			}
 		}
