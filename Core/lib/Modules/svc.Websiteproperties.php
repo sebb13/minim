@@ -24,9 +24,6 @@ final class Websiteproperties extends CoreCommon {
 	}
 
 	public function getArticle() {
-		if(UserRequest::getParams('article_id') === false) {
-			UserRequest::setParams('article_id', 'operation');
-		}
 		UserRequest::setParams('article_id', str_replace('_bottom', '', UserRequest::getParams('article_id')));
 		die(Minifier::minifyHtml(
 					file_get_contents(
@@ -37,11 +34,19 @@ final class Websiteproperties extends CoreCommon {
 	}
 	
 	public function getPageArticle() {
+		$sPage = substr(UserRequest::getPage(), 0, strpos(UserRequest::getPage(), '_'));
 		if(UserRequest::getParams('article_id') === false) {
-			UserRequest::setParams('article_id', str_replace('documentation_', '', UserRequest::getPage()));
+			UserRequest::setParams(
+					'article_id', 
+					str_replace($sPage.'_', '', UserRequest::getPage()
+				)
+			);
 		}
 		if(UserRequest::getParams('article_id') === 'documentation') {
 			UserRequest::setParams('article_id', 'operation');
+		}
+		if(UserRequest::getParams('article_id') === 'plugins') {
+			UserRequest::setParams('article_id', 'contactPlugin');
 		}
 		$sContent = str_replace(
 						'{__ARTICLE-CONTENTS__}', 
@@ -49,7 +54,7 @@ final class Websiteproperties extends CoreCommon {
 							ModulesMgr::getFilePath(__CLASS__, 'data').'articles/'.UserRequest::getParams('article_id').'.html'
 						),
 						file_get_contents(
-							CONTENT_TPL_PATH.'documentation.tpl'
+							CONTENT_TPL_PATH.$sPage.'.tpl'
 						)
 					);
 		return array(
@@ -57,7 +62,7 @@ final class Websiteproperties extends CoreCommon {
 												$sContent, 
 												ModulesMgr::getFilePath('minim', 'locales', $this->oLang->LOCALE).'documentation.xml'
 											),
-			'sPage'	=> 'documentation_'.UserRequest::getParams('article_id')
+			'sPage'	=> $sPage.'_'.UserRequest::getParams('article_id')
 		);
 	}
 }

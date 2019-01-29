@@ -6,17 +6,27 @@ $(function(){
 		navMain.collapse('hide');
     });
 });
-function updateArticle(article_id) {
+function updateArticle(article_id, mainPage) {
 	if (!$.browser.msie || parseInt($.browser.version) >= 10) {
-		history.pushState(null, 'documentation/'+article_id, '/'+getLang()+'/'+'documentation/'+article_id+'.html');
+		history.pushState(null, mainPage+'/'+article_id, '/'+getLang()+'/'+mainPage+'/'+article_id+'.html');
 	}
 	$(".cbox").colorbox({rel:'cbox'});
 	if(typeof gtag !== 'undefined') {
 		gtag('config', 'UA-132033845-1', {
 			page_title : article_id,
-			page_path: '/'+getLang()+'/documentation/'+article_id
+			page_path: '/'+getLang()+'/'+mainPage+'/'+article_id
 		});
 	}
-	updateMenu("documentation");
+	updateMenu(mainPage);
 	Prism.highlightAll();
+}
+
+function getMainPage() {
+	if(getCurrentPage().indexOf("documentation") === 0) {
+		return 'documentation';
+	}
+	if(getCurrentPage().indexOf("plugins") === 0) {
+		return 'plugins';
+	}
+	return false;
 }
