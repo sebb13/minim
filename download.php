@@ -49,6 +49,7 @@ try {
 			die();
 	}
 	//counter
+	
 	DownloadMgr::counterUpdate($aFiles, $_GET['file_id']);
 	header('Pragma: public');
 	header("Expires: 0"); // obligé
@@ -73,7 +74,3 @@ try {
 		print_r($e->getTrace());
 	}
 }
-
-
-
-$iTest = $sFileName;
