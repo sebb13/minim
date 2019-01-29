@@ -60,7 +60,7 @@ final class Websiteproperties extends CoreCommon {
 		return array(
 			'content' => $this->oTplMgr->buildSimpleCacheTpl(
 												$sContent, 
-												ModulesMgr::getFilePath('minim', 'locales', $this->oLang->LOCALE).'documentation.xml'
+												ModulesMgr::getFilePath('minim', 'locales', $this->oLang->LOCALE).$sPage.'.xml'
 											),
 			'sPage'	=> $sPage.'_'.UserRequest::getParams('article_id')
 		);

@@ -245,9 +245,11 @@ final class Config extends SimpleXmlMgr {
 						1 => 'odd'
 					),
 					'download' => array(
-							'zip'		=> DOWNLOAD_PATH.'minim.webearthquake.com.zip',
-							'targz'		=> DOWNLOAD_PATH.'minim.webearthquake.com.tar.gz',
-							'copying'	=> DOWNLOAD_PATH.'COPYING.txt',
+							'zip'			=> DOWNLOAD_PATH.'minim.webearthquake.com.zip',
+							'targz'			=> DOWNLOAD_PATH.'minim.webearthquake.com.tar.gz',
+							'contact-zip'	=> DOWNLOAD_PATH.'Contact.zip',
+							'contact-targz'	=> DOWNLOAD_PATH.'Contact.tar.gz',
+							'copying'		=> DOWNLOAD_PATH.'COPYING.txt',
 					)
 				);
 		return !empty($aConfig[$sKey]) ? $aConfig[$sKey] : false;
