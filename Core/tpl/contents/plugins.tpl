@@ -18,17 +18,17 @@
 	<div class="row">
 		<div class="col-md-2 col-sm-3 col-xs-6">
 			<a href="#" id="contactPlugin" class="article contactPlugin btn btn-primary btn-sm btn-active">
-				Contact <div class="fa fa-envelope-o"></div>
+				{__CONTACT__} <div class="fa fa-envelope-o"></div>
 			</a>
 		</div>
 		<div class="col-md-2 col-sm-3 col-xs-6">
 			<a href="#" id="mediaPlugin" class="article mediaPlugin btn btn-primary btn-sm">
-				Media <div class="fa fa-play-circle-o"></div>
+				{__MEDIA__} <div class="fa fa-play-circle-o"></div>
 			</a>
 		</div>
 		<div class="col-md-2 col-sm-3 col-xs-6">
 			<a href="#" id="galleriesPlugin" class="article galleriesPlugin btn btn-primary btn-sm">
-				Galleries <div class="fa fa-tv"></div>
+				{__GALLERIES__} <div class="fa fa-tv"></div>
 			</a>
 		</div>
 	</div>
@@ -37,17 +37,17 @@
 	<div class="row">
 		<div class="col-md-2 col-sm-3 col-xs-6">
 			<a href="#" id="contactPlugin_bottom" class="article contactPlugin btn btn-primary btn-sm btn-active">
-				Contact <div class="fa fa-envelope-o"></div>
+				{__CONTACT__} <div class="fa fa-envelope-o"></div>
 			</a>
 		</div>
 		<div class="col-md-2 col-sm-3 col-xs-6">
 			<a href="#" id="mediaPlugin_bottom" class="article mediaPlugin btn btn-primary btn-sm">
-				Media <div class="fa fa-play-circle-o"></div>
+				{__MEDIA__} <div class="fa fa-play-circle-o"></div>
 			</a>
 		</div>
 		<div class="col-md-2 col-sm-3 col-xs-6">
 			<a href="#" id="galleriesPlugin_bottom" class="article galleriesPlugin btn btn-primary btn-sm">
-				Galleries <div class="fa fa-tv"></div>
+				{__GALLERIES__} <div class="fa fa-tv"></div>
 			</a>
 		</div>
 	</div>
@@ -55,13 +55,7 @@
 	<div class="row">
 		<article class="col-sm-12 maincontent">
 			<h3>D'autres modules vont arriver très bientot !</h3>
-		</article>
-		<!-- /Article -->
-	</div>
-	<hr />
-	<div class="row">
-		<article class="col-sm-12 maincontent">
-			<h3>Soumettez vos modules ou vos thèmes et nous les regrouperons ici dans un catalogue !</h3>
+			<h4>Soumettez vos modules ou vos thèmes et nous les regrouperons ici dans un catalogue !</h4>
 			<p>Tiens, un module catalogue, en voilà une bonne idée !</p>
 		</article>
 		<!-- /Article -->
