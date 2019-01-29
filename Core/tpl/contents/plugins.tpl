@@ -14,7 +14,6 @@
 		</article>
 		<!-- /Article -->
 	</div>
-	<h2>Modules fonctionnels</h2>
 	<div class="row">
 		<div class="col-md-2 col-sm-3 col-xs-6">
 			<a href="#" id="contactPlugin" class="article contactPlugin btn btn-primary btn-sm btn-active">
@@ -32,6 +31,7 @@
 			</a>
 		</div>
 	</div>
+	<hr />
 	<div id="article-contents" class="article-contents">{__ARTICLE-CONTENTS__}</div>
 	<hr />
 	<div class="row">
