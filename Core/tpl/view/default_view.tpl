@@ -90,8 +90,8 @@
 							<p class="simplenav">
                                 <a href="/{##LANG##}/home.html" class="ajaxLink" id="_home">{__HOME__}</a> | 
                                 <a href="/{##LANG##}/framework.html" class="ajaxLink" id="_framework">{__FRAMEWORK__}</a> |
-                                <a href="/{##LANG##}/plugins.html" class="ajaxLink" id="_plugins">{__PLUGINS__}</a> | 
                                 <a href="/{##LANG##}/documentation.html" class="ajaxLink" id="_documentation">{__DOCUMENTATION__}</a> | 
+                                <a href="/{##LANG##}/plugins.html" class="ajaxLink" id="_plugins">{__PLUGINS__}</a> | 
                                 <a href="/{##LANG##}/examples.html" class="ajaxLink" id="_examples">{__EXAMPLES__}</a> | 
                                 <a href="/{##LANG##}/about.html" class="ajaxLink" id="_about">{__ABOUT__}</a> | 
                                 <a href="/{##LANG##}/contact.html" class="ajaxLink" id="_contact">{__CONTACT__}</a> | 

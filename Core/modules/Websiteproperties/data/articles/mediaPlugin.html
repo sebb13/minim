@@ -1,15 +1,213 @@
 <div class="row">
-	<article class="col-sm-8 sidebar sidebar-left">
+	<article class="col-sm-12 sidebar sidebar-left">
 		<h3>Media <i class="fa fa-play-circle-o"></i></h3>
 		<p>Le module "media" permet de gérer les médias utilisés sur votre application.</p>
 		<p>Il ne sert à rien seul, c'est un module de dépendence.</p>
-		<p>Bientôt !</p>
+	</article>
+</div>
+<hr />
+<div class="row">
+	<article class="col-sm-6">
+		<h4>La médiathèque de votre site/application !</h4>
+		<p>Vous pouvez gérer des :</p>
+		<ul class="cog-tools">
+			<li>images</li>
+			<li>fichiers audio</li>
+			<li>fichiers vidéo</li>
+			<li>flux</li>
+			<li>iframe</li>
+			<li>PDF</li>
+			<li>ZIP</li>
+		</ul>
+	</article>
+	<article class="col-sm-6">
+		<h4>Configuration</h4>
+		<p>Vous pouvez configurer :</p>
+		<ul class="cog-tools">
+			<li>La taille maximum de vos images.</li>
+			<li>La qualité (compression) de vos miniatures.</li>
+			<li>Le nombre de média à afficher par page.</li>
+			<li>Ce module nécessite plusieurs tables en base de données</li>
+		</ul>
+	</article>
+</div>
+<hr />
+<div class="row">
+	<article class="col-sm-8 sidebar sidebar-left">
+		<h4>L'acueil de ce plugin vous permet de :</h4>
+		<ul class="cog-tools">
+			<li>Gérer les médias actifs.</li>
+			<li>Gérer les médias archivés.</li>
+			<li>Ajouter un nouveau média.</li>
+			<li>Rechercher un média.</li>
+			<li>Visualiser les médias actifs et y accéder (par type).</li>
+			<li>Gérer la configuration du module.</li>
+		</ul>
+		<p>La base de données se paramètre dans la configuration globale.</p>
 	</article>
 	<aside class="col-sm-4 sidebar sidebar-right">
 		<div class="widget">
 			<p class="txt-center">
-				
+				<a href="/img/contents/doc/mediaPlugin_home.png" rel="cbox" title="Accueil du module media" class="cbox">
+					<img src="/img/contents/doc/mediaPlugin_home.png" alt="Accueil du module media" class="img-rounded" />
+				</a>
 			</p>
 		</div>
 	</aside>
+</div>
+<hr />
+<div class="row">
+	<article class="col-sm-8 sidebar sidebar-left">
+		<h4>Ajout d'un média</h4>
+		<p>Chaque média a ses spécificités, ici l'exemple des images :</p>
+		<ul class="cog-tools">
+			<li>url</li>
+			<li>src</li> 
+			<li>alt_FR (la langue de référence dans cet exemple)</li>
+			<li>media_description_FR (la langue de référence dans cet exemple)</li>
+			<li>title_FR (la langue de référence dans cet exemple)</li>
+			<li>Traductions (Les balises alt, title et meta-description dans les autres langues disponibles sur l'application)</li>
+			<li>Si le média est téléchargeable depuis le site internet</li>
+		</ul>
+	</article>
+	<aside class="col-sm-4 sidebar sidebar-right">
+		<div class="widget">
+			<p class="txt-center">
+				<a href="/img/contents/doc/addMedia.png" rel="cbox" title="Ajout d'un media" class="cbox">
+					<img src="/img/contents/doc/addMedia.png" alt="Ajout d'un media" class="img-rounded" />
+				</a>
+			</p>
+		</div>
+	</aside>
+</div>
+<hr />
+<div class="row">
+	<article class="col-sm-8 sidebar sidebar-left">
+		<h4>Edition d'un média</h4>
+		<p>Ici pour une image, vous pouvez modifier les informations saisies lors de l'ajout :</p>
+		<ul class="cog-tools">
+			<li>url</li>
+			<li>src</li> 
+			<li>alt_FR (la langue de référence dans cet exemple)</li>
+			<li>media_description_FR (la langue de référence dans cet exemple)</li>
+			<li>title_FR (la langue de référence dans cet exemple)</li>
+			<li>Traductions (Les balises alt, title et meta-description dans les autres langues disponibles sur l'application)</li>
+			<li>Si le média est téléchargeable depuis le site internet</li>
+		</ul>
+		<p>Vous pouvez également créer dynamiquement une page dédiée à ce média (pour le partager simplement par exemple).</p>
+	</article>
+	<aside class="col-sm-4 sidebar sidebar-right">
+		<div class="widget">
+			<p class="txt-center">
+				<a href="/img/contents/doc/editMediaImg.png" rel="cbox" title="Edition d'un media" class="cbox">
+					<img src="/img/contents/doc/editMediaImg.png" alt="Edition d'un media" class="img-rounded" />
+				</a>
+			</p>
+		</div>
+	</aside>
+</div>
+<hr />
+<div class="row">
+	<article class="col-sm-8 sidebar sidebar-left">
+		<h4>Gestionnaire</h4>
+		<p>Ici le gestionnaire de médias pour l'audio.</p>
+		<p>Cette interface vous permet :</p>
+		<ul class="cog-tools">
+			<li>De changer de type de média à gérer.</li>
+			<li>D'accéder aux opérations possibles par type de média (génération de miniatures, etc).</li>
+			<li>D'accéder au formulaire d'ajout en fonction du type de média.</li> 
+			<li>D'accéder aux médias archivés.</li>
+			<li>D'accéder au formulaire d'édition du média de votre choix.</li>
+			<li>D'archiver des médias.</li>
+		</ul>
+	</article>
+	<aside class="col-sm-4 sidebar sidebar-right">
+		<div class="widget">
+			<p class="txt-center">
+				<a href="/img/contents/doc/mediaMgrAudio.png" rel="cbox" title="Gestionnaire de médias pour l'audio" class="cbox">
+					<img src="/img/contents/doc/mediaMgrAudio.png" alt="Gestionnaire de médias pour l'audio" class="img-rounded" />
+				</a>
+			</p>
+		</div>
+	</aside>
+</div>
+<hr />
+<div class="row">
+	<article class="col-sm-8 sidebar sidebar-left">
+		<h4>Traitements par lot</h4>
+		<p>Pour les images, vous pouvez :</p>
+		<ul class="cog-tools">
+			<li>Consulter les tailles de miniatures disponibles.</li>
+			<li>Générer une nouvelle taile de miniature</li> 
+			<li>Régénérer toutes les miniatures dans toutes les tailles.</li>
+			<li>Rechercher un autre média.</li>
+		</ul>
+	</article>
+	<aside class="col-sm-4 sidebar sidebar-right">
+		<div class="widget">
+			<p class="txt-center">
+				<a href="/img/contents/doc/mediaOperations.png" rel="cbox" title="Traitements par lot" class="cbox">
+					<img src="/img/contents/doc/mediaOperations.png" alt="Traitements par lot" class="img-rounded" />
+				</a>
+			</p>
+		</div>
+	</aside>
+</div>
+<hr />
+<div class="row">
+	<article class="col-sm-8 sidebar sidebar-left">
+		<h4>Recherche</h4>
+		<p>Le module fourni un moteur de recherche en bas de chaque bloc d'opération sur les médias</p>
+		<p>Vous indiquez le type de média recherché (par défaut il s'agit du type en cours) et les mots clés de votre recherche.</p>
+	</article>
+	<aside class="col-sm-4 sidebar sidebar-right">
+		<div class="widget">
+			<p class="txt-center">
+				<a href="/img/contents/doc/mediaSearch.png" rel="cbox" title="Recherche de médias" class="cbox">
+					<img src="/img/contents/doc/mediaSearch.png" alt="Recherche de médias" class="img-rounded" />
+				</a>
+			</p>
+		</div>
+	</aside>
+</div>
+<hr />
+<div class="row">
+	<article class="col-sm-8 sidebar sidebar-left">
+		<h4>Bugs connus / améliorations</h4>
+		<ul class="cog-tools">
+			<li>Toutes les bulles d'aide ne sont pas encore disponibles.</li>
+			<li>La CSS est à revoir, il manque quelques marges.</li>
+		</ul>
+	</article>
+	<aside class="col-sm-4 sidebar sidebar-right">
+		<div class="widget">
+			<p class="txt-center">
+				<a href="/img/contents/doc/mediaBugs.png" rel="cbox" title="C'est pas joli joli" class="cbox">
+					<img src="/img/contents/doc/mediaBugs.png" alt="C'est pas joli joli" class="img-rounded" />
+				</a>
+			</p>
+		</div>
+	</aside>
+</div>
+<hr />
+<div class="row">
+	<article class="col-sm-12 maincontent">
+		<div class="row">
+			<article class="col-sm-12">
+				<h4>Télécharger</h4>
+			</article>
+			<div class="col-md-3 col-sm-6 col-xs-6">
+				<a class="btn btn-default btn-large btn-dl" href="https://github.com/sebb13/media" target="_blank">Récupérer depuis GitHub <i class="fa fa-github" aria-hidden="true"></i></a>
+			</div>
+			<div class="col-md-3 col-sm-6 col-xs-6">
+				<a class="btn btn-default btn-large btn-dl" href="/download.php?file_id=media-zip">Télécharger les sources (.zip)</a>
+			</div>
+			<div class="col-md-3 col-sm-6 col-xs-6">
+				<a class="btn btn-default btn-large btn-dl" href="/download.php?file_id=media-targz">Télécharger les sources (.tar.gz)</a>
+			</div>
+			<div class="col-md-3 col-sm-6 col-xs-6">
+				<a class="btn btn-default btn-large btn-dl" href="/download.php?file_id=copying">Télécharger la license</a>
+			</div>
+		</div>
+	</article>
 </div>

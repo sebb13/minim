@@ -249,6 +249,8 @@ final class Config extends SimpleXmlMgr {
 							'targz'			=> DOWNLOAD_PATH.'minim.webearthquake.com.tar.gz',
 							'contact-zip'	=> DOWNLOAD_PATH.'Contact.zip',
 							'contact-targz'	=> DOWNLOAD_PATH.'Contact.tar.gz',
+							'media-zip'		=> DOWNLOAD_PATH.'media.zip',
+							'media-targz'	=> DOWNLOAD_PATH.'media.tar.gz',
 							'copying'		=> DOWNLOAD_PATH.'COPYING.txt',
 					)
 				);
