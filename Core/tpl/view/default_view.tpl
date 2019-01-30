@@ -41,7 +41,7 @@
 							<p class="follow-me-icons text-left">
 								<a href="https://www.facebook.com/minimFramework/" target="_blank">
 									<img src="/img/design/picto_facebook.png" />
-								</a>
+								</a>&nbsp;
 								<a href="https://github.com/sebb13/minim.git" target="_blank">
 									<img src="/img/design/picto_github.png" />
 								</a>
