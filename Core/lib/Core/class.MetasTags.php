@@ -72,6 +72,7 @@ final class MetasTags {
 												'{__GOOGLE_SECTION__}',
 												'{__OG_SECTION__}',
 												'{__TOKEN__}',
+												'{__STATIC_SERVER__}',
 												'{__CURRENT_PAGE__}',
 												'{__LANG__}',
 												'{__LANG_AVAILABLE__}'
@@ -83,6 +84,7 @@ final class MetasTags {
 												self::getGoogleSection(),
 												self::getOgSection(),
 												SessionCore::getSessionHash(),
+												DEV ? STATIC_DEV_SERVER_URL : STATIC_SERVER_URL,
 												UserRequest::getRequest('sPage'),
 												UserRequest::getRequest('sLang'),
 												json_encode(SessionCore::$oLang->getAvailable())

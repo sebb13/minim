@@ -20,7 +20,7 @@
 <script src="js/html5shiv.js"></script>
 <script src="js/respond.min.js"></script>
 <![endif]-->
-<link rel="dns-prefetch" href="https://static.artearthquake.com"/>
+<link rel="dns-prefetch" href="{__STATIC_SERVER__}"/>
 <link rel="dns-prefetch" href="https://www.google-analytics.com"/>
 <link rel="apple-touch-icon" sizes="180x180" href="/img/favicons/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/img/favicons/favicon-32x32.png">
