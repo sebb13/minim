@@ -52,6 +52,7 @@
 			</div>
 		</nav>
 		<div id="ajaxFrame">{__CONTENT__}</div>
+		<div id="qn"></div>
 		<div class="cTop"></div>
 		<!-- END CONTENT - FOOTER -->
 	</div>

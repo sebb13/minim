@@ -20,14 +20,20 @@
 			<type><![CDATA[launchers]]></type>
 		</file>
 		<file>
-			<url><![CDATA[minim.back.functions.js]]></url>
+			<url><![CDATA[jquery.quicknote.js]]></url>
 			<level><![CDATA[1]]></level>
 			<role><![CDATA[back]]></role>
 			<type><![CDATA[functions]]></type>
 		</file>
 		<file>
-			<url><![CDATA[minim.back.launchers.js]]></url>
+			<url><![CDATA[minim.back.functions.js]]></url>
 			<level><![CDATA[2]]></level>
+			<role><![CDATA[back]]></role>
+			<type><![CDATA[functions]]></type>
+		</file>
+		<file>
+			<url><![CDATA[minim.back.launchers.js]]></url>
+			<level><![CDATA[3]]></level>
 			<role><![CDATA[back]]></role>
 			<type><![CDATA[launchers]]></type>
 		</file>
@@ -47,7 +53,7 @@
 		</file>
 		<file>
 			<url><![CDATA[contact.back.launchers.js]]></url>
-			<level><![CDATA[2]]></level>
+			<level><![CDATA[4]]></level>
 			<role><![CDATA[back]]></role>
 			<type><![CDATA[launchers]]></type>
 		</file>

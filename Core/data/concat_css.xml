@@ -17,8 +17,13 @@
 			<role><![CDATA[back]]></role>
 		</file>
 		<file>
-			<url><![CDATA[minim.back.css]]></url>
+			<url><![CDATA[jquery.quicknote.css]]></url>
 			<level><![CDATA[1]]></level>
+			<role><![CDATA[back]]></role>
+		</file>
+		<file>
+			<url><![CDATA[minim.back.css]]></url>
+			<level><![CDATA[2]]></level>
 			<role><![CDATA[back]]></role>
 		</file>
 	</minim>

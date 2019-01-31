@@ -19,6 +19,11 @@
 bootbox.setDefaults({
   locale: (getLang() === 'GB' ? 'en' : getLang().toLowerCase()),
 });
+$('#qn').quicknote({
+	theme: 'dark',
+	pos: 'right',
+	storage: true, 
+});
 if($('form#loginForm').is(':visible')) {
 	$('button.userHeaderButton').hide();
 } else {
