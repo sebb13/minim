@@ -1,2 +1,3 @@
-# minim est un framework PHP léger, évolutif et open source
-# documentation sur https://minim.webearthquake.com
+# This project is licensed under the terms of the GNU GPL3 license.
+# minim is a light open sources PHP framework
+# documentation : https://minim.webearthquake.com
