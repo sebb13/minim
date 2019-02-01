@@ -35,6 +35,9 @@ final class Websiteproperties extends CoreCommon {
 	
 	public function getPageArticle() {
 		$sPage = substr(UserRequest::getPage(), 0, strpos(UserRequest::getPage(), '_'));
+		if(empty($sPage)) {
+			$sPage = UserRequest::getPage();
+		}
 		if(UserRequest::getParams('article_id') === false) {
 			UserRequest::setParams(
 					'article_id', 
