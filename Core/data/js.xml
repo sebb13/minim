@@ -12,7 +12,7 @@
 			<role><![CDATA[required]]></role>
 		</file>
 		<file>
-			<url><![CDATA[https://static.artearthquake.com/js/bootbox.min.js]]></url>
+			<url><![CDATA[{__STATIC_SERVER_URL__}js/bootbox.min.js]]></url>
 			<level><![CDATA[4]]></level>
 			<role><![CDATA[required]]></role>
 		</file>
@@ -23,7 +23,7 @@
 			<role><![CDATA[required]]></role>
 		</file>
 		<file>
-			<url><![CDATA[https://static.artearthquake.com/js/jquery.browser.js]]></url>
+			<url><![CDATA[{__STATIC_SERVER_URL__}js/jquery.browser.js]]></url>
 			<level><![CDATA[6]]></level>
 			<role><![CDATA[required]]></role>
 		</file>
@@ -34,7 +34,7 @@
 			<prefixUrl><![CDATA[1]]></prefixUrl>
 		</file>
 		<file>
-			<url><![CDATA[https://static.artearthquake.com/js/imagesloaded.min.js]]></url>
+			<url><![CDATA[{__STATIC_SERVER_URL__}js/imagesloaded.min.js]]></url>
 			<level><![CDATA[8]]></level>
 			<role><![CDATA[required]]></role>
 		</file>

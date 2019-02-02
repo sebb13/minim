@@ -32,7 +32,7 @@
 			<role><![CDATA[required]]></role>
 		</file>
 		<file>
-			<url><![CDATA[https://static.artearthquake.com/css/ie.css]]></url>
+			<url><![CDATA[{__STATIC_SERVER_URL__}css/ie.css]]></url>
 			<level><![CDATA[1000]]></level>
 			<role><![CDATA[required]]></role>
 			<wrapper_pattern><![CDATA[<!--[if IE]>{__LINK__}<![endif]-->]]></wrapper_pattern>
@@ -51,22 +51,22 @@
 			<role><![CDATA[front]]></role>
 		</file>
 		<file>
-			<url><![CDATA[https://static.artearthquake.com/css/summernote.css]]></url>
+			<url><![CDATA[{__STATIC_SERVER_URL__}css/summernote.css]]></url>
 			<level><![CDATA[3]]></level>
 			<role><![CDATA[back]]></role>
 		</file>
 		<file>
-			<url><![CDATA[https://static.artearthquake.com/css/jquery.timepicker.css]]></url>
+			<url><![CDATA[{__STATIC_SERVER_URL__}css/jquery.timepicker.css]]></url>
 			<level><![CDATA[4]]></level>
 			<role><![CDATA[back]]></role>
 		</file>
 		<file>
-			<url><![CDATA[https://static.artearthquake.com/css/datepicker.css]]></url>
+			<url><![CDATA[{__STATIC_SERVER_URL__}css/datepicker.css]]></url>
 			<level><![CDATA[5]]></level>
 			<role><![CDATA[back]]></role>
 		</file>
 		<file>
-			<url><![CDATA[https://static.artearthquake.com/css/c3.min.css]]></url>
+			<url><![CDATA[{__STATIC_SERVER_URL__}css/c3.min.css]]></url>
 			<level><![CDATA[6]]></level>
 			<role><![CDATA[back]]></role>
 		</file>

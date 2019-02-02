@@ -122,6 +122,13 @@ final class AssetsLinker extends SimpleXmlMgr {
 									'required'	=> array('url', 'level', 'role'),
 									'data'	=> $aLink
 								));
+			if(strpos($aLink['url'], '{__STATIC_SERVER_URL__}') === 0) {
+				$aLink['url'] = str_replace(
+					'{__STATIC_SERVER_URL__}', 
+					DEV ? STATIC_DEV_SERVER_URL : STATIC_SERVER_URL, 
+					$aLink['url']
+				);
+			}
 			if($aLink['role'] === 'required') {
 				$aRoles['required'][$aLink['level']] = $aLink;
 			} elseif($aLink['role'] === 'front') {
