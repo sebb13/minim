@@ -63,6 +63,7 @@
 									<li><a href="https://sebastien-boulard.webearthquake.com/" target="_blank">Sébastien Boulard</a></li>
 									<li><a href="https://webearthquake.com" target="_blank">webearthquake</a></li>
 									<li>Page <a href="/{##LANG##}/contact.html" class="ajaxLink" id="__contact">contact</a></li>
+									<li><a href="https://github.com/sebb13" target="_blank">GitHub</a></li>
 								</ul>
 							</div>
 						</div>
