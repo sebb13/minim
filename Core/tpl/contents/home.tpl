@@ -20,9 +20,9 @@
 			</div>
 		</div>
 		<div class="col-md-3 col-sm-6 highlight">
-			<div class="h-caption"><h4 class="text-center"><img src="/img/design/picto_modules.png" class="picto-home" /><br />{__PLUGINS__}</h4></div>
+			<div class="h-caption"><h4 class="text-center"><img src="/img/design/picto_outils.png" class="picto-home" /><br />{__TOOLS__}</h4></div>
 			<div class="h-body">
-				<ul class="cog-tools">{__PLUGINS_HANGS__}</ul>
+				<ul class="cog-tools">{__TOOLS_HANGS__}</ul>
 			</div>
 		</div>
 		<div class="col-md-3 col-sm-6 highlight">
@@ -32,9 +32,9 @@
 			</div>
 		</div>
 		<div class="col-md-3 col-sm-6 highlight">
-			<div class="h-caption"><h4 class="text-center"><img src="/img/design/picto_outils.png" class="picto-home" /><br />{__TOOLS__}</h4></div>
+			<div class="h-caption"><h4 class="text-center"><img src="/img/design/picto_modules.png" class="picto-home" /><br />{__PLUGINS__}</h4></div>
 			<div class="h-body">
-				<ul class="cog-tools">{__TOOLS_HANGS__}</ul>
+				<ul class="cog-tools">{__PLUGINS_HANGS__}</ul>
 			</div>
 		</div>
 	</div> <!-- /row  -->
