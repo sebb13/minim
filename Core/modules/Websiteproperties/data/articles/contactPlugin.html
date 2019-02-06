@@ -1,7 +1,7 @@
 <div class="row">
 	<article class="col-sm-8 sidebar sidebar-left">
 		<h3>Contact <i class="fa fa-envelope-o"></i></h3>
-		<p>Le module "contact" permet de gérer les messages déposés sur votre application.</p>
+		<p>Le module <strong>Contact</strong> permet de gérer les messages déposés sur votre application.</p>
 		<p>La configuration est assez simple : </p>
 		<ul class="cog-tools">
 			<li>Le type de support pour les données (SQL ou XML), mais attention ! Si vous choisissez le mode SQL, la base de données doit être bien configurée et la table créée, sous peine de voir planter le module.</li>
@@ -18,12 +18,33 @@
 		</div>
 	</aside>
 </div>
+<div class="row">
+	<article class="col-sm-8 sidebar sidebar-left">
+		<h3>Installation</h3>
+		<p>Comme pour tous les modules, n'oubliez pas de :</p>
+		<ul class="cog-tools">
+			<li>Copier les classes PHP (présentes dans /lib) dans le répertoire Core/lib/Modules/ de votre site/application.</li>
+			<li>Ajouter les fichiers css et js dans votre configuration (/Core/data/concat_js.xml et /Core/data/concat_css.xml) afin qu'ils soient pris en compte.</li>
+		</ul>
+		<p>Vous pouvez pour ce module choisir entre deux types de stockage : XML (par défaut) ou SQL.</p>
+	</article>
+	<aside class="col-sm-4 sidebar sidebar-right">
+		<div class="widget">
+			<p class="txt-center">
+				<a href="/img/contents/doc/contactSQL.png" rel="cbox" title="Fichier de création des tables mySQL" class="cbox">
+					<img src="/img/contents/doc/contactSQL.png" alt="Fichier de création des tables mySQL" class="img-rounded" />
+				</a>
+			</p>
+		</div>
+	</aside>
+</div>
 <hr />
 <div class="row">
 	<article class="col-sm-8 sidebar sidebar-left">
 		<h3>SQL</h3>
 		<p>Par défaut, ce module stock ses données dans un fichier XML.</p>
 		<p>Si votre site/application nécessite déjà une base de données, vous pouvez l'utiliser pour stocker les informations de ce module.</p>
+		<p>Vous trouverez les requêtes SQL d'installation dans le répertoire <strong>data</strong> du module.</p>
 	</article>
 	<aside class="col-sm-4 sidebar sidebar-right">
 		<div class="widget text-center">
@@ -31,35 +52,6 @@
 		</div>
 	</aside>
 </div>
-<div class="row">
-	<article class="col-sm-8 sidebar sidebar-left language-sql">
-		<p>Comme on est sympa, voici la requête SQL pour créer la table.</p>
-		<code>CREATE TABLE `t_contact` (</code><br />
-		<code>`contact_id` int(11) NOT NULL,</code><br />
-		<code>`contact_name` varchar(256) NOT NULL,</code><br />
-		<code>`contact_email` varchar(256) NOT NULL,</code><br />
-		<code>`contact_subject` varchar(256) DEFAULT NULL,</code><br />
-		<code>`contact_msg` text NOT NULL,</code><br />
-		<code>`contact_comment` varchar(512) DEFAULT NULL,</code><br />
-		<code>`contact_comment_user` varchar(64) DEFAULT NULL,</code><br />
-		<code>`contact_file` varchar(256) DEFAULT NULL,</code><br />
-		<code>`contact_ip` varchar(64) NOT NULL,</code><br />
-		<code>`contact_active` tinyint(1) NOT NULL DEFAULT '1',</code><br />
-		<code>`contact_date` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP</code><br />
-		<code>) ENGINE=InnoDB DEFAULT CHARSET=utf8;</code>
-	</article>
-	<aside class="col-sm-4 sidebar sidebar-right">
-		<div class="widget text-center">
-			<p>
-				<a href="/img/contents/doc/phpMyAdmin.png" rel="cbox" title="Vue dans phpMyAdmin" class="cbox">
-					<img src="/img/contents/doc/phpMyAdmin.png" alt="Vue dans phpMyAdmin" class="img-rounded" />
-				</a>
-			</p>
-			<p>Le fichier SQL vous est fourni dans les sources.</p>
-		</div>
-	</aside>
-</div>
-<hr />
 <div class="row">
 	<article class="col-sm-8 sidebar sidebar-left">
 		<h3>Dashboard</h3>

@@ -1,9 +1,8 @@
 <div class="row">
 	<article class="col-sm-8 sidebar sidebar-left">
 		<h3>Galleries <i class="fa fa-tv"></i></h3>
-		<p>Le module "galleries" permet de gérer des albums photos.</p>
-		<p>Il dépend du module media pour fonctionner.</p>
-		<p>Bientôt !</p>
+		<p>Le module <strong>Galleries</strong> permet de gérer des albums photos.</p>
+		<p>Il dépend du module <strong>Media</strong> pour fonctionner.</p>
 	</article>
 	<aside class="col-sm-4 sidebar sidebar-right">
 		<div class="widget">
@@ -12,4 +11,133 @@
 			</p>
 		</div>
 	</aside>
+</div>
+<div class="row">
+	<article class="col-sm-8 sidebar sidebar-left">
+		<h3>Installation</h3>
+		<p>Tout comme le module <strong>media</strong>, ce module nécessite une base de données.</p>
+		<p>Vous trouverez les requêtes SQL d'installation dans le répertoire <strong>data</strong> du module.</p>
+		<p>Et comme pour tous les modules, n'oubliez pas de :</p>
+		<ul class="cog-tools">
+			<li>Copier les classes PHP (présentes dans /lib) dans le répertoire Core/lib/Modules/ de votre site/application.</li>
+			<li>Ajouter les fichiers css et js dans votre configuration (/Core/data/concat_js.xml et /Core/data/concat_css.xml) afin qu'ils soient pris en compte.</li>
+		</ul>
+	</article>
+	<aside class="col-sm-4 sidebar sidebar-right">
+		<div class="widget">
+			<p class="txt-center">
+				<a href="/img/contents/doc/galleriesSQL.png" rel="cbox" title="Fichier de création des tables mySQL" class="cbox">
+					<img src="/img/contents/doc/galleriesSQL.png" alt="Fichier de création des tables mySQL" class="img-rounded" />
+				</a>
+			</p>
+		</div>
+	</aside>
+</div>
+<hr />
+<div class="row">
+	<article class="col-sm-8 sidebar sidebar-left">
+		<h3>L'accueil de ce plugin vous permet de :</h3>
+		<ul class="cog-tools">
+			<li>Gérer les galeries actives.</li>
+			<li>Gérer les galeries archivées.</li>
+			<li>Ajouter une nouvelle galerie.</li>
+			<li>Visualiser les galeries actives et y accéder.</li>
+			<li>Gérer la configuration du module.</li>
+		</ul>
+		<p>Bugs connus, TODO :</p>
+		<ul class="cog-tools">
+			<li>S'il n'y a qu'un seul média dans une galerie, cette dernière plante ; débugage en cours.</li>
+			<li>La fonctionnalité "créer une galerie" est à mettre en place.</li>
+		</ul>
+	</article>
+	<aside class="col-sm-4 sidebar sidebar-right">
+		<div class="widget">
+			<p class="txt-center">
+				<a href="/img/contents/doc/galleriesHome.png" rel="cbox" title="Accueil du module Galleries" class="cbox">
+					<img src="/img/contents/doc/galleriesHome.png" alt="Accueil du module Galleries" class="img-rounded" />
+				</a>
+			</p>
+		</div>
+	</aside>
+</div>
+<hr />
+<div class="row">
+	<article class="col-sm-8 sidebar sidebar-left">
+		<h3>Dashboard</h3>
+		<p>Comme tous les modules (bien que ce ne soit pas indispensable), le module de gestion de galeries propose un widget sur l'accueil du backoffice avec un accès rapide aux galeries.</p>
+	</article>
+	<aside class="col-sm-4 sidebar sidebar-right">
+		<div class="widget">
+			<p class="txt-center">
+				<a href="/img/contents/doc/galleriesDashboard.png" rel="cbox" title="dashboard widget" class="cbox">
+					<img src="/img/contents/doc/galleriesDashboard.png" alt="dashboard widget" class="img-rounded" />
+				</a>
+			</p>
+		</div>
+	</aside>
+</div>
+<hr />
+<div class="row">
+	<article class="col-sm-8 sidebar sidebar-left">
+		<h3>Accès aux galeries</h3>
+		<p>A partir de cette interface, vous pouvez :</p>
+		<ul class="cog-tools">
+			<li>Gérer les galeries actives.</li>
+			<li>Gérer les galeries archivées.</li>
+			<li>Archiver une galerie.</li>
+		</ul>
+		<p>Vous retrouvez la pochette et la description de vos galeries en guise menu, il vous suffit ensuite de cliquer sur la galerie que vous souhaitez éditer pour accéder à son interface de gestion.</p>
+	</article>
+	<aside class="col-sm-4 sidebar sidebar-right">
+		<div class="widget">
+			<p class="txt-center">
+				<a href="/img/contents/doc/galleriesMgr.png" rel="cbox" title="Gestionnaire de galeries" class="cbox">
+					<img src="/img/contents/doc/galleriesMgr.png" alt="Gestionnaire de galeries" class="img-rounded" />
+				</a>
+			</p>
+		</div>
+	</aside>
+</div>
+<hr />
+<div class="row">
+	<article class="col-sm-8 sidebar sidebar-left">
+		<h3>Gestionnaire de galerie</h3>
+		<p>A partir de cette interface, vous pouvez :</p>
+		<ul class="cog-tools">
+			<li>Accéder aux galeries actives et aux galeries archivées.</li>
+			<li>Archiver la galerie.</li>
+			<li>Ajouter un ou des média(s) à la galerie.</li>
+			<li>Éditer un média (accès direct au média sur le gestionnaire de média).</li>
+			<li>Supprimer un média de la galerie.</li>
+			<li>Supprimer un média de la galerie et de vos médias.</li>
+		</ul>
+	</article>
+	<aside class="col-sm-4 sidebar sidebar-right">
+		<div class="widget">
+			<p class="txt-center">
+				<a href="/img/contents/doc/galleryMgr.png" rel="cbox" title="Gestionnaire de galerie" class="cbox">
+					<img src="/img/contents/doc/galleryMgr.png" alt="Gestionnaire de galerie" class="img-rounded" />
+				</a>
+			</p>
+		</div>
+	</aside>
+	<article class="col-sm-12 maincontent">
+		<div class="row">
+			<article class="col-sm-12">
+				<h4>Télécharger</h4>
+			</article>
+			<div class="col-md-3 col-sm-6 col-xs-6">
+				<a class="btn btn-default btn-large btn-dl" href="https://github.com/sebb13/galleries" target="_blank">Récupérer depuis GitHub <i class="fa fa-github" aria-hidden="true"></i></a>
+			</div>
+			<div class="col-md-3 col-sm-6 col-xs-6">
+				<a class="btn btn-default btn-large btn-dl" href="/download.php?file_id=galleries-zip">Télécharger les sources (.zip)</a>
+			</div>
+			<div class="col-md-3 col-sm-6 col-xs-6">
+				<a class="btn btn-default btn-large btn-dl" href="/download.php?file_id=galleries-targz">Télécharger les sources (.tar.gz)</a>
+			</div>
+			<div class="col-md-3 col-sm-6 col-xs-6">
+				<a class="btn btn-default btn-large btn-dl" href="/download.php?file_id=copying">Télécharger la license</a>
+			</div>
+		</div>
+	</article>
 </div>
