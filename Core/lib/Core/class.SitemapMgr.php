@@ -96,9 +96,7 @@ final class SitemapMgr {
 			}
 		}
 		$oRoutingMgr = new RoutingMgr();
-		$aRoutes = $oRoutingMgr->getAllRoutes('front');
-		unset($oRoutingMgr);
-		foreach($aRoutes as $sPage=>$sServiceMethod) {
+		foreach($oRoutingMgr->getAllRoutes('front') as $sPage=>$sServiceMethod) {
 			$sPage = str_replace('_', '/', $sPage);
 			$aPage = array(
 							'loc' 		=> SITE_URL_PROD.$sLang.'/'.$sPage.'.html',
@@ -108,6 +106,7 @@ final class SitemapMgr {
 				$aUrls[] = $aPage;
 			}
 		}
+		unset($oRoutingMgr);
 		return $aUrls;
 	}
 	
@@ -169,14 +168,13 @@ final class SitemapMgr {
 			$aSitemap[] = Toolz_Tpl::getLi(str_replace('_', '/', $sPageName));
 		}
 		$oRoutingMgr = new RoutingMgr();
-		$aRoutes = $oRoutingMgr->getAllRoutes('front');		
-		unset($oRoutingMgr);
-		foreach($aRoutes as $sPage=>$sServiceMethod) {
+		foreach($oRoutingMgr->getAllRoutes('front') as $sPage=>$sServiceMethod) {
 			$sRoutedPage = Toolz_Tpl::getLi(str_replace('_', '/', $sPage));
 			if(!in_array($sRoutedPage, $aSitemap)) {
 				$aSitemap[] = $sRoutedPage;
 			}
 		}
+		unset($oRoutingMgr);
 		foreach(self::getCurrentSitemapInArray() as $aPage) {
 			$sSitemapXml .= Toolz_Tpl::getLi($aPage['loc']);
 			$sLastMod = $aPage['lastmod'];
