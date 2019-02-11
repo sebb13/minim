@@ -97,6 +97,7 @@ final class SitemapMgr {
 		}
 		$oRoutingMgr = new RoutingMgr();
 		$aRoutes = $oRoutingMgr->getAllRoutes('front');
+		unset($oRoutingMgr);
 		foreach($aRoutes as $sPage=>$sServiceMethod) {
 			$sPage = str_replace('_', '/', $sPage);
 			$aPage = array(
@@ -168,7 +169,8 @@ final class SitemapMgr {
 			$aSitemap[] = Toolz_Tpl::getLi(str_replace('_', '/', $sPageName));
 		}
 		$oRoutingMgr = new RoutingMgr();
-		$aRoutes = $oRoutingMgr->getAllRoutes('front');
+		$aRoutes = $oRoutingMgr->getAllRoutes('front');		
+		unset($oRoutingMgr);
 		foreach($aRoutes as $sPage=>$sServiceMethod) {
 			$sRoutedPage = Toolz_Tpl::getLi(str_replace('_', '/', $sPage));
 			if(!in_array($sRoutedPage, $aSitemap)) {
