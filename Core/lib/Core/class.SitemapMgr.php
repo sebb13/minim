@@ -32,7 +32,7 @@ final class SitemapMgr {
 	private static $sRobotsTxtFileName	= 'robots.txt';
 	private static $sSitemapFileName	= 'sitemap.xml';
 	private static $aAllowedNodes		= array('loc','lastmod','changefreq','priority');
-	private static $aExcludedFiles		= array('404','menu','index.php');
+	private static $aExcludedFiles		= array('404','menu','index.php', 'thankyou');
 	
 	/**
 	* require an array with one key bey url. Each key are an array with one key per node for currently value
@@ -95,6 +95,18 @@ final class SitemapMgr {
 							);
 			}
 		}
+		$oRoutingMgr = new RoutingMgr();
+		$aRoutes = $oRoutingMgr->getAllRoutes('front');
+		foreach($aRoutes as $sPage=>$sServiceMethod) {
+			$sPage = str_replace('_', '/', $sPage);
+			$aPage = array(
+							'loc' 		=> SITE_URL_PROD.$sLang.'/'.$sPage.'.html',
+							'lastmod' 	=> date('Y-m-d')
+						);
+			if(!in_array($aPage, $aUrls)) {
+				$aUrls[] = $aPage;
+			}
+		}
 		return $aUrls;
 	}
 	
@@ -150,10 +162,18 @@ final class SitemapMgr {
 	}
 	
 	public static function getSitemapPage() {
-		$sTest = self::getPagesListFromConf();
 		$sSitemap = $sSitemapXml = '';
+		$aSitemap = array();
 		foreach(self::getPagesListFromConf() as $sPageName) {
-			$sSitemap .= Toolz_Tpl::getLi(str_replace('/', ' &#x21E8; ', $sPageName));
+			$aSitemap[] = Toolz_Tpl::getLi(str_replace('_', '/', $sPageName));
+		}
+		$oRoutingMgr = new RoutingMgr();
+		$aRoutes = $oRoutingMgr->getAllRoutes('front');
+		foreach($aRoutes as $sPage=>$sServiceMethod) {
+			$sRoutedPage = Toolz_Tpl::getLi(str_replace('_', '/', $sPage));
+			if(!in_array($sRoutedPage, $aSitemap)) {
+				$aSitemap[] = $sRoutedPage;
+			}
 		}
 		foreach(self::getCurrentSitemapInArray() as $aPage) {
 			$sSitemapXml .= Toolz_Tpl::getLi($aPage['loc']);
@@ -167,7 +187,7 @@ final class SitemapMgr {
 						'{__ROBOT_TXT__}'
 					), 
 					array(
-						$sSitemap, 
+						implode('', $aSitemap), 
 						$sSitemapXml, 
 						$sLastMod, 
 						file_get_contents(ROOT_PATH.self::$sRobotsTxtFileName)
