@@ -297,7 +297,7 @@ final class ContactXml extends SimpleXmlMgr implements iContactMgr  {
 				if(is_array($aMsg['contact_subject'])) {
 					$aMsg['contact_subject'] = '';
 				}
-				$aMsg['contact_date'] = date ('Y-m-d H:i:s', $aMsg['contact_date']);
+				$aMsg['contact_date'] = date('Y-m-d H:i:s', $aMsg['contact_date']);
 				$aMsgs[] = $aMsg;
 			}
 		}
@@ -362,7 +362,7 @@ final class ContactXml extends SimpleXmlMgr implements iContactMgr  {
 				$sDate = $aMsg['contact_date'];
 			}
 		}
-		return date ('Y-m-d H:i:s', $sDate);
+		return date('Y-m-d H:i:s', $sDate);
 	}
 }
 
