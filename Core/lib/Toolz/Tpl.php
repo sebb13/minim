@@ -62,6 +62,18 @@ final class Toolz_Tpl {
 		return '<'.$sElmt.self::getClass($sClass).self::getId($sId).'>'.$sContent.'</'.$sElmt.'>';
 	}
 	
+	public static function replacePlaceholdersFromArray(&$aReplace, $sTpl, $sPlaceholderTpl = '{__KEY__}'){
+		if(!empty($sPlaceholderTpl)){
+			$aFinalReplace = array();
+			foreach ($aReplace as $sKey => $sVal){
+				$sNewKey = str_replace('KEY', $sKey, $sPlaceholderTpl);
+				$aFinalReplace[$sNewKey] = $sVal;
+			}
+			return str_replace(array_keys($aFinalReplace), array_values($aFinalReplace), $sTpl);
+		}
+		return '';
+	}
+	
 	public static function getToolTip($sContents) {
 		return ' <a href="#" data-toggle="tooltip" data-placement="right" title="'.$sContents.'" class="text-right" style="display:bloc;width:100%;">
 					<span class="glyphicon glyphicon-question-sign"></span>
