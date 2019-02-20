@@ -30,6 +30,11 @@
 				{__GALLERIES__} <div class="fa fa-tv"></div>
 			</a>
 		</div>
+		<div class="col-md-2 col-sm-3 col-xs-6">
+			<a href="#" id="emptyPlugin" class="article emptyPlugin btn btn-primary btn-sm">
+				{__EMPTY_PLUGIN__} <div class="fa fa-inbox"></div>
+			</a>
+		</div>
 	</div>
 	<hr />
 	<div id="article-contents" class="article-contents">{__ARTICLE-CONTENTS__}</div>
@@ -48,6 +53,11 @@
 		<div class="col-md-2 col-sm-3 col-xs-6">
 			<a href="#" id="galleriesPlugin_bottom" class="article galleriesPlugin btn btn-primary btn-sm">
 				{__GALLERIES__} <div class="fa fa-tv"></div>
+			</a>
+		</div>
+		<div class="col-md-2 col-sm-3 col-xs-6">
+			<a href="#" id="emptyPlugin_bottom" class="article emptyPlugin btn btn-primary btn-sm">
+				{__EMPTY_PLUGIN__} <div class="fa fa-inbox"></div>
 			</a>
 		</div>
 	</div>
