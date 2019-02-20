@@ -253,6 +253,8 @@ final class Config extends SimpleXmlMgr {
 							'media-targz'		=> DOWNLOAD_PATH.'media.tar.gz',
 							'galleries-zip'		=> DOWNLOAD_PATH.'Galleries.zip',
 							'galleries-targz'	=> DOWNLOAD_PATH.'Galleries.tar.gz',
+							'emptyPlugin-zip'	=> DOWNLOAD_PATH.'emptyPlugin.zip',
+							'emptyPlugin-targz'	=> DOWNLOAD_PATH.'emptyPlugin.tar.gz',
 							'copying'			=> DOWNLOAD_PATH.'COPYING.txt',
 					)
 				);
