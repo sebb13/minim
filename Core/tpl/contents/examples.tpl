@@ -18,6 +18,7 @@
 		<div class="col-sm-6">
 			<h4 style="color: #72a3ff;">sebastien-boulard.webearthquake.com</h4>
 			<p>Il s'agit ici du site pro de Sébastien Boulard, développeur freelance.</p>
+			<p>Modules utilisés : Contact et un module propre au site.</p>
 		<!-- /Article -->
 		</div>
 		<div class="col-sm-6">
@@ -33,6 +34,7 @@
 		<div class="col-sm-6">
 			<h4 style="color: #72a3ff;">tilala.net</h4>
 			<p>Une webradio, bel exemple de l'utilisation de l'AJAX.</p>
+			<p>Modules utilisés : Contact et un module propre au site.</p>
 		<!-- /Article -->
 		</div>
 		<div class="col-sm-6">
@@ -48,6 +50,7 @@
 		<div class="col-sm-6">
 			<h4 style="color: #72a3ff;">webearthquake.com</h4>
 			<p>Webearthquake est un collectif de freelances...</p>
+			<p>Modules utilisés : Contact et un module propre au site.</p>
 		<!-- /Article -->
 		</div>
 		<div class="col-sm-6">
@@ -63,6 +66,7 @@
 		<div class="col-sm-6">
 			<h4 style="color: #72a3ff;">lagrainefolle.fr</h4>
 			<p>lagrainefolle, un projet de fou !</p>
+			<p>Modules utilisés : Contact et un module propre au site.</p>
 		<!-- /Article -->
 		</div>
 		<div class="col-sm-6">
@@ -78,6 +82,7 @@
 		<div class="col-sm-6">
 			<h4 style="color: #72a3ff;">biscuitskhaya.lagrainefolle.fr</h4>
 			<p>Des biscuits pour chien !</p>
+			<p>Modules utilisés : Contact et un module propre au site.</p>
 		<!-- /Article -->
 		</div>
 		<div class="col-sm-6">
@@ -93,6 +98,7 @@
 		<div class="col-sm-6">
 			<h4 style="color: #72a3ff;">www.streetswing.net</h4>
 			<p>Du jazz manouche !</p>
+			<p>Modules utilisés : Contact et un module propre au site.</p>
 		<!-- /Article -->
 		</div>
 		<div class="col-sm-6">
@@ -108,6 +114,7 @@
 		<div class="col-sm-6">
 			<h4 style="color: #72a3ff;">www.horslimites13.fr</h4>
 			<p>Le club de motards de Gardanne (13) !</p>
+			<p>Modules utilisés : Contact, Media, Galleries et un module propre au site.</p>
 		<!-- /Article -->
 		</div>
 		<div class="col-sm-6">
