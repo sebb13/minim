@@ -25,10 +25,16 @@ final class Websiteproperties extends CoreCommon {
 
 	public function getArticle() {
 		UserRequest::setParams('article_id', str_replace('_bottom', '', UserRequest::getParams('article_id')));
-		die(Minifier::minifyHtml(
-					file_get_contents(
+		$sContent = file_get_contents(
 						ModulesMgr::getFilePath(__CLASS__, 'data').'articles/'.UserRequest::getParams('article_id').'.html'
-						)
+					);
+		
+		
+		die(Minifier::minifyHtml(
+					$this->oTplMgr->buildSimpleCacheTpl(
+												$sContent, 
+												ModulesMgr::getFilePath('minim', 'locales', $this->oLang->LOCALE).'plugins.xml'
+											)
 					)
 			);
 	}

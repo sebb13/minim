@@ -21,6 +21,11 @@
 			</a>
 		</div>
 		<div class="col-md-2 col-sm-3 col-xs-6">
+			<a href="#" id="downloadPlugin" class="article downloadPlugin btn btn-primary btn-sm btn-active">
+				Download <div class="fa fa-download"></div>
+			</a>
+		</div>
+		<div class="col-md-2 col-sm-3 col-xs-6">
 			<a href="#" id="mediaPlugin" class="article mediaPlugin btn btn-primary btn-sm">
 				{__MEDIA__} <div class="fa fa-play-circle-o"></div>
 			</a>
@@ -43,6 +48,11 @@
 		<div class="col-md-2 col-sm-3 col-xs-6">
 			<a href="#" id="contactPlugin_bottom" class="article contactPlugin btn btn-primary btn-sm btn-active">
 				{__CONTACT__} <div class="fa fa-envelope-o"></div>
+			</a>
+		</div>
+		<div class="col-md-2 col-sm-3 col-xs-6">
+			<a href="#" id="downloadPlugin_bottom" class="article downloadPlugin btn btn-primary btn-sm btn-active">
+				Download <div class="fa fa-download"></div>
 			</a>
 		</div>
 		<div class="col-md-2 col-sm-3 col-xs-6">

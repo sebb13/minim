@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<translations>
+	<DOWNLOAD_MGR_HOME_TITLE><![CDATA[Download Manager]]></DOWNLOAD_MGR_HOME_TITLE>
+	<MANAGE_FILES><![CDATA[Gestisci i file]]></MANAGE_FILES>
+	<STATS_FILES><![CDATA[Scarica le statistiche]]></STATS_FILES>
+	<CONFIRM_DELETE_FILE><![CDATA[Sei sicuro di voler cancellare questo file?]]></CONFIRM_DELETE_FILE>
+	<SUCCESS_DELETE_FILE><![CDATA[Il file è stato cancellato con successo]]></SUCCESS_DELETE_FILE>
+	<ERROR_DELETE_FILE><![CDATA[Impossibile cancellare il file]]></ERROR_DELETE_FILE>
+	<ADD_FILE><![CDATA[Aggiungi un file]]></ADD_FILE>
+	<SUCCESS_ADD_FILE><![CDATA[File aggiunto con successo]]></SUCCESS_ADD_FILE>
+	<ERROR_ADD_FILE><![CDATA[Impossibile aggiungere questo file]]></ERROR_ADD_FILE>
+	<GET_FILE_LINK><![CDATA[Ottieni il link da incorporare per questo file]]></GET_FILE_LINK>
+	<ERROR_MISSING_FILE_ID><![CDATA[Si prega di fornire un identificatore per il file]]></ERROR_MISSING_FILE_ID>
+	<ERROR_FILE_ID_ALREADY_EXIST><![CDATA[Questo identificatore è già utilizzato]]></ERROR_FILE_ID_ALREADY_EXIST>
+	<ERROR_FILE_ID_MUST_BEGIN_WITH_LETTER><![CDATA[L'identificatore deve iniziare con una lettera]]></ERROR_FILE_ID_MUST_BEGIN_WITH_LETTER>
+	<ERROR_FILE_ID_MUST_CONTAIN_ONLY_NUMS_AND_LETTERS><![CDATA[L'identificatore deve contenere solo numeri e lettere]]></ERROR_FILE_ID_MUST_CONTAIN_ONLY_NUMS_AND_LETTERS>
+	<FILE_ID_TOOLTIP><![CDATA[L'identificatore deve iniziare con una lettera e deve contenere solo numeri e lettere.]]></FILE_ID_TOOLTIP>
+</translations>

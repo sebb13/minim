@@ -31,13 +31,13 @@
 				<a class="btn btn-primary btn-large btn-dl" href="https://github.com/sebb13/minim" target="_blank">Récupérer depuis GitHub <i class="fa fa-github" aria-hidden="true"></i></a>
 			</p>
 			<p>
-				<a class="btn btn-primary btn-large btn-dl" href="{##FRONT_URL##}download.php?file_id=zip">Télécharger les sources (.zip)</a>
+				<a class="btn btn-primary btn-large btn-dl" href="{##FRONT_URL##}{##LANG##}/downloadFile.html?file_id=minimwebearthquakecomzip">Télécharger les sources (.zip)</a>
 			</p>
 			<p>
-				<a class="btn btn-primary btn-large btn-dl" href="{##FRONT_URL##}download.php?file_id=targz">Télécharger les sources (.tar.gz)</a>
+				<a class="btn btn-primary btn-large btn-dl" href="{##FRONT_URL##}{##LANG##}/downloadFile.html?file_id=minimwebearthquakecomtargz">Télécharger les sources (.tar.gz)</a>
 			</p>
 			<p>
-				<a class="btn btn-primary btn-large btn-dl" href="{##FRONT_URL##}download.php?file_id=copying">Télécharger la license</a>
+				<a class="btn btn-primary btn-large btn-dl" href="{##FRONT_URL##}{##LANG##}/downloadFile.html?file_id=LICENSEmd">Télécharger la license</a>
 			</p>
 		</aside>
 		<!-- /Sidebar -->

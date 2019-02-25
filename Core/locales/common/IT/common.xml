@@ -21,6 +21,7 @@
 	<VALIDATE><![CDATA[Convalidare]]></VALIDATE>
 	<ACTIONS><![CDATA[Stock]]></ACTIONS>
 	<CONFIGURATION><![CDATA[Configurazione]]></CONFIGURATION>
+	<NO_CONFIGURATION><![CDATA[Nessuna configurazione per questo modulo]]></NO_CONFIGURATION>
 	<MOVE_TO_PROD><![CDATA[Messo in produzione]]></MOVE_TO_PROD>
 	<PUBLISH><![CDATA[Pubblicare]]></PUBLISH>
 	<CONFIRM_TITLE><![CDATA[Conferma]]></CONFIRM_TITLE>

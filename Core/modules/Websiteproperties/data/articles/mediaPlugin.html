@@ -5,6 +5,7 @@
 		<p>Il ne sert à rien seul, c'est un module de dépendence.</p>
 	</article>
 </div>
+<hr />
 <div class="row">
 	<article class="col-sm-6">
 		<h3>La médiathèque de votre site/application !</h3>
@@ -39,6 +40,7 @@
 		<ul class="cog-tools">
 			<li>Copier les classes PHP (présentes dans /lib) dans le répertoire Core/lib/Modules/ de votre site/application.</li>
 			<li>Ajouter les fichiers css et js dans votre configuration (/Core/data/concat_js.xml et /Core/data/concat_css.xml) afin qu'ils soient pris en compte.</li>
+			<li>Ajouter au menu du backoffice la page d'accueil du module dans le menu "modules".</li>
 			<li>Régénérer le cache afin que le module soit pris en compte.</li>
 		</ul>
 	</article>
@@ -237,13 +239,13 @@
 				<a class="btn btn-default btn-large btn-dl" href="https://github.com/sebb13/media" target="_blank">Récupérer depuis GitHub <i class="fa fa-github" aria-hidden="true"></i></a>
 			</div>
 			<div class="col-md-3 col-sm-6 col-xs-6">
-				<a class="btn btn-default btn-large btn-dl" href="/download.php?file_id=media-zip">Télécharger les sources (.zip)</a>
+				<a class="btn btn-default btn-large btn-dl" href="/{##LANG##}/downloadFile.html?file_id=mediazip">Télécharger les sources (.zip)</a>
 			</div>
 			<div class="col-md-3 col-sm-6 col-xs-6">
-				<a class="btn btn-default btn-large btn-dl" href="/download.php?file_id=media-targz">Télécharger les sources (.tar.gz)</a>
+				<a class="btn btn-default btn-large btn-dl" href="/{##LANG##}/downloadFile.html?file_id=mediatargz">Télécharger les sources (.tar.gz)</a>
 			</div>
 			<div class="col-md-3 col-sm-6 col-xs-6">
-				<a class="btn btn-default btn-large btn-dl" href="/download.php?file_id=copying">Télécharger la license</a>
+				<a class="btn btn-default btn-large btn-dl" href="/{##LANG##}/downloadFile.html?file_id=LICENSEmd">Télécharger la license</a>
 			</div>
 		</div>
 	</article>

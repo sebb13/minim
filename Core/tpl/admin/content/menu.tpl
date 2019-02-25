@@ -3,6 +3,7 @@
 								<a class="dropdown" data-toggle="dropdown" role="button" href="#" id="modules">{__MODULES__}</a>
 								<ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu">
 									<li><a href="/{##LANG##}/contact/home.html" class="ajaxLink sub_menu" id="contact_home">{__CONTACT__}</a></li>
+									<li><a href="/{##LANG##}/download/home.html" class="ajaxLink sub_menu" id="download_home">{__DOWNLOAD__}</a></li>
 								</ul>
 							</li>
 							<li class="dropdown">

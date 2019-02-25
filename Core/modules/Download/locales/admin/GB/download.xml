@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<translations>
+	<DOWNLOAD_MGR_HOME_TITLE><![CDATA[Download Manager]]></DOWNLOAD_MGR_HOME_TITLE>
+	<MANAGE_FILES><![CDATA[Manage files]]></MANAGE_FILES>
+	<STATS_FILES><![CDATA[Download statistics]]></STATS_FILES>
+	<CONFIRM_DELETE_FILE><![CDATA[Are you sure you want to delete this file?]]></CONFIRM_DELETE_FILE>
+	<SUCCESS_DELETE_FILE><![CDATA[The file has been successfully deleted]]></SUCCESS_DELETE_FILE>
+	<ERROR_DELETE_FILE><![CDATA[Can not delete the file]]></ERROR_DELETE_FILE>
+	<ADD_FILE><![CDATA[Add a file]]></ADD_FILE>
+	<SUCCESS_ADD_FILE><![CDATA[File successfully added]]></SUCCESS_ADD_FILE>
+	<ERROR_ADD_FILE><![CDATA[Can not add this file]]></ERROR_ADD_FILE>
+	<GET_FILE_LINK><![CDATA[Get the link to embed for this file]]></GET_FILE_LINK>
+	<ERROR_MISSING_FILE_ID><![CDATA[This identifier is already used]]></ERROR_MISSING_FILE_ID>
+	<ERROR_FILE_ID_ALREADY_EXIST><![CDATA[Please give an identifier for your file]]></ERROR_FILE_ID_ALREADY_EXIST>
+	<ERROR_FILE_ID_MUST_BEGIN_WITH_LETTER><![CDATA[The identifier must start with a letter]]></ERROR_FILE_ID_MUST_BEGIN_WITH_LETTER>
+	<ERROR_FILE_ID_MUST_CONTAIN_ONLY_NUMS_AND_LETTERS><![CDATA[The identifier must contain only numbers and letters]]></ERROR_FILE_ID_MUST_CONTAIN_ONLY_NUMS_AND_LETTERS>
+	<FILE_ID_TOOLTIP><![CDATA[The identifier must begin with a letter and must contain only numbers and letters.]]></FILE_ID_TOOLTIP>
+</translations>

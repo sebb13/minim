@@ -243,19 +243,6 @@ final class Config extends SimpleXmlMgr {
 					'secureKey' => array(
 						0 => 'even',
 						1 => 'odd'
-					),
-					'download' => array(
-							'zip'				=> DOWNLOAD_PATH.'minim.webearthquake.com.zip',
-							'targz'				=> DOWNLOAD_PATH.'minim.webearthquake.com.tar.gz',
-							'contact-zip'		=> DOWNLOAD_PATH.'Contact.zip',
-							'contact-targz'		=> DOWNLOAD_PATH.'Contact.tar.gz',
-							'media-zip'			=> DOWNLOAD_PATH.'media.zip',
-							'media-targz'		=> DOWNLOAD_PATH.'media.tar.gz',
-							'galleries-zip'		=> DOWNLOAD_PATH.'Galleries.zip',
-							'galleries-targz'	=> DOWNLOAD_PATH.'Galleries.tar.gz',
-							'emptyPlugin-zip'	=> DOWNLOAD_PATH.'emptyPlugin.zip',
-							'emptyPlugin-targz'	=> DOWNLOAD_PATH.'emptyPlugin.tar.gz',
-							'copying'			=> DOWNLOAD_PATH.'COPYING.txt',
 					)
 				);
 		return !empty($aConfig[$sKey]) ? $aConfig[$sKey] : false;

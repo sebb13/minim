@@ -1,0 +1,173 @@
+<div class="row">
+	<article class="col-sm-12">
+		<h3>Download <i class="fa fa-download"></i></h3>
+		<p>Le module Download propose un système simple pour offrir et gérer des fichiers au téléchargement.</p>
+		<p>Un système de comptage permet de consulter le nombre de téléchargement par fichier.</p>
+		<p>Fonctionnalité initialement native dans minim, elle ne s'avère pas pertinente dans tous les projets. 
+Elle a donc été déportée dans un module afin de pouvoir la développer à volonté sans toucher au cœur de minim (interface de gestion dans le backoffice, statistiques de téléchargement, etc).</p>
+	</article>
+</div>
+<hr />
+<div class="row">
+	<article class="col-sm-12">
+		<h3>Installation</h3>
+		<p>Comme pour tous les modules, n'oubliez pas de :</p>
+		<ul class="cog-tools">
+			<li>Copier les classes PHP (présentes dans /lib) dans le répertoire Core/lib/Modules/ de votre site/application.</li>
+			<li>Ajouter les fichiers css et js dans votre configuration (/Core/data/concat_js.xml et /Core/data/concat_css.xml) afin qu'ils soient pris en compte.</li>
+			<li>Ajouter au menu du backoffice la page d'accueil du module dans le menu "modules".</li>
+			<li>Régénérer le cache afin que le module soit pris en compte.</li>
+		</ul>
+	</article>
+</div>
+<hr />
+<div class="row">
+	<article class="col-sm-8 sidebar sidebar-left">
+		<h3>Dashboard</h3>
+		<p>Ce module vous propose un accès rapide depuis l'accueil du backoffice avec les statistiques de téléchargement.</p>
+	</article>
+	<aside class="col-sm-4 sidebar sidebar-right">
+		<div class="widget">
+			<p class="txt-center">
+				<a href="/img/contents/doc/downloadDashboard.png" rel="cbox" title="Dashboard" class="cbox">
+					<img src="/img/contents/doc/downloadDashboard.png" alt="Dashboard" class="img-rounded" />
+				</a>
+			</p>
+		</div>
+	</aside>
+</div>
+<hr />
+<div class="row">
+	<article class="col-sm-8 sidebar sidebar-left">
+		<h3>Accueil</h3>
+		<p>La page d'accueil de ce module, pour l'instant, vous permet :</p>
+		<ul class="cog-tools">
+			<li>d'accéder à la gestion des fichiers disponibles au téléchargement.</li>
+			<li>de consulter les statistiques de téléchargement par fichier.</li>
+			<li>de consulter la configuration (pas de configuration utilisateur pour l'instant).</li>
+		</ul>
+		<p>La possibilité de soumettre les téléchargement à des droits est déjà en place, il ne manque plus qu'à l'implémenter.</p>
+	</article>
+	<aside class="col-sm-4 sidebar sidebar-right">
+		<div class="widget">
+			<p class="txt-center">
+				<a href="/img/contents/doc/downloadHome.png" rel="cbox" title="Accueil du module" class="cbox">
+					<img src="/img/contents/doc/downloadHome.png" alt="Accueil du module" class="img-rounded" />
+				</a>
+			</p>
+		</div>
+	</aside>
+</div>
+<hr />
+<div class="row">
+	<article class="col-sm-8 sidebar sidebar-left">
+		<h3>Gérer les fichiers</h3>
+		<p>Avec le formulaire en haut de cette interface, vous pouvez ajouter un fichier à télécharger.</p>
+		<p>Un identifiant vous est automatiquement attribué pour ce fichier afin de vous facilité la tâche. Vous pouvez toute fois modifier cet identifiant en vous assurant qu'il ne commence pas par un chiffre et qu'il ne comporte pas de caractères spéciaux.</p>
+		<p>La possibilité de soumettre les téléchargement à des droits est déjà en place, il ne manque plus qu'à l'implémenter.</p>
+		<p>Les boutons à la droite de chaque fichier vous permettent de :</p>
+		<ul class="cog-tools">
+			<li>copier dans le presse-papier l'url à placer dans votre lien pour donner l'accès au fichier.</li>
+			<li>télécharger le fichier (pour le vérifier par exemple).</li>
+			<li>supprimer le fichier.</li>
+		</ul>
+	</article>
+	<aside class="col-sm-4 sidebar sidebar-right">
+		<div class="widget">
+			<p class="txt-center">
+				<a href="/img/contents/doc/manageFiles.png" rel="cbox" title="Gestion des fichiers" class="cbox">
+					<img src="/img/contents/doc/manageFiles.png" alt="Gestion des fichiers" class="img-rounded" />
+				</a>
+			</p>
+			<p>
+				Gestion des fichiers disponibles au téléchargement.
+			</p>
+		</div>
+	</aside>
+</div>
+<hr />
+<div class="row">
+	<article class="col-sm-8 sidebar sidebar-left">
+		<h3>Format des identifiants de fichier</h3>
+		<p>Comme mentionné plus haut, un identifiant est automatiquement généré à partir du nom du fichier afin de vous facilité la vie.</p>
+		<p>Vous pouvez toute fois modifier cet identifiant en vous assurant qu'il ne commence pas par un chiffre et qu'il ne comporte que des chiffres et des lettres.</p>
+	</article>
+	<aside class="col-sm-4 sidebar sidebar-right">
+		<div class="widget">
+			<p class="txt-center">
+				<a href="/img/contents/doc/addFileId.png" rel="cbox" title="Génération automatique de l'identifiant" class="cbox">
+					<img src="/img/contents/doc/addFileId.png" alt="Génération automatique de l'identifiant" class="img-rounded" />
+				</a>
+			</p>
+			<p>
+				Si le nom de fichier commence par un chiffre, un "f" se place automatiquement au début de l'identifiant.
+			</p>
+		</div>
+	</aside>
+</div>
+<hr />
+<div class="row">
+	<article class="col-sm-12">
+		<h3>Headers par extension de fichier</h3>
+		<p>Des headers spécifiques sont envoyés pour les extensions suivantes :</p>
+	</article>
+	<article class="col-sm-3">
+		<ul class="cog-tools">
+			<li>.txt</li>
+			<li>.md</li>
+			<li>.sql</li>
+			<li>.xml</li>
+			<li>.html</li>
+		</ul>
+	</article>
+	<article class="col-sm-3">
+		<ul class="cog-tools">
+			<li>.hml</li>
+			<li>.json</li>
+			<li>.pdf</li>
+			<li>.jpg</li>
+			<li>.jpeg</li>
+		</ul>
+	</article>
+	<article class="col-sm-3">
+		<ul class="cog-tools">
+			<li>.png</li>
+			<li>.gif</li>
+			<li>.zip</li>
+			<li>.rar</li>
+			<li>.tar</li>
+		</ul>
+	</article>
+	<article class="col-sm-3">
+		<ul class="cog-tools">
+			<li>.gz</li>
+			<li>.tgz</li>
+			<li>.gz2</li>
+		</ul>
+	</article>
+	<article class="col-sm-12">
+		<p class="language-php"><code>header("Content-Type: application/octet-stream");</code> est envoyé par défaut pour les autres extensions.</p>
+	</article>
+</div>
+<hr />
+<div class="row">
+	<article class="col-sm-12 maincontent">
+		<div class="row">
+			<article class="col-sm-12">
+				<h3>Télécharger</h3>
+			</article>
+			<div class="col-md-3 col-sm-6 col-xs-6">
+				<a class="btn btn-default btn-large btn-dl" href="https://github.com/sebb13/Download" target="_blank">Récupérer depuis GitHub <i class="fa fa-github" aria-hidden="true"></i></a>
+			</div>
+			<div class="col-md-3 col-sm-6 col-xs-6">
+				<a class="btn btn-default btn-large btn-dl" href="/{##LANG##}/downloadFile.html?file_id=Downloadzip">Télécharger les sources (.zip)</a>
+			</div>
+			<div class="col-md-3 col-sm-6 col-xs-6">
+				<a class="btn btn-default btn-large btn-dl" href="/{##LANG##}/downloadFile.html?file_id=Downloadtargz">Télécharger les sources (.tar.gz)</a>
+			</div>
+			<div class="col-md-3 col-sm-6 col-xs-6">
+				<a class="btn btn-default btn-large btn-dl" href="/{##LANG##}/downloadFile.html?file_id=LICENSEmd">Télécharger la license</a>
+			</div>
+		</div>
+	</article>
+</div>

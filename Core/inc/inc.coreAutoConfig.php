@@ -57,8 +57,6 @@ unset($sWebPath, $sRoot);
 define('IMG_URL',				WEB_PATH.'img/');
 define('CSS_URL',				WEB_PATH.'css/');
 define('JS_URL',				WEB_PATH.'js/');
-define('SWF_URL',				WEB_PATH.'swf');
-define('DOWNLOAD_URL',			WEB_PATH.'download/');
 define('DOWNLOAD_PATH',			ROOT_PATH.'download/');
 define('LOG_PATH',				CORE_PATH.'logs/');
 define('DATA_PATH',				CORE_PATH.'data/');

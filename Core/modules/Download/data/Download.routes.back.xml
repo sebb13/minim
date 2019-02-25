@@ -1,0 +1,2 @@
+<?xml version="1.0"?>
+<routes><download_home><![CDATA[Download::getHomePage]]></download_home><download_manageFiles><![CDATA[Download::getManageFilesPage]]></download_manageFiles></routes>

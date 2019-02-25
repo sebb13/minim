@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<translations>
+	<DOWNLOAD_MGR_HOME_TITLE><![CDATA[Gestor de descargas]]></DOWNLOAD_MGR_HOME_TITLE>
+	<MANAGE_FILES><![CDATA[Administrar archivos]]></MANAGE_FILES>
+	<STATS_FILES><![CDATA[Descargar estadísticas]]></STATS_FILES>
+	<CONFIRM_DELETE_FILE><![CDATA[¿Estás seguro de que quieres eliminar este archivo?]]></CONFIRM_DELETE_FILE>
+	<SUCCESS_DELETE_FILE><![CDATA[El archivo ha sido eliminado exitosamente.]]></SUCCESS_DELETE_FILE>
+	<ERROR_DELETE_FILE><![CDATA[No se puede borrar el archivo.]]></ERROR_DELETE_FILE>
+	<ADD_FILE><![CDATA[Agregar un archivo]]></ADD_FILE>
+	<SUCCESS_ADD_FILE><![CDATA[Archivo exitosamente agregado]]></SUCCESS_ADD_FILE>
+	<ERROR_ADD_FILE><![CDATA[No se puede agregar este archivo]]></ERROR_ADD_FILE>
+	<GET_FILE_LINK><![CDATA[Obtenga el enlace para incrustar para este archivo]]></GET_FILE_LINK>
+	<ERROR_MISSING_FILE_ID><![CDATA[Por favor ingrese un identificador para su archivo]]></ERROR_MISSING_FILE_ID>
+	<ERROR_FILE_ID_ALREADY_EXIST><![CDATA[Este identificador ya está en uso.]]></ERROR_FILE_ID_ALREADY_EXIST>
+	<ERROR_FILE_ID_MUST_BEGIN_WITH_LETTER><![CDATA[El identificador debe comenzar con una letra.]]></ERROR_FILE_ID_MUST_BEGIN_WITH_LETTER>
+	<ERROR_FILE_ID_MUST_CONTAIN_ONLY_NUMS_AND_LETTERS><![CDATA[El identificador debe contener solo números y letras.]]></ERROR_FILE_ID_MUST_CONTAIN_ONLY_NUMS_AND_LETTERS>
+	<FILE_ID_TOOLTIP><![CDATA[El identificador debe comenzar con una letra y debe contener solo números y letras.]]></FILE_ID_TOOLTIP>
+</translations>

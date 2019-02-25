@@ -274,32 +274,5 @@
 			</div>
 		</aside>
 	</div>
-    <hr />
-	<h3>Download</h3>
-    <div class="row">
-		<!-- Article main content -->
-		<article class="col-sm-8 maincontent language-php">
-			<h4>Téléchargement de fichiers</h4>
-			<p>Minim propose un système simple pour offrir des fichiers au téléchargement.</p>
-			<p>Le fichier download.php situé à la racine a été conçu pour cela.</p>
-			<p>Il gère actuellement les extentions .txt, .pdf, .jpg, .png, .zip et .tar.gz</p>
-			<p>Libre à vous d'en rajouter !</p>
-			<h4>Pour offrir des fichiers au téléchargement il vous suffit de :</h4>
-			<ul class="cog-tools">
-				<li>Placer un répertoire <strong>download</strong> à la racine de votre site / application contenant les fichiers que vous souhaitez mettre à disposition (accessible avec la constante <code>DOWNLOAD_PATH</code>).</li>
-				<li>Renseigner dans le fichier <strong>class.Config.php</strong> les correspondances ID=>chemin vers le fichier</li>
-				<li>Renseigner dans l'attribut "href" des liens permettant de télécharger <strong>download.php?file_id=yourFileId</strong>.</li>
-			</ul>
-			<p>Un fichier JSON est mis à jour dans <strong>Core/data/download.json</strong> avec le nombre de téléchargement par fichier. C'est la méthode <code>DownloadMgr::counterUpdate()</code> qui s'en charge.</p>
-		</article>
-		<!-- /Article -->
-		<aside class="col-sm-4 sidebar sidebar-right">
-			<div class="widget">
-				<a href="/img/contents/doc/download.png" rel="cbox" title="download.php" class="cbox">
-					<img src="/img/contents/doc/download.png" alt="download.php" class="img-rounded" />
-				</a>
-			</div>
-		</aside>
-	</div>
 </div>
 <!-- /container -->

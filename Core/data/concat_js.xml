@@ -72,4 +72,18 @@
 			<type><![CDATA[launchers]]></type>
 		</file>
 	</Websiteproperties>
+	<Download>
+		<file>
+			<url><![CDATA[download.back.functions.js]]></url>
+			<level><![CDATA[4]]></level>
+			<role><![CDATA[back]]></role>
+			<type><![CDATA[functions]]></type>
+		</file>
+		<file>
+			<url><![CDATA[download.back.launchers.js]]></url>
+			<level><![CDATA[5]]></level>
+			<role><![CDATA[back]]></role>
+			<type><![CDATA[launchers]]></type>
+		</file>
+	</Download>
 </concat_js>

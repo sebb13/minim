@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <translations>
 	<CONTACT>Contact</CONTACT>
+	<DOWNLOAD>Téléchargements</DOWNLOAD>
 	<MEDIA>Media</MEDIA>
 	<GALLERIES>Galleries</GALLERIES>
+	<EMPTY_PLUGIN>Module vierge</EMPTY_PLUGIN>
 </translations>
