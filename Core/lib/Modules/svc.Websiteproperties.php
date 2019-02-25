@@ -28,8 +28,6 @@ final class Websiteproperties extends CoreCommon {
 		$sContent = file_get_contents(
 						ModulesMgr::getFilePath(__CLASS__, 'data').'articles/'.UserRequest::getParams('article_id').'.html'
 					);
-		
-		
 		die(Minifier::minifyHtml(
 					$this->oTplMgr->buildSimpleCacheTpl(
 												$sContent, 
