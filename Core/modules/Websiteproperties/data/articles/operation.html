@@ -320,7 +320,7 @@
 		<h3>La vue et les pages.</h3>
 		<p>La gestion des vues se fait dans la classe <strong>class.view.php</strong>.</p>
 		<p>C'est ici que l'on va stocker dans un SplObjectStorage les méthodes des classes de placeholders sur lesquels nous reviendront dans la section suivante.</p>
-		<p>Comme vous pouvez le voir dans l'extrait en complément, les partie dynamiques de la vue  sont représentés par des placeholders du type <code>{__METATAGS__}</code>, comme pour les traductions dans les templates, ou <code>{##SITE_URL##}</code> pour le remplacement de certaines valeurs par le moteur de template.</p>
+		<p>Comme vous pouvez le voir dans l'extrait en complément, les partie dynamiques de la vue  sont représentés par des placeholders du type <code>{__METATAGS__}</code>, comme pour les traductions dans les templates, ou <code>&#x7B;##SITE_URL##}</code> pour le remplacement de certaines valeurs par le moteur de template.</p>
 		<p>Chaque placeholder correspond à une méthode qui sera appelée à la volée pour mettre en place le bon contenu (méthode <code>buildView($sViewPath)</code>).</p>
 		<p>Le contenu de la page viendra se placer en lieu et place du tag <code>{__CONTENT__}</code> de la vue.</p>
 	</article>
@@ -381,16 +381,16 @@
 		<p>La classe <strong>class.TplMgr.php</strong> embarque les méthodes de base pour gérer les templates et les traductions (en équipe avec la classe <strong>class.Lang.php</strong>).</p>
 		<p>Elle permet en plus de gérer la mise en place des traductions d'assurer le remplacement de certaines valeurs, autant dans la vue que dans la page demandée.</p>
 		<ul class="cog-tools">
-			<li><code>{##WEB_PATH##}</code> : L'URL du projet avec un "/" à la fin.</li>
-			<li><code>{##SITE_URL##}</code> : L'URL du projet sans "/" à la fin.</li>
-			<li><code>{##FRONT_URL##}</code> : L'URL du front du projet (tient compte de l'environnement, développement ou production).</li>
-			<li><code>{##STATIC_SERVER_URL##}</code> : L'URL du serveur statique du projet (tient compte de l'environnement, développement ou production).</li>
-			<li><code>{##EMAIL_CONTACT##}</code> : L'email à utiliser pour les notifications d'erreur.</li>
-			<li><code>{##LANG##}</code> : La langue en cours.</li>
-			<li><code>{##PAGE##}</code> : La page en cours.</li>
-			<li><code>{##APP_TOKEN##}</code> : Le token de l'application.</li>
-			<li><code>{##DOMAIN_NAME##}</code> : Le nom de domaine.</li>
-			<li><code>{##YEAR##}</code> : L'année en cours.</li>
+			<li><code>&#x7B;##WEB_PATH##}</code> : L'URL du projet avec un "/" à la fin.</li>
+			<li><code>&#x7B;##SITE_URL##}</code> : L'URL du projet sans "/" à la fin.</li>
+			<li><code>&#x7B;##FRONT_URL##}</code> : L'URL du front du projet (tient compte de l'environnement, développement ou production).</li>
+			<li><code>&#x7B;##STATIC_SERVER_URL##}</code> : L'URL du serveur statique du projet (tient compte de l'environnement, développement ou production).</li>
+			<li><code>&#x7B;##EMAIL_CONTACT##}</code> : L'email à utiliser pour les notifications d'erreur.</li>
+			<li><code>&#x7B;##LANG##}</code> : La langue en cours.</li>
+			<li><code>&#x7B;##PAGE##}</code> : La page en cours.</li>
+			<li><code>&#x7B;##APP_TOKEN##}</code> : Le token de l'application.</li>
+			<li><code>&#x7B;##DOMAIN_NAME##}</code> : Le nom de domaine.</li>
+			<li><code>&#x7B;##YEAR##}</code> : L'année en cours.</li>
 		</ul>
 		<p>La plupart de ces informations sont récupérées directement dans la configuration.</p>
 	</article>
