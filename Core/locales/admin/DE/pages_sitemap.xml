@@ -8,4 +8,12 @@
 	<REGENERATE_SITEMAP_CONFIRM><![CDATA[Bist du sicher, dass du die Sitemap regenerieren willst?]]></REGENERATE_SITEMAP_CONFIRM>
 	<SUCCESS_REGENERATE_SITEMAP><![CDATA[Erfolgreich regenerierte Sitemap]]></SUCCESS_REGENERATE_SITEMAP>
 	<ERROR_REGENERATE_SITEMAP><![CDATA[Unmöglich, die Sitemap zu regenerieren]]></ERROR_REGENERATE_SITEMAP>
+	<PAGES_TO_IGNORE_TITLE><![CDATA[Zu ignorierende Seiten]]></PAGES_TO_IGNORE_TITLE>
+	<PAGES_TO_IGNORE_LABEL><![CDATA[Neue Seite]]></PAGES_TO_IGNORE_LABEL>
+	<DELETE_PAGE_TO_IGNORE_CONFIRM><![CDATA[Möchten Sie diese Seite wirklich löschen, um sie in der Sitemap zu ignorieren?]]></DELETE_PAGE_TO_IGNORE_CONFIRM>
+	<DELETE_PAGE_TO_IGNORE_SUCCESS><![CDATA[Seite wurde erfolgreich gelöscht]]></DELETE_PAGE_TO_IGNORE_SUCCESS>
+	<DELETE_PAGE_TO_IGNORE_ERROR><![CDATA[Diese Seite kann nicht von negativen Seiten entfernt werden]]></DELETE_PAGE_TO_IGNORE_ERROR>
+	<ADD_PAGE_TO_IGNORE_CONFIRM><![CDATA[Möchten Sie diese Seite wirklich zu den Seiten hinzufügen, die in der Sitemap ignoriert werden sollen?]]></ADD_PAGE_TO_IGNORE_CONFIRM>
+	<ADD_PAGE_TO_IGNORE_SUCCESS><![CDATA[Seite wurde erfolgreich ausgeschlossen]]></ADD_PAGE_TO_IGNORE_SUCCESS>
+	<ADD_PAGE_TO_IGNORE_ERROR><![CDATA[Kann keine Seite zum Ausschließen hinzufügen]]></ADD_PAGE_TO_IGNORE_ERROR>
 </translations>

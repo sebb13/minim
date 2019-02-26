@@ -8,4 +8,12 @@
 	<REGENERATE_SITEMAP_CONFIRM><![CDATA[Êtes vous sûr de vouloir régénérer le sitemap ?]]></REGENERATE_SITEMAP_CONFIRM>
 	<SUCCESS_REGENERATE_SITEMAP><![CDATA[Sitemap régénéré avec succès]]></SUCCESS_REGENERATE_SITEMAP>
 	<ERROR_REGENERATE_SITEMAP><![CDATA[Imopssible de régénérer le sitemap]]></ERROR_REGENERATE_SITEMAP>
+	<PAGES_TO_IGNORE_TITLE><![CDATA[Pages à ignorer]]></PAGES_TO_IGNORE_TITLE>
+	<PAGES_TO_IGNORE_LABEL><![CDATA[Nouvelle page]]></PAGES_TO_IGNORE_LABEL>
+	<DELETE_PAGE_TO_IGNORE_CONFIRM><![CDATA[Êtes-vous sûr de vouloir supprimer cette page des pages à ignorer dans le sitemap ?]]></DELETE_PAGE_TO_IGNORE_CONFIRM>
+	<DELETE_PAGE_TO_IGNORE_SUCCESS><![CDATA[Page à exclure supprimée avec succès]]></DELETE_PAGE_TO_IGNORE_SUCCESS>
+	<DELETE_PAGE_TO_IGNORE_ERROR><![CDATA[Impossible de supprimer la page à exclure]]></DELETE_PAGE_TO_IGNORE_ERROR>
+	<ADD_PAGE_TO_IGNORE_CONFIRM><![CDATA[Êtes-vous sûr de vouloir ajouter cette page dans les pages à ignorer dans le sitemap ?]]></ADD_PAGE_TO_IGNORE_CONFIRM>
+	<ADD_PAGE_TO_IGNORE_SUCCESS><![CDATA[Page à exclure ajoutée avec succès]]></ADD_PAGE_TO_IGNORE_SUCCESS>
+	<ADD_PAGE_TO_IGNORE_ERROR><![CDATA[Impossible d'ajouter la page à exclure]]></ADD_PAGE_TO_IGNORE_ERROR>
 </translations>

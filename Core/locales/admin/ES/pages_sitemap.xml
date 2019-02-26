@@ -8,4 +8,12 @@
 	<REGENERATE_SITEMAP_CONFIRM><![CDATA[¿Está seguro de que desea regenerar el mapa del sitio?]]></REGENERATE_SITEMAP_CONFIRM>
 	<SUCCESS_REGENERATE_SITEMAP><![CDATA[Mapa de sitio regenerado con éxito]]></SUCCESS_REGENERATE_SITEMAP>
 	<ERROR_REGENERATE_SITEMAP><![CDATA[Imposible regenerar el mapa del sitio]]></ERROR_REGENERATE_SITEMAP>
+	<PAGES_TO_IGNORE_TITLE><![CDATA[Páginas para ignorar]]></PAGES_TO_IGNORE_TITLE>
+	<PAGES_TO_IGNORE_LABEL><![CDATA[Nueva pagina]]></PAGES_TO_IGNORE_LABEL>
+	<DELETE_PAGE_TO_IGNORE_CONFIRM><![CDATA[¿Está seguro de que desea eliminar esta página de las páginas para ignorarlas en el mapa del sitio?]]></DELETE_PAGE_TO_IGNORE_CONFIRM>
+	<DELETE_PAGE_TO_IGNORE_SUCCESS><![CDATA[Página para excluir eliminado con éxito]]></DELETE_PAGE_TO_IGNORE_SUCCESS>
+	<DELETE_PAGE_TO_IGNORE_ERROR><![CDATA[Esta página no puede ser eliminada de las páginas negativas.]]></DELETE_PAGE_TO_IGNORE_ERROR>
+	<ADD_PAGE_TO_IGNORE_CONFIRM><![CDATA[¿Está seguro de que desea agregar esta página a las páginas para ignorar en el mapa del sitio?]]></ADD_PAGE_TO_IGNORE_CONFIRM>
+	<ADD_PAGE_TO_IGNORE_SUCCESS><![CDATA[Página para excluir añadido con éxito]]></ADD_PAGE_TO_IGNORE_SUCCESS>
+	<ADD_PAGE_TO_IGNORE_ERROR><![CDATA[No se puede agregar la página para excluir]]></ADD_PAGE_TO_IGNORE_ERROR>
 </translations> 

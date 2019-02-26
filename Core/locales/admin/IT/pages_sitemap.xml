@@ -8,4 +8,12 @@
 	<REGENERATE_SITEMAP_CONFIRM><![CDATA[Sei sicuro di voler rigenerare la sitemap?]]></REGENERATE_SITEMAP_CONFIRM>
 	<SUCCESS_REGENERATE_SITEMAP><![CDATA[Riuscita la rigenerazione della Sitemap]]></SUCCESS_REGENERATE_SITEMAP>
 	<ERROR_REGENERATE_SITEMAP><![CDATA[Impossibile rigenerare la sitemap]]></ERROR_REGENERATE_SITEMAP>
+	<PAGES_TO_IGNORE_TITLE><![CDATA[Pagine da ignorare]]></PAGES_TO_IGNORE_TITLE>
+	<PAGES_TO_IGNORE_LABEL><![CDATA[Nuova pagina]]></PAGES_TO_IGNORE_LABEL>
+	<DELETE_PAGE_TO_IGNORE_CONFIRM><![CDATA[Sei sicuro di voler eliminare questa pagina dalle pagine da ignorare nella sitemap?]]></DELETE_PAGE_TO_IGNORE_CONFIRM>
+	<DELETE_PAGE_TO_IGNORE_SUCCESS><![CDATA[Pagina da escludere eliminata correttamente]]></DELETE_PAGE_TO_IGNORE_SUCCESS>
+	<DELETE_PAGE_TO_IGNORE_ERROR><![CDATA[Questa pagina non può essere rimossa dalle pagine negative]]></DELETE_PAGE_TO_IGNORE_ERROR>
+	<ADD_PAGE_TO_IGNORE_CONFIRM><![CDATA[Sei sicuro di voler aggiungere questa pagina alle pagine da ignorare nella sitemap?]]></ADD_PAGE_TO_IGNORE_CONFIRM>
+	<ADD_PAGE_TO_IGNORE_SUCCESS><![CDATA[Pagina da escludere aggiunta correttamente]]></ADD_PAGE_TO_IGNORE_SUCCESS>
+	<ADD_PAGE_TO_IGNORE_ERROR><![CDATA[Impossibile aggiungere la pagina da escludere]]></ADD_PAGE_TO_IGNORE_ERROR>
 </translations>
