@@ -54,7 +54,8 @@
 		<h3>Déploiement / à noter</h3>
 		<p>Si vous voulez basculer votre application de la version de développement vers la version de production, il convient de copier les fichiers XML définissants les routes pour chaque module (Websiteproperties.routes.front.xml par exemple), minim compris.</p>
 		<p>Mais attention ! Cette action n'est pas suffisante pour que les routes soient prisent en compte.</p>
-		<p>En effet, les fichiers XML de définition permettent uniquement d'afficher les routes dans l'interface du backoffice. Un passage sur chaque module et chaque "face" (front, back) depuis la gestion des routes suivi d'une sauvegarde des routes va inscrire dans la classe PHP dédiée les différentes routes.</p>
+		<p>En effet, les fichiers XML de définition permettent uniquement d'afficher les routes dans l'interface du backoffice.</p>
+		<p>Un passage sur chaque module et chaque "face" (front, back) depuis la gestion des routes suivi d'une sauvegarde des routes va inscrire dans la classe PHP dédiée (/Core/data/class.RoutesConf.php) les différentes routes.</p>
 	</article>
 	<!-- /Article -->
 </div>
