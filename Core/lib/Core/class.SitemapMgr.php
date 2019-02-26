@@ -21,6 +21,10 @@ final class SitemapMgr {
 
 	const SUCCESS_REGENERATE_SITEMAP = 'SUCCESS_REGENERATE_SITEMAP';
 	const ERROR_REGENERATE_SITEMAP = 'ERROR_REGENERATE_SITEMAP';
+	const DELETE_PAGE_TO_IGNORE_SUCCESS = 'DELETE_PAGE_TO_IGNORE_SUCCESS';
+	const DELETE_PAGE_TO_IGNORE_ERROR = 'DELETE_PAGE_TO_IGNORE_ERROR';
+	const ADD_PAGE_TO_IGNORE_SUCCESS = 'ADD_PAGE_TO_IGNORE_SUCCESS';
+	const ADD_PAGE_TO_IGNORE_ERROR = 'ADD_PAGE_TO_IGNORE_ERROR';
 	private static $sTpl = '<?xml version="1.0" encoding="UTF-8"?>
 							<urlset
 								xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
@@ -28,12 +32,58 @@ final class SitemapMgr {
 								xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
 								 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 							</urlset>';
-	private static $sRobotsTxtPatern	= 'Sitemap: {__WEB_PATH__}sitemap.xml';
-	private static $sRobotsTxtFileName	= 'robots.txt';
-	private static $sSitemapFileName	= 'sitemap.xml';
-	private static $aAllowedNodes		= array('loc','lastmod','changefreq','priority');
-	private static $aExcludedFiles		= array('404','menu','index.php', 'thankyou');
+	private static $sRobotsTxtPatern		= 'Sitemap: {__WEB_PATH__}sitemap.xml';
+	private static $sRobotsTxtFileName		= 'robots.txt';
+	private static $sSitemapFileName		= 'sitemap.xml';
+	private static $aAllowedNodes			= array('loc','lastmod','changefreq','priority');
+	private static $aExcludedFiles			= array(
+												'404'=>'404',
+												'menu'=>'menu',
+												'thankyou'=>'thankyou',
+												'downloadFile'=>'downloadFile',
+												'maintenance'=>'maintenance'
+											);
+	private static $sExcludedFilesFilename	= 'sitemapExcludedFiles.json';
 	
+	private static function init() {
+		clearstatcache();
+		if(file_exists(DATA_PATH.self::$sExcludedFilesFilename)) {
+			self::$aExcludedFiles = (array) json_decode(file_get_contents(DATA_PATH.self::$sExcludedFilesFilename));
+		} else {
+			file_put_contents(DATA_PATH.self::$sExcludedFilesFilename, json_encode(self::$aExcludedFiles));
+			return self::init();
+		}
+	}
+	
+	public static function deletePageToIgnore($sFilename) {
+		self::init();
+		if(isset(self::$aExcludedFiles[$sFilename])) {
+			unset(self::$aExcludedFiles[$sFilename]);
+		}
+		if(self::savePagesToIgnore()) {
+			UserRequest::$oAlertBoxMgr->success = SessionCore::getLangObject()->getMsg('pages_sitemap', self::DELETE_PAGE_TO_IGNORE_SUCCESS);
+			return true;
+		} else {
+			UserRequest::$oAlertBoxMgr->danger = SessionCore::getLangObject()->getMsg('pages_sitemap', self::DELETE_PAGE_TO_IGNORE_ERROR);
+			return false;
+		}
+	}
+	
+	public static function addPageToIgnore($sFilename) {
+		self::init();
+		self::$aExcludedFiles[$sFilename] = $sFilename;
+		if(self::savePagesToIgnore()) {
+			UserRequest::$oAlertBoxMgr->success = SessionCore::getLangObject()->getMsg('pages_sitemap', self::ADD_PAGE_TO_IGNORE_SUCCESS);
+			return true;
+		} else {
+			UserRequest::$oAlertBoxMgr->danger = SessionCore::getLangObject()->getMsg('pages_sitemap', self::ADD_PAGE_TO_IGNORE_ERROR);
+			return false;
+		}
+	}
+	
+	private static function savePagesToIgnore() {
+		return file_put_contents(DATA_PATH.self::$sExcludedFilesFilename, json_encode(self::$aExcludedFiles));
+	}
 	/**
 	* require an array with one key bey url. Each key are an array with one key per node for currently value
 	* example for one url : array(0=>array('loc'=>'http://mySite.com', 'lastmod'=>'20120612'))
@@ -41,6 +91,7 @@ final class SitemapMgr {
 	*/
 	public static function build() {
 		try {
+			self::init();
 			$oXml = simplexml_load_string(self::$sTpl);
 			foreach(self::getArrayMap() as $aUrl) {
 				if(empty($aUrl['loc'])) {
@@ -98,12 +149,17 @@ final class SitemapMgr {
 		$oRoutingMgr = new RoutingMgr();
 		foreach($oRoutingMgr->getAllRoutes('front') as $sPage=>$sServiceMethod) {
 			$sPage = str_replace('_', '/', $sPage);
-			$aPage = array(
-							'loc' 		=> SITE_URL_PROD.$sLang.'/'.$sPage.'.html',
-							'lastmod' 	=> date('Y-m-d')
-						);
-			if(!in_array($aPage, $aUrls)) {
-				$aUrls[] = $aPage;
+			if(!in_array($sPage, self::$aExcludedFiles)) {
+				foreach(SessionCore::$oLang->getFrontAvailable() as $sLang) {
+					$aPage = array(
+									'loc' 		=> SITE_URL_PROD.$sLang.'/'.$sPage.'.html',
+									'lastmod' 	=> date('Y-m-d')
+								);
+
+					if(!in_array($aPage, $aUrls)) {
+						$aUrls[] = $aPage;
+					}
+				}
 			}
 		}
 		unset($oRoutingMgr);
@@ -138,7 +194,9 @@ final class SitemapMgr {
 		$oPagesListMgr = new PagesListMgr();
 		$aPagesList = array();
 		foreach(self::getStaticPagesList() as $sPage) {
-			$aPagesList[$sPage] = str_replace('_', '/', $sPage);
+			if(!in_array($sPage, self::$aExcludedFiles)) {
+				$aPagesList[$sPage] = str_replace('_', '/', $sPage);
+			}
 		}
 		unset($oPagesListMgr);
 		return $aPagesList;
@@ -161,17 +219,29 @@ final class SitemapMgr {
 		return $aUrls['url'];
 	}
 	
+	private static function getPagesToIgnoreBloc() {
+		$sTpl = file_get_contents(ADMIN_PARTS_TPL_PATH.'pages.sitemap.fileToIgnoreForm.tpl');
+		$sBloc = '';
+		foreach(self::$aExcludedFiles as $sPage) {
+			$sBloc .= str_replace('{__PAGE__}', $sPage, $sTpl);
+		}
+		return $sBloc;
+	}
+	
 	public static function getSitemapPage() {
-		$sSitemap = $sSitemapXml = '';
+		self::init();
+		$sSitemapXml = '';
 		$aSitemap = array();
 		foreach(self::getPagesListFromConf() as $sPageName) {
 			$aSitemap[] = Toolz_Tpl::getLi(str_replace('_', '/', $sPageName));
 		}
 		$oRoutingMgr = new RoutingMgr();
 		foreach($oRoutingMgr->getAllRoutes('front') as $sPage=>$sServiceMethod) {
-			$sRoutedPage = Toolz_Tpl::getLi(str_replace('_', '/', $sPage));
-			if(!in_array($sRoutedPage, $aSitemap)) {
-				$aSitemap[] = $sRoutedPage;
+			if(!in_array($sPage, self::$aExcludedFiles)) {
+				$sRoutedPage = Toolz_Tpl::getLi(str_replace('_', '/', $sPage));
+				if(!in_array($sRoutedPage, $aSitemap)) {
+					$aSitemap[] = $sRoutedPage;
+				}
 			}
 		}
 		unset($oRoutingMgr);
@@ -184,13 +254,15 @@ final class SitemapMgr {
 						'{__SITEMAP__}', 
 						'{__SITEMAP_XML__}', 
 						'{__LAST_MOD__}', 
-						'{__ROBOT_TXT__}'
+						'{__ROBOT_TXT__}',
+						'{__PAGES_TO_IGNORE__}'
 					), 
 					array(
 						implode('', $aSitemap), 
 						$sSitemapXml, 
 						$sLastMod, 
-						file_get_contents(ROOT_PATH.self::$sRobotsTxtFileName)
+						file_get_contents(ROOT_PATH.self::$sRobotsTxtFileName),
+						self::getPagesToIgnoreBloc()
 					), 
 					file_get_contents(ADMIN_CONTENT_TPL_PATH.'pages_sitemap.tpl')
 				);

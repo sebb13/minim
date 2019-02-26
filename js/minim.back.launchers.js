@@ -400,6 +400,40 @@ $('div#ajaxFrame').on('click', 'input#last-mod', function(e){
 		return true;
 	});
 });
+$('div#ajaxFrame').on('click', 'button.deletePageToIgnore', function(e){
+	var pagename = $(this).parent().parent().find('.pageToIgnorename').val();
+	bootbox.confirm($('input#deletePageToIgnoreConfirm').val(), function(result){
+		if(result) {
+			var promise = genericRequest({
+					app_token: getToken(), 
+					content: getCurrentPage(),
+					exw_action: 'Pages::deletePageToIgnore',
+					pagename: pagename
+				});
+			promise.success(function(data) {
+				$('div#ajaxFrame').html(data);
+			});
+		}
+		return true;
+	});
+});
+$('div#ajaxFrame').on('click', 'button#addPageToIgnoreButton', function(e){
+	var pagename = $('#addPageToIgnore').val();
+	bootbox.confirm($('input#addPageToIgnoreConfirm').val(), function(result){
+		if(result) {
+			var promise = genericRequest({
+					app_token: getToken(), 
+					content: getCurrentPage(),
+					exw_action: 'Pages::addPageToIgnore',
+					pagename: pagename
+				});
+			promise.success(function(data) {
+				$('div#ajaxFrame').html(data);
+			});
+		}
+		return true;
+	});
+});
 $('div#ajaxFrame').on('change', 'select#sFileToTranslate, select#sRefLang, select#sLangToTranslate', function(e){
 	if (getHasChanges(false) === true) {
 		if (!confirm('Êtes vous sûr de ne pas vouloir enregistrer vos modifications ?')) {

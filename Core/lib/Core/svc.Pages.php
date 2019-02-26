@@ -80,4 +80,14 @@ final class Pages extends CoreCommon {
 		SitemapMgr::build();
 		return $this->getSitemapPage();
 	}
+	
+	public function addPageToIgnore() {
+		SitemapMgr::addPageToIgnore(UserRequest::getParams('pagename'));
+		return $this->getSitemapPage();
+	}
+	
+	public function deletePageToIgnore() {
+		SitemapMgr::deletePageToIgnore(UserRequest::getParams('pagename'));
+		return $this->getSitemapPage();
+	}
 }
