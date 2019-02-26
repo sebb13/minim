@@ -25,6 +25,8 @@
 			</div>
 		</div>
 	</div>
+</div>
+<div class="row">
 	<div class="col-md-6">
 		<div class="panel panel-default conf-box">
 			<div class="panel-heading conf-box-header">
