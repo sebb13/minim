@@ -5,7 +5,7 @@
 		Dans le cadre de développements de sites internet ou d'applications, certains composants et outils sont souvent nécessaires de manière récurrente, comme un système d'internationalisation, de gestion de cache, etc.<br />
 		Forts d'une dizaine d'années d'expérience, nous avons regroupé ces différents composants autour d'un système de routage. 
 		Une structure de fichiers a également été pensée et mise en place pour favoriser l'aspect modulaire du projet et simplifier sa compréhension.<br />
-		En production sur plusieurs sites dont celui-ci, nous avons décidé de créer une documentation et de l'ouvrir à l'open source.
+		En production depuis quelques années sur plusieurs sites, dont celui-ci, nous avons décidé de créer une documentation et de l'ouvrir à l'open source.
 	]]></HANGS>
 	<HANGS_OUTRO><![CDATA[minim est né.]]></HANGS_OUTRO>
     <FRAMEWORK><![CDATA[Framework]]></FRAMEWORK>
