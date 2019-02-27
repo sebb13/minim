@@ -36,7 +36,7 @@
 				<div class="row form-group">
 					<form action="#" method="post">
 						<div class="col-md-4">
-							<label for="last-mod" class="form-control">{__PAGES_TO_IGNORE_LABEL__}</label>
+							<label for="last-mod" class="form-control">{__PAGES_TO_IGNORE_LABEL__}:</label>
 						</div>
 						<div class="col-md-6">
 							<input type="text" name="addPageToIgnore" id="addPageToIgnore" class="form-control" />
