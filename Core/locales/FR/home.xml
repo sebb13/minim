@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <translations>
-    <HANGS_TITLE><![CDATA[<strong>minim</strong> est un framework <strong>PHP léger</strong>, évolutif et <strong>open source</strong>]]></HANGS_TITLE>
+    <HANGS_TITLE><![CDATA[<strong>minim</strong> est un framework <strong>PHP</strong> léger, évolutif et <strong>open source</strong>]]></HANGS_TITLE>
     <HANGS><![CDATA[
 		Dans le cadre de développements de sites internet ou d'applications, certains composants et outils sont souvent nécessaires de manière récurrente, comme un système d'internationalisation, de gestion de cache, etc.<br />
 		Forts d'une dizaine d'années d'expérience, nous avons regroupé ces différents composants autour d'un système de routage. 
