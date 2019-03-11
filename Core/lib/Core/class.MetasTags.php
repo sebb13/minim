@@ -63,8 +63,6 @@ final class MetasTags {
 		} else {
 			$sRobots = 'noindex,nofollow';
 		}
-		$sStaticDevServerUrl = is_array(STATIC_DEV_SERVER_URL) ? '' : STATIC_DEV_SERVER_URL;
-		$sStaticServerUrl = is_array(STATIC_DEV_SERVER_URL) ? '' : STATIC_SERVER_URL;
 		$sMetas = Minifier::genericMinify(
 									str_replace(
 											array(
@@ -86,7 +84,7 @@ final class MetasTags {
 												self::getGoogleSection(),
 												self::getOgSection(),
 												SessionCore::getSessionHash(),
-												DEV ? $sStaticDevServerUrl : $sStaticServerUrl,
+												DEV ? STATIC_DEV_SERVER_URL : STATIC_SERVER_URL,
 												UserRequest::getRequest('sPage'),
 												UserRequest::getRequest('sLang'),
 												json_encode(SessionCore::$oLang->getAvailable())

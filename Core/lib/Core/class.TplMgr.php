@@ -88,8 +88,6 @@ final class TplMgr {
 		} else {
 			$sWebPath = ADMIN ?  ADMIN_URL_PROD : SITE_URL_PROD;
 		}
-		$sStaticDevServerUrl = is_array(STATIC_DEV_SERVER_URL) ? '' : STATIC_DEV_SERVER_URL;
-		$sStaticServerUrl = is_array(STATIC_DEV_SERVER_URL) ? '' : STATIC_SERVER_URL;
 		$aSearchAdd = array(
 						'{##WEB_PATH##}',
 						'{##SITE_URL##}',
@@ -106,7 +104,7 @@ final class TplMgr {
 						$sWebPath,
 						SITE_URL,
 						DEV ? SITE_URL_DEV : SITE_URL_PROD,
-						DEV ? $sStaticDevServerUrl : $sStaticServerUrl,
+						DEV ? STATIC_DEV_SERVER_URL : STATIC_SERVER_URL,
 						is_array(EMAIL_CONTACT) ? '' : EMAIL_CONTACT,
 						$this->oLang === NULL ? DEFAULT_LANG : $this->oLang->LOCALE,
 						UserRequest::getPage(),

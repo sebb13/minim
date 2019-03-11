@@ -162,13 +162,13 @@ if (($aConf['SYS_DB_NEED'] === 'YES') ||
 	}
 }
 define('DOMAIN_NAME',			$aConf['DOMAIN_NAME']);
-define('EMAIL_CONTACT',			$aConf['EMAIL_CONTACT']);
+define('EMAIL_CONTACT',			is_array($aConf['EMAIL_CONTACT']) ? '' : $aConf['EMAIL_CONTACT']);
 define('SITE_URL_PROD',			$aConf['SITE_URL_PROD']);
 define('SITE_URL_DEV',			$aConf['SITE_URL_DEV']);
 define('ADMIN_URL_PROD',		$aConf['ADMIN_URL_PROD']);
 define('ADMIN_URL_DEV',			$aConf['ADMIN_URL_DEV']);
-define('STATIC_SERVER_URL',		$aConf['STATIC_SERVER_URL']);
-define('STATIC_DEV_SERVER_URL',	$aConf['STATIC_DEV_SERVER_URL']);
+define('STATIC_SERVER_URL',		is_array($aConf['STATIC_SERVER_URL']) ? '' : $aConf['STATIC_SERVER_URL']);
+define('STATIC_DEV_SERVER_URL',	is_array($aConf['STATIC_DEV_SERVER_URL']) ? '' : $aConf['STATIC_DEV_SERVER_URL']);
 define('SITE_URL',				substr(WEB_PATH, 0, -1));
 define('DEFAULT_LANG',			$aConf['DEFAULT_LANG']);
 define('SYS_UPDATES_URL',		$aConf['SYS_UPDATES_URL']);
