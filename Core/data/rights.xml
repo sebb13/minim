@@ -1,2 +1,2 @@
 <?xml version="1.0"?>
-<system_user><item0><login><![CDATA[admin]]></login><pwd><![CDATA[{SHA}N/omUzCtg+qoee+x4ttjgIls9jk=]]></pwd><role><![CDATA[sysAdmin]]></role></item0><item1><login><![CDATA[guest]]></login><pwd><![CDATA[{SHA}NWdeaPS1r3uZXZIFrQ/EOELxZFA=]]></pwd><role><![CDATA[user]]></role></item1></system_user>
+<system_user><item0><login><![CDATA[seb]]></login><pwd><![CDATA[{SHA}Upb66/Osggq/1U7kWhluYdiwec8=]]></pwd><role><![CDATA[sysAdmin]]></role></item0><item1><login><![CDATA[guest]]></login><pwd><![CDATA[{SHA}NWdeaPS1r3uZXZIFrQ/EOELxZFA=]]></pwd><role><![CDATA[user]]></role></item1></system_user>

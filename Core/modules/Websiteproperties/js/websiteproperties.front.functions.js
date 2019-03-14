@@ -12,7 +12,7 @@ function updateArticle(article_id, mainPage) {
 	}
 	$(".cbox").colorbox({rel:'cbox'});
 	if(typeof gtag !== 'undefined') {
-		gtag('config', 'UA-132033845-1', {
+		gtag('config', $('meta[name=GOOGLE_ANALYTICS_TAG]').attr("content"), {
 			page_title : article_id,
 			page_path: '/'+getLang()+'/'+mainPage+'/'+article_id
 		});

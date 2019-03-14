@@ -150,7 +150,7 @@ function loadHtml(sPage) {
 		}
 		/* google analytics */
 		if(sPage !== 'menu' && sPage !== 'player' && typeof(gtag) !== 'undefined') {
-			gtag('config', 'UA-132033845-1', {
+			gtag('config', $('meta[name=GOOGLE_ANALYTICS_TAG]').attr("content"), {
 				'page_title' : 'sPage',
 				'page_path': '/'+sLang+'/'+sPage.replace('_', '/')+'.html'
 			 });

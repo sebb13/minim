@@ -28,7 +28,8 @@ final class MetasTags {
 											'msvalidate_01'=>'msvalidate.01',
 											'keywords'=>'keywords',
 											'author'=>'author',
-											'google-site-verification'=>'google-site-verification'
+											'google-site-verification'=>'google-site-verification',
+											'GOOGLE_ANALYTICS_TAG'=>'GOOGLE_ANALYTICS_TAG'
 										);
 	public static $aOgList = array(
 				'type',
@@ -63,6 +64,14 @@ final class MetasTags {
 		} else {
 			$sRobots = 'noindex,nofollow';
 		}
+		$oConfig = new Config();
+		$mGoogleAnalyticsTag = $oConfig->getGlobalConf('GOOGLE_ANALYTICS_TAG');
+		if(is_array($mGoogleAnalyticsTag) || !$mGoogleAnalyticsTag) {
+			$mGoogleAnalyticsTag = false;
+		} else {
+			self::$aPageConfig['meta']['GOOGLE_ANALYTICS_TAG'] = $mGoogleAnalyticsTag;
+		}
+		unset($oConfig);
 		$sMetas = Minifier::genericMinify(
 									str_replace(
 											array(
@@ -92,8 +101,12 @@ final class MetasTags {
 											file_get_contents(INC_TPL_PATH.'metaTags.tpl')
 										)
 									);
-		if (!DEV && !ADMIN) {
-			$sMetas .= file_get_contents(DATA_PATH.'google-analytics.tpl');
+		if (!DEV && !ADMIN && $mGoogleAnalyticsTag !== false) {
+			$sMetas .= str_replace(
+							'{__GOOGLE_ANALYTICS_TAG__}', 
+							$mGoogleAnalyticsTag, 
+							file_get_contents(INC_TPL_PATH.'google-analytics.tpl')
+						);
 		}
 		return $sMetas;
 	}

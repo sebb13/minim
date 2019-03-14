@@ -25,6 +25,7 @@
 			<li><strong>ERROR_MAIL :</strong> L'email du contact concerné par les erreurs de l'application.</li>
 			<li><strong>DEFAULT_LANG :</strong> La langue par défaut de l'application.</li>
 			<li><strong>LOGS_TTL :</strong> La durée de vie des logs d'erreurs.</li>
+			<li><strong>GOOGLE_ANALYTICS_TAG :</strong> Identifiant Google analytics.</li>
 			<li><strong>MAINTENANCE :</strong> Si l'application est en maintenance ou non.</li>
 			<li><strong>SYS_DB_NEED :</strong> Si l'application nécessite une base de données.</li>
 			<li><strong>SYS_DB_HOST :</strong> Adresse de la basse de données.</li>
@@ -44,9 +45,27 @@
                     <img src="/img/contents/doc/minimConf.png" alt="interface de configuration de minim" class="img-rounded" />
                 </a>
 			</p>
+			<p class="txt-center">
+				<a href="/img/contents/doc/minimConfXml.png" rel="cbox" title="fichier de configuration de minim" class="cbox">
+                    <img src="/img/contents/doc/minimConfXml.png" alt="fichier de configuration de minim" class="img-rounded" />
+                </a>
+			</p>
 		</div>
 	</aside>
 	<!-- /Sidebar -->
+</div>
+<div class="row">
+	<article class="col-sm-8 maincontent">
+		<h3>Nouvelle valeur</h3>
+		<p>Pour ajouter une valeur en configuration, il vous suffit de rajouter un nœud dans le fichier XML de configuration du module concerné (minim par défaut).</p>
+		<p>Vous pouvez définir une liste de choix en ajoutant un attribut "options" à ce nœud.</p>
+		<p>Vous avez la possibilité de séparer vos options possibles par :</p>
+		<ul class="cog-tools">
+			<li>des "|" pour un choix unique, qui seront proposées dans un champs de type "select"</li>
+			<li>des "," pour un choix multiple, qui seront proposées sous forme de checkbox.</li>
+		</ul>
+	</article>
+	<!-- /Article -->
 </div>
 <hr />
 <div class="row">
