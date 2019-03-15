@@ -29,8 +29,13 @@ function setLang(sLang) {
 	$('meta[name=app_lang]').trigger("change");
 	$('html').attr("lang", sLang);
 }
-function addMetaToForm(form, exw_actions) {
-	
+function setGoogleAnalytics(sTitle, sPage) {
+	if(typeof(gtag) !== 'undefined') {
+		gtag('config', $('meta[name=GOOGLE_ANALYTICS_TAG]').attr("content"), {
+			page_title : sTitle.replace('_', '/'),
+			page_path: '/'+getLang()+'/'+sPage.replace('_', '/')+'.html'
+		});
+	}
 }
 $.ajaxQ = (function(){
 	var id = 0, Q = {};
@@ -149,11 +154,8 @@ function loadHtml(sPage) {
 			});
 		}
 		/* google analytics */
-		if(sPage !== 'menu' && sPage !== 'player' && typeof(gtag) !== 'undefined') {
-			gtag('config', $('meta[name=GOOGLE_ANALYTICS_TAG]').attr("content"), {
-				'page_title' : 'sPage',
-				'page_path': '/'+sLang+'/'+sPage.replace('_', '/')+'.html'
-			 });
+		if(sPage !== 'menu' && sPage !== 'player') {
+			setGoogleAnalytics(sPage, sPage);
 		}
 		$('html, body').animate({
 			scrollTop: 0

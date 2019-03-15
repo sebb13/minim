@@ -12,10 +12,7 @@ function updateArticle(article_id, mainPage) {
 	}
 	$(".cbox").colorbox({rel:'cbox'});
 	if(typeof gtag !== 'undefined') {
-		gtag('config', $('meta[name=GOOGLE_ANALYTICS_TAG]').attr("content"), {
-			page_title : article_id,
-			page_path: '/'+getLang()+'/'+mainPage+'/'+article_id
-		});
+		setGoogleAnalytics(article_id, mainPage+'/'+article_id);
 	}
 	updateMenu(mainPage);
 	Prism.highlightAll();
