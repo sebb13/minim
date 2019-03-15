@@ -34,7 +34,7 @@
 		<div class="col-sm-6">
 			<h4 style="color: #72a3ff;">tilala.net</h4>
 			<p>Une webradio, bel exemple de l'utilisation de l'AJAX.</p>
-			<p>Modules utilisés : Contact et un module propre au site.</p>
+			<p>Modules utilisés : Contact, Download et un module propre au site.</p>
 		<!-- /Article -->
 		</div>
 		<div class="col-sm-6">
