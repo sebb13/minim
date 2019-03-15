@@ -30,8 +30,8 @@ class GenericException extends Exception {
 		$this->oErrorLogs->addLog($this->oErrorLogs->getDebugEnv(true).parent::__toString());
 		if(!dexad('DEV',false)) {
 			mail(
-				ERROR_MAIL,
-				'Une erreur est survenue sur '.WEB_PATH,
+				str_replace('{__DOMAIN_NAME__}', DOMAIN_NAME, ERROR_MAIL),
+				'Une erreur est survenue sur '.DOMAIN_NAME,
 				$this->oErrorLogs->getDebugEnv(true).parent::__toString()
 			);
 			return '';

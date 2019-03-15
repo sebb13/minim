@@ -85,17 +85,18 @@ final class ErrorLogs {
 		$sTest = TEST ? 'true' : 'false';
 		$sAdmin = ADMIN ? 'true' : 'false';
 		$aReturn = array(
-					0 => 'TIME.......... '.date('Ymd H:i:s'),
-					1 => 'PHP_VERSION....'.phpversion(),
-					2 => 'DEV........... '.$sDev,
-					3 => 'TEST.......... '.$sTest,
-					4 => 'ADMIN......... '.$sAdmin,
-					5 => 'WEB_PATH...... '.WEB_PATH,
-					6 => 'DEFAULT_LANG.. '.DEFAULT_LANG,
-					7 => 'sLang......... '.UserRequest::getLang(),
-					8 => 'sPage......... '.UserRequest::getPage(),
+					0 => 'TIME............. '.date('Ymd H:i:s'),
+					1 => 'PHP_VERSION...... '.phpversion(),
+					2 => 'DEV.............. '.$sDev,
+					3 => 'TEST............. '.$sTest,
+					4 => 'ADMIN............ '.$sAdmin,
+					5 => 'WEB_PATH......... '.WEB_PATH,
+					6 => 'DEFAULT_LANG..... '.DEFAULT_LANG,
+					7 => 'sLang............ '.UserRequest::getLang(),
+					8 => 'sPage............ '.UserRequest::getPage(),
 					9 => 'HTTP_USER_AGENT.. '.SessionCore::get('HTTP_USER_AGENT'),
-					10 => ''
+					10 => 'IP............... '.SessionCore::get('REMOTE_ADDR'),
+					11 => ''
 				);
 		return dexad('DEV', false)||$bForce ? "\n".implode("\n", $aReturn) : '';
 	}
