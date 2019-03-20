@@ -26,6 +26,11 @@
 			</a>
 		</div>
 		<div class="col-md-2 col-sm-3 col-xs-6">
+			<a href="#" id="geolocationPlugin" class="article geolocationPlugin btn btn-primary btn-sm">
+				Geolocation <div class="fa fa-globe"></div>
+			</a>
+		</div>
+		<div class="col-md-2 col-sm-3 col-xs-6">
 			<a href="#" id="mediaPlugin" class="article mediaPlugin btn btn-primary btn-sm">
 				{__MEDIA__} <div class="fa fa-play-circle-o"></div>
 			</a>
@@ -53,6 +58,11 @@
 		<div class="col-md-2 col-sm-3 col-xs-6">
 			<a href="#" id="downloadPlugin_bottom" class="article downloadPlugin btn btn-primary btn-sm btn-active">
 				Download <div class="fa fa-download"></div>
+			</a>
+		</div>
+		<div class="col-md-2 col-sm-3 col-xs-6">
+			<a href="#" id="geolocationPlugin_bottom" class="article geolocationPlugin btn btn-primary btn-sm btn-active">
+				Geolocation <div class="fa fa-globe"></div>
 			</a>
 		</div>
 		<div class="col-md-2 col-sm-3 col-xs-6">

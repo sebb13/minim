@@ -1,0 +1,120 @@
+<div class="row">
+	<article class="col-sm-12">
+		<h3>Géolocalisation <i class="fa fa-globe"></i></h3>
+		<p>Pour bon nombre d'activités ou simplement pouvoir afficher son point de vente sur une carte, la géolocalisation est devenue indispensable.</p>
+		<p>Minim vous propose ici un module simple permettant de vous localiser ainsi que les visiteurs de votre site/application.</p>
+		<p>Ce module offre également une API vous permettant de faciliter la vie de vos utilisateurs dans la saisie d'adresse en s'appuyant sur une API gouvernementale afin de bénéficier de données à jour.</p>
+		<p>Des modules de gestion de carte vont venir bientôt afin de compléter ce module.</p>
+	</article>
+</div>
+<hr />
+<div class="row">
+	<article class="col-sm-12">
+		<h3>Installation</h3>
+		<p>Comme pour tous les modules, n'oubliez pas de :</p>
+		<ul class="cog-tools">
+			<li>Copier les classes PHP (présentes dans /lib) dans le répertoire Core/lib/Modules/ de votre site/application.</li>
+			<li>Ajouter les fichiers js dans votre configuration (/Core/data/concat_js.xml) afin qu'ils soient pris en compte.</li>
+			<li>Ajouter au menu du backoffice la page d'accueil du module dans le menu "modules".</li>
+			<li>Régénérer le cache afin que le module soit pris en compte.</li>
+		</ul>
+	</article>
+</div>
+<hr />
+<div class="row">
+	<article class="col-sm-8 sidebar sidebar-left">
+		<h3>Configuration</h3>
+		<ul class="cog-tools">
+			<li>FORMAT: Le format des données renvoyées par l'API</li>
+			<li>LATITUDE: votre latitude</li>
+			<li>LONGITUDE: votre longitude</li>
+			<li>RADIUS: le rayon autour de votre position à afficher sur la carte (en prévision des modules de gestion de carte).</li>
+		</ul>
+		<p>Le bouton "localisez-moi" rempli automatiquement les champs latitude et longitude en fonction de votre position actuelle.</p>
+	</article>
+	<aside class="col-sm-4 sidebar sidebar-right">
+		<div class="widget">
+			<p class="txt-center">
+				<a href="/img/contents/doc/geolocationPlugin_home.png" rel="cbox" title="Accueil du module geolocalisation" class="cbox">
+					<img src="/img/contents/doc/geolocationPlugin_home.png" alt="Accueil du module geolocalisation" class="img-rounded" />
+				</a>
+			</p>
+		</div>
+	</aside>
+</div>
+<hr />
+<div class="row">
+	<article class="col-sm-8 sidebar sidebar-left">
+		<h3>API</h3>
+		<p>
+			Comme dit plus haut, ce module offre une API reposant sur des données du gouvernement. 
+			Cette fonctionnalité n’est donc disponible pour l'instant que pour la France.
+		</p>
+		<p>Voici les fonctionnalités offertes par l'API :</p>
+		<ul class="cog-tools">
+			<li>
+				https://domain.ltd/FR/geoloc/getPositionFromAddress.html?address=paris<br />
+				Attend une valeur "address" en argument<br />
+				Renvoie un tableau avec les coordonnées trouvées.
+			</li>
+			<li>
+				https://domain.ltd/FR/geoloc/getAddressFromPosition.html?latitude=43.454029&longitude=5.475256<br />
+				Attend les valeurs "latitude" et "latitude" en arguments<br />
+				Renvoie un tableau avec les lieux trouvés.
+			</li>
+			<li>
+				https://domain.ltd/FR/geoloc/getAddress.html?address=gardanne&latitude=43.454029&longitude=5.475256<br />
+				Attend une valeur "address" en argument et optionnellement les valeurs "latitude" et "longitude" qui auront la priorité dans le classement des résultats.<br />
+				Renvoie un tableau avec les lieux trouvés.
+			</li>
+			<li>
+				https://domain.ltd/FR/geoloc/getPostCodeFromCity.html?city=gardanne<br />
+				Attend une valeur "city" en argument<br />
+				Renvoie un tableau avec les codes postaux trouvés.
+			</li>
+			<li>
+				https://domain.ltd/FR/geoloc/getCitiesFromPostCode.html?postcode=13790<br />
+				Attend une valeur "postcode" en argument<br />
+				Renvoie un tableau avec les villes trouvées.
+			</li>
+		</ul>
+	</article>
+	<aside class="col-sm-4 sidebar sidebar-right">
+		<h3>Format</h3>
+		<div class="widget">
+			<p class="txt-center">
+				<a href="/img/contents/doc/geolocationPlugin_API.png" rel="cbox" title="Exemple de réponse de l'API" class="cbox">
+					<img src="/img/contents/doc/geolocationPlugin_API.png" alt="Exemple de réponse de l'API" class="img-rounded" />
+				</a>
+			</p>
+			<p>Le format de sortie de cette API se défini dans la configuration du module (json, XML ou un simple tableau PHP pour une utilisation interne au framework).</p>
+			<p class="txt-center">
+				<a href="/img/contents/doc/geolocationPlugin_API_format.png" rel="cbox" title="Exemple de réponse de l'API" class="cbox">
+					<img src="/img/contents/doc/geolocationPlugin_API_format.png" alt="Exemple de réponse de l'API" class="img-rounded" />
+				</a>
+			</p>
+		</div>
+	</aside>
+</div>
+<hr />
+<div class="row">
+	<article class="col-sm-12 maincontent">
+		<div class="row">
+			<article class="col-sm-12">
+				<h3>Télécharger</h3>
+			</article>
+			<div class="col-md-3 col-sm-6 col-xs-6">
+				<a class="btn btn-default btn-large btn-dl" href="https://github.com/sebb13/Geolocation" target="_blank">Récupérer depuis GitHub <i class="fa fa-github" aria-hidden="true"></i></a>
+			</div>
+			<div class="col-md-3 col-sm-6 col-xs-6">
+				<a class="btn btn-default btn-large btn-dl" href="/{##LANG##}/downloadFile.html?file_id=Geolocationzip">Télécharger les sources (.zip)</a>
+			</div>
+			<div class="col-md-3 col-sm-6 col-xs-6">
+				<a class="btn btn-default btn-large btn-dl" href="/{##LANG##}/downloadFile.html?file_id=Geolocationtargz">Télécharger les sources (.tar.gz)</a>
+			</div>
+			<div class="col-md-3 col-sm-6 col-xs-6">
+				<a class="btn btn-default btn-large btn-dl" href="/{##LANG##}/downloadFile.html?file_id=LICENSEmd">Télécharger la license</a>
+			</div>
+		</div>
+	</article>
+</div>
