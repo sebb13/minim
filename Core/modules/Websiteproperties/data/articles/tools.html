@@ -88,6 +88,12 @@
 					<li><code>clearDir($sDir, $bDelete=false)</code></li>
 				</ul>
 			</li>
+			<li>Img
+				<ul class="cog-2">
+					<li><code>resize($sImgSrcPath, $iMaxSize, $sOrient='', $sImgDstPath='', $iQuality=100)</code></li>
+					<li><code>getSize($sImgSrcPath='')</code></li>
+				</ul>
+			</li>
 			<li>Main
 				<ul class="cog-2">
 					<li><code>checkVersion() (si on est en dév, en test, en prod...)</code></li>
@@ -128,6 +134,11 @@
 	</article>
 	<article class="col-sm-6 maincontent">
 		<ul class="cog-tools language-php">
+			<li>Crypt
+				<ul class="cog-2">
+					<li><code>getSha1ForHtpasswd($sPwd)</code></li>
+				</ul>
+			</li>
 			<li>Format
 				<ul class="cog-2">
 					<li><code>XssKiller(&$aValue)</code></li>
@@ -144,9 +155,16 @@
 					<li>...</li>
 				</ul>
 			</li>
-			<li>Crypt
+			<li>Dates
 				<ul class="cog-2">
-					<li><code>getSha1ForHtpasswd($sPwd)</code></li>
+					<li><code>getNumDay($sDate)</code></li>
+					<li><code>getNumWeek($sDate)</code></li>
+					<li><code>getNumberOfDays($sDate)</code></li>
+					<li><code>getHolidays($iYear=null)</code></li>
+					<li><code>diffCalendar($sFirstDate, $sSecondDate)</code></li>
+					<li><code>diffWorkDay($sFirstDate, $sSecondDate)</code></li>
+					<li><code>isHoliday($iTimestamp)</code></li>
+					<li><code>isWorkingDay($iTimestamp)</code></li>
 				</ul>
 			</li>
 			<li>Form
@@ -162,12 +180,6 @@
 					<li><code>checkbox($sName, $sId, $sValue = null, $sChoice='', array $aData=array(), $sClass='')</code></li>
 					<li><code>textarea($sName, $sId, $sValue = null, $sClass='', $sRows='', $sCols='')</code></li>
 					<li><code>genInputsHidden($sName, $sValue, $sId)</code></li>
-				</ul>
-			</li>
-			<li>Img
-				<ul class="cog-2">
-					<li><code>resize($sImgSrcPath, $iMaxSize, $sOrient='', $sImgDstPath='', $iQuality=100)</code></li>
-					<li><code>getSize($sImgSrcPath='')</code></li>
 				</ul>
 			</li>
 			<li>WebSvc
