@@ -64,32 +64,4 @@ final class Toolz_Main {
 					);
 		}
 	}
-	
-	/**
-	 * DEPRECATED
-	 * retourne le HTML de la div error 
-	 * à partir d'un tableau de messages d'erreurs
-	 * @param Array $aMsgErrors
-	 * @return String
-	 */
-	public static function getErrorDiv($aMsgErrors, $bEcho = true){
-		if(!is_array($aMsgErrors)){
-			throw new Toolz_Main_Exception('The given parameter must be an Array');
-		}
-		$sErrorDiv = '';
-		if(!empty($aMsgErrors)){
-			$sErrorDiv = '<div id="errorDiv" style="display:none;"><ul style="padding-left:15px">';
-			foreach ($aMsgErrors as $sMsg){
-				if(!empty($sMsg)){
-					$sErrorDiv .= '<li>'.$sMsg.'</li>';
-				}
-			}
-			$sErrorDiv .= '</ul></div>';
-		}
-		if($bEcho){
-			echo $sErrorDiv;
-		}else{
-			return $sErrorDiv;
-		}
-	}
 }
