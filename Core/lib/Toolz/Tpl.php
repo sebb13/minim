@@ -22,11 +22,15 @@ final class Toolz_Tpl {
 	private static $sToolTipTagPatern = '{__{__tag_name__}_TOOLTIP__}';
 	
 	public static function getClass($sClassName='') {
-		return !empty($sClassName) ? ' class="'.$sClassName.'"' : '';
+		return !empty($sClassName) ? ' class="'.trim($sClassName).'"' : '';
 	}
 	
 	public static function getId($sId='') {
-		return !empty($sId) ? ' id="'.$sId.'"' : '';
+		return !empty($sId) ? ' id="'.trim($sId).'"' : '';
+	}
+	
+	public static function getRel($sRel='') {
+		return !empty($sRel) ? ' rel="'.trim($sRel).'"' : '';
 	}
 	
 	public static function getUl($sContent='', $sClass='', $sId='') {
@@ -53,9 +57,9 @@ final class Toolz_Tpl {
 		return self::getBasicElmt('p', $sContent, $sClass, $sId);
 	}
 	
-	public static function getA($sUrl, $sContent, $sClass='', $sId='', $bTargetBlank=false) {
-		$sTarget = $bTargetBlank ? 'target="_blank" ' : '';
-		return '<a href="'.$sUrl.'" '.$sTarget.self::getClass($sClass).self::getId($sId).'>'.$sContent.'</a>';
+	public static function getA($sUrl, $sContent, $sClass='', $sId='', $bTargetBlank=false, $sRel='') {
+		$sTarget = $bTargetBlank ? ' target="_blank" ' : '';
+		return '<a href="'.$sUrl.'"'.$sTarget.self::getClass($sClass).self::getId($sId).self::getRel($sRel).'>'.$sContent.'</a>';
 	}
 	
 	private static function getBasicElmt($sElmt, $sContent='', $sClass='', $sId='') {
@@ -85,12 +89,13 @@ final class Toolz_Tpl {
 	}
 	
 	public static function getPaging($iNbPages, $iActivePage, $sQueryString, $bArrow=true) {
+		//rel="prev" et rel="next"
 		if((int)$iNbPages === 1) {
 			return '';
 		}
 		if((int)$iActivePage > 1 && $bArrow) {
 			$iPreviousPage = (int)$iActivePage-1;
-			$sPaging = self::getA($sQueryString.$iPreviousPage, '< {__PREVIOUS__}');
+			$sPaging = self::getA($sQueryString.$iPreviousPage, '< {__PREVIOUS__}', '', '', false, 'prev');
 		} else {
 			$sPaging = '';
 		}
@@ -103,7 +108,7 @@ final class Toolz_Tpl {
 		}
 		if((int)$iActivePage < $iNbPages && $bArrow) {
 			$iNextPage = (int)$iActivePage+1;
-			$sPaging .= self::getA($sQueryString.$iNextPage, '{__NEXT__} >');
+			$sPaging .= self::getA($sQueryString.$iNextPage, '{__NEXT__} >', '', '', false, 'next');
 		}
 		return self::getDiv($sPaging, 'paging');
 	}
