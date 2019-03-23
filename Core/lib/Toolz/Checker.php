@@ -91,6 +91,17 @@ final class Toolz_Checker {
 		'10minutemail',
 	);
 	
+	public static function checkIp() {
+		$sIp = gethostbyname($_SERVER['REMOTE_ADDR']);
+		$rCh = curl_init();
+		curl_setopt($rCh, CURLOPT_SSL_VERIFYPEER, false);
+		curl_setopt($rCh, CURLOPT_RETURNTRANSFER, true);
+		curl_setopt($rCh, CURLOPT_URL, 'http://proxy.mind-media.com/block/proxycheck.php?ip='.$sIp);
+		$mResult = curl_exec($rCh);
+		curl_close($rCh);
+		return $mResult === 'N';
+	}
+	
 	/**
 	 * Vérification des clés requises dans un tableau
 	 * @param Array $aParams
@@ -108,8 +119,8 @@ final class Toolz_Checker {
 		array_shift($aDb);
 		if (count($aCheck) > 0) {
 			throw new InvalidArgumentException(
-					'Missing fields ' . implode (', ', $aCheck) . ' ' . $aDb[0]['function']. ' '. $aDb[0]['file']. ' ('.$aDb[0]['line'] .')'
-				);
+				'Missing fields ' . implode (', ', $aCheck) . ' ' . $aDb[0]['function']. ' '. $aDb[0]['file']. ' ('.$aDb[0]['line'] .')'
+			);
 		}
 		$aErrors = array();
 		$aData = $aParams['data'];
