@@ -71,6 +71,10 @@
 		<ul class="cog-tools language-php">
 			<li>Checker
 				<ul class="cog-2">
+					<li><code>isSafeIp($sIp)</code></li>
+					<li><code>isValidIp($sIp)</code></li>
+					<li><code>isIpV4($sIp)</code></li>
+					<li><code>isIpV6($sIp)</code></li>
 					<li><code>checkParams(array $aParams)</code></li>
 					<li><code>isValidMethod($sClassMethod)</code></li>
 					<li><code>checkRegExp($sStr, $sRegExp)</code></li>
@@ -80,12 +84,9 @@
 					<li>...</li>
 				</ul>
 			</li>
-			<li>FileSystem
+			<li>Crypt
 				<ul class="cog-2">
-					<li><code>getRecursivePathList($sDirPath)</code></li>
-					<li><code>getPathList($sDirPath)</code></li>
-					<li><code>purgeDir($sDirPath)</code></li>
-					<li><code>clearDir($sDir, $bDelete=false)</code></li>
+					<li><code>getSha1ForHtpasswd($sPwd)</code></li>
 				</ul>
 			</li>
 			<li>Img
@@ -134,9 +135,12 @@
 	</article>
 	<article class="col-sm-6 maincontent">
 		<ul class="cog-tools language-php">
-			<li>Crypt
+			<li>FileSystem
 				<ul class="cog-2">
-					<li><code>getSha1ForHtpasswd($sPwd)</code></li>
+					<li><code>getRecursivePathList($sDirPath)</code></li>
+					<li><code>getPathList($sDirPath)</code></li>
+					<li><code>purgeDir($sDirPath)</code></li>
+					<li><code>clearDir($sDir, $bDelete=false)</code></li>
 				</ul>
 			</li>
 			<li>Format
