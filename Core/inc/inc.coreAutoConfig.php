@@ -158,7 +158,7 @@ if (($aConf['SYS_DB_NEED'] === 'YES') ||
 	try {
 		$oPdo = SPDO::getInstance($sConnect, $aConf['SYS_DB_USER'], $aConf['SYS_DB_PWD']);
 	} catch (PDOException $e) {
-		//throw new CoreException('unable to connect to DB');
+		throw new CoreException('unable to connect to DB');
 	}
 }
 define('DOMAIN_NAME',			$aConf['DOMAIN_NAME']);
