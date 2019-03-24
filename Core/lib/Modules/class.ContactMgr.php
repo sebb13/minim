@@ -137,15 +137,9 @@ final class ContactMgr extends ContactModel {
 	
 	public function newMsg(array $aMsgData) {
 		if(($aMsgFormated = $this->checkMsg($aMsgData)) !== false) {
-			$aFile = UserRequest::getFiles();
-			$sFileTmp = $aFile['contact_file']['tmp_name'];
-			if (!empty($sFileTmp)) { 
-				$aMsgFormated['contact_file'] = $aFile['contact_file']['name'];
-				$sFileErrorMsg = $aFile['contact_file']['error'];
-				if(!move_uploaded_file($sFileTmp, $this->sUploadPath.$aMsgFormated['contact_file'])){
-					$aMsgFormated['contact_file'] = '';
-					UserRequest::$oAlertBoxMgr->danger = $sFileErrorMsg;
-				}
+			$sContactFilename = Toolz_FileSystem::uploadFile('contact_file', $this->sUploadPath);
+			if($sContactFilename !== false) {
+				$aMsgFormated['contact_file'] = $sContactFilename;
 			} else {
 				$aMsgFormated['contact_file'] = '';
 			}

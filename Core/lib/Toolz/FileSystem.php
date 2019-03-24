@@ -69,4 +69,20 @@ final class Toolz_FileSystem {
 			rmdir($sDir);
 		}
 	}
+	
+	public static function uploadFile($sIndex, $sUploadPath) {
+		$aFile = UserRequest::getFiles();
+		$sFileTmp = $aFile[$sIndex]['tmp_name'];
+		if (!empty($sFileTmp)) { 
+			$sFileErrorMsg = $aFile[$sIndex]['error'];
+			if(!move_uploaded_file($sFileTmp, $sUploadPath.$aFile[$sIndex]['name'])){
+				UserRequest::$oAlertBoxMgr->danger = $sFileErrorMsg;
+				return false;
+			} else {
+				chmod($sUploadPath.$aFile[$sIndex]['name'], 0604);
+				return $aFile[$sIndex]['name'];
+			}
+		}
+		return false;
+	}
 } 
