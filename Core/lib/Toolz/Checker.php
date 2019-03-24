@@ -96,7 +96,7 @@ final class Toolz_Checker {
 	 * @param String $sIp
 	 * @return Boolean
 	 */
-	public static function checkIfSafeIp($sIp) {
+	public static function isSafeIp($sIp) {
 		$sIp = gethostbyname($sIp);
 		$rCh = curl_init();
 		curl_setopt($rCh, CURLOPT_SSL_VERIFYPEER, false);
