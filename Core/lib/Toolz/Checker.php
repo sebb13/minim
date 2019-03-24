@@ -91,8 +91,13 @@ final class Toolz_Checker {
 		'10minutemail',
 	);
 	
-	public static function checkIp() {
-		$sIp = gethostbyname($_SERVER['REMOTE_ADDR']);
+	/**
+	 * check if is a safe IP (no VPN, no VPS, no Proxy...)
+	 * @param String $sIp
+	 * @return Boolean
+	 */
+	public static function checkIfSafeIp($sIp) {
+		$sIp = gethostbyname($sIp);
 		$rCh = curl_init();
 		curl_setopt($rCh, CURLOPT_SSL_VERIFYPEER, false);
 		curl_setopt($rCh, CURLOPT_RETURNTRANSFER, true);
@@ -100,6 +105,33 @@ final class Toolz_Checker {
 		$mResult = curl_exec($rCh);
 		curl_close($rCh);
 		return $mResult === 'N';
+	}
+	
+	/*
+	 * check if is a valid IP
+	 * @param String $sIp
+	 * @return Boolean
+	 */
+	public static function isValidIp($sIp) {
+		return (self::isIpV4($sIp) || self::isIpV6($sIp));
+	}
+	
+	/**
+	 * check if is an IP v4 address
+	 * @param String $sIp
+	 * @return Boolean
+	 */
+	public static function isIpV4($sIp) {
+		return filter_var($sIp, FILTER_VALIDATE_IP, FILTER_FLAG_IPV4);
+	}
+	
+	/**
+	 * check if is an IP v6 address
+	 * @param String $sIp
+	 * @return Boolean
+	 */
+	public static function isIpV6($sIp) {
+		return filter_var($sIp, FILTER_VALIDATE_IP, FILTER_FLAG_IPV6);
 	}
 	
 	/**
