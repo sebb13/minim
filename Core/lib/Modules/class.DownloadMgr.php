@@ -53,78 +53,12 @@ final class DownloadMgr {
 					UserRequest::setRequest(array('sPage'=>'404', 'sLang'=>DEFAULT_LANG));
 					return true;
 			}
-			$sFilePath = $this->sFilesPath.$this->aFiles[$sFileId];
-			$sFileName = basename($sFilePath);
-			ini_set('zlib.output_compression', 0);
-			//factory
-			switch(strtolower(pathinfo($sFilePath, PATHINFO_EXTENSION))) {
-				case 'txt':
-				case 'md':
-				case 'sql':
-					header("Content-Type: text/plain");
-					break;
-				case 'xml':
-					header("Content-type: text/xml");
-					break;
-				case 'html':
-				case 'hml':
-					header("Content-type: text/html");
-					break;
-				case 'json':
-					header("Content-type: application/json");
-					break;
-				case 'pdf':
-					header("Content-Type: application/pdf");
-					break;
-				case 'jpg':
-				case 'jpeg':
-					header("Content-Type: image/jpg");
-					break;
-				case 'png':
-					header("Content-Type: image/png");
-					break;
-				case 'gif':
-					header("Content-Type: image/gif");
-					break;
-				case 'zip':
-					header("Content-Type: application/zip");
-					break;
-				case 'rar':
-					header("Content-Type: application/rar");
-					break;
-				case 'tar':
-					header("Content-Type: application/tar");
-					break;
-				case 'gz':
-				case 'tgz':
-				case 'gz2':
-					header("Content-Type: application/tar+gzip");
-					break;
-				default:
-					header("Content-Type: application/octet-stream");
-			}
-			//stats
-			// no stat from test
 			if(!ADMIN) {
 				$this->counterUpdate($this->aFiles, $sFileId);
 			}
-			//fire
-			header('Pragma: public');
-			header("Expires: 0"); // obligé
-			header("Cache-Control: must-revalidate, post-check=0, pre-check=0");
-			header("Cache-Control: private",false); // obligé
-			header("Content-Type: image/jpg");
-			header('Content-Type: application/octetstream; name="'.$sFileName.'"');
-			header("Content-Disposition: attachment; filename=\"".$sFileName."\";" );
-			header('Content-MD5: '.base64_encode(md5_file($sFilePath)));
-			header("Content-Transfer-Encoding: binary");
-			header("Content-Length: ".filesize($sFilePath));
-			header('Date: '.gmdate(DATE_RFC1123));
-			header('Expires: '.gmdate(DATE_RFC1123, time()+1));
-			header('Last-Modified: '.gmdate(DATE_RFC1123, filemtime($sFilePath)));
-			readfile($sFilePath);
+			return Toolz_FileSystem::downloadFile($this->aFiles[$sFileId], $this->sFilesPath);
 		}
-		die();
+		return false;
 	}
 	
 	private function counterUpdate(array $aFiles, $sFileId) {
