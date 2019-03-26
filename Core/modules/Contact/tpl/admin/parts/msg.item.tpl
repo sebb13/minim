@@ -14,7 +14,7 @@
 				<i>{__CONTACT_SUBJECT__}</i>
 			</div>
 			<div class="col-md-6">
-				<a href="{__CONTACT_FILE_URL__}" download="{__CONTACT_FILE__}">{__CONTACT_FILE__}</a>
+				<a href="/{##LANG##}/getFile.html?file_id={__CONTACT_FILE__}">{__CONTACT_FILE__}</a>
 			</div>
 		</div>
 	</div>

@@ -261,12 +261,15 @@ final class ContactXml extends SimpleXmlMgr implements iContactMgr  {
 	public function __construct() {
 		$this->sContactFilePath = ModulesMgr::getFilePath(ContactMgr::$sModuleName, 'data').$this->sContactsFilename;
 		parent::__construct($this->sContactFilePath);
-		$this->aMsgs = $this->getIemsList();
+		$aMsgTmp = $this->getIemsList();
+		foreach($aMsgTmp as $aMsg) {
+			$this->aMsgs[$aMsg['contact_id']] = $aMsg;
+		}
 	}
 	
 	public function add(array $aMsgData) {
-		$aMsgData['contact_id'] = count($this->aMsgs);
-		$this->aMsgs['item'.count($this->aMsgs)] = $aMsgData;
+		$aMsgData['contact_id'] = 'item-'.uniqid();
+		$this->aMsgs[] = $aMsgData;
 		return $this->saveContacts();
 	}
 	
@@ -278,7 +281,7 @@ final class ContactXml extends SimpleXmlMgr implements iContactMgr  {
 				strpos($aMsg['contact_name'], $sKeyword) !== false ||
 				strpos($aMsg['contact_email'], $sKeyword) !== false ||
 				(!is_array($aMsg['contact_subject']) && strpos($aMsg['contact_subject'], $sKeyword) !== false)) {
-					$aMsgs[] = $aMsg;
+					$aMsgs[$aMsg['contact_id']] = $aMsg;
 				}
 			}
 		}
@@ -298,16 +301,16 @@ final class ContactXml extends SimpleXmlMgr implements iContactMgr  {
 					$aMsg['contact_subject'] = '';
 				}
 				$aMsg['contact_date'] = date('Y-m-d H:i:s', $aMsg['contact_date']);
-				$aMsgs[] = $aMsg;
+				$aMsgs[$aMsg['contact_id']] = $aMsg;
 			}
 		}
 		return $aMsgs;
 	}
 	
 	public function saveComment($iMsgId, $sComment) {
-		if(isset($this->aMsgs['item'.$iMsgId])) {
-			$this->aMsgs['item'.$iMsgId]['contact_comment'] = $sComment;
-			$this->aMsgs['item'.$iMsgId]['contact_comment_user'] = SessionUser::get('user');
+		if(isset($this->aMsgs[$iMsgId])) {
+			$this->aMsgs[$iMsgId]['contact_comment'] = $sComment;
+			$this->aMsgs[$iMsgId]['contact_comment_user'] = SessionUser::get('user');
 			return $this->saveContacts();
 		} else {
 			return false;
@@ -315,9 +318,9 @@ final class ContactXml extends SimpleXmlMgr implements iContactMgr  {
 	}
 	
 	public function delete($iMsgId) {
-		if(isset($this->aMsgs['item'.$iMsgId]['contact_active'])
-			&& $this->aMsgs['item'.$iMsgId]['contact_active'] === '0') {
-			unset($this->aMsgs['item'.$iMsgId]);
+		if(isset($this->aMsgs[$iMsgId]['contact_active'])
+			&& $this->aMsgs[$iMsgId]['contact_active'] === '0') {
+			unset($this->aMsgs[$iMsgId]);
 			return $this->saveContacts();
 		} else {
 			return false;
@@ -325,16 +328,16 @@ final class ContactXml extends SimpleXmlMgr implements iContactMgr  {
 	}
 	
 	public function archive($iMsgId) {
-		if(isset($this->aMsgs['item'.$iMsgId])) {
-			$this->aMsgs['item'.$iMsgId]['contact_active'] = 0;
+		if(isset($this->aMsgs[$iMsgId])) {
+			$this->aMsgs[$iMsgId]['contact_active'] = 0;
 			return $this->saveContacts();
 		}
 		return false;
 	}
 	
 	public function restore($iMsgId) {
-		if(isset($this->aMsgs['item'.$iMsgId])) {
-			$this->aMsgs['item'.$iMsgId]['contact_active'] = 1;
+		if(isset($this->aMsgs[$iMsgId])) {
+			$this->aMsgs[$iMsgId]['contact_active'] = 1;
 			return $this->saveContacts();
 		}
 		return false;

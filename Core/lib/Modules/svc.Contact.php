@@ -161,4 +161,8 @@ final class Contact extends CoreCommon {
 				'sPage'	=> 'contact_messagesReceived'
 			);
 	}
+	
+	public function getFile() {
+		return $this->oContactMgr->getFile(UserRequest::getRequest('file_id'));
+	}
 }

@@ -18,7 +18,7 @@
     Free Software Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
  */
 final class Toolz_FileSystem {
-
+	
 	public static function getRecursivePathList($sDirPath) {
 		if (!is_dir($sDirPath)) { 
 			throw new Exception ($sDirPath.' is not a valid directory');
@@ -71,16 +71,24 @@ final class Toolz_FileSystem {
 	}
 	
 	public static function uploadFile($sIndex, $sUploadPath) {
+		if(!file_exists($sUploadPath.'.htaccess')) {
+			$sHtaccessContent = '<Files *.php>Deny from all</Files>';
+			file_put_contents($sUploadPath.'.htaccess', $sHtaccessContent);
+		}
 		$aFile = UserRequest::getFiles();
 		$sFileTmp = $aFile[$sIndex]['tmp_name'];
+		if($sFileTmp === '.htaccess' || strpos($sFileTmp, '.php')) {
+			return false;
+		}
+		$sFilename = 'msg_'.uniqid().'_'.$aFile[$sIndex]['name'];
 		if (!empty($sFileTmp)) { 
 			$sFileErrorMsg = $aFile[$sIndex]['error'];
-			if(!move_uploaded_file($sFileTmp, $sUploadPath.$aFile[$sIndex]['name'])){
+			if(!move_uploaded_file($sFileTmp, $sUploadPath.$sFilename)){
 				UserRequest::$oAlertBoxMgr->danger = $sFileErrorMsg;
 				return false;
 			} else {
-				chmod($sUploadPath.$aFile[$sIndex]['name'], 0604);
-				return $aFile[$sIndex]['name'];
+				chmod($sUploadPath.$sFilename, 0604);
+				return $sFilename;
 			}
 		}
 		return false;

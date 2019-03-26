@@ -190,7 +190,6 @@ final class ContactMgr extends ContactModel {
 			$aMsgs = $this->getAll($bActive);
 		}
 		$sMsgs = '';
-		$sDownloadUrl = WEB_PATH.'Core/modules/'.self::$sModuleName.'/data/files/';
 		$sMsgTpl = file_get_contents(ModulesMgr::getFilePath(self::$sModuleName, 'backPartsTpl').'msg.item.tpl');
 		$sArchivedMsgTpl = file_get_contents(ModulesMgr::getFilePath(self::$sModuleName, 'backPartsTpl').'archived.msg.item.tpl');
 		$sSearchTpl = file_get_contents(ModulesMgr::getFilePath(self::$sModuleName, 'backPartsTpl').'header.form.tpl');
@@ -222,7 +221,6 @@ final class ContactMgr extends ContactModel {
 									'{__CONTACT_NAME__}',
 									'{__CONTACT_EMAIL__}',
 									'{__CONTACT_SUBJECT__}',
-									'{__CONTACT_FILE_URL__}',
 									'{__CONTACT_FILE__}',
 									'{__CONTACT_MSG__}',
 									'{__COMMENT__}',
@@ -233,7 +231,6 @@ final class ContactMgr extends ContactModel {
 									$aMsg['contact_name'],
 									$aMsg['contact_email'],
 									!empty($aMsg['contact_subject']) ? $aMsg['contact_subject'] : '',
-									!empty($aMsg['contact_file']) ? $sDownloadUrl.$aMsg['contact_file'] : '',
 									!empty($aMsg['contact_file']) ? $aMsg['contact_file'] : '',
 									$aMsg['contact_msg'],
 									$sComment,
@@ -263,6 +260,78 @@ final class ContactMgr extends ContactModel {
 						), 
 						$sPageTpl
 					);
+	}
+	
+	public function getFile($sFilename) {
+		$sFilePath = $this->sUploadPath.$sFilename;
+		if (!file_exists($sFilePath)) {
+			UserRequest::setRequest(array('sPage'=>'404', 'sLang'=>DEFAULT_LANG));
+			return true;
+		}
+		ini_set('zlib.output_compression', 0);
+		//factory
+		switch(strtolower(pathinfo($sFilePath, PATHINFO_EXTENSION))) {
+			case 'txt':
+			case 'md':
+			case 'sql':
+				header("Content-Type: text/plain");
+				break;
+			case 'xml':
+				header("Content-type: text/xml");
+				break;
+			case 'html':
+			case 'hml':
+				header("Content-type: text/html");
+				break;
+			case 'json':
+				header("Content-type: application/json");
+				break;
+			case 'pdf':
+				header("Content-Type: application/pdf");
+				break;
+			case 'jpg':
+			case 'jpeg':
+				header("Content-Type: image/jpg");
+				break;
+			case 'png':
+				header("Content-Type: image/png");
+				break;
+			case 'gif':
+				header("Content-Type: image/gif");
+				break;
+			case 'zip':
+				header("Content-Type: application/zip");
+				break;
+			case 'rar':
+				header("Content-Type: application/rar");
+				break;
+			case 'tar':
+				header("Content-Type: application/tar");
+				break;
+			case 'gz':
+			case 'tgz':
+			case 'gz2':
+				header("Content-Type: application/tar+gzip");
+				break;
+			default:
+				header("Content-Type: application/octet-stream");
+		}
+		//fire
+		header('Pragma: public');
+		header("Expires: 0"); // obligé
+		header("Cache-Control: must-revalidate, post-check=0, pre-check=0");
+		header("Cache-Control: private",false); // obligé
+		header("Content-Type: image/jpg");
+		header('Content-Type: application/octetstream; name="'.$sFilename.'"');
+		header("Content-Disposition: attachment; filename=\"".$sFilename."\";" );
+		header('Content-MD5: '.base64_encode(md5_file($sFilePath)));
+		header("Content-Transfer-Encoding: binary");
+		header("Content-Length: ".filesize($sFilePath));
+		header('Date: '.gmdate(DATE_RFC1123));
+		header('Expires: '.gmdate(DATE_RFC1123, time()+1));
+		header('Last-Modified: '.gmdate(DATE_RFC1123, filemtime($sFilePath)));
+		readfile($sFilePath);
+		die();
 	}
 	
 	public function saveUserComment($iMsgId, $sComment) {
@@ -303,6 +372,7 @@ final class ContactMgr extends ContactModel {
 			return true;
 		} catch(Exception $e) {
 			UserRequest::$oAlertBoxMgr->danger = $this->oLang->getMsg('contact', self::ERROR_DELETE_MSG);
+			return false;
 		}
 	}
 	
@@ -313,6 +383,7 @@ final class ContactMgr extends ContactModel {
 			return true;
 		} catch(Exception $e) {
 			UserRequest::$oAlertBoxMgr->danger = $this->oLang->getMsg('contact', self::ERROR_ARCHIVE_MSG);
+			return false;
 		}
 	}
 	
@@ -323,6 +394,7 @@ final class ContactMgr extends ContactModel {
 			return true;
 		} catch(Exception $e) {
 			UserRequest::$oAlertBoxMgr->danger = $this->oLang->getMsg('contact', self::ERROR_RESTORE_MSG);
+			return false;
 		}
 	}
 }
