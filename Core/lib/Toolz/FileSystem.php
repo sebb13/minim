@@ -72,8 +72,10 @@ final class Toolz_FileSystem {
 	
 	public static function uploadFile($sIndex, $sUploadPath) {
 		if(!file_exists($sUploadPath.'.htaccess')) {
-			$sHtaccessContent = '<Files *.php>Deny from all</Files>';
-			file_put_contents($sUploadPath.'.htaccess', $sHtaccessContent);
+			file_put_contents(
+				$sUploadPath.'.htaccess', 
+				'<Files *.php>Deny from all</Files>'
+			);
 		}
 		$aFile = UserRequest::getFiles();
 		$sFileTmp = $aFile[$sIndex]['tmp_name'];
