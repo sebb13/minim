@@ -70,19 +70,22 @@ final class Toolz_FileSystem {
 		}
 	}
 	
-	public static function uploadFile($sIndex, $sUploadPath) {
+	public static function uploadFile($sIndex, $sUploadPath, $sId='') {
 		if(!file_exists($sUploadPath.'.htaccess')) {
 			file_put_contents(
 				$sUploadPath.'.htaccess', 
 				"<Files *.php>\nDeny from all\n</Files>"
 			);
 		}
+		if(empty($sId)) {
+			$sId = uniqid();
+		}
 		$aFile = UserRequest::getFiles();
 		$sFileTmp = $aFile[$sIndex]['tmp_name'];
 		if($sFileTmp === '.htaccess' || strpos($sFileTmp, '.php')) {
 			return false;
 		}
-		$sFilename = 'msg_'.uniqid().'_'.$aFile[$sIndex]['name'];
+		$sFilename = 'msg_'.$sId.'_'.$aFile[$sIndex]['name'];
 		if (!empty($sFileTmp)) { 
 			$sFileErrorMsg = $aFile[$sIndex]['error'];
 			if(!move_uploaded_file($sFileTmp, $sUploadPath.$sFilename)){

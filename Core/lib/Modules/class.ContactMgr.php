@@ -137,12 +137,14 @@ final class ContactMgr extends ContactModel {
 	
 	public function newMsg(array $aMsgData) {
 		if(($aMsgFormated = $this->checkMsg($aMsgData)) !== false) {
-			$sContactFilename = Toolz_FileSystem::uploadFile('contact_file', $this->sUploadPath);
+			$sId = uniqid();
+			$sContactFilename = Toolz_FileSystem::uploadFile('contact_file', $this->sUploadPath, $sId);
 			if($sContactFilename !== false) {
 				$aMsgFormated['contact_file'] = $sContactFilename;
 			} else {
 				$aMsgFormated['contact_file'] = '';
 			}
+			$aMsgFormated['contact_id'] = 'item-'.$sId;
 			$this->add($aMsgFormated);
 			if(empty($this->aConfig['EMAIL_ALERT'])) {
 				mail(

@@ -268,7 +268,6 @@ final class ContactXml extends SimpleXmlMgr implements iContactMgr  {
 	}
 	
 	public function add(array $aMsgData) {
-		$aMsgData['contact_id'] = 'item-'.uniqid();
 		$this->aMsgs[] = $aMsgData;
 		return $this->saveContacts();
 	}
