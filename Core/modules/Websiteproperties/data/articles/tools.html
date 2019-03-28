@@ -135,12 +135,41 @@
 	</article>
 	<article class="col-sm-6 maincontent">
 		<ul class="cog-tools language-php">
+			<li>Dates
+				<ul class="cog-2">
+					<li><code>getNumDay($sDate)</code></li>
+					<li><code>getNumWeek($sDate)</code></li>
+					<li><code>getNumberOfDays($sDate)</code></li>
+					<li><code>getHolidays($iYear=null)</code></li>
+					<li><code>diffCalendar($sFirstDate, $sSecondDate)</code></li>
+					<li><code>diffWorkDay($sFirstDate, $sSecondDate)</code></li>
+					<li><code>isHoliday($iTimestamp)</code></li>
+					<li><code>isWorkingDay($iTimestamp)</code></li>
+				</ul>
+			</li>
 			<li>FileSystem
 				<ul class="cog-2">
 					<li><code>getRecursivePathList($sDirPath)</code></li>
 					<li><code>getPathList($sDirPath)</code></li>
 					<li><code>purgeDir($sDirPath)</code></li>
 					<li><code>clearDir($sDir, $bDelete=false)</code></li>
+					<li><code>uploadFile($sIndex, $sUploadPath, $sId='')</code></li>
+					<li><code>downloadFile($sFilename, $sFilePath) {</code></li>
+				</ul>
+			</li>
+			<li>Form
+				<ul class="cog-2">
+					<li><code>hasBeenChecked($sChoice, $sValue, array $aData)</code></li>
+					<li><code>hasBeenSelected($sChoice, $sValue, array $aData)</code></li>
+					<li><code>optionsYear($sName='', $iYear=1900, $aData='', $sChoice='')</code></li>
+					<li><code>getSelect($sName, $sId='', $sClass='')</code></li>
+					<li><code>optionsList($sChoice='', array $aData=array())</code></li>
+					<li><code>label($sDisplay, $sForID, $sClass='text-left')</code></li>
+					<li><code>input($sType, $sName, $sId, $sValue=null, $sClass='', $bReadonly=false, $sPlaceholder='')</code></li>
+					<li><code>file($sName, $sId, $sClass='')</code></li>
+					<li><code>checkbox($sName, $sId, $sValue = null, $sChoice='', array $aData=array(), $sClass='')</code></li>
+					<li><code>textarea($sName, $sId, $sValue = null, $sClass='', $sRows='', $sCols='')</code></li>
+					<li><code>genInputsHidden($sName, $sValue, $sId)</code></li>
 				</ul>
 			</li>
 			<li>Format
@@ -157,33 +186,6 @@
 					<li><code>strtoupper($sStr)</code></li>
 					<li><code>strtolower($sStr)</code></li>
 					<li>...</li>
-				</ul>
-			</li>
-			<li>Dates
-				<ul class="cog-2">
-					<li><code>getNumDay($sDate)</code></li>
-					<li><code>getNumWeek($sDate)</code></li>
-					<li><code>getNumberOfDays($sDate)</code></li>
-					<li><code>getHolidays($iYear=null)</code></li>
-					<li><code>diffCalendar($sFirstDate, $sSecondDate)</code></li>
-					<li><code>diffWorkDay($sFirstDate, $sSecondDate)</code></li>
-					<li><code>isHoliday($iTimestamp)</code></li>
-					<li><code>isWorkingDay($iTimestamp)</code></li>
-				</ul>
-			</li>
-			<li>Form
-				<ul class="cog-2">
-					<li><code>hasBeenChecked($sChoice, $sValue, array $aData)</code></li>
-					<li><code>hasBeenSelected($sChoice, $sValue, array $aData)</code></li>
-					<li><code>optionsYear($sName='', $iYear=1900, $aData='', $sChoice='')</code></li>
-					<li><code>getSelect($sName, $sId='', $sClass='')</code></li>
-					<li><code>optionsList($sChoice='', array $aData=array())</code></li>
-					<li><code>label($sDisplay, $sForID, $sClass='text-left')</code></li>
-					<li><code>input($sType, $sName, $sId, $sValue=null, $sClass='', $bReadonly=false, $sPlaceholder='')</code></li>
-					<li><code>file($sName, $sId, $sClass='')</code></li>
-					<li><code>checkbox($sName, $sId, $sValue = null, $sChoice='', array $aData=array(), $sClass='')</code></li>
-					<li><code>textarea($sName, $sId, $sValue = null, $sClass='', $sRows='', $sCols='')</code></li>
-					<li><code>genInputsHidden($sName, $sValue, $sId)</code></li>
 				</ul>
 			</li>
 			<li>WebSvc
