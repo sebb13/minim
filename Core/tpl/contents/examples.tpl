@@ -18,7 +18,7 @@
 		<div class="col-sm-6">
 			<h4 style="color: #72a3ff;">sebastien-boulard.webearthquake.com</h4>
 			<p>Il s'agit ici du site pro de Sébastien Boulard, développeur freelance.</p>
-			<p>Modules utilisés : Contact et un module propre au site.</p>
+			<p>Modules utilisés : Contact, Download et un module propre au site.</p>
 		<!-- /Article -->
 		</div>
 		<div class="col-sm-6">
