@@ -6,7 +6,6 @@
 {__META_FROM_CONF__}
 {__OG_SECTION__}
 {__TWITTER_SECTION__}
-{__GOOGLE_SECTION__}
 <meta name="app_token" content="{__TOKEN__}" />
 <meta name="app_current_page" content="{__CURRENT_PAGE__}" />
 <meta name="app_lang" content="{__LANG__}" />

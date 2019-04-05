@@ -22,7 +22,6 @@ final class MetasTags {
 	private static $sOgMetaTplName		= 'og.meta.tpl';
 	private static $aPageConfig			= array();
 	private static $sMetaPattern		= '<meta name="{__NAME__}" content="{__CONTENT__}" />';
-	private static $sGooglePattern		= '<meta itemprop="{__NAME__}" content="{__CONTENT__}" />';
 	public static $aAllowedNames		= array(
 											'description'=>'description',
 											'msvalidate_01'=>'msvalidate.01',
@@ -51,11 +50,6 @@ final class MetasTags {
 				'twitter:creator'=>'',
 				'twitter:image'=>''
 		);
-	public static $aGoogleList = array(
-				'g+:name',
-				'g+:description',
-				'g+:image'
-		);
 	
 	public static function getMetaTags(array $aPageConfig) {
 		self::$aPageConfig = $aPageConfig;
@@ -78,7 +72,6 @@ final class MetasTags {
 												'{__ROBOTS_META__}',
 												'{__META_FROM_CONF__}',
 												'{__TWITTER_SECTION__}',
-												'{__GOOGLE_SECTION__}',
 												'{__OG_SECTION__}',
 												'{__TOKEN__}',
 												'{__STATIC_SERVER__}',
@@ -90,7 +83,6 @@ final class MetasTags {
 												$sRobots,
 												self::getMetaTagsFromConf(),
 												self::getTwitterSection(),
-												self::getGoogleSection(),
 												self::getOgSection(),
 												SessionCore::getSessionHash(),
 												DEV ? STATIC_DEV_SERVER_URL : STATIC_SERVER_URL,
@@ -157,20 +149,5 @@ final class MetasTags {
 			);
 		}
 		return $sTwitterSection;
-	}
-	
-	private static function getGoogleSection() {
-		$sGoogleSection = '';
-		if(empty(self::$aPageConfig['google'])) {
-			return '';
-		}
-		foreach(self::$aPageConfig['google'] as $sName=>$sContent) {
-			$sGoogleSection .= str_replace(
-				array('{__NAME__}','{__CONTENT__}'), 
-				array(str_replace('g+:', '', $sName),$sContent), 
-				self::$sGooglePattern
-			);
-		}
-		return $sGoogleSection;
 	}
 }

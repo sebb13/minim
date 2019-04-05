@@ -56,6 +56,25 @@
 				</div>
 			</fieldset>
 			<fieldset>
+				<legend>{__VIEW__}</legend>
+				<div class="row form-group">
+					<div class="col-md-4">
+						<label for="view" class="form-control">{__VIEW_NAME_LABEL__}&nbsp;{__VIEW_NAME_TOOLTIP__}</label>
+					</div>
+					<div class="col-md-8">
+						<select id="view" name="view" class="form-control">
+							{__VIEW_LIST__}
+						</select>
+					</div>
+				</div>
+			</fieldset>
+			<fieldset>
+				<legend>Open Graph <a href="https://developers.facebook.com/tools/debug/" target="_blank">developers.facebook.com/tools/debug</a></legend>
+				{__OPEN_GRAPH__}
+			</fieldset>
+		</div>
+		<div class="col-md-6">
+			<fieldset>
 				<legend>{__META_TAGS__}</legend>
 				{__META_TAGS_CONTENT__}
 			</fieldset>
@@ -70,29 +89,6 @@
 				<input type="hidden" name="app_token" value="{##APP_TOKEN##}" />
 				<input type="submit" class="btn btn-success" value="{__SAVE__}" />&nbsp;
 				<button type="button" class="btn btn-danger backHomeButton">{__CANCEL__}</button>
-			</fieldset>
-		</div>
-		<div class="col-md-6">
-			<fieldset>
-				<legend>Open Graph <a href="https://developers.facebook.com/tools/debug/" target="_blank">developers.facebook.com/tools/debug</a></legend>
-				{__OPEN_GRAPH__}
-			</fieldset>
-			<fieldset>
-				<legend>{__GOOGLE_TAGS__}</legend>
-				{__GOOGLE_CONTENT__}
-			</fieldset>
-			<fieldset>
-				<legend>{__VIEW__}</legend>
-				<div class="row form-group">
-					<div class="col-md-4">
-						<label for="view" class="form-control">{__VIEW_NAME_LABEL__}&nbsp;{__VIEW_NAME_TOOLTIP__}</label>
-					</div>
-					<div class="col-md-8">
-						<select id="view" name="view" class="form-control">
-							{__VIEW_LIST__}
-						</select>
-					</div>
-				</div>
 			</fieldset>
 		</div>
 	</div>

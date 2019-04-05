@@ -74,11 +74,7 @@ final class Config extends SimpleXmlMgr {
 				$sConfValue = '';
 			}
 			$sDisplayValue = '';
-			if(strlen($sConfName) > 17) {
-				$sDisplayConfName = substr($sConfName, 0, 15).'...';
-			} else {
-				$sDisplayConfName = $sConfName;
-			}
+			$sDisplayConfName = Toolz_Format::cutWithEndDots(strtolower($sConfName), 25);
 			$sTooltip = Toolz_Tpl::getToolTip(Toolz_Tpl::getToolTipTag($sConfName));
 			$sLabel = Toolz_Form::label($sDisplayConfName.$sTooltip, $sConfName, 'form-control');
 			//s'il y a des options

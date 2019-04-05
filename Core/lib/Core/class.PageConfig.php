@@ -109,7 +109,6 @@ final class PageConfig extends PagesConf {
 							'{__META_TAGS_CONTENT__}',
 							'{__TWITTER_CONTENT__}',
 							'{__OPEN_GRAPH__}',
-							'{__GOOGLE_CONTENT__}',
 							'{__VIEW_LIST__}',
 							'{__VIEW_NAME_TOOLTIP__}'
 						), 
@@ -129,7 +128,6 @@ final class PageConfig extends PagesConf {
 							$this->getMetaTagsInterface(),
 							$this->getTwitterInterface(),
 							$this->getOgInterface(),
-							$this->getGoogleInterface(),
 							Toolz_Form::optionsList($sViewName, $aViewsAvailable),
 							Toolz_Tpl::getToolTip(Toolz_Tpl::getToolTipTag('VIEW'))
 						), 
@@ -182,26 +180,6 @@ final class PageConfig extends PagesConf {
 		return Toolz_Tpl::getUl(implode($aTwitterSection));
 	}
 	
-	private function getGoogleInterface() {
-		$aGoogleSection = array();
-		if(!isset($this->aPageConf['google'])) {
-			if(($this->aPageConf['google'] = $this->getDefaultConf('google')) === false) {
-				$this->aPageConf['google'] = array();
-			}
-		}
-		foreach(MetasTags::$aGoogleList as $sGoogleType) {
-			$sNameAndId = $sGoogleType;
-			$sTooltip = Toolz_Tpl::getToolTip(Toolz_Tpl::getToolTipTag(Toolz_Format::formatTanslateNodeName($sNameAndId)));
-			$sValue = isset($this->aPageConf['google'][$sGoogleType]) ? $this->aPageConf['google'][$sGoogleType] : '';
-			$sItem = $this->getInputTpl(
-							Toolz_Form::label($sNameAndId.$sTooltip, $sNameAndId, 'form-control text-left'),
-							Toolz_Form::input('text', $sNameAndId, $sNameAndId, $sValue, 'form-control confInput')
-					);
-			$aGoogleSection[] = Toolz_Tpl::getLi($sItem);
-		}
-		return Toolz_Tpl::getUl(implode($aGoogleSection));
-	}
-	
 	private function getMetaTagsInterface() {
 		$aMetaTags = array();
 		if(!isset($this->aPageConf['meta'])) {
@@ -225,7 +203,7 @@ final class PageConfig extends PagesConf {
 			}
 			$sTooltip = Toolz_Tpl::getToolTip(Toolz_Tpl::getToolTipTag(Toolz_Format::formatTanslateNodeName($sMetaName)));
 			$sItem = $this->getInputTpl(
-							Toolz_Form::label($sMetaName.$sTooltip, $sMetaName, 'form-control text-left'),
+							Toolz_Form::label(Toolz_Format::cutWithEndDots(strtolower($sMetaName), 15).$sTooltip, $sMetaName, 'form-control text-left'),
 							Toolz_Form::input('text', $sMetaName, $sMetaName, $sValue, 'form-control confInput', $bReadOnly)
 					);
 			$aMetaTags[] = Toolz_Tpl::getLi($sItem);
@@ -300,13 +278,6 @@ final class PageConfig extends PagesConf {
 			}
 		}
 		$aConf['twitter'] = $aTwitter;
-		// google
-		foreach(MetasTags::$aGoogleList as $sGoogleType) {
-			if(UserRequest::getParams($sGoogleType) !== '') {
-				$aGoogle[$sGoogleType] = UserRequest::getParams($sGoogleType);
-			}
-		}
-		$aConf['google'] = $aGoogle;
 		//view
 		if(UserRequest::getParams('view') !== false && UserRequest::getParams('view') !== '') {
 			if(View::checkIfViewExists(UserRequest::getParams('view'))) {
