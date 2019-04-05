@@ -54,6 +54,14 @@ final class Toolz_Format {
 		}
 	}
 	
+	public static function cutWithEndDots($sString, int $iMaxSize) {
+		if(strlen($sString) > $iMaxSize) {
+			return substr($sString, 0, $iMaxSize-2).'...';
+		} else {
+			return $sString;
+		}
+	}
+	
 	public static function formatFromSerializeArray(array $aForm) {
 		$aFormOutput = array();
 		foreach($aForm as $aFormInfos) {
