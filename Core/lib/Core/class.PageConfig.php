@@ -211,6 +211,16 @@ final class PageConfig extends PagesConf {
 		}
 		foreach(MetasTags::$aAllowedNames as $sMetaName) {
 			$sValue = isset($this->aPageConf['meta'][$sMetaName]) ? $this->aPageConf['meta'][$sMetaName] : '';
+			if(empty($sValue)) {
+				$oConfig = new Config();
+				$mValue = $oConfig->getGlobalConf($sMetaName);
+				unset($oConfig);
+				if(is_array($mValue) || !$mValue) {
+					$sValue = false;
+				} else {
+					$sValue = $mValue;
+				}
+			}
 			$sTooltip = Toolz_Tpl::getToolTip(Toolz_Tpl::getToolTipTag(Toolz_Format::formatTanslateNodeName($sMetaName)));
 			$sItem = $this->getInputTpl(
 							Toolz_Form::label($sMetaName.$sTooltip, $sMetaName, 'form-control text-left'),

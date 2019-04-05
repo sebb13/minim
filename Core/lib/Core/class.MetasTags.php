@@ -120,7 +120,7 @@ final class MetasTags {
 			if(in_array($sName, self::$aAllowedNames)) {
 				$sMetaTags .= str_replace(
 									array('{__NAME__}', '{__CONTENT__}'), 
-									array($sName,$sContent), 
+									array($sName, $sContent), 
 									self::$sMetaPattern
 								);
 			}
