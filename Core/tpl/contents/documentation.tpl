@@ -46,6 +46,7 @@
 			</a>
 		</div>
 	</div>
+	<hr />
 	<div id="article-contents" class="article-contents">{__ARTICLE-CONTENTS__}</div>
 	<hr />
 	<div class="row">

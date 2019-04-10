@@ -21,7 +21,7 @@
 			</a>
 		</div>
 		<div class="col-md-2 col-sm-3 col-xs-6">
-			<a href="#" id="downloadPlugin" class="article downloadPlugin btn btn-primary btn-sm btn-active">
+			<a href="#" id="downloadPlugin" class="article downloadPlugin btn btn-primary btn-sm">
 				Download <div class="fa fa-download"></div>
 			</a>
 		</div>
@@ -56,12 +56,12 @@
 			</a>
 		</div>
 		<div class="col-md-2 col-sm-3 col-xs-6">
-			<a href="#" id="downloadPlugin_bottom" class="article downloadPlugin btn btn-primary btn-sm btn-active">
+			<a href="#" id="downloadPlugin_bottom" class="article downloadPlugin btn btn-primary btn-sm">
 				Download <div class="fa fa-download"></div>
 			</a>
 		</div>
 		<div class="col-md-2 col-sm-3 col-xs-6">
-			<a href="#" id="geolocationPlugin_bottom" class="article geolocationPlugin btn btn-primary btn-sm btn-active">
+			<a href="#" id="geolocationPlugin_bottom" class="article geolocationPlugin btn btn-primary btn-sm">
 				Geolocation <div class="fa fa-globe"></div>
 			</a>
 		</div>
