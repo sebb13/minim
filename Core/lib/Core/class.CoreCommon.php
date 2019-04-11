@@ -33,6 +33,9 @@ abstract class CoreCommon {
 									);
 		$this->oTplMgr = new TplMgr($this->oLang);
 		$this->sCoreResultTpl = file_get_contents(CORE_RESULT_TPL_PATH);
+		if(UserRequest::getParams('app_token') === false) {
+			UserRequest::setParams('app_token', SessionCore::getSessionHash());
+		}
 	}
 	
 	protected function getCoreResult($sContent, array $aOther=array()) {

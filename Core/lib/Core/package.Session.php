@@ -223,7 +223,9 @@ final class SessionCore extends Session {
     }
 
     public static function get($sKey) {
-        return parent::getSubSession(self::$sSubKey, $sKey);
+		return (getenv($sKey) !== false) 
+			? getenv($sKey) 
+			: parent::getSubSession(self::$sSubKey, $sKey);
     }
 	
 	public static function destroy() {
@@ -265,42 +267,55 @@ final class SessionCore extends Session {
 		return self::$oLang;
     }
 
-    public static function sessionStart($mSessionHash) {
-		// -- INIT SESSION
-		ini_set('session.use_trans_sid', 0);
-		ini_set('session.gc_maxlifetime', 36000);
-		ini_set('session.cookie_lifetime', 36000);
-		ini_set('session.force_path', 0);
-		session_save_path(SESSION_PATH);
-		if ($mSessionHash === false) {
-			return session_start();
-		}
-		if(($aSecureKey = Config::get('secureKey')) === false) {
-			throw new CoreException('secureKey no found');
-		}
-		// TODO
-		// TOKEN MUST BE BUILT WITH SITE NAME
-		self::$sTokenKey = $aSecureKey[(int)date('d') % 2];
-		if (!self::checkSessionHash($mSessionHash)) {
-			self::$sTokenKey = $aSecureKey[((int)date('d')+1) % 2];
-			if(!self::checkSessionHash($mSessionHash)) {
-				return session_start();
+    public static function sessionStart($mToken) {
+		try {
+			// -- INIT TOKEN
+			$sClearTokenKey = DOMAIN_NAME.date('d');
+			$sSalt = getenv('REMOTE_ADDR');
+			self::$sTokenKey = str_replace('.', '', crypt($sClearTokenKey, $sSalt));
+			// -- INIT SESSION
+			$iTTL = strtotime(date('Y-m-d', strtotime('tomorrow'))) - time();
+			ini_set('session.gc_maxlifetime', $iTTL);
+			ini_set('session.cookie_lifetime', $iTTL);
+			ini_set('session.force_path', 0);
+			ini_set('session.cookie_secure', 1);
+			session_save_path(SESSION_PATH);
+			// -- CHECK IF SESSION EXIST
+			if (self::checkToken($mToken)) {
+				session_id(self::getSessionId($mToken));
+			} elseif(UserRequest::getCookie('minimCookie') !== false 
+			&& self::checkToken(UserRequest::getCookie('minimCookie'))) {
+				session_id(self::getSessionId(UserRequest::getCookie('minimCookie')));
+			} else {
+				$sSessId = uniqid();
+				$sToken = self::$sTokenKey.str_rot13($sSessId);
+				UserRequest::setCookie('minimCookie', $sToken, time()+$iTTL);
+				session_id($sSessId);
 			}
+			// -- START
+			return session_start();
+		} catch (Exception $e) {
+			if(DEV) {
+				debug($e);
+			}
+			return false;
 		}
-		session_id(self::getSessionId($mSessionHash));
-		return session_start();
     }
 
     public static function getSessionHash() {
-        return str_rot13(self::$sTokenKey.session_id());
+        return self::$sTokenKey.str_rot13(session_id());
     }
 
-    private static function getSessionId($sSessionHash) {
-        return str_rot13(str_replace(self::$sTokenKey, '', $sSessionHash));
+    private static function checkToken($mToken) {
+		try {
+			return is_file(SESSION_PATH.'sess_'.self::getSessionId($mToken));
+		} catch (Exception $e) {
+			return false;
+		}
     }
 
-    private static function checkSessionHash($sSessionHash) {
-        return file_exists(SESSION_PATH.'sess_'.self::getSessionId($sSessionHash));
+    private static function getSessionId($mToken) {
+        return str_rot13(str_replace(self::$sTokenKey, '', $mToken));
     }
 
     public static function isSecureArea() {

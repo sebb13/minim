@@ -87,6 +87,7 @@ final class AdminAuthMgr {
 					} else {
 						SessionUser::login($sUser);
 						SessionUser::setRole($aUser['role']);
+						UserRequest::setParams('app_token', SessionCore::getSessionHash());
 						return true;
 					}
 				}

@@ -68,7 +68,7 @@ define('EXTERNAL_CLASS_PATH',	LIB_PATH.'External/');
 define('TOOLZ_CLASS_PATH',		LIB_PATH.'Toolz/');
 define('USR_CLASS_PATH',		LIB_PATH.'usr/');
 define('INC_PATH',				CORE_PATH.'inc/');
-define('SESSION_PATH',			CORE_PATH.'_sessions');
+define('SESSION_PATH',			CORE_PATH.'_sessions/');
 define('LOC_PATH',				CORE_PATH.'locales/');
 define('COMMON_LOC_PATH',		LOC_PATH.'common/');
 define('TPL_PATH',				CORE_PATH.'tpl/');

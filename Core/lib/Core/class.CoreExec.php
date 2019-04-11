@@ -30,16 +30,19 @@ final class CoreExec extends Router {
 			unset($aActionParams['exw_action']);
 			try {
 				$oClass = new $sClassName();
+				if (UserRequest::getParams('app_token') !== SessionCore::getSessionHash()) {
+					throw new Exception('INTERNAL ERROR', CoreException::INTERNAL_ERROR);
+				}
 				$mResult = $oClass->$sMethodName($aActionParams);
 				if(!$mResult) {
-					throw new CoreException('fatal core error', CoreException::INTERNAL_ERROR);
+					throw new CoreException('FATAL CORE ERROR', CoreException::INTERNAL_ERROR);
 				}
 			} catch(CoreException $e) {
 				$sMsg = DEV ? $e->getMessage() : ''; 
 				$sMsg .= DEV ? print_r($e->getTrace(), true) : ''; 
 				$e->log();
 				$mResult = array(
-								'content' => 'internal error: '.$sMsg,
+								'content' => 'INTERNAL ERROR : '.$sMsg,
 								'sPage' => UserRequest::getRequest('sPage')
 							);
 				if($e->getCode() === CoreException::INTERNAL_ERROR) {
@@ -49,7 +52,7 @@ final class CoreExec extends Router {
 				$sMsg = DEV ? $e->getMessage() : ''; 
 				$sMsg .= DEV ? print_r($e->getTrace(), true) : ''; 
 				$mResult = array(
-								'content' => 'internal error: '.$sMsg,
+								'content' => 'INTERNAL ERROR : '.$sMsg,
 								'sPage' => UserRequest::getRequest('sPage')
 							);
 			}
@@ -74,7 +77,7 @@ final class CoreExec extends Router {
 			}
 			return $this->getView();
 		} else {
-			throw new CoreException('invalid request '.UserRequest::getParams('exw_action'));
+			throw new CoreException('INVALID REQUEST '.UserRequest::getParams('exw_action'));
 		}
 	}
 	

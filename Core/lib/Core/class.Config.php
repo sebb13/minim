@@ -231,16 +231,4 @@ final class Config extends SimpleXmlMgr {
 		ModulesMgr::setModulesAvailable();
 		return $this->save2path($oNewXml, $this->sConfFilePath);
 	}
-	
-	public static function get($sKey) {
-		// charger les différents XML de configurations
-		// Checker dans un tableau si y'a la clé
-		$aConfig = array(
-					'secureKey' => array(
-						0 => 'even',
-						1 => 'odd'
-					)
-				);
-		return !empty($aConfig[$sKey]) ? $aConfig[$sKey] : false;
-	}
 }

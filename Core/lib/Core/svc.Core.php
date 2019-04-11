@@ -84,10 +84,12 @@ final class Core extends CoreCommon {
 					),
 					file_get_contents(ADMIN_CONTENT_TPL_PATH.'home.tpl')
 				);
-		return $this->oTplMgr->buildSimpleCacheTpl(
+		return array(
+					'content' => $this->oTplMgr->buildSimpleCacheTpl(
 											$sContent, 
 											ADMIN_LOC_PATH.$this->oLang->LOCALE.'/home.xml'
-					);
+					)
+				);
 	}
 	
 	public function sessionGC() {
