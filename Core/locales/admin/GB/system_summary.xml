@@ -10,4 +10,5 @@
 	<MANAGE_ROUTES><![CDATA[Manage routes]]></MANAGE_ROUTES>
 	<GLOBAL_CONF><![CDATA[Global configuration]]></GLOBAL_CONF>
 	<MANAGE_USERS><![CDATA[Manage users]]></MANAGE_USERS>
+	<ERROR_LOGS_TITLE><![CDATA[Error logs (website and back office]]></ERROR_LOGS_TITLE>
 </translations>

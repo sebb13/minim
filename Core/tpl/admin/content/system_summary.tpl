@@ -84,6 +84,16 @@
 	</div>
 	<div class="col-md-6">
 		<div class="panel panel-default conf-box">
+			<div class="panel-heading conf-box-header">{__ERROR_LOGS_TITLE__}</div>
+			<div class="panel-body chart-box">
+				<div id="chart_div"></div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="row">
+	<div class="col-md-6">
+		<div class="panel panel-default conf-box">
 			<div class="panel-heading conf-box-header">
 				code lines
 			</div>

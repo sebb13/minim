@@ -44,7 +44,7 @@ $('.note-editable').first().focus();
 
 getErrorLogsGraph();
 $(document).on('change', 'meta[name=app_current_page]', function(){
-	if(getCurrentPage() === 'system_errorLogs') {
+	if(getCurrentPage() === 'system_errorLogs' || getCurrentPage() === 'system_summary') {
 		var chartTarget = '#chart_div';
 		var chartWidth = $('#chart_div').parent().parent()-20;
 		getErrorLogsGraph(chartTarget, chartWidth);
