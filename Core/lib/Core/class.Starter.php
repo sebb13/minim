@@ -45,19 +45,16 @@ final class Starter {
 			$aRequest['sPage'] = $aRequest['version'].'_'.$aRequest['sPage'];
 			unset($aRequest[VersionsContentsMgr::$sParamUrl]);
 		}
-		UserRequest::init($aRequest, $mParams, $mFiles, $aCookies);
-		self::initSystemSession($aServer);
+		UserRequest::init($aRequest, $mParams, $mFiles, $aCookies, $aServer);
+		self::initSystemSession();
 		SessionNav::setCurrentPage($aRequest['sPage']);
 		self::InitLang($aRequest['sLang']);
 		return true;
 	}
 	
-	private static function initSystemSession(array $aSystemParams) {
+	private static function initSystemSession() {
 		
 		SessionCore::sessionStart(UserRequest::getParams('app_token'));
-		if(Session::get('system') === false) {
-			Session::set('system', $aSystemParams);
-		}
 		if(UserRequest::getParams('app_token') !== false) {
 			SessionCore::set('app_token', UserRequest::getParams('app_token'));
 		} else {
@@ -80,7 +77,7 @@ final class Starter {
 		if (!empty($sLangCalled)) {
 			$sLang = $sLangCalled;
 		} elseif(!SessionLang::langIsSet()) {
-			if (($sHTTP_ACCEPT_LANGUAGE = SessionCore::get('HTTP_ACCEPT_LANGUAGE')) !== false) {
+			if (($sHTTP_ACCEPT_LANGUAGE = UserRequest::getEnv('HTTP_ACCEPT_LANGUAGE')) !== false) {
 				$aBrowserLang = explode(',',$sHTTP_ACCEPT_LANGUAGE);
 				$sLang = strtoupper(substr($aBrowserLang[0],0,2));
 				/* 

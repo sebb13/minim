@@ -21,6 +21,7 @@ final class UserRequest {
 	
 	private static $aRequest		= array();
 	private static $aParams			= array();
+	private static $aEnv			= array();
 	private static $aFiles			= array();
 	private static $aCookies		= array();
 	private static $iTimeStart		= 0;
@@ -29,9 +30,10 @@ final class UserRequest {
 	private static $sBenchmarkTpl	= '';
 	public static $oAlertBoxMgr		= NULL;
 	
-	public static function init(array $aRequest, $mParams=array(), $mFiles=array(), $aCookies=array()) {
+	public static function init(array $aRequest, $mParams=array(), $mFiles=array(), $aCookies=array(), $aServer=array()) {
 		self::$aRequest = $aRequest;
 		self::$aCookies = $aCookies;
+		self::$aEnv = $aServer;
 		if(is_array($mParams)) {
 			self::$aParams = $mParams;
 		} elseif(is_string($mParams)) {
@@ -44,11 +46,66 @@ final class UserRequest {
 		return true;
 	}
 	
+	public static function setRequest($aNewRequest) {
+		Toolz_Checker::checkParams(array(
+									'required'	=> array('sPage', 'sLang'),
+									'data'	=> $aNewRequest
+								));
+		self::$aRequest = $aNewRequest;
+		SessionNav::setCurrentPage($aNewRequest['sPage']);
+		SessionLang::setLang($aNewRequest['sLang']);
+		return true;
+	}
+	
 	public static function getRequest($sKey='') {
 		if(!empty($sKey)) {
 			return akead($sKey, self::$aRequest, false);
 		}
 		return !empty(self::$aRequest) ? self::$aRequest : false;
+	}
+	
+	public static function setParams($sKey, $mValue) {
+		self::$aParams[$sKey] = $mValue;
+		return true;
+	}
+	
+	public static function setAllParams(array $aParams) {
+		self::$aParams = $aParams;
+		return true;
+	}
+	
+	public static function getParams($sKey='') {
+		if(!empty($sKey)) {
+			return akead($sKey, self::$aParams, false);
+		}
+		return !empty(self::$aParams) ? self::$aParams : false;
+	}
+	
+	public static function setEnv($sKey, $mValue) {
+		self::$aEnv[$sKey] = $mValue;
+		return true;
+	}
+	
+	public static function getEnv($sKey='') {
+		if(!empty($sKey)) {
+			// -- IF IN $_SERVER
+			if (!empty(self::$aEnv[$sKey])) {
+				return self::$aEnv[$sKey];
+			} elseif (getenv($sKey) !== false) {
+				return getenv($sKey);
+			} else {
+				return false;
+			}
+		}
+		return !empty(self::$aEnv) ? self::$aEnv : getenv();
+	}
+	
+	public static function setCookie($sKey, $sValue, $sTTL) {
+		return setcookie($sKey, $sValue, $sTTL);
+	}
+	
+	public static function getCookie($sKey) {
+		return isset(self::$aCookies[$sKey]) ? self::$aCookies[$sKey] : false;
 	}
 	
 	public static function getFiles($sKey='') {
@@ -64,42 +121,6 @@ final class UserRequest {
 	
 	public static function getPage() {
 		return self::$aRequest['sPage'];
-	}
-	
-	public static function setRequest($aNewRequest) {
-		Toolz_Checker::checkParams(array(
-									'required'	=> array('sPage', 'sLang'),
-									'data'	=> $aNewRequest
-								));
-		self::$aRequest = $aNewRequest;
-		SessionNav::setCurrentPage($aNewRequest['sPage']);
-		SessionLang::setLang($aNewRequest['sLang']);
-		return true;
-	}
-	
-	public static function getParams($sKey='') {
-		if(!empty($sKey)) {
-			return akead($sKey, self::$aParams, false);
-		}
-		return !empty(self::$aParams) ? self::$aParams : false;
-	}
-	
-	public static function setParams($sKey, $mValue) {
-		self::$aParams[$sKey] = $mValue;
-		return true;
-	}
-	
-	public static function setAllParams(array $aParams) {
-		self::$aParams = $aParams;
-		return true;
-	}
-	
-	public static function getCookie($sKey) {
-		return isset(self::$aCookies[$sKey]) ? self::$aCookies[$sKey] : false;
-	}
-	
-	public static function setCookie($sKey, $sValue, $sTTL) {
-		return setcookie($sKey, $sValue, $sTTL);
 	}
 	
 	public static function getUrl($sPage='', $sLang='') {

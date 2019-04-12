@@ -50,7 +50,7 @@ final class AdminAuthMgr {
 		} else {
 			$aBanIps = array();
 		}
-		if(in_array(Session::getSubSession('system', 'HTTP_REMOTE_IP'), $aBanIps)) {
+		if(in_array(UserRequest::getEnv('HTTP_REMOTE_IP'), $aBanIps)) {
 			return self::kick();
 		}
 		if(count($aBanIps) >= 10) {
@@ -138,7 +138,7 @@ final class AdminAuthMgr {
 				self::setLoginPromptAlert();
                 $sContent = str_replace(
 							'{__LOGIN_VALUE__}',
-							SessionCore::get('REMOTE_USER') !== false ? SessionCore::get('REMOTE_USER') : '',
+							UserRequest::getEnv('REMOTE_USER') !== false ? UserRequest::getEnv('REMOTE_USER') : '',
                             $oCacheMgr->getCache()
 						);
 				return $sContent;
@@ -165,11 +165,11 @@ final class AdminAuthMgr {
 		mail(
 			ERROR_MAIL,
 			'3 consecutive connection errors on '.WEB_PATH,
-			SessionCore::get('REMOTE_USER').' - '.Session::getSubSession('system', 'HTTP_REMOTE_IP')
+			UserRequest::getEnv('REMOTE_USER').' - '.UserRequest::getEnv('HTTP_REMOTE_IP')
 		);
         file_put_contents(
                     self::getBanFilePath(), 
-                    Session::getSubSession('system', 'HTTP_REMOTE_IP').PHP_EOL, 
+                    UserRequest::getEnv('HTTP_REMOTE_IP').PHP_EOL, 
                     FILE_APPEND
                 );
     }

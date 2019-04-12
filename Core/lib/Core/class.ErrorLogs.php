@@ -94,8 +94,8 @@ final class ErrorLogs {
 					6 => 'DEFAULT_LANG..... '.DEFAULT_LANG,
 					7 => 'sLang............ '.UserRequest::getLang(),
 					8 => 'sPage............ '.UserRequest::getPage(),
-					9 => 'HTTP_USER_AGENT.. '.SessionCore::get('HTTP_USER_AGENT'),
-					10 => 'IP............... '.SessionCore::get('REMOTE_ADDR'),
+					9 => 'HTTP_USER_AGENT.. '.UserRequest::getEnv('HTTP_USER_AGENT'),
+					10 => 'IP............... '.UserRequest::getEnv('REMOTE_ADDR'),
 					11 => ''
 				);
 		return dexad('DEV', false)||$bForce ? "\n".implode("\n", $aReturn) : '';

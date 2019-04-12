@@ -223,9 +223,7 @@ final class SessionCore extends Session {
     }
 
     public static function get($sKey) {
-		return (getenv($sKey) !== false) 
-			? getenv($sKey) 
-			: parent::getSubSession(self::$sSubKey, $sKey);
+		return parent::getSubSession(self::$sSubKey, $sKey);
     }
 	
 	public static function destroy() {
