@@ -88,6 +88,11 @@
 					<img alt="" border="0" src="https://www.paypal.com/fr_FR/i/scr/pixel.gif" width="1" height="1" />
 				</form>
 			</div>
+			<div class="widget text-center">
+				<a href="https://computta.com/?ref=376437" target="_blank" title="computta">
+					<img src="/img/contents/300px_computta_blue.png" alt="computta" class="img-rounded" />
+				</a>
+			</div>
 		</aside>
 		<!-- /Sidebar -->
 	</div>
