@@ -75,7 +75,7 @@
 		<article class="col-sm-8 maincontent">
 			<h3>Supportez le projet !</h3>
 			<p>Vous pouvez participer à l'hébergement de cette documentation (par exemple) !</p>
-			<p>Vous pouvez faire un don de bitcoin à cette adresse : 3E7559xyiKDhU4ZJ6N5hLqYt6c18MLScwE</p>
+			<p>Vous pouvez faire un don en bitcoin à cette adresse : 3E7559xyiKDhU4ZJ6N5hLqYt6c18MLScwE</p>
 			<p>Vous pouvez aussi être affilié au programme computta via ce lien de parrainage : <a href="https://computta.com/?ref=376437" target="_blank">https://computta.com/?ref=376437</a> et ainsi gagner des bitcoins tout en nous en faisant profiter !</p>
 		</article>
 		<!-- Sidebar créer un widget -->
