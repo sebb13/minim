@@ -16,6 +16,23 @@
 	</div>
 	<div class="row">
 		<!-- Article main content -->
+		<article class="col-sm-8 maincontent">
+			<h3>Compatibilité PHP</h3>
+			<p>minim n'utilise pas (encore) les nouveaux opérateurs de PHP 7 (entre autres) afin d'assurer la rétro-compatibilité avec PHP 5.3 encore beaucoup utilisé aujourd'hui.</p>
+			<p>Cependant, aucune fonction dépréciée ou supprimée dans PHP 7 n'est utilisée non plus.</p>
+			<p>Libre à vous donc de coder vos modules en fonction de la version de PHP que vous disposez sur votre serveur.</p>
+			<p>La version actuelle supportée (en production) est la version 7.0.33.</p>
+		<!-- /Article -->
+		</article>
+		<aside class="col-sm-4 sidebar sidebar-right">
+			<div class="widget">
+				<p class="txt-center">
+					<img src="/img/contents/doc/php.png" alt="PHP" />
+				</p>
+			</div>
+		</aside>
+		<!-- /Sidebar -->
+		<!-- Article main content -->
 		<article class="col-sm-12 maincontent">
 			<h3>Conventions - normes</h3>
 		</article>
