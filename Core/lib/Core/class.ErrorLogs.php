@@ -68,7 +68,7 @@ final class ErrorLogs {
 						), 
 						array(
 							nl2br($sMsg), 
-							$sTrace
+							nl2br($sTrace)
 						), 
 						$sLogContainer
 					);
