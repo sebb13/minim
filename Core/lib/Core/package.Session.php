@@ -123,11 +123,11 @@ final class SessionNav extends Session {
 			$mSesction = self::setSectionsList();
 		} else {
 			// -- if one page is added in runing time
-			if (!isset($mSesction[basename($_SERVER['PHP_SELF'])])) {
+			if (!isset($mSesction[basename(UserRequest::getEnv('PHP_SELF'))])) {
 				$mSesction = self::setSectionsList();
 			}
 		}
-		return $mSesction[basename($_SERVER['PHP_SELF'])];
+		return $mSesction[basename(UserRequest::getEnv('PHP_SELF'))];
     }
 
     private static function setSectionsList() {
@@ -268,9 +268,11 @@ final class SessionCore extends Session {
     public static function sessionStart($mToken) {
 		try {
 			// -- INIT TOKEN
-			$sClearTokenKey = DOMAIN_NAME.date('d');
-			$sSalt = UserRequest::getEnv('REMOTE_ADDR');
-			self::$sTokenKey = str_replace('.', '', crypt($sClearTokenKey, $sSalt));
+			self::$sTokenKey = str_replace('.', '', crypt(
+														DOMAIN_NAME.date('d'), 
+														UserRequest::getEnv('REMOTE_ADDR')
+														)
+													);
 			// -- INIT SESSION
 			$iTTL = strtotime(date('Y-m-d', strtotime('tomorrow'))) - time();
 			ini_set('session.gc_maxlifetime', $iTTL);
