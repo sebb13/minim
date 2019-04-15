@@ -24,6 +24,9 @@
 			<p class="text-left">
 				Vous pouvez également récupérer les sources depuis <a href="https://github.com/sebb13/minim" target="_blank">https://github.com</a>.
 			</p>
+			<p class="text-left">
+				Pour télécharger les modules, veuillez vous rendre sur la page du module désiré ou sur GitHub où un dépôt a été créé par module.
+			</p>
 		</article>
 		<!-- Sidebar créer un widget -->
 		<aside class="col-sm-4 maincontent">
@@ -38,6 +41,9 @@
 			</p>
 			<p>
 				<a class="btn btn-primary btn-large btn-dl" href="{##FRONT_URL##}{##LANG##}/downloadFile.html?file_id=LICENSEmd">Télécharger la license</a>
+			</p>
+			<p>
+				<a class="btn btn-primary btn-large btn-dl ajaxLink" href="{##FRONT_URL##}{##LANG##}/plugins/contactPlugin.html" id="_plugins">Télécharger les modules</a>
 			</p>
 		</aside>
 		<!-- /Sidebar -->
