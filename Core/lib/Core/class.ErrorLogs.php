@@ -21,6 +21,7 @@ final class ErrorLogs {
 	
 	private $sDaysLogFilePath		= '';
 	private $sErrorItemTplName		= 'errorLogs.item.tpl';
+	private $sErrorBoxTplName		= 'errorLog.box.tpl';
 	private $sErrorLogsTplName		= 'system_errorLogs.tpl';
 	private $sEndOfLogPatern		= "\nEND OF LOG";
 	const PURGE_OLD_LOGS_SUCCESS	= 'PURGE_OLD_LOGS_SUCCESS';
@@ -56,7 +57,7 @@ final class ErrorLogs {
 		if(file_exists($sLogsFile)) {
 			$aLogs = explode($this->sEndOfLogPatern, file_get_contents($sLogsFile));
 			$sLogs = '';
-			$sLogContainer = file_get_contents(ADMIN_PARTS_TPL_PATH.'errorLog.box.tpl');
+			$sLogContainer = file_get_contents(ADMIN_PARTS_TPL_PATH.$this->sErrorBoxTplName);
 			foreach($aLogs as $sLog) {
 				$sMsg = substr($sLog, 0, strpos($sLog, 'Stack trace:'));
 				$sTrace = substr($sLog, strpos($sLog, 'Stack trace:'));
