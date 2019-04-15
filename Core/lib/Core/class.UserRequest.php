@@ -93,6 +93,8 @@ final class UserRequest {
 				return self::$aEnv[$sKey];
 			} elseif (getenv($sKey) !== false) {
 				return getenv($sKey);
+			} elseif (function_exists('apache_getenv') && apache_getenv($sKey) !== false) {
+				return apache_getenv($sKey);
 			} else {
 				return false;
 			}
