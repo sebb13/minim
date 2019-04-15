@@ -1,22 +1,4 @@
 <?php
-/*
- *	minim - PHP framework
-    Copyright (C) 2019  Sébastien Boulard
-
-    This program is free software; you can redistribute it and/or modify
-    it under the terms of the GNU General Public License as published by
-    the Free Software Foundation; either version 2 of the License, or
-    (at your option) any later version.
-
-    This program is distributed in the hope that it will be useful,
-    but WITHOUT ANY WARRANTY; without even the implied warranty of
-    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-    GNU General Public License for more details.
-
-    You should have received a copy of the GNU General Public License
-    along with this program; see the file COPYING. If not, write to the
-    Free Software Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
- */
 final class AdminAuthMgr {
     private static $bIsBan		= false;
 	private static $bMailSecure	= false;
@@ -50,7 +32,7 @@ final class AdminAuthMgr {
 		} else {
 			$aBanIps = array();
 		}
-		if(in_array(UserRequest::getEnv('HTTP_REMOTE_IP'), $aBanIps)) {
+		if(in_array(UserRequest::getEnv('REMOTE_ADDR'), $aBanIps)) {
 			return self::kick();
 		}
 		if(count($aBanIps) >= 10) {
@@ -87,7 +69,6 @@ final class AdminAuthMgr {
 					} else {
 						SessionUser::login($sUser);
 						SessionUser::setRole($aUser['role']);
-						UserRequest::setParams('app_token', SessionCore::getSessionHash());
 						return true;
 					}
 				}
@@ -114,10 +95,7 @@ final class AdminAuthMgr {
 	}
 	
 	private static function checkMailCode() {
-		/*
-		 idem		 
-		 */
-		return true;
+		
 	}
 	
 	public static function logout() {
@@ -138,7 +116,7 @@ final class AdminAuthMgr {
 				self::setLoginPromptAlert();
                 $sContent = str_replace(
 							'{__LOGIN_VALUE__}',
-							UserRequest::getEnv('REMOTE_USER') !== false ? UserRequest::getEnv('REMOTE_USER') : '',
+							SessionCore::get('REMOTE_USER') !== false ? SessionCore::get('REMOTE_USER') : '',
                             $oCacheMgr->getCache()
 						);
 				return $sContent;
@@ -165,11 +143,11 @@ final class AdminAuthMgr {
 		mail(
 			ERROR_MAIL,
 			'3 consecutive connection errors on '.WEB_PATH,
-			UserRequest::getEnv('REMOTE_USER').' - '.UserRequest::getEnv('HTTP_REMOTE_IP')
+			SessionCore::get('REMOTE_USER').' - '.UserRequest::getEnv('REMOTE_ADDR')
 		);
         file_put_contents(
                     self::getBanFilePath(), 
-                    UserRequest::getEnv('HTTP_REMOTE_IP').PHP_EOL, 
+                    UserRequest::getEnv('REMOTE_ADDR').PHP_EOL, 
                     FILE_APPEND
                 );
     }

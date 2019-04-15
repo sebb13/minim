@@ -33,7 +33,8 @@ class Router {
                                 );
         $this->aHomeRedirect = array(
                                     'sLang'=>  UserRequest::getLang(),
-                                    'sPage' => 'home'
+                                    'sPage' => 'home',
+									'app_token' => ''
                                 );
     }
 
@@ -73,6 +74,7 @@ class Router {
                 return true;
             } elseif(UserRequest::getParams() !== false && AdminAuthMgr::checkLogin(UserRequest::getParams())) {
 				SessionNav::setPreviousCurrentPage('home');
+				UserRequest::setParams('app_token', SessionCore::getSessionHash());
 				$this->redirect($this->aHomeRedirect);
                 return true;
             } else {
