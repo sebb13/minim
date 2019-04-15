@@ -4,9 +4,7 @@
 			<div class="panel-heading conf-box-header">{__PAGE_TITLE__}</div>
 			<div class="panel-body">
 				<div id="errorLogsList">
-					<ul>
-						{__LOGS_LIST__}
-					</ul>
+					{__LOGS_LIST__}
 				</div>
 			</div>
 		</div>

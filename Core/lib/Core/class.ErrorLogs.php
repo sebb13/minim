@@ -54,24 +54,25 @@ final class ErrorLogs {
 			$sLogsFile = $this->sDaysLogFilePath;
 		}
 		if(file_exists($sLogsFile)) {
-			return nl2br(file_get_contents($sLogsFile));
 			$aLogs = explode($this->sEndOfLogPatern, file_get_contents($sLogsFile));
 			$sLogs = '';
 			$sLogContainer = file_get_contents(ADMIN_PARTS_TPL_PATH.'errorLog.box.tpl');
 			foreach($aLogs as $sLog) {
-				$sMsg = substr($sLog, 0, strpos('<pre>'));
-				$sTrace = substr($sLog, strpos('<pre>'));
-				$sLogs .= str_replace(
-					array(
-						'{__MSG__}',
-						'{__TRACE__}'
-					), 
-					array(
-						$sMsg, 
-						$sTrace
-					), 
-					$sLogContainer
-				);
+				$sMsg = substr($sLog, 0, strpos($sLog, 'Stack trace:'));
+				$sTrace = substr($sLog, strpos($sLog, 'Stack trace:'));
+				if(!empty($sMsg) && !empty($sTrace)) {
+					$sLogs .= str_replace(
+						array(
+							'{__MSG__}',
+							'{__TRACE__}'
+						), 
+						array(
+							nl2br($sMsg), 
+							$sTrace
+						), 
+						$sLogContainer
+					);
+				}
 			}
 			return $sLogs;
 		} else {
