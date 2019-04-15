@@ -41,8 +41,7 @@ final class ErrorLogs {
 		if(file_exists($sLogsFile)) {
 			$aLogs = file($sLogsFile);
 			foreach($aLogs as $sLine) {
-				//if(strpos($sLine, $this->sEndOfLogPatern) !== false) {
-				if(strpos($sLine, 'TIME.......... '.$sDate) !== false) {
+				if(strpos($sLine, 'END OF LOG') !== false) {
 					$iErrors++;
 				}
 			}
@@ -106,7 +105,7 @@ final class ErrorLogs {
 		if(file_exists($this->sDaysLogFilePath)) {
 			$sString = $sString.file_get_contents($this->sDaysLogFilePath);
 		}
-		return file_put_contents($this->sDaysLogFilePath,$sString);
+		return file_put_contents($this->sDaysLogFilePath, $sString);
 	}
 	
 	private function getLogDate($sLogsFile, $sSep='') {
