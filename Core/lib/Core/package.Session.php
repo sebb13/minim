@@ -269,7 +269,7 @@ final class SessionCore extends Session {
 		try {
 			// -- INIT TOKEN
 			$sClearTokenKey = DOMAIN_NAME.date('d');
-			$sSalt = getenv('REMOTE_ADDR');
+			$sSalt = UserRequest::getEnv('REMOTE_ADDR');
 			self::$sTokenKey = str_replace('.', '', crypt($sClearTokenKey, $sSalt));
 			// -- INIT SESSION
 			$iTTL = strtotime(date('Y-m-d', strtotime('tomorrow'))) - time();
