@@ -91,8 +91,10 @@ final class UserRequest {
 			// -- IF IN $_SERVER
 			if (!empty(self::$aEnv[$sKey])) {
 				return self::$aEnv[$sKey];
+			// -- ELSE
 			} elseif (getenv($sKey) !== false) {
 				return getenv($sKey);
+			// -- IF APACHE
 			} elseif (function_exists('apache_getenv') && apache_getenv($sKey) !== false) {
 				return apache_getenv($sKey);
 			} else {
