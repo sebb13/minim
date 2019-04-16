@@ -26,13 +26,15 @@ final class SocialNetwork {
 			throw new CoreException('language not allowed');
 		}
 		$sReturn = '';
-		//if (!dexad('DEV', false) && !dexad('ADMIN', false)) {
-			foreach(scandir(SOC_NET_TPL_PATH.$sLanguage) as $sFilename) {
-				if (pathinfo($sFilename,PATHINFO_EXTENSION) === 'tpl') {
-					$sReturn .= file_get_contents(SOC_NET_TPL_PATH.$sLanguage.'/'.$sFilename);
-				}
+		foreach(scandir(SOC_NET_TPL_PATH.$sLanguage) as $sFilename) {
+			if (pathinfo($sFilename,PATHINFO_EXTENSION) === 'tpl') {
+				$sReturn .= str_replace(
+								'{##DOMAIN_NAME##}', 
+								DOMAIN_NAME, 
+								file_get_contents(SOC_NET_TPL_PATH.$sLanguage.'/'.$sFilename)
+							);
 			}
-		//}
+		}
 		return $sReturn;
 	}
 }
