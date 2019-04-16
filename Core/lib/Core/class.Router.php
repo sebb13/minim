@@ -21,6 +21,7 @@ class Router {
 	 
     private $aAuthRedirect = array();
     private $aHomeRedirect = array();
+    private $a404Redirect = array();
 	private $oPageConfig = NULL;
 	protected $oView = NULL;
 
@@ -33,8 +34,11 @@ class Router {
                                 );
         $this->aHomeRedirect = array(
                                     'sLang'=>  UserRequest::getLang(),
-                                    'sPage' => 'home',
-									'app_token' => ''
+                                    'sPage' => 'home'
+                                );
+        $this->a404Redirect = array(
+                                    'sLang'=>  UserRequest::getLang(),
+                                    'sPage' => '404'
                                 );
     }
 
@@ -56,9 +60,15 @@ class Router {
 			}
 		} catch (CoreException $e) {
             echo $e;
+			$this->redirect($this->a404Redirect);
+			return $this->oView->getPage();
         } catch (Exception $e) {
 			$sMsg = $e->getMessage()."\n\r".print_r($e->getTrace(), true);
-			throw new GenericException($sMsg);
+			$oErrorLogs = new ErrorLogs();
+			$oErrorLogs->addLog($sMsg);
+			unset($oErrorLogs);
+			$this->redirect($this->a404Redirect);
+			return $this->oView->getPage();
 		}
 		if (UserRequest::getParams('content') !== false) {
 			return $this->oView->getContent('home');

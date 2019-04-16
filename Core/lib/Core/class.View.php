@@ -53,6 +53,9 @@ final class View {
 		if(DEV) {
 			$this->oCacheMgr->deleteCache($sContentName);
 		}
+		if ($sContentName === '404') {
+			$sContent = $this->get404();
+		}
         if($this->bMultiFlux && !empty($this->aContent)) {
 			$this->bMultiFlux = false;
             return json_encode($this->aContent);

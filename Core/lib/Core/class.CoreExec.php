@@ -67,7 +67,7 @@ final class CoreExec extends Router {
 			} elseif(is_string($mResult)) {
 				$sContent = $mResult;
 			} else {
-				$sContent = '';
+				$sPageName = '404';
 			}
 			if(empty($sPageName)) {
 				$sPageName = UserRequest::getRequest('sPage');
