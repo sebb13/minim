@@ -71,7 +71,8 @@ class Router {
 			return $this->oView->getPage();
 		}
 		if (UserRequest::getParams('content') !== false) {
-			return $this->oView->getContent('home');
+			$this->oView->setContent(UserRequest::getPage(), UserRequest::getParams('content'));
+			return $this->oView->getContent(UserRequest::getPage());
 		} else {
 			if(!UserRequest::getParams('sPage')) {
 				$this->redirect($this->aHomeRedirect);
