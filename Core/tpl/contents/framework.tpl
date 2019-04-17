@@ -20,7 +20,7 @@
 			<h3>Compatibilité PHP</h3>
 			<p>minim n'utilise pas (encore) les nouveaux opérateurs de PHP 7 (entre autres) afin d'assurer la rétro-compatibilité avec PHP 5.3 encore beaucoup utilisé aujourd'hui.</p>
 			<p>Cependant, aucune fonction dépréciée ou supprimée dans PHP 7 n'est utilisée non plus.</p>
-			<p>Libre à vous donc de coder vos modules en fonction de la version de PHP que vous disposez sur votre serveur.</p>
+			<p>Libre à vous donc de coder vos modules en fonction de la version de PHP dont vous disposez sur votre serveur.</p>
 			<p>La version actuelle supportée (en production) est la version 7.0.33.</p>
 		<!-- /Article -->
 		</article>

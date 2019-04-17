@@ -117,7 +117,7 @@
                     <img src="/img/contents/doc/htaccess.png" alt=".htaccess (apache)" class="img-rounded" />
                 </a>
 			</p>
-			<p>
+			<p class="text-center">
 				Extrait du fichier de configuration <strong>.htaccess</strong> pour le serveur <strong>Apache</strong>.
 			</p>
 		</div>
@@ -138,7 +138,7 @@
 	<!-- Sidebar créer un widget -->
 	<aside class="col-sm-4 sidebar sidebar-right">
 		<div class="widget">
-			<p class="txt-center">
+			<p class="text-center">
 				<a href="/img/contents/doc/index.png" rel="cbox" title="index.php" class="cbox">
                     <img src="/img/contents/doc/index.png" alt="index.php" class="img-rounded" />
                 </a>
@@ -155,18 +155,18 @@
 		<p>Tout ne se fait pas tout seul évidemment, mais certaines choses si, et l'idée est de ne pas s'en priver.</p>
 		<p>Définir dynamiquement les différents chemins vers les différents répertoires de l'application par exemple, le chargement des classes, le comportement à adopter en fonction du contexte (back, front, développement, production...)...</p>
 		<p>Voilà le rôle du fichier <strong>inc.coreAutoConfig.php</strong>.</p>
-		<p>Mais pas que !</p>
+		<p>Mais pas que ! Il permet également de  :</p>
 		<ul class="cog-tools">
-			<li>Il met à plat quelques normes (timezone, encodage).</li>
-			<li>Charge les classes essentielles.</li>
-			<li>Inclue l'autoloader.</li>
-			<li>Défini le gestionnaire d'erreurs.</li>
-			<li>Charge le premier niveau d'outils.</li>
-			<li>Charge la configuration globale et initialise les constantes nécessaires.</li>
-			<li>Réalise la connexion avec la base de données (si besoin).</li>
-			<li>Soigne les attaques XSS.</li>
-			<li>Défini la langue par défaut.</li>
-			<li>Défini la page par défaut.</li>
+			<li>Mettre à plat quelques normes (timezone, encodage).</li>
+			<li>Charger les classes essentielles.</li>
+			<li>Inclure l'autoloader.</li>
+			<li>Définir le gestionnaire d'erreurs.</li>
+			<li>Charger le premier niveau d'outils.</li>
+			<li>Charger la configuration globale et initialiser les constantes nécessaires.</li>
+			<li>Réaliser la connexion avec la base de données (si besoin).</li>
+			<li>Soigner les attaques XSS.</li>
+			<li>Définir la langue par défaut.</li>
+			<li>Définir la page par défaut.</li>
 		</ul>
 		<p>Enfin, il initialise le "starter" de minim que nous allons voir juste après.</p>
 		<p>Nous vous invitons à lire ce code directement pour bien comprendre l'importance de ce fichier et ce qu'il apporte.</p>
@@ -175,10 +175,13 @@
 	<!-- Sidebar créer un widget -->
 	<aside class="col-sm-4 sidebar sidebar-right">
 		<div class="widget">
-			<p class="txt-center">
+			<p class="text-center">
 				<a href="/img/contents/doc/autoConfig.png" rel="cbox" title="inc.coreAutoConfig.php extrait" class="cbox">
                     <img src="/img/contents/doc/autoConfig.png" alt="inc.coreAutoConfig.php extrait" class="img-rounded" />
                 </a>
+			</p>
+			<p class="text-center">
+				inc.coreAutoConfig.php extrait
 			</p>
 		</div>
 	</aside>
@@ -209,6 +212,9 @@
                     <img src="/img/contents/doc/requirePHP.png" alt="inc.coreAutoConfig.php extrait" class="img-rounded" />
                 </a>
 			</p>
+			<p class="text-center">
+				inc.coreAutoConfig.php extrait
+			</p>
 		</div>
 	</aside>
 	<!-- /Sidebar -->
@@ -238,15 +244,21 @@
 	<!-- Sidebar créer un widget -->
 	<aside class="col-sm-4 sidebar sidebar-right">
 		<div class="widget">
-			<p class="txt-center">
+			<p class="text-center">
 				<a href="/img/contents/doc/dataBaseInit.png" rel="cbox" title="connexion à la base de données" class="cbox">
                     <img src="/img/contents/doc/dataBaseInit.png" alt="connexion à la base de données" class="img-rounded" />
                 </a>
 			</p>
-			<p class="txt-center">
+			<p class="text-center">
+				inc.coreAutoConfig.php extrait
+			</p>
+			<p class="text-center">
 				<a href="/img/contents/doc/SPDO.png" rel="cbox" title="classe SPDO.php" class="cbox">
                     <img src="/img/contents/doc/SPDO.png" alt="classe SPDO.php" class="img-rounded" />
                 </a>
+			</p>
+			<p class="text-center">
+				SPDO
 			</p>
 		</div>
 	</aside>
@@ -272,12 +284,12 @@
 	<!-- Sidebar créer un widget -->
 	<aside class="col-sm-4 sidebar sidebar-right">
 		<div class="widget">
-			<p>
+			<p class="text-center">
 				<a href="/img/contents/doc/starter.png" rel="cbox" title="class.Starter.php extrait" class="cbox">
                     <img src="/img/contents/doc/starter.png" alt="class.Starter.php extrait" class="img-rounded" />
                 </a>
 			</p>
-			<p>
+			<p class="text-center">
 				Ici, les trois méthodes de la classe <strong>class.Starter.php</strong>.
 			</p>
 		</div>
@@ -288,8 +300,8 @@
 <div class="row">
 	<article class="col-sm-8 maincontent">
 		<h3>Le routeur</h3>
-		<code class="language-php">$oRouter->checkRequest();</code>
-		<p>Tout est prêt, on envoie la sauce.</p>
+		<p>Tout est prêt, on envoie la sauce : <code class="language-php">$oRouter->checkRequest();</code></p>
+		
 		<p>Détails</p>
 		<ul class="cog-tools">
 			<li>C'est ici que l'application basculera en front ou backoffice.</li>
@@ -305,10 +317,13 @@
 	<!-- Sidebar créer un widget -->
 	<aside class="col-sm-4 sidebar sidebar-right">
 		<div class="widget">
-			<p class="txt-center">
+			<p class="text-center">
 				<a href="/img/contents/doc/router.png" rel="cbox" title="class.Router.php extrait" class="cbox">
                     <img src="/img/contents/doc/router.png" alt="class.Router.php extrait" class="img-rounded" />
                 </a>
+			</p>
+			<p class="text-center">
+				class.Router.php extrait
 			</p>
 		</div>
 	</aside>
@@ -328,7 +343,7 @@
 	<!-- Sidebar créer un widget -->
 	<aside class="col-sm-4 sidebar sidebar-right">
 		<div class="widget">
-			<p class="txt-center">
+			<p class="text-center">
 				<a href="/img/contents/doc/default_view.png" rel="cbox" title="default_view.tpl extrait" class="cbox">
                     <img src="/img/contents/doc/default_view.png" alt="default_view.tpl extrait" class="img-rounded" />
                 </a>
@@ -362,12 +377,12 @@
 	<!-- Sidebar créer un widget -->
 	<aside class="col-sm-4 sidebar sidebar-right">
 		<div class="widget">
-			<p>
+			<p class="text-center">
 				<a href="/img/contents/doc/view.png" rel="cbox" title="class.View.php extrait" class="cbox">
                     <img src="/img/contents/doc/view.png" alt="class.View.php extrait" class="img-rounded" />
                 </a>
 			</p>
-			<p class="language-php">
+			<p class="text-center language-php">
 				La méthode <code>InitPlaceholdersStorage()</code> regroupe toutes les classes de type <strong>class.*Placeholders.php</strong> puis en extrait les méthodes dans une collection de type <strong>SplObjectStorage</strong>.
 			</p>
 		</div>
@@ -398,12 +413,12 @@
 	<!-- Sidebar créer un widget -->
 	<aside class="col-sm-4 sidebar sidebar-right">
 		<div class="widget">
-			<p>
+			<p class="text-center">
 				<a href="/img/contents/doc/TplMgr.png" rel="cbox" title="class.TplMgr.php extrait" class="cbox">
                     <img src="/img/contents/doc/TplMgr.png" alt="class.TplMgr.php extrait" class="img-rounded" />
                 </a>
 			</p>
-			<p class="language-php">
+			<p class="language-php text-center">
 				Comme vous pouvez le voir dans cet extrait, c'est également ici que sont injectées les traductions communes.
 			</p>
 		</div>
@@ -464,10 +479,10 @@
                     <img src="/img/contents/doc/common_meta.png" alt="métadonnées communes" class="img-rounded" />
                 </a>
 			</p>
-			<p>
+			<p class="text-center">
 				Les métadonnées présentées ici servent aux scripts javascript.
 			</p>
-			<p>
+			<p class="text-center">
 				Elles sont générées dynamiquement par la vue.
 			</p>
 		</div>
