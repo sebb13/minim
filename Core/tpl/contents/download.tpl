@@ -22,7 +22,7 @@
 				La page home.tpl intègre le système d'internationnalisation pour vous donner un exemple complet. Dans les autres pages, la plupart des textes sont en dur dans les templates puisque ce site ne propose qu'une langue.
 			</p>
 			<p class="text-left">
-				Vous pouvez également récupérer les sources depuis <a href="https://github.com/sebb13/minim" target="_blank">https://github.com</a>.
+				Vous pouvez également récupérer les sources depuis <a href="https://github.com/sebb13/minim" target="_blank">https://github.com</a> (méthode conseillée).
 			</p>
 			<p class="text-left">
 				Pour télécharger les modules, veuillez vous rendre au bas de la page du module désiré, ou sur GitHub, où un dépôt a été créé par module.
@@ -57,9 +57,10 @@
 			</p>
 			<ul class="cog-tools">
 				<li>Un peu de temps.</li>
-				<li>Un serveur web avec PHP 5.3 minimum.</li>
+				<li>Un serveur web (apache de préférence) avec PHP 5.3 minimum.</li>
 				<li>Les droits daccès en (S)FTP.</li>
 				<li>La possibilité de créer des domaines, des sous domaine et de paramétrer les entrées DNS afin qu'ells pointent sur le(s) bon(s) répertoire(s) de votre hébergement.</li>
+				<li>Une base de données ainsi que les droits nécessaires (si besoin, minim seul ne nécessite pas de base de données).</li>
 			</ul>
 			<p class="text-left">
 				L'installation se fait ensuite en suivant les instructions dans la <a href="{##FRONT_URL##}{##LANG##}/documentation/operation.html" id="documentation_operation" class="ajaxLink">documentation</a>.
@@ -67,11 +68,23 @@
 			<p class="text-left">
 				Vous pouvez bien sûr l'installer en local en adaptant le fichier <strong>inc.coreAutoConfig.php</strong> à votre environnement.
 			</p>
+			<p class="text-left">
+				Une fois l'installation terminée et le cache régénéré, vous pouvez commencer à :
+			</p>
+			<ul class="cog-tools">
+				<li>Vous dire que vous avez déjà compris pas mal de concepts sur le fonctionnement global.</li>
+				<li>Vous servir un autre café.</li>
+				<li>Supprimer les pages de démonstration et mettre en place vos propres pages.</li>
+				<li>Installer les modules disponibles dont vous avez besoin et vous les approprier.</li>
+				<li>Développer vos propres modules.</li>
+				<li>Contribuer au projet en proposant vos modules !</li>
+				<li>Contribuer au projet en faisant un petit don !</li>
+			</ul>
 		</article>
 		<!-- Sidebar créer un widget -->
 		<aside class="col-sm-4 sidebar sidebar-right">
 			<div class="widget">
-				<img src="/img/contents/doc/dns.png" alt="DNS" class="img-rounded" />
+				<img src="/img/contents/doc/installation.jpg" alt="installation" class="img-rounded" />
 			</div>
 		</aside>
 		<!-- /Sidebar -->
