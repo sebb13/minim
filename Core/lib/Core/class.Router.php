@@ -78,6 +78,7 @@ class Router {
 			}
 			return $this->oView->getPage();
 		}
+		return $this->oView->get404();
      }
 
     private function checkRight() {
