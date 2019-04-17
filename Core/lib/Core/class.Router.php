@@ -78,7 +78,6 @@ class Router {
 			}
 			return $this->oView->getPage();
 		}
-		return $this->oView->get404();
      }
 
     private function checkRight() {
@@ -86,7 +85,7 @@ class Router {
             if(SessionUser::isLogged()) {
                 return true;
             } elseif(UserRequest::getParams() !== false && AdminAuthMgr::checkLogin(UserRequest::getParams())) {
-				SessionNav::setPreviousCurrentPage('home');
+				SessionNav::setPreviousCurrentPage(UserRequest::getPage());
 				UserRequest::setParams('app_token', SessionCore::getSessionHash());
                 return true;
             } else {
