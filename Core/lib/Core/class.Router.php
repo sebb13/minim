@@ -73,7 +73,9 @@ class Router {
 		if (UserRequest::getParams('content') !== false) {
 			return $this->oView->getContent('home');
 		} else {
-			$this->redirect($this->aHomeRedirect);
+			if(!UserRequest::getParams('sPage')) {
+				$this->redirect($this->aHomeRedirect);
+			}
 			return $this->oView->getPage();
 		}
      }
@@ -85,7 +87,6 @@ class Router {
             } elseif(UserRequest::getParams() !== false && AdminAuthMgr::checkLogin(UserRequest::getParams())) {
 				SessionNav::setPreviousCurrentPage('home');
 				UserRequest::setParams('app_token', SessionCore::getSessionHash());
-				$this->redirect($this->aHomeRedirect);
                 return true;
             } else {
 				if (UserRequest::getParams('content') === 'menu') {
