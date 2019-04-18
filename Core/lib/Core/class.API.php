@@ -73,10 +73,10 @@ abstract class API {
 	
 	public function __construct($sCheckApiKey='API::noCheck') {
 		$this->sCheckApiKey = $sCheckApiKey;
-		return $this->inputs();
+		return $this->setInputs();
 	}
 
-	private function inputs() {
+	private function setInputs() {
 		switch($this->getRequestMethod()) {
 			case 'POST':
 				$this->aRequest = $this->cleanInputs(UserRequest::getParams());
