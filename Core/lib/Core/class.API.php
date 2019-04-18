@@ -101,16 +101,25 @@ abstract class API {
 	}
 	
 	private function checkApiKey() {
-		if(empty($this->aRequest) 
-		|| empty($this->aRequest['api_key']) 
-		|| !Toolz_Checker::isValidMethod($this->sCheckApiKey)) {
+		try {
+			if(empty($this->aRequest) 
+			|| empty($this->aRequest['api_key']) 
+			|| !Toolz_Checker::isValidMethod($this->sCheckApiKey)) {
+				return false;
+			}
+			list($sClassName, $sMethodName) = explode('::', $this->sCheckApiKey);
+			$oClass = new $sClassName();
+			$mResult = $oClass->$sMethodName($this->aRequest['api_key']);
+			unset($oClass);
+			return $mResult !== false;
+		} catch (Exception $e) {
+			$sMsg = "API ERROR\n\r";
+			$sMsg .= $e->getMessage()."\n\r".print_r($e->getTrace(), true);
+			$oErrorLogs = new ErrorLogs();
+			$oErrorLogs->addLog($sMsg);
+			unset($oErrorLogs);
 			return false;
 		}
-		list($sClassName, $sMethodName) = explode('::', $this->sCheckApiKey);
-		$oClass = new $sClassName();
-		$mResult = $oClass->$sMethodName($this->aRequest['api_key']);
-		unset($oClass);
-		return $mResult !== false;
 	}
 	
 	protected function getReferer() {
