@@ -22,8 +22,8 @@ abstract class API {
 	/*
 	 * https://www.pulsar-informatique.com/actus-blog/entry/mise-en-place-api-rest-en-php
 	 */
-	protected $aAllow			= array();
-	protected $sContentType		= 'application/json';
+	protected $aFormatAllowed	= array('json', 'xml', 'php');
+	protected $sContentType		= 'json';
 	protected $aRequest			= array();
 	private $iCode				= 200;
 	private $sCheckApiKey		= '';
@@ -71,7 +71,7 @@ abstract class API {
 					505 => 'HTTP Version Not Supported'
 		);
 	
-	public function __construct($sCheckApiKey) {
+	public function __construct($sCheckApiKey='API::noCheck') {
 		$this->sCheckApiKey = $sCheckApiKey;
 		return $this->inputs();
 	}
@@ -96,22 +96,8 @@ abstract class API {
 		return $this->checkApiKey();
 	}
 	
-	protected function getReferer() {
-		return UserRequest::getEnv('HTTP_REFERER');
-	}
-
-	protected function getRequestMethod() {
-		return UserRequest::getEnv('REQUEST_METHOD');
-	}
-
-	protected function sendResponse($mData, $iStatus, $sContentType='') {
-		if(!empty($sContentType)) {
-			$this->sContentType = $sContentType;
-		}
-		$this->iCode = ($iStatus) ? $iStatus : 200;
-		$this->setHeaders();
-		echo $mData;
-		exit;
+	private function noCheck() {
+		return true;
 	}
 	
 	private function checkApiKey() {
@@ -123,7 +109,37 @@ abstract class API {
 		list($sClassName, $sMethodName) = explode('::', $this->sCheckApiKey);
 		$oClass = new $sClassName();
 		$mResult = $oClass->$sMethodName($this->aRequest['api_key']);
+		unset($oClass);
 		return $mResult !== false;
+	}
+	
+	protected function getReferer() {
+		return UserRequest::getEnv('HTTP_REFERER');
+	}
+
+	protected function getRequestMethod() {
+		return UserRequest::getEnv('REQUEST_METHOD');
+	}
+
+	protected function sendResponse(array $aData, $iStatus=null, $sContentType='') {
+		if(!empty($sContentType)) {
+			$this->sContentType = $sContentType;
+		}
+		if(!in_array($sContentType, $this->aFormatAllowed)) {
+			$this->iCode = 404;
+			$this->setHeaders();
+			die();
+		}
+		$this->iCode = !empty($iStatus) ? $iStatus : 200;
+		$this->setHeaders();
+		switch($sContentType) {
+			case 'json':
+				die(json_encode($aData));
+			case 'xml':
+				die(json_encode($aData));
+			case 'php':
+				die(var_export($aData));
+		}
 	}
 
 	private function getStatusMessage() {
@@ -150,6 +166,6 @@ abstract class API {
 
 	private function setHeaders() {
 		header("HTTP/1.1 ".$this->iCode." ".$this->getStatusMessage());
-		header("Content-Type:".$this->sContentType);
+		header("Content-Type:application/".$this->sContentType);
 	}
 }
