@@ -47,7 +47,7 @@ final class Config extends SimpleXmlMgr {
 		if($sModuleName === $this->sMainModule) {
 			// minim
 			if(!file_exists(DATA_PATH.$sModuleName.'.conf.xml')) {
-				throw new CoreException('Unknow module "'.$sModuleName.'"');
+				throw new CoreException('No configuration for module "'.$sModuleName.'"');
 			} else {
 				$this->sConfFilePath = DATA_PATH.$this->sMainModule.'.conf.xml';
 			}
@@ -55,7 +55,7 @@ final class Config extends SimpleXmlMgr {
 			// module
 			$sModuleConfPath = MODULES_PATH.$sModuleName.'/'.GEN_DATA_PATH.$sModuleName.'.conf.xml';
 			if(!file_exists($sModuleConfPath)) {
-				throw new CoreException('Unknow module "'.$sModuleName.'"');
+				throw new CoreException('No configuration for module "'.$sModuleName.'"');
 			} else {
 				$this->sConfFilePath = $sModuleConfPath;
 			}
