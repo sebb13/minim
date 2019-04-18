@@ -22,10 +22,11 @@ abstract class API {
 	/*
 	 * https://www.pulsar-informatique.com/actus-blog/entry/mise-en-place-api-rest-en-php
 	 */
-	protected $aAllow = array();
-	protected $sContentType = 'application/json';
-	protected $aRequest = array();
-	private $iCode = 200;
+	protected $aAllow			= array();
+	protected $sContentType		= 'application/json';
+	protected $aRequest			= array();
+	private $iCode				= 200;
+	private $sCheckApiKey		= '';
 	private $iStatus = array(
 					100 => 'Continue',  
 					101 => 'Switching Protocols',  
@@ -70,8 +71,9 @@ abstract class API {
 					505 => 'HTTP Version Not Supported'
 		);
 	
-	public function __construct() {
-		$this->inputs();
+	public function __construct($sCheckApiKey) {
+		$this->sCheckApiKey = $sCheckApiKey;
+		return $this->inputs();
 	}
 
 	private function inputs() {
@@ -91,6 +93,7 @@ abstract class API {
 				$this->response('', 406);
 				break;
 		}
+		return $this->checkApiKey();
 	}
 	
 	protected function getReferer() {
@@ -109,6 +112,18 @@ abstract class API {
 		$this->setHeaders();
 		echo $mData;
 		exit;
+	}
+	
+	private function checkApiKey() {
+		if(empty($this->aRequest) 
+		|| empty($this->aRequest['api_key']) 
+		|| !Toolz_Checker::isValidMethod($this->sCheckApiKey)) {
+			return false;
+		}
+		list($sClassName, $sMethodName) = explode('::', $this->sCheckApiKey);
+		$oClass = new $sClassName();
+		$mResult = $oClass->$sMethodName($this->aRequest['api_key']);
+		return $mResult !== false;
 	}
 
 	private function getStatusMessage() {
