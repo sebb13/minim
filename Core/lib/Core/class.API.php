@@ -164,11 +164,7 @@ abstract class API {
 				$mCleanInput[$k] = $this->cleanInputs($v);
 			}
 		}else{
-			if(get_magic_quotes_gpc()) {
-				$mData = trim(stripslashes($mData));
-			}
-			$mData = strip_tags($mData);
-			$mCleanInput = trim($mData);
+			Toolz_Format::XssKiller($mCleanInput);
 		}
 		return $mCleanInput;
 	}		
