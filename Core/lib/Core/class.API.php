@@ -22,9 +22,9 @@ abstract class API {
 	/*
 	 * https://www.pulsar-informatique.com/actus-blog/entry/mise-en-place-api-rest-en-php
 	 */
-	public $aAllow = array();
-	public $sContentType = 'application/json';
-	public $aRequest = array();
+	protected $aAllow = array();
+	protected $sContentType = 'application/json';
+	protected $aRequest = array();
 	private $iCode = 200;
 	private $iStatus = array(
 					100 => 'Continue',  
@@ -93,15 +93,15 @@ abstract class API {
 		}
 	}
 	
-	public function getReferer() {
+	protected function getReferer() {
 		return UserRequest::getEnv('HTTP_REFERER');
 	}
 
-	public function getRequestMethod() {
+	protected function getRequestMethod() {
 		return UserRequest::getEnv('REQUEST_METHOD');
 	}
 
-	public function sendResponse($mData, $iStatus, $sContentType='') {
+	protected function sendResponse($mData, $iStatus, $sContentType='') {
 		if(!empty($sContentType)) {
 			$this->sContentType = $sContentType;
 		}
