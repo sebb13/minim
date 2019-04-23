@@ -82,8 +82,8 @@ final class SessionUser extends Session {
 		return parent::destroySubSessionKey(self::$sSubKey,$sKey);
 	}
 
-    public static function login($sUser) {
-        return self::set('user', $sUser);
+    public static function login() {
+        return self::set('app_token', SessionCore::getSessionHash());
     }
 
 	public static function logout() {
@@ -91,7 +91,7 @@ final class SessionUser extends Session {
     }
 
     public static function isLogged() {
-        return self::get('user') !== false;
+        return self::get('app_token') === SessionCore::getSessionHash();
     }
 
     public static function setEmail($sEmail) {
