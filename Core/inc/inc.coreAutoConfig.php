@@ -140,6 +140,7 @@ require DATA_PATH.'class.PagesConf.php';
 // Configuration globale
 require CORE_CLASS_PATH.'class.UserRequest.php';
 UserRequest::startBenchmark();
+require CORE_CLASS_PATH.'class.ExtendedSimpleXMLElement.php';
 require CORE_CLASS_PATH.'class.SimpleXmlMgr.php';
 require CORE_CLASS_PATH.'class.Config.php';
 $oConfig = new Config('minim');
@@ -188,7 +189,7 @@ set_error_handler(array('exceptionErrorHandler', 'errorHandler'));
 // -- interfaces 
 include_once CORE_INTERFACE_PATH.'interface.iCacheSystem.php';
 // -- function autoloader
-function __autoload($sClass) {
+spl_autoload_register(function($sClass) {
     if (file_exists(CORE_CLASS_PATH.'svc.'.$sClass.'.php')) {
         include_once CORE_CLASS_PATH.'svc.'.$sClass.'.php';
     } elseif (file_exists(CORE_CLASS_PATH.'class.'.$sClass.'.php')) {
@@ -204,14 +205,14 @@ function __autoload($sClass) {
     } else {
         throw new CoreException('Class '.$sClass.' not found');
     }
-}
-if (!empty($_POST)) {
+});
+if(!empty($_POST)) {
     Toolz_Format::XssKiller($_POST);
 }
-if (empty($_GET['page'])) {
+if(empty($_GET['page'])) {
     $_GET['page'] = 'home';
 }
-if (empty($_GET['lang'])) {
+if(empty($_GET['lang'])) {
     $_GET['lang'] = DEFAULT_LANG;
 }
 Toolz_Main::checkVersion();
